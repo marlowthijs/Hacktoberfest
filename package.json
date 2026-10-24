@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev --test-scheduled",
-    "deploy": "wrangler deploy",
-    "db:apply": "wrangler d1 migrations apply DB --remote",
-    "db:apply:local": "wrangler d1 migrations apply DB --local"
+    "dev": "wrangler dev --config wrangler.jsonc --test-scheduled",
+    "deploy": "wrangler deploy --config wrangler.jsonc",
+    "db:apply": "wrangler d1 migrations apply DB --remote --config wrangler.jsonc",
+    "db:apply:local": "wrangler d1 migrations apply DB --local --config wrangler.jsonc"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
