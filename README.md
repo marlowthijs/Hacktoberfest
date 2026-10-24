@@ -24,13 +24,13 @@ From the project folder, install Wrangler and sign in:
 ```sh
 npm install
 npx wrangler login
-npx wrangler d1 create society-synth-db --location weur
+npx wrangler d1 create society-synth-db --location weur --config wrangler.jsonc
 ```
 
 Copy the database ID Wrangler returns into `wrangler.jsonc`, replacing `REPLACE_WITH_YOUR_D1_DATABASE_ID`. Then create the tables and the example ECSS draft:
 
 ```sh
-npx wrangler d1 migrations apply DB --remote
+npm run db:apply
 ```
 
 ### 2. Set up Google Calendar access
@@ -58,11 +58,11 @@ openssl rand -base64 32
 Add the five values through Wrangler. Each command prompts for its value:
 
 ```sh
-npx wrangler secret put GOOGLE_CLIENT_ID
-npx wrangler secret put GOOGLE_CLIENT_SECRET
-npx wrangler secret put SESSION_SECRET
-npx wrangler secret put TOKEN_ENCRYPTION_KEY
-npx wrangler secret put ADMIN_SECRET
+npx wrangler secret put GOOGLE_CLIENT_ID --config wrangler.jsonc
+npx wrangler secret put GOOGLE_CLIENT_SECRET --config wrangler.jsonc
+npx wrangler secret put SESSION_SECRET --config wrangler.jsonc
+npx wrangler secret put TOKEN_ENCRYPTION_KEY --config wrangler.jsonc
+npx wrangler secret put ADMIN_SECRET --config wrangler.jsonc
 ```
 
 `ADMIN_SECRET` is the shared password for **Team admin**. Keep it out of GitHub. For local development, copy `.dev.vars.example` to `.dev.vars`, fill it in with test credentials, and use local D1 migrations instead. The configured D1 binding still needs a database ID in `wrangler.jsonc`.
@@ -70,7 +70,7 @@ npx wrangler secret put ADMIN_SECRET
 ### 4. Deploy and connect your domain
 
 ```sh
-npx wrangler deploy
+npm run deploy
 ```
 
 In Cloudflare, open **Workers & Pages → society-synth → Settings → Domains & Routes** and add your domain as a custom domain. Then update the Google OAuth client's authorized redirect URI to the final HTTPS domain if needed.
@@ -88,7 +88,7 @@ Create a Google OAuth client with the localhost callback above, then prepare loc
 ```sh
 cp .dev.vars.example .dev.vars
 # Fill in .dev.vars with the test OAuth credentials and fresh random keys.
-npx wrangler d1 migrations apply DB --local
+npm run db:apply:local
 npm run dev
 ```
 
