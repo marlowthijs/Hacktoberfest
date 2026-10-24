@@ -1,53 +1,34 @@
 # Society Synth
 
-Society Synth turns a weekly society event list into a public calendar feed that students can subscribe to in Google Calendar. It starts with the ECSS Hacktoberfest entry from the project brief.
+Society Synth is a laptop-only society events board. Select the societies you follow, manage the weekly event list, and download an \`.ics\` file to import into Google Calendar.
 
-## Update society events
+## Run locally
 
-The event catalogue lives in [`data/events.json`](data/events.json). Update this file in the GitHub repository when society teams send their weekly events. The public Site reads the file from the repository's `main` branch and checks for updates every few minutes, so ordinary event edits do not need a Site redeploy.
+From the repository folder, run:
 
-Each event needs a stable `id`, its `society_id`, a title, ISO 8601 start and end times with an offset, a time-zone name, a location, and a short description. Add the society to `societies` before adding its events. Keep IDs stable when editing an existing event so calendar subscriptions can recognise it.
+\`\`\`sh
+python3 -m http.server 8765 --bind 127.0.0.1
+\`\`\`
 
-```json
-{
-  "schema_version": 1,
-  "updated_at": "2026-10-24T12:00:00Z",
-  "societies": [
-    { "id": "ecss", "name": "ECSS", "description": "Society events", "accent": "#b7ef72" }
-  ],
-  "events": [
-    {
-      "id": "hacktoberfest-2026",
-      "society_id": "ecss",
-      "title": "Hacktoberfest",
-      "start": "2026-10-24T09:45:00+01:00",
-      "end": "2026-10-24T20:00:00+01:00",
-      "timezone": "Europe/London",
-      "location": "Building 60 West",
-      "description": "hackathon"
-    }
-  ]
-}
-```
+Open [http://127.0.0.1:8765](http://127.0.0.1:8765). Stop the server with \`Control-C\`.
 
-## Google Calendar
+Python 3 is the only requirement. There is no build step, Node.js install, Cloudflare account, or Google OAuth setup.
 
-Students select societies in the app, copy their calendar URL, then choose **Other calendars → + → From URL** in Google Calendar. The feed is a separate subscribed calendar; it does not write directly into the student's primary calendar. Google refreshes subscribed calendars periodically. The `.ics` download is available for a one-time import.
+## Use the app
 
-Selections stay in the student's browser. The generated feed URL contains only the selected society IDs and public event listings. Anyone who has that URL can view the corresponding feed.
+- Select societies on the main page. Picks are stored in this browser.
+- Open **Team admin** to add societies and enter, edit, publish, or cancel events.
+- Use **Export backup** to save event data and society picks. **Import backup** restores it in this browser.
+- Download an \`.ics\` file for selected societies. In Google Calendar, choose **Settings → Import & export → Import**, select the file, and choose a calendar.
 
-## Deploy to Cloudflare
+The starting catalogue is in \`data/events.json\` and includes the ECSS Hacktoberfest example. Browser edits are saved locally and take precedence over the starter file. Use **Restore starter data** to clear local edits and load the file again.
 
-The app is a dependency-free Cloudflare Worker. From this directory, authenticate Wrangler with the Cloudflare account, then run:
+## Calendar behavior
 
-```sh
-npx wrangler deploy
-```
+This local version exports one-time calendar files. It does not sign in to Google, directly edit the primary calendar, or sync in the background. To avoid duplicates, remove an older imported copy before importing a replacement.
 
-Wrangler publishes to the Worker URL. To use a Cloudflare domain, attach the deployed Worker to a domain in **Workers & Pages → Settings → Domains & Routes**. The domain's zone must be available in the Cloudflare account.
+## Source files
 
-## Project files
+- \`index.html\`, \`app.js\`, and \`styles.css\` — local app
+- \`data/events.json\` — starter event catalogue
 
-- `worker/index.js` — public app, event API, and iCalendar feed.
-- `data/events.json` — weekly event catalogue, also served from the GitHub `main` branch.
-- `wrangler.toml` — Cloudflare Worker configuration.
