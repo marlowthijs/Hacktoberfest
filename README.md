@@ -1,6 +1,6 @@
-# Society Synth
+# uniflow
 
-Society Synth turns a weekly society event list into a public calendar feed that students can subscribe to in Google Calendar. It starts with the ECSS Hacktoberfest entry from the project brief.
+uniflow turns a weekly society event list into a public calendar feed that students can subscribe to in Google Calendar. It starts with the ECSS Hacktoberfest entry from the project brief.
 
 ## Update society events
 
