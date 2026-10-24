@@ -433,7 +433,7 @@ async function syncOneUser(user, env) {
         WHERE sub.user_id = ? AND e.status = 'published' AND e.end_at >= ? ORDER BY e.start_at ASC`)
         .bind(user.user_id, now).all(),
       db.prepare(`SELECT e.id, ce.google_event_id FROM calendar_entries ce JOIN events e ON e.id = ce.event_id
-        WHERE ce.user_id = ? AND e.status = 'cancelled'`).bind(user.user_id).all(),
+        WHERE ce.user_id = ? AND e.status IN ('cancelled', 'draft')`).bind(user.user_id).all(),
       db.prepare('SELECT event_id, google_event_id FROM calendar_entries WHERE user_id = ?').bind(user.user_id).all()
     ]);
     const entries = new Map((entriesResult.results || []).map((row) => [row.event_id, row.google_event_id]));
