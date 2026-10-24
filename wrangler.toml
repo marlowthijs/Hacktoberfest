@@ -1,4 +1,0 @@
-name = "society-synth"
-main = "dist/server/index.js"
-compatibility_date = "2026-10-24"
-workers_dev = true
