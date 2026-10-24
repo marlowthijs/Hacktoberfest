@@ -5,8 +5,26 @@
     {
       "id": "ecss",
       "name": "ECSS",
-      "description": "Society events, collected in one easy-to-follow calendar.",
+      "description": "ECS talks, workshops and socials in one easy-to-follow calendar.",
       "accent": "#b7ef72"
+    },
+    {
+      "id": "mma",
+      "name": "MMA",
+      "description": "Striking, grappling and full MMA sessions.",
+      "accent": "#f6b6c8"
+    },
+    {
+      "id": "cyber-security",
+      "name": "Cyber Security",
+      "description": "Weekly cyber sessions, CTFs and practical workshops.",
+      "accent": "#b9d8ff"
+    },
+    {
+      "id": "boxing",
+      "name": "Boxing",
+      "description": "Training, sparring, socials and hill sprints.",
+      "accent": "#ffd1b9"
     }
   ],
   "events": [
@@ -19,6 +37,116 @@
       "timezone": "Europe/London",
       "location": "Building 60 West",
       "description": "hackathon"
+    },
+    {
+      "id": "ecss-chatgpt-workshop-2026-10-26",
+      "society_id": "ecss",
+      "title": "ChatGPT workshop",
+      "start": "2026-10-26T18:00:00+00:00",
+      "end": "2026-10-26T20:00:00+00:00",
+      "timezone": "Europe/London",
+      "location": "Building 100, Room 4013",
+      "description": "An ECSS workshop on using ChatGPT."
+    },
+    {
+      "id": "ecss-halloween-pub-crawl-2026-10-29",
+      "society_id": "ecss",
+      "title": "Halloween pub crawl",
+      "start": "2026-10-29T19:15:00+00:00",
+      "end": "2026-10-29T22:15:00+00:00",
+      "timezone": "Europe/London",
+      "location": "The Stag's",
+      "description": "Costumes encouraged."
+    },
+    {
+      "id": "ecss-kcl-tech-summit-2026-10-31",
+      "society_id": "ecss",
+      "title": "KCL Tech Summit",
+      "start": "2026-10-31T09:30:00+00:00",
+      "end": "2026-10-31T17:30:00+00:00",
+      "timezone": "Europe/London",
+      "location": "KCL Strand Campus",
+      "description": "A full-day technology summit at King's College London."
+    },
+    {
+      "id": "mma-training-2026-10-31",
+      "society_id": "mma",
+      "title": "MMA training",
+      "start": "2026-10-31T11:30:00+00:00",
+      "end": "2026-10-31T13:30:00+00:00",
+      "timezone": "Europe/London",
+      "location": "Jubilee Sports Centre",
+      "description": "Weekly MMA training session."
+    },
+    {
+      "id": "cyber-security-weekly-2026-10-28",
+      "society_id": "cyber-security",
+      "title": "Weekly Cyber Security session",
+      "start": "2026-10-28T18:00:00+00:00",
+      "end": "2026-10-28T20:00:00+00:00",
+      "timezone": "Europe/London",
+      "location": "To be announced",
+      "description": "Regular weekly session; venue and activity details are to be announced."
+    },
+    {
+      "id": "boxing-general-training-2026-10-26",
+      "society_id": "boxing",
+      "title": "General training",
+      "start": "2026-10-26T20:00:00+00:00",
+      "end": "2026-10-26T21:30:00+00:00",
+      "timezone": "Europe/London",
+      "location": "Glen Eyre Hall",
+      "description": "All abilities welcome."
+    },
+    {
+      "id": "boxing-sparring-bagwork-2026-10-27",
+      "society_id": "boxing",
+      "title": "Sparring & bagwork",
+      "start": "2026-10-27T17:00:00+00:00",
+      "end": "2026-10-27T19:00:00+00:00",
+      "timezone": "Europe/London",
+      "location": "Richard Taunton",
+      "description": "Bring a mouthguard for sparring."
+    },
+    {
+      "id": "boxing-sparring-bagwork-2026-10-29",
+      "society_id": "boxing",
+      "title": "Sparring & bagwork",
+      "start": "2026-10-29T17:00:00+00:00",
+      "end": "2026-10-29T19:00:00+00:00",
+      "timezone": "Europe/London",
+      "location": "Richard Taunton",
+      "description": "Bring a mouthguard for sparring."
+    },
+    {
+      "id": "boxing-general-training-2026-10-30",
+      "society_id": "boxing",
+      "title": "General training",
+      "start": "2026-10-30T18:00:00+00:00",
+      "end": "2026-10-30T20:00:00+00:00",
+      "timezone": "Europe/London",
+      "location": "Glen Eyre Hall",
+      "description": "All abilities welcome."
+    },
+    {
+      "id": "boxing-womens-training-2026-10-31",
+      "society_id": "boxing",
+      "title": "Women's-only training",
+      "start": "2026-10-31T12:30:00+00:00",
+      "end": "2026-10-31T14:00:00+00:00",
+      "timezone": "Europe/London",
+      "location": "SUSU Training Room",
+      "description": "Women's-only Boxing training."
+    },
+    {
+      "id": "boxing-hill-sprints-2026-11-01",
+      "society_id": "boxing",
+      "title": "Hill sprints",
+      "start": "2026-11-01T10:30:00+00:00",
+      "end": "2026-11-01T11:30:00+00:00",
+      "timezone": "Europe/London",
+      "location": "To be announced",
+      "description": "Sunday conditioning session."
     }
   ]
 }
