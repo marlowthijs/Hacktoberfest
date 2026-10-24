@@ -26,7 +26,7 @@ function initials(value = '') {
 }
 
 function palette(value = '') {
-  const colors = ['#dc795d', '#799c81', '#8b83b9', '#d1a04c', '#55999a', '#bd7183'];
+  const colors = ['#0053b3', '#007d8a', '#b47b00', '#476a8a', '#006b5a', '#695f89'];
   let hash = 0;
   for (const char of value) hash = ((hash << 5) - hash + char.charCodeAt(0)) | 0;
   return colors[Math.abs(hash) % colors.length];
@@ -68,8 +68,8 @@ function renderEvents() {
   const node = $('#events-list');
   if (!rows.length) {
     const connected = Boolean(state.user);
-    const message = state.query ? 'Try another search.' : state.filter === 'following' || state.view === 'following' ? (connected ? 'Follow a society to see its events here.' : 'Connect your calendar to save your society picks.') : 'The team is adding this week’s events. Check back soon.';
-    node.innerHTML = `<div class="empty-state"><div class="empty-symbol">✳</div><h3>${search ? 'No matches just yet' : 'A little room in your week'}</h3><p>${escapeHtml(message)}</p></div>`;
+    const message = state.query ? 'Try changing your search terms.' : state.filter === 'following' || state.view === 'following' ? (connected ? 'Follow a society to see its events here.' : 'Connect your calendar to follow societies.') : 'More events will appear when society admins publish them.';
+    node.innerHTML = `<div class="empty-state"><div class="empty-symbol">✳</div><h3>${search ? 'No events found' : 'No upcoming events'}</h3><p>${escapeHtml(message)}</p></div>`;
     return;
   }
   node.innerHTML = rows.map(eventMarkup).join('');
@@ -81,12 +81,12 @@ function renderSocieties() {
   $('#following-count').textContent = state.selectedIds.size;
   $('#filter-following-count').textContent = state.selectedIds.size;
   const societies = state.societies;
-  $('#sidebar-societies').innerHTML = societies.slice(0, 7).map((society) => `<div class="side-society"><span class="society-dot" style="--society-color:${palette(society.name)}"></span><span>${escapeHtml(society.abbreviation || society.name)}</span></div>`).join('') || '<div class="side-society"><span style="color:#91a6a2;font-size:11px">A new circle starts here.</span></div>';
+  $('#sidebar-societies').innerHTML = societies.slice(0, 7).map((society) => `<div class="side-society"><span class="society-dot" style="--society-color:${palette(society.name)}"></span><span>${escapeHtml(society.abbreviation || society.name)}</span></div>`).join('') || '<div class="side-society"><span style="color:#c8d8e2;font-size:11px">No societies listed yet.</span></div>';
   $('#societies-list').innerHTML = societies.map((society) => {
     const following = state.selectedIds.has(society.id);
     const count = state.events.filter((event) => event.society_id === society.id).length;
-    return `<article class="society-card"><span class="society-avatar" style="--society-color:${palette(society.name)}">${escapeHtml(society.abbreviation || initials(society.name))}</span><div class="society-info"><strong title="${escapeHtml(society.name)}">${escapeHtml(society.name)}</strong><small>${following ? 'In your circles' : `${count} upcoming ${count === 1 ? 'event' : 'events'}`}</small></div><button class="join-button${following ? ' joined' : ''}" data-join="${escapeHtml(society.id)}" aria-pressed="${following}" aria-label="${following ? 'Unfollow' : 'Follow'} ${escapeHtml(society.name)}">${following ? '✓' : '+'}</button></article>`;
-  }).join('') || '<div class="empty-state"><div class="empty-symbol">✳</div><h3>Find your first circle</h3><p>Societies will show up here once the team adds them.</p></div>';
+    return `<article class="society-card"><span class="society-avatar" style="--society-color:${palette(society.name)}">${escapeHtml(society.abbreviation || initials(society.name))}</span><div class="society-info"><strong title="${escapeHtml(society.name)}">${escapeHtml(society.name)}</strong><small>${following ? 'Following' : `${count} upcoming ${count === 1 ? 'event' : 'events'}`}</small></div><button class="join-button${following ? ' joined' : ''}" data-join="${escapeHtml(society.id)}" aria-pressed="${following}" aria-label="${following ? 'Unfollow' : 'Follow'} ${escapeHtml(society.name)}">${following ? '✓' : '+'}</button></article>`;
+  }).join('') || '<div class="empty-state"><div class="empty-symbol">✳</div><h3>No societies listed yet</h3><p>Societies will appear here once they have been added.</p></div>';
   renderEvents();
 }
 
@@ -100,13 +100,13 @@ function renderUser() {
   $('#sync-button').classList.toggle('hidden', !connected || needsReconnect);
   $('#disconnect-button').classList.toggle('hidden', !connected);
   $('#calendar-card-action').textContent = connected && !needsReconnect ? 'Sync my calendar  ↻' : needsReconnect ? 'Reconnect Google Calendar  ↗' : 'Connect Google Calendar  ↗';
-  $('#calendar-card-copy').textContent = connected ? (state.user.last_sync_error ? `Last sync needs attention: ${state.user.last_sync_error}` : state.user.last_sync_at ? `Connected as ${state.user.email}. Last synced ${new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(state.user.last_sync_at))}.` : `Connected as ${state.user.email}. Follow the societies you care about and we'll add their events.`) : 'Connect Google Calendar and we’ll add events from the societies you follow.';
+  $('#calendar-card-copy').textContent = connected ? (state.user.last_sync_error ? `Last sync needs attention: ${state.user.last_sync_error}` : state.user.last_sync_at ? `Connected as ${state.user.email}. Last synced ${new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(state.user.last_sync_at))}.` : `Connected as ${state.user.email}. Follow societies to add their events to your calendar.`) : 'Connect your Google Calendar to sync published events from the societies you follow.';
   $('#calendar-card-action').onclick = connected && !needsReconnect ? syncMyCalendar : connectCalendar;
   const now = new Date();
-  $('#today-label').textContent = new Intl.DateTimeFormat(undefined, { weekday: 'long', month: 'long', day: 'numeric' }).format(now).toUpperCase();
+  $('#today-label').textContent = `SOUTHAMPTON · ${new Intl.DateTimeFormat(undefined, { weekday: 'long', month: 'long', day: 'numeric' }).format(now).toUpperCase()}`;
   $('#week-label').textContent = `WEEK OF ${new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric' }).format(now).toUpperCase()}`;
   $('#event-total').textContent = state.events.length;
-  $('#welcome-title').innerHTML = state.user ? `Good to see you,<br /><em>${escapeHtml(state.user.display_name?.split(' ')[0] || 'friend')}.</em>` : 'Make room for<br /><em>good things.</em>';
+  $('#welcome-title').innerHTML = state.user ? `Welcome back,<br /><em>${escapeHtml(state.user.display_name?.split(' ')[0] || 'Southampton student')}.</em>` : 'Society events at<br /><em>Southampton.</em>';
 }
 
 function render() { renderUser(); renderSocieties(); }
@@ -120,7 +120,7 @@ async function load() {
     state.selectedIds = new Set(data.selectedSocietyIds || []);
     render();
   } catch (error) {
-    $('#events-list').innerHTML = `<div class="empty-state"><div class="empty-symbol">!</div><h3>We couldn’t load the campus board</h3><p>${escapeHtml(error.message)} Check the Cloudflare setup and try refreshing.</p></div>`;
+    $('#events-list').innerHTML = `<div class="empty-state"><div class="empty-symbol">!</div><h3>Society events could not be loaded</h3><p>${escapeHtml(error.message)} Please refresh and try again.</p></div>`;
   }
 }
 
@@ -140,13 +140,13 @@ async function syncMyCalendar() {
 }
 
 async function toggleSociety(societyId) {
-  if (!state.user) { toast('Connect your Google Calendar to save your society picks.'); connectCalendar(); return; }
+  if (!state.user) { toast('Connect your Google Calendar to follow societies.'); connectCalendar(); return; }
   const joined = state.selectedIds.has(societyId);
   try {
     await api(`/api/subscriptions/${encodeURIComponent(societyId)}`, { method: 'POST', body: JSON.stringify({ joined: !joined }) });
     if (joined) state.selectedIds.delete(societyId); else state.selectedIds.add(societyId);
     render();
-    if (joined) toast('You’ve updated your society picks.');
+    if (joined) toast('Society removed from your list.');
     else {
       try {
         const result = await api('/api/calendar/sync', { method: 'POST', body: '{}' });
@@ -154,7 +154,7 @@ async function toggleSociety(societyId) {
         toast(`${result.added} event${result.added === 1 ? '' : 's'} added to your calendar.`);
       } catch (error) {
         await load();
-        toast(`You’re following this society, but the calendar did not sync: ${error.message}`, 'error');
+        toast(`You are following this society, but the calendar did not sync: ${error.message}`, 'error');
       }
     }
   } catch (error) { toast(error.message, 'error'); }
@@ -196,7 +196,7 @@ async function loadAdminData() {
     const start = new Date(event.start_at);
     const label = new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }).format(start);
     return `<tr><td><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.society_name)}${event.location ? ` · ${escapeHtml(event.location)}` : ''}</small></td><td>${escapeHtml(label)}</td><td><span class="status-pill ${escapeHtml(event.status)}">${escapeHtml(event.status)}</span></td><td>${event.status !== 'cancelled' ? `<button class="table-action" data-edit-event="${escapeHtml(event.id)}">Edit</button> <button class="table-action" data-cancel-event="${escapeHtml(event.id)}">Cancel</button>` : ''}</td></tr>`;
-  }).join('') || '<tr><td colspan="4">No events yet. Add one for this week.</td></tr>';
+  }).join('') || '<tr><td colspan="4">No events yet. Select Add event to create one.</td></tr>';
   $('#admin-events-body').insertAdjacentHTML('beforeend', '');
   const options = activeSocieties.map((society) => `<option value="${escapeHtml(society.id)}">${escapeHtml(society.name)}</option>`).join('');
   $('#event-form [name="society_id"]').innerHTML = options || '<option value="">Add a society first</option>';
@@ -258,7 +258,7 @@ async function saveEvent(form) {
 }
 
 async function cancelEvent(id) {
-  const confirmed = window.confirm('Cancel this event? The next sync will remove the event created by Society Synth from subscribed calendars.');
+  const confirmed = window.confirm('Cancel this event? The next sync will remove the event added to subscribed calendars.');
   if (!confirmed) return;
   try { await api(`/api/admin/events/${encodeURIComponent(id)}`, { method: 'DELETE' }); await Promise.all([load(), loadAdminData()]); toast('Event cancelled.'); }
   catch (error) { toast(error.message, 'error'); }
@@ -275,8 +275,8 @@ $$('.filter-chip').forEach((chip) => chip.addEventListener('click', () => setFil
 $$('.nav-item[data-view]').forEach((button) => button.addEventListener('click', () => {
   state.view = button.dataset.view;
   $$('.nav-item[data-view]').forEach((item) => item.classList.toggle('active', item === button));
-  $('#page-label').textContent = state.view === 'following' ? 'My societies' : 'Discover';
-  $('#events-heading').textContent = state.view === 'following' ? 'Your circles, coming up' : 'Coming up';
+  $('#page-label').textContent = state.view === 'following' ? 'My societies' : 'Events';
+  $('#events-heading').textContent = state.view === 'following' ? 'Followed society events' : 'Upcoming events';
   if (state.view === 'following') setFilter('following'); else setFilter('all');
 }));
 document.addEventListener('click', (event) => {
@@ -323,7 +323,7 @@ $('#admin-sync-button').addEventListener('click', async (event) => {
 });
 
 $('#disconnect-button').addEventListener('click', async () => {
-  const confirmed = window.confirm('Disconnect Google Calendar? Your Society Synth picks and saved connection will be removed. Events already in Google Calendar stay there.');
+  const confirmed = window.confirm('Disconnect Google Calendar? Your account, followed societies and sync records will be removed from this service. Events already in Google Calendar will remain there.');
   if (!confirmed) return;
   try { await api('/api/account/disconnect', { method: 'POST', body: '{}' }); state.user = null; state.selectedIds.clear(); await load(); toast('Calendar disconnected.'); }
   catch (error) { toast(error.message, 'error'); }
