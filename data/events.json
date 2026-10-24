@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-24T12:00:00Z",
+  "societies": [
+    {
+      "id": "ecss",
+      "name": "ECSS",
+      "description": "Society events, collected in one easy-to-follow calendar.",
+      "accent": "#b7ef72"
+    }
+  ],
+  "events": [
+    {
+      "id": "hacktoberfest-2026",
+      "society_id": "ecss",
+      "title": "Hacktoberfest",
+      "start": "2026-10-24T09:45:00+01:00",
+      "end": "2026-10-24T20:00:00+01:00",
+      "timezone": "Europe/London",
+      "location": "Building 60 West",
+      "description": "hackathon"
+    }
+  ]
+}
