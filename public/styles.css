@@ -127,7 +127,7 @@ dialog{box-shadow:0 18px 48px rgba(0,31,57,.2)}dialog::backdrop{background:rgba(
 .privacy-note{border-radius:5px;background:#edf3fa;color:#344b57}.privacy-footer{color:#495961;border-color:var(--line)}
 @media(max-width:900px){.main-area{margin-left:210px;padding:0 27px 24px}.content-grid{grid-template-columns:1fr}.right-rail{grid-template-columns:1fr 1fr;align-items:start}.welcome-aside{margin-right:12px}}
 @media(max-width:650px){
- .sidebar{width:100%;padding:10px 14px}.brand-name{max-width:155px;font-size:11px}.brand-name span{font-size:9px}
+ .sidebar{width:100%;padding:10px 14px}.brand-name{max-width:100px;font-size:10px}.brand-name span{font-size:9px}
  .main-area{padding:0 16px 20px}.welcome-row{padding:30px 0 25px}
  h1{font-size:39px;letter-spacing:-1.7px}.welcome-copy{font-size:13px;max-width:310px;padding-right:4px}
  .content-grid{padding-top:24px}.section-heading-row h2{font-size:22px}.search-box{width:150px}
