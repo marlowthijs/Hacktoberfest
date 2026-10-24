@@ -92,14 +92,16 @@ function renderSocieties() {
 
 function renderUser() {
   const connected = Boolean(state.user);
+  const needsReconnect = connected && /expired|reconnect/i.test(state.user.last_sync_error || '');
   $('#account-label').textContent = state.user?.email || 'Calendar not connected';
   $('#avatar').textContent = state.user ? initials(state.user.display_name || state.user.email) : '?';
-  $('#connect-button').classList.toggle('hidden', connected);
-  $('#sync-button').classList.toggle('hidden', !connected);
+  $('#connect-button').classList.toggle('hidden', connected && !needsReconnect);
+  $('#connect-button').innerHTML = `${needsReconnect ? 'Reconnect calendar' : 'Connect calendar'} <span aria-hidden="true">↗</span>`;
+  $('#sync-button').classList.toggle('hidden', !connected || needsReconnect);
   $('#disconnect-button').classList.toggle('hidden', !connected);
-  $('#calendar-card-action').textContent = connected ? 'Sync my calendar  ↻' : 'Connect Google Calendar  ↗';
+  $('#calendar-card-action').textContent = connected && !needsReconnect ? 'Sync my calendar  ↻' : needsReconnect ? 'Reconnect Google Calendar  ↗' : 'Connect Google Calendar  ↗';
   $('#calendar-card-copy').textContent = connected ? (state.user.last_sync_error ? `Last sync needs attention: ${state.user.last_sync_error}` : state.user.last_sync_at ? `Connected as ${state.user.email}. Last synced ${new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(state.user.last_sync_at))}.` : `Connected as ${state.user.email}. Follow the societies you care about and we'll add their events.`) : 'Connect Google Calendar and we’ll add events from the societies you follow.';
-  $('#calendar-card-action').onclick = connected ? syncMyCalendar : connectCalendar;
+  $('#calendar-card-action').onclick = connected && !needsReconnect ? syncMyCalendar : connectCalendar;
   const now = new Date();
   $('#today-label').textContent = new Intl.DateTimeFormat(undefined, { weekday: 'long', month: 'long', day: 'numeric' }).format(now).toUpperCase();
   $('#week-label').textContent = `WEEK OF ${new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric' }).format(now).toUpperCase()}`;
@@ -133,7 +135,7 @@ async function syncMyCalendar() {
     const result = await api('/api/calendar/sync', { method: 'POST', body: '{}' });
     toast(`${result.added} added · ${result.updated} updated`);
     await load();
-  } catch (error) { toast(error.message, 'error'); }
+  } catch (error) { await load(); toast(error.message, 'error'); }
   finally { button.disabled = false; button.innerHTML = original; }
 }
 
@@ -144,7 +146,17 @@ async function toggleSociety(societyId) {
     await api(`/api/subscriptions/${encodeURIComponent(societyId)}`, { method: 'POST', body: JSON.stringify({ joined: !joined }) });
     if (joined) state.selectedIds.delete(societyId); else state.selectedIds.add(societyId);
     render();
-    toast(joined ? 'You’ve updated your society picks.' : 'Added to your circles.');
+    if (joined) toast('You’ve updated your society picks.');
+    else {
+      try {
+        const result = await api('/api/calendar/sync', { method: 'POST', body: '{}' });
+        await load();
+        toast(`${result.added} event${result.added === 1 ? '' : 's'} added to your calendar.`);
+      } catch (error) {
+        await load();
+        toast(`You’re following this society, but the calendar did not sync: ${error.message}`, 'error');
+      }
+    }
   } catch (error) { toast(error.message, 'error'); }
 }
 
