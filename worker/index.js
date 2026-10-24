@@ -142,6 +142,75 @@ const PAGE = String.raw`<!doctype html>
     .catalogue-contact{margin-top:18px;padding:13px 16px;border-left:3px solid #005c84;background:#f4f8fa;color:#526b7b;font-size:12px}
     .catalogue-contact a{color:#005c84;font-weight:700;text-underline-offset:3px}
     @media(max-width:620px){.catalogue-tools{align-items:stretch;flex-direction:column;gap:8px;margin:0 0 14px}.search-field{width:100%}.catalogue-result{font-size:11px}.list-actions{padding-top:13px}}
+    /* Focus the page on completing the calendar setup. */
+    .hero{grid-template-columns:1fr 390px;gap:48px;align-items:center;padding:44px 0 46px}
+    .hero h1{max-width:680px;font-size:clamp(40px,5vw,60px);margin:16px 0 12px}
+    .hero-copy>p{max-width:580px;margin-bottom:18px}
+    .hero-footnote{margin-top:17px}
+    .hero-art{display:block;min-height:0}
+    .art-backdrop,.orbit,.art-caption{display:none}
+    .art-card{width:100%;max-width:none;padding:20px 22px;border:1px solid #d7e1e8;border-top:4px solid #005c84;border-radius:6px;box-shadow:0 8px 24px rgba(0,47,76,.06);transform:none}
+    .flow-card-title{display:flex;align-items:center;justify-content:space-between;color:#002f4c;font-size:12px;font-weight:700}
+    .flow-card-title span{color:#526b7b;font-size:10px;font-weight:600}
+    .flow-steps{display:grid;gap:0;margin-top:12px}
+    .flow-step{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:10px;padding:12px 0;border-top:1px solid #e6edf1}
+    .flow-step-number{width:27px;height:27px;display:grid;place-items:center;background:#eaf2f7;color:#005c84;font-size:11px;font-weight:700;border-radius:50%}
+    .flow-step strong{display:block;color:#002f4c;font-size:12px}
+    .flow-step small{display:block;color:#526b7b;font-size:10px;margin-top:2px}
+    .flow-step-state{color:#526b7b;font-size:10px;white-space:nowrap}
+    .section{padding:45px 0}
+    .section-heading{margin-bottom:18px}
+    .society-card{min-height:176px}
+    .selection-next{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px;padding:15px 17px;border:1px solid #d7e1e8;border-left:3px solid #005c84;background:#f8fafb}
+    .selection-next-copy{color:#526b7b;font-size:12px}
+    .selection-next-copy strong{display:block;color:#002f4c;font-size:13px;margin-bottom:2px}
+    .selection-next .button{white-space:nowrap}
+    .selection-next .button:disabled{background:#e2eaf0;color:#718694;cursor:not-allowed}
+    .sync-section{padding:10px 0 46px;scroll-margin-top:20px}
+    .sync-card{grid-template-columns:1fr 1fr;gap:28px;padding:28px;background:#002f4c;border-radius:6px}
+    .sync-copy .section-kicker{color:#fcbc00}
+    .sync-copy h2{max-width:460px;margin-bottom:10px}
+    .sync-copy>p{margin-bottom:12px}
+    .feed-status{font-size:12px;margin:0 0 12px}
+    .feed-box{display:block;margin-top:0;max-width:100%;padding:12px;background:rgba(255,255,255,.08)}
+    .feed-label{display:block;color:#d2e1e9;font-size:10px;font-weight:700;margin-bottom:7px}
+    .feed-url{display:block;width:100%;font-size:11px;line-height:1.5;white-space:normal;overflow-wrap:anywhere;user-select:all}
+    .calendar-action{width:100%;margin-top:12px;justify-content:center;text-align:center;padding:14px 16px;background:#fff;color:#002f4c;border-radius:4px;font-size:13px}
+    .calendar-action:hover{background:#eaf2f7;color:#002f4c;transform:none}
+    .calendar-action:disabled{background:#b5c8d2;color:#536d7b;cursor:not-allowed;transform:none}
+    .copy-guidance{min-height:42px;margin:10px 0 0;color:#e1ebf0;font-size:11px;line-height:1.55}
+    .feed-foot{margin-top:10px}
+    .sync-steps{padding:21px;background:rgba(255,255,255,.08);border-radius:5px}
+    .sync-steps h3{margin-bottom:14px;font-size:16px}
+    .steps{gap:12px}
+    .steps li{font-size:12px}
+    .steps strong{font-size:12px}
+    .google-link{margin-top:14px;font-size:11px}
+    .privacy-note{margin-top:14px;font-size:10px}
+    .event-section{padding:8px 0 42px}
+    .event-details{border:1px solid #d7e1e8;border-radius:5px;background:#fff}
+    .event-summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 19px;cursor:pointer;list-style:none}
+    .event-summary::-webkit-details-marker{display:none}
+    .event-summary:after{content:"+";color:#005c84;font-size:24px;line-height:1;font-weight:400}
+    .event-details[open] .event-summary:after{content:"−"}
+    .event-summary .section-kicker{display:block;margin-bottom:4px}
+    .event-summary-title{display:block;color:#002f4c;font-size:18px;line-height:1.2;font-weight:700;margin-bottom:3px}
+    .event-summary-text{display:block;color:#526b7b;font-size:11px}
+    .event-summary .selection-count{margin-left:auto}
+    .event-details-content{padding:0 19px 20px;border-top:1px solid #e6edf1}
+    .selection-dock{position:fixed;z-index:20;left:0;right:0;bottom:0;display:flex;justify-content:center;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid #d7e1e8;box-shadow:0 -6px 24px rgba(0,47,76,.1)}
+    .selection-dock[hidden]{display:none}
+    .selection-dock-inner{width:min(100%,1136px);display:flex;align-items:center;justify-content:space-between;gap:14px}
+    .selection-dock-copy{color:#526b7b;font-size:12px}
+    .selection-dock-copy strong{display:block;color:#002f4c}
+    .selection-dock .button{padding:11px 16px;white-space:nowrap}
+    .footer{padding-bottom:92px}
+    .feedback-link{font-weight:700;white-space:nowrap}
+    .button:focus-visible,.calendar-action:focus-visible,.event-summary:focus-visible{outline:3px solid #fcbc00;outline-offset:3px}
+    @media(max-width:840px){.hero{grid-template-columns:1fr 330px;gap:26px;padding:38px 0}.sync-card{gap:20px;padding:23px}.section{padding:38px 0}}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;gap:20px}.hero-art{max-width:480px}}
+    @media(max-width:620px){.hero{grid-template-columns:1fr;gap:20px;padding:34px 0}.hero h1{font-size:clamp(38px,10vw,49px)}.hero-art{max-width:none}.art-card{padding:17px}.section{padding:36px 0}.selection-next{align-items:stretch;flex-direction:column}.selection-next .button{width:100%}.sync-section{padding:6px 0 30px}.sync-card{grid-template-columns:1fr;gap:16px;padding:19px}.sync-steps{padding:17px}.event-summary{padding:15px}.event-summary .selection-count{display:none}.event-details-content{padding:0 14px 15px}.selection-dock{padding-left:12px;padding-right:12px}.selection-dock-copy{font-size:11px}.selection-dock .button{font-size:11px;padding:10px 12px}.footer{padding-bottom:100px}.footer-right{gap:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
@@ -150,57 +219,59 @@ const PAGE = String.raw`<!doctype html>
     <header class="topbar">
       <a class="brand" href="/" aria-label="University of Southampton uniflow home"><img class="brand-logo" src="/southampton-logo.svg" alt="University of Southampton"><span class="brand-divider" aria-hidden="true"></span><span class="brand-label">uniflow</span></a>
       <nav class="topnav" aria-label="Main navigation"><a href="#societies">Societies</a><a href="#events">Events</a><a href="#calendar">Calendar</a></nav>
-      <a class="top-cta" href="#calendar">Add to calendar <span aria-hidden="true">↗</span></a>
+      <a class="top-cta" href="#societies">Choose societies <span aria-hidden="true">↓</span></a>
     </header>
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> University of Southampton · Student societies</div>
-          <h1 id="hero-title">Society events,<br><em>all in one place.</em></h1>
-          <p>Choose the University of Southampton societies you follow and keep their upcoming events together in your calendar.</p>
-          <a class="button button-primary" href="#societies">Browse societies <span aria-hidden="true">↓</span></a>
-          <div class="hero-footnote">Updated by student society teams</div>
+          <h1 id="hero-title">Your societies.<br><em>In your calendar.</em></h1>
+          <p>Choose the Southampton societies you follow, then add their live event feed to Google Calendar in two quick steps.</p>
+          <a class="button button-primary" href="#societies">Start with your societies <span aria-hidden="true">↓</span></a>
+          <div class="hero-footnote">Two steps · your choices stay in this browser</div>
         </div>
-        <div class="hero-art" aria-label="A preview of the next society event">
-          <div class="art-backdrop" aria-hidden="true"></div><div class="orbit" aria-hidden="true"></div>
+        <div class="hero-art" aria-label="Calendar setup in two steps">
           <div class="art-card">
-            <div class="art-card-head"><span>Next society event</span><span class="art-live">Upcoming</span></div>
-            <div class="art-date"><div class="date-tile"><span id="preview-month">OCT</span><span id="preview-day">24</span></div><div class="art-date-copy"><strong id="preview-date-title">Saturday plans</strong><span id="preview-date-subtitle">Society events, in one place</span></div></div>
-            <div class="art-event"><div class="art-event-line"><strong id="preview-event-title">Your next event</strong><span class="art-tag" id="preview-society">ECSS</span></div><div class="art-event-meta"><span id="preview-event-time">09:45 — 20:00</span><span id="preview-event-location">Building 60 West</span></div></div>
+            <div class="flow-card-title">Set up your calendar <span>2 simple steps</span></div>
+            <div class="flow-steps"><div class="flow-step"><span class="flow-step-number">1</span><span><strong>Choose societies</strong><small>Tick the calendars you want</small></span><span class="flow-step-state" id="hero-selection-count">Not started</span></div><div class="flow-step"><span class="flow-step-number">2</span><span><strong>Add to Google Calendar</strong><small>Copy your link, then paste it</small></span><span class="flow-step-state">About 30 sec</span></div></div>
           </div>
-          <div class="art-caption">A calmer kind of campus life</div>
         </div>
       </section>
 
       <div class="section-rule" aria-hidden="true"></div>
       <section class="section" id="societies" aria-labelledby="societies-title">
-        <div class="section-heading"><div><div class="section-kicker">YOUR SELECTION</div><h2 id="societies-title">Choose your societies</h2><p>Select the societies whose events you want to see.</p></div><div class="selection-count" id="selection-count" aria-live="polite">0 selected</div></div>
+        <div class="section-heading"><div><div class="section-kicker">STEP 1 OF 2</div><h2 id="societies-title">Choose your societies</h2><p>Tick every society you want in your calendar. You can change this list any time.</p></div><div class="selection-count" id="selection-count" aria-live="polite">0 selected</div></div>
         <div class="catalogue-tools"><label class="search-field"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.7"></circle><path d="m13.2 13.2 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg><span class="sr-only">Search societies by name</span><input id="society-search" type="search" autocomplete="off" placeholder="Search societies"></label><span class="catalogue-result" id="society-result-count" role="status" aria-live="polite">Loading societies…</span></div>
         <div class="society-grid" id="society-grid" aria-live="polite"><div class="empty-state">Gathering the society list…</div></div>
         <div class="list-actions" id="society-actions" hidden><button class="expand-button" id="society-toggle" type="button" aria-controls="society-grid" aria-expanded="false">Show all societies</button></div>
+        <div class="selection-next"><div class="selection-next-copy"><strong id="selection-next-title">Choose at least one society</strong><span id="selection-next-detail">Your calendar link will appear in step 2.</span></div><button class="button button-primary" id="continue-calendar" type="button" disabled>Continue to calendar setup <span aria-hidden="true">↓</span></button></div>
         <div class="catalogue-contact">Want your society included? <a href="mailto:marlow.thijs@icloud.com?subject=Add%20my%20society%20to%20uniflow">Get in touch with the uniflow team</a>.</div>
-      </section>
-
-      <section class="section event-section" id="events" aria-labelledby="events-title">
-        <div class="section-heading"><div><div class="section-kicker">WHAT’S ON</div><h2 id="events-title">Upcoming events</h2><p id="event-intro">Events from the societies listed above.</p></div><div class="selection-count" id="event-count">Loading events</div></div>
-        <div class="catalogue-tools"><label class="search-field"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.7"></circle><path d="m13.2 13.2 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg><span class="sr-only">Search events by title, society, place or date</span><input id="event-search" type="search" autocomplete="off" placeholder="Search events, societies or places"></label><span class="catalogue-result" id="event-result-count" role="status" aria-live="polite">Loading events…</span></div>
-        <div class="event-list" id="event-list" aria-live="polite"><div class="empty-state">Loading the latest events…</div></div>
-        <div class="list-actions" id="event-actions" hidden><button class="expand-button" id="event-toggle" type="button" aria-controls="event-list" aria-expanded="false">Show all events</button></div>
       </section>
 
       <section class="sync-section" id="calendar" aria-labelledby="calendar-title">
         <div class="sync-card">
-          <div class="sync-copy"><div class="section-kicker">TAKE IT WITH YOU</div><h2 id="calendar-title">Add events to your calendar</h2><p>Use a live calendar feed for the societies you select. When teams add events, the feed updates for your calendar subscription.</p><div class="feed-status" id="feed-status">Choose a society to make your calendar link</div>
-            <div class="feed-box"><span class="feed-url" id="feed-url">Choose a society above to create your feed</span><button class="copy-button" id="copy-feed" type="button" disabled>Copy link</button></div>
-            <div class="feed-foot">The feed includes only the societies you select. Anyone with its link can view those public event listings.</div>
+          <div class="sync-copy"><div class="section-kicker">STEP 2 OF 2</div><h2 id="calendar-title" tabindex="-1">Copy your link &amp; add it</h2><p>Your personal feed stays up to date as society events change.</p><div class="feed-status" id="feed-status" role="status" aria-live="polite">Choose at least one society to unlock your calendar link.</div>
+            <div class="feed-box"><span class="feed-label">Your calendar feed link</span><span class="feed-url" id="feed-url">Choose a society above to create your feed</span></div>
+            <button class="button calendar-action" id="copy-feed" type="button" disabled>Copy link &amp; open Google Calendar <span aria-hidden="true">↗</span></button>
+            <p class="copy-guidance" id="copy-guidance" role="status" aria-live="polite">After choosing societies, use the button to copy your link and open Google Calendar.</p>
+            <div class="feed-foot">Anyone with your link can view the selected public society events. Your choices are saved in this browser.</div>
             <a class="snapshot-link" id="download-feed" href="#" aria-disabled="true">Download a one-time .ics file instead</a>
           </div>
-          <div class="sync-steps"><h3>Add your feed in Google Calendar</h3><ol class="steps"><li><span class="step-num">1</span><span><strong>Choose your societies</strong>Pick the events you want to follow above.</span></li><li><span class="step-num">2</span><span><strong>Copy your calendar link</strong>Use the button here to copy your selected feed.</span></li><li><span class="step-num">3</span><span><strong>Add it by URL</strong>In Google Calendar, choose “Other calendars” → “+” → “From URL”, paste the link, then add the calendar.</span></li></ol><a class="google-link" href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" target="_blank" rel="noopener noreferrer">Open Google Calendar <span aria-hidden="true">↗</span></a><p class="privacy-note">No Google sign-in is requested here. A feed subscription appears as a separate calendar in Google Calendar; it does not edit your primary calendar. Your society choices stay in this browser.</p></div>
+          <div class="sync-steps"><h3>Finish in the Google Calendar tab</h3><ol class="steps"><li><span class="step-num">1</span><span><strong>Choose “From URL”</strong>In Google Calendar, open “Other calendars” and choose “+”, then “From URL”.</span></li><li><span class="step-num">2</span><span><strong>Paste your copied link</strong>Paste it into the URL field and select “Add calendar”.</span></li></ol><a class="google-link" href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" target="_blank" rel="noopener noreferrer">Open Google Calendar manually <span aria-hidden="true">↗</span></a><p class="privacy-note">This adds a separate calendar subscription. It does not edit your primary calendar, and Google may take a little time to refresh new events.</p></div>
         </div>
       </section>
+
+      <section class="section event-section" id="events" aria-labelledby="events-title">
+        <details class="event-details"><summary class="event-summary"><span><span class="section-kicker">OPTIONAL PREVIEW</span><span class="event-summary-title" id="events-title">See upcoming events</span><span class="event-summary-text">Check what’s coming up before or after you subscribe.</span></span><span class="selection-count" id="event-count">Loading events</span></summary>
+          <div class="event-details-content"><p id="event-intro" class="sr-only">Events from the societies listed above.</p><div class="catalogue-tools"><label class="search-field"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.7"></circle><path d="m13.2 13.2 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg><span class="sr-only">Search events by title, society, place or date</span><input id="event-search" type="search" autocomplete="off" placeholder="Search events, societies or places"></label><span class="catalogue-result" id="event-result-count" role="status" aria-live="polite">Loading events…</span></div>
+          <div class="event-list" id="event-list" aria-live="polite"><div class="empty-state">Loading the latest events…</div></div>
+          <div class="list-actions" id="event-actions" hidden><button class="expand-button" id="event-toggle" type="button" aria-controls="event-list" aria-expanded="false">Show all events</button></div></div>
+        </details>
+      </section>
     </main>
-    <footer class="footer"><div class="footer-left"><strong>uniflow</strong><span>·</span><span>Student-run project; not an official University service.</span></div><div class="footer-right"><span id="updated-label">Events curated weekly</span><a href="https://github.com/marlowthijs/Hacktoberfest" target="_blank" rel="noopener noreferrer">Project on GitHub ↗</a></div></footer>
+    <footer class="footer"><div class="footer-left"><strong>uniflow</strong><span>·</span><span>Student-run project; not an official University service.</span></div><div class="footer-right"><span id="updated-label">Events curated weekly</span><a class="feedback-link" href="mailto:marlow.thijs@icloud.com?subject=UniFlow%20feedback">Feedback: marlow.thijs@icloud.com</a><a href="https://github.com/marlowthijs/Hacktoberfest" target="_blank" rel="noopener noreferrer">Project on GitHub ↗</a></div></footer>
   </div>
+  <div class="selection-dock" id="selection-dock" hidden><div class="selection-dock-inner"><div class="selection-dock-copy"><strong id="selection-dock-count">0 societies selected</strong><span>Ready to build your calendar?</span></div><a class="button button-primary" href="#calendar">Continue <span aria-hidden="true">↓</span></a></div></div>
   <div class="sr-only" id="announcement" aria-live="polite"></div>
   <script>
     (function(){
@@ -221,6 +292,8 @@ const PAGE = String.raw`<!doctype html>
       var feedUrl=document.getElementById("feed-url");
       var copyButton=document.getElementById("copy-feed");
       var downloadLink=document.getElementById("download-feed");
+      var continueButton=document.getElementById("continue-calendar");
+      var selectionDock=document.getElementById("selection-dock");
 
       function readSavedSelection(){try{var saved=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(saved)?saved.filter(function(id){return typeof id==="string";}):[];}catch(_){return [];}}
       function esc(value){return String(value==null?"":value).replace(/[&<>"']/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch];});}
@@ -264,15 +337,73 @@ const PAGE = String.raw`<!doctype html>
           return '<article class="event-card"><div class="event-date"><span class="day">'+esc(date.day)+'</span><span class="month">'+esc(date.month)+'</span></div><div class="event-main"><div class="event-society">'+esc(society.name)+'</div><h3>'+esc(event.title)+'</h3><p class="event-meta">'+meta+'</p>'+(event.description?'<p>'+esc(event.description)+'</p>':'')+'</div><span class="event-label">'+esc(date.weekday)+'</span></article>';
         }).join("");
       }
-      function renderPreview(){var event=visibleEvents()[0]||catalogue.events.slice().sort(function(a,b){return new Date(a.start)-new Date(b.start);})[0];if(!event)return;var date=eventDate(event),society=societyFor(event.society_id);document.getElementById("preview-month").textContent=date.month.toUpperCase();document.getElementById("preview-day").textContent=date.day;document.getElementById("preview-date-title").textContent=date.weekday+" plans";document.getElementById("preview-date-subtitle").textContent=date.full;document.getElementById("preview-event-title").textContent=event.title;document.getElementById("preview-society").textContent=society.name;document.getElementById("preview-event-time").textContent=eventTime(event);document.getElementById("preview-event-location").textContent=event.location||"Location to be announced";}
-      function renderFeed(){var ids=Array.from(selected).filter(function(id){return catalogue.societies.some(function(s){return s.id===id;});}).sort();if(!ids.length){feedUrl.textContent="Choose a society above to create your feed";copyButton.disabled=true;downloadLink.href="#";downloadLink.setAttribute("aria-disabled","true");document.getElementById("feed-status").textContent="Choose a society to make your calendar link";return;}var url=new URL("/calendar.ics",window.location.origin);url.searchParams.set("societies",ids.join(","));feedUrl.textContent=url.href;copyButton.disabled=false;downloadLink.href=url.href+"&download=1";downloadLink.removeAttribute("aria-disabled");document.getElementById("feed-status").textContent=ids.length+" society "+(ids.length===1?"selected":"calendars selected");}
-      function render(){renderSocieties();renderEvents();renderPreview();renderFeed();}
+      function renderFeed(){
+        var ids=Array.from(selected).filter(function(id){return catalogue.societies.some(function(s){return s.id===id;});}).sort();
+        var count=ids.length;
+        var heroCount=document.getElementById("hero-selection-count");
+        heroCount.textContent=count?count+" selected":"Not started";
+        document.getElementById("selection-count").textContent=count+" selected";
+        continueButton.disabled=!count;
+        document.getElementById("selection-next-title").textContent=count?count+" societ"+(count===1?"y":"ies")+" selected":"Choose at least one society";
+        document.getElementById("selection-next-detail").textContent=count?"Your calendar link is ready in step 2.":"Your calendar link will appear in step 2.";
+        selectionDock.hidden=!count;
+        document.getElementById("selection-dock-count").textContent=count+" societ"+(count===1?"y":"ies")+" selected";
+        if(!count){
+          feedUrl.textContent="Choose a society above to create your feed";
+          copyButton.disabled=true;
+          copyButton.textContent="Copy link & open Google Calendar";
+          downloadLink.href="#";
+          downloadLink.setAttribute("aria-disabled","true");
+          document.getElementById("feed-status").textContent="Choose at least one society to unlock your calendar link.";
+          document.getElementById("copy-guidance").textContent="After choosing societies, use the button to copy your link and open Google Calendar.";
+          return;
+        }
+        var url=new URL("/calendar.ics",window.location.origin);
+        url.searchParams.set("societies",ids.join(","));
+        feedUrl.textContent=url.href;
+        copyButton.disabled=false;
+        copyButton.textContent="Copy link & open Google Calendar";
+        downloadLink.href=url.href+"&download=1";
+        downloadLink.removeAttribute("aria-disabled");
+        document.getElementById("feed-status").textContent=count+" societ"+(count===1?"y":"ies")+" selected · ready to add";
+        document.getElementById("copy-guidance").textContent="Your link is ready. The button copies it and opens the Google Calendar URL screen.";
+      }
+      function render(){renderSocieties();renderEvents();renderFeed();}
       async function load(){try{var response=await fetch("/api/events",{cache:"no-store"});if(!response.ok)throw new Error("catalogue unavailable");var next=await response.json();if(!Array.isArray(next.societies)||!Array.isArray(next.events))throw new Error("invalid catalogue");catalogue=next;selected=new Set(Array.from(selected).filter(function(id){return catalogue.societies.some(function(s){return s.id===id;});}));var label=document.getElementById("updated-label");if(catalogue.updated_at){var updated=new Date(catalogue.updated_at);if(!Number.isNaN(updated.getTime()))label.textContent="Events last updated "+new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"Europe/London"}).format(updated);}render();}catch(_){document.getElementById("society-result-count").textContent="Societies unavailable";document.getElementById("event-result-count").textContent="Events unavailable";grid.innerHTML='<div class="empty-state">We couldn’t load the society list right now. Please refresh in a moment.</div>';list.innerHTML='<div class="empty-state">Event updates are temporarily unavailable.</div>';}}
       societySearch.addEventListener("input",function(){societyExpanded=false;renderSocieties();});
       eventSearch.addEventListener("input",function(){eventExpanded=false;renderEvents();});
       societyToggle.addEventListener("click",function(){societyExpanded=!societyExpanded;renderSocieties();});
       eventToggle.addEventListener("click",function(){eventExpanded=!eventExpanded;renderEvents();});
-      copyButton.addEventListener("click",async function(){try{await navigator.clipboard.writeText(feedUrl.textContent);copyButton.textContent="Copied ✓";document.getElementById("announcement").textContent="Calendar feed link copied.";setTimeout(function(){copyButton.textContent="Copy link";},1800);}catch(_){var input=document.createElement("textarea");input.value=feedUrl.textContent;input.setAttribute("readonly","");input.style.position="fixed";input.style.opacity="0";document.body.appendChild(input);input.select();var ok=document.execCommand("copy");input.remove();copyButton.textContent=ok?"Copied ✓":"Select link above";setTimeout(function(){copyButton.textContent="Copy link";},1800);}});
+      continueButton.addEventListener("click",function(){document.getElementById("calendar").scrollIntoView({behavior:"smooth",block:"start"});document.getElementById("calendar-title").focus({preventScroll:true});});
+      copyButton.addEventListener("click",async function(){
+        if(copyButton.disabled)return;
+        var link=feedUrl.textContent;
+        window.open("https://calendar.google.com/calendar/u/0/r/settings/addbyurl","_blank","noopener,noreferrer");
+        var copied=false;
+        try{if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(link);copied=true;}}catch(_){}
+        if(!copied){
+          var input=document.createElement("textarea");
+          input.value=link;
+          input.setAttribute("readonly","");
+          input.style.position="fixed";
+          input.style.opacity="0";
+          document.body.appendChild(input);
+          input.select();
+          try{copied=document.execCommand("copy");}catch(_){}
+          input.remove();
+        }
+        if(copied){
+          copyButton.textContent="Link copied ✓";
+          document.getElementById("feed-status").textContent="Your calendar link is copied.";
+          document.getElementById("copy-guidance").textContent="In the Google Calendar tab, choose “From URL”, paste your copied link into the URL field, then select “Add calendar”.";
+          document.getElementById("announcement").textContent="Calendar link copied and Google Calendar opened in a new tab. Paste it using From URL, then choose Add calendar.";
+        }else{
+          copyButton.textContent="Google Calendar opened";
+          document.getElementById("feed-status").textContent="Calendar opened. Copy the link above to continue.";
+          document.getElementById("copy-guidance").textContent="Clipboard access was unavailable. Select and copy the link above, then paste it into Google Calendar under “From URL”.";
+          document.getElementById("announcement").textContent="Google Calendar opened in a new tab. Select and copy the link above, then paste it using From URL.";
+        }
+      });
       load();window.addEventListener("focus",load);setInterval(load,300000);
     })();
   </script>
