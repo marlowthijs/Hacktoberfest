@@ -1,0 +1,15 @@
+{
+  "name": "society-synth",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "db:apply": "wrangler d1 migrations apply DB --remote",
+    "db:apply:local": "wrangler d1 migrations apply DB --local"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

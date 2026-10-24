@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#162a38" />
+    <meta name="description" content="Society Synth brings your campus society events together and adds them to your Google Calendar." />
+    <title>Society Synth — your campus, in sync</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23ed704d'/%3E%3Cpath d='M20 23c0-3 3-5 8-5 4 0 7 1 10 3l-3 5c-2-2-5-3-7-3s-3 1-3 2c0 4 15 1 15 10 0 4-4 7-10 7-5 0-9-2-12-5l4-4c2 2 5 4 8 4 2 0 4-1 4-2 0-4-14-1-14-10Z' fill='white'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="/" aria-label="Society Synth home">
+          <span class="brand-mark">s<span>·</span></span>
+          <span class="brand-name">society<span>synth</span></span>
+        </a>
+
+        <div class="sidebar-label">YOUR CAMPUS</div>
+        <nav class="side-nav">
+          <button class="nav-item active" data-view="discover"><span class="nav-icon">◷</span><span>Discover</span></button>
+          <button class="nav-item" data-view="following"><span class="nav-icon">▦</span><span>My societies</span><span class="nav-count" id="following-count">0</span></button>
+        </nav>
+
+        <div class="sidebar-label circles-label">SOCIETIES</div>
+        <div class="sidebar-societies" id="sidebar-societies"></div>
+
+        <div class="sidebar-bottom">
+          <div class="sync-note"><span class="status-dot"></span><div><strong>Weekly sync</strong><small>Monday mornings</small></div></div>
+          <button class="nav-item admin-link" id="open-admin"><span class="nav-icon">⚙</span><span>Team admin</span></button>
+          <div class="sidebar-footer">Made for the moments between lectures.</div>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="breadcrumb"><span>Campus life</span><span class="crumb-sep">/</span><strong id="page-label">Discover</strong></div>
+          <div class="topbar-actions">
+            <div class="account-pill" id="account-pill"><span class="avatar" id="avatar">?</span><span id="account-label">Calendar not connected</span></div>
+            <button class="button button-outline button-small" id="connect-button">Connect calendar <span aria-hidden="true">↗</span></button>
+            <button class="button button-dark button-small hidden" id="sync-button"><span aria-hidden="true">↻</span> Sync now</button>
+          </div>
+        </header>
+
+        <section class="welcome-row">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span><span id="today-label">YOUR CAMPUS, IN SYNC</span></div>
+            <h1 id="welcome-title">Make room for<br /><em>good things.</em></h1>
+            <p class="welcome-copy">Find your people. Catch the events you care about. Let your calendar do the remembering.</p>
+          </div>
+          <div class="welcome-aside">
+            <div class="week-chip"><span class="week-chip-icon">✳</span><span><strong id="week-label">THIS WEEK</strong><small>Campus plans, sorted.</small></span></div>
+            <div class="welcome-stats"><div><strong id="event-total">—</strong><span>upcoming events</span></div><div class="stat-divider"></div><div><strong id="society-total">—</strong><span>societies</span></div></div>
+          </div>
+          <div class="hero-stamp" aria-hidden="true"><span>BETTER<br />TOGETHER</span><b>✳</b></div>
+        </section>
+
+        <div class="content-grid">
+          <section class="events-column" aria-labelledby="events-heading">
+            <div class="section-heading-row">
+              <div><div class="section-kicker">THE GOOD STUFF</div><h2 id="events-heading">Coming up</h2></div>
+              <label class="search-box"><span aria-hidden="true">⌕</span><input id="event-search" type="search" placeholder="Find an event" aria-label="Search events" /></label>
+            </div>
+            <div class="filter-row" role="tablist" aria-label="Event filters">
+              <button class="filter-chip active" data-filter="all" role="tab" aria-selected="true">All events</button>
+              <button class="filter-chip" data-filter="following" role="tab" aria-selected="false">My societies <span id="filter-following-count">0</span></button>
+            </div>
+            <div class="events-list" id="events-list" aria-live="polite"></div>
+          </section>
+
+          <aside class="right-rail">
+            <section class="calendar-card" aria-labelledby="calendar-card-title">
+              <div class="calendar-card-top"><span class="calendar-symbol">▦</span><span class="mini-label">YOUR CALENDAR</span></div>
+              <h3 id="calendar-card-title">Keep the good<br />plans close.</h3>
+              <p id="calendar-card-copy">Connect Google Calendar and we'll add events from the societies you follow.</p>
+              <button class="button button-orange full-width" id="calendar-card-action">Connect Google Calendar <span aria-hidden="true">↗</span></button>
+              <div class="calendar-footnote"><span>⌁</span> Private to you · change your picks anytime</div>
+            </section>
+
+            <section class="societies-panel" aria-labelledby="societies-heading">
+              <div class="section-heading-row compact-heading"><div><div class="section-kicker">FIND YOUR PEOPLE</div><h2 id="societies-heading">Societies</h2></div><span class="society-badge" id="society-badge">0</span></div>
+              <div class="societies-list" id="societies-list"></div>
+              <div class="societies-footnote"><span class="sparkle">✳</span><span>Your picks shape what lands in your calendar.</span></div>
+            </section>
+          </aside>
+        </div>
+
+        <footer class="page-footer"><span>Society Synth</span><span>Make your week a little more yours.</span><a class="text-button privacy-link" href="/privacy.html">Privacy</a><button class="text-button" id="disconnect-button">Disconnect calendar</button></footer>
+      </main>
+    </div>
+
+    <dialog class="admin-dialog" id="admin-dialog" aria-labelledby="admin-title">
+      <div class="dialog-topbar"><a class="brand dialog-brand" href="/"><span class="brand-mark">s<span>·</span></span><span class="brand-name">society<span>synth</span></span></a><button class="icon-button" id="close-admin" aria-label="Close admin">×</button></div>
+      <div id="admin-login" class="admin-login">
+        <div class="section-kicker">FOR THE PEOPLE BEHIND THE PLANS</div><h2 id="admin-title">Team admin</h2><p>Sign in to add societies and publish this week's events.</p>
+        <form id="admin-login-form"><label for="admin-password">Admin password</label><input id="admin-password" type="password" autocomplete="current-password" required /><button class="button button-dark full-width" type="submit">Continue <span aria-hidden="true">→</span></button><div class="form-message" id="admin-login-message" role="status"></div></form>
+      </div>
+      <div id="admin-dashboard" class="admin-dashboard hidden">
+        <div class="admin-heading"><div><div class="section-kicker">THE BACKSTAGE</div><h2 id="admin-title-auth">Manage the week</h2><p>Publish what's happening, and the weekly sync will take it from here.</p></div><button class="button button-orange" id="add-event-button">+ Add event</button></div>
+        <div class="admin-stats"><div><span>Published</span><strong id="admin-published-count">0</strong></div><div><span>Drafts</span><strong id="admin-draft-count">0</strong></div><div><span>Societies</span><strong id="admin-society-count">0</strong></div><button class="button button-outline" id="admin-sync-button">↻ Sync all calendars</button></div>
+        <div class="admin-section-heading"><div><div class="section-kicker">EVENT DESK</div><h3>Events</h3></div><span class="mini-label">EDIT OR CANCEL AT ANY TIME</span></div>
+        <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>EVENT</th><th>DATE & TIME</th><th>STATUS</th><th></th></tr></thead><tbody id="admin-events-body"></tbody></table></div>
+        <div class="admin-bottom-grid">
+          <section class="add-society-card"><div class="section-kicker">GROW THE CIRCLE</div><h3>Add a society</h3><form id="society-form" class="society-form"><label>Name<input name="name" required maxlength="90" placeholder="e.g. Film Society" /></label><label>Short name<input name="abbreviation" maxlength="12" placeholder="e.g. FILM" /></label><label class="span-all">A little about them<textarea name="description" rows="2" maxlength="240" placeholder="What brings people together?"></textarea></label><button class="button button-dark" type="submit">Add society <span aria-hidden="true">→</span></button><div class="form-message" id="society-form-message" role="status"></div></form></section>
+          <div class="admin-tip"><span class="tip-icon">✳</span><div><strong>Monday, sorted.</strong><p>Published events are added every Monday at 08:00 UTC for the societies each student follows. Use “Sync all calendars” to send updates right away.</p></div></div>
+        </div>
+        <div class="admin-end-row"><button class="text-button" id="admin-logout">Sign out of team admin</button></div>
+      </div>
+    </dialog>
+
+    <dialog class="event-dialog" id="event-dialog" aria-labelledby="event-form-title">
+      <form id="event-form" method="dialog">
+        <div class="dialog-topbar"><div><div class="section-kicker">PUT IT ON THE BOARD</div><h2 id="event-form-title">Add an event</h2></div><button type="button" class="icon-button" id="close-event-form" aria-label="Close event form">×</button></div>
+        <input type="hidden" name="id" />
+        <label>Society<select name="society_id" required></select></label>
+        <label>Event name<input name="title" required maxlength="120" placeholder="Hacktoberfest" /></label>
+        <div class="form-two-col"><label>Starts<input name="start_at" type="datetime-local" required /></label><label>Ends<input name="end_at" type="datetime-local" required /></label></div>
+        <label>Where<input name="location" maxlength="180" placeholder="Building 60 West" /></label>
+        <label>What's the plan?<textarea name="description" rows="3" maxlength="1600" placeholder="A few details for people joining you…"></textarea></label>
+        <label>Visibility<select name="status"><option value="published">Publish now</option><option value="draft">Save as draft</option></select></label>
+        <div class="dialog-actions"><button type="button" class="button button-outline" id="cancel-event-form">Cancel</button><button type="submit" class="button button-orange">Save event <span aria-hidden="true">→</span></button></div>
+        <div class="form-message" id="event-form-message" role="status"></div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
