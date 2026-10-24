@@ -127,6 +127,21 @@ const PAGE = String.raw`<!doctype html>
     @media(max-width:620px){.shell{padding:0 19px}.topbar{height:68px}.brand{gap:9px}.brand-logo{width:145px}.brand-divider,.brand-label{display:none}.top-cta{padding:10px 11px;font-size:10px}.hero{grid-template-columns:1fr;gap:24px;padding:48px 0 52px}.hero h1{font-size:clamp(40px,10vw,52px)}.hero-art{padding:0}.art-card{max-width:none;padding:21px}.section{padding:48px 0}.section-heading{align-items:flex-start}.society-grid{grid-template-columns:1fr}.society-card{min-height:178px}.event-card{grid-template-columns:58px minmax(0,1fr);gap:12px;padding:14px}.event-label{grid-column:2;justify-self:start}.sync-section{padding-top:8px}.sync-card{grid-template-columns:1fr;gap:20px;padding:23px 19px;border-radius:6px}.footer{align-items:flex-start;flex-direction:column}.footer-right{flex-wrap:wrap}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
     .society-contact{color:#005c84;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+    .catalogue-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:-6px 0 18px}
+    .search-field{display:flex;align-items:center;gap:10px;width:min(100%,420px);min-height:44px;padding:0 13px;border:1px solid #b7c8d2;border-radius:4px;background:#fff;color:#526b7b}
+    .search-field:focus-within{outline:3px solid rgba(0,92,132,.18);border-color:#005c84}
+    .search-icon{width:16px;height:16px;flex:none;color:#526b7b}
+    .search-field input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#002f4c;font:inherit;font-size:13px}
+    .search-field input::placeholder{color:#718694;opacity:1}
+    .catalogue-result{color:#526b7b;font-size:11px}
+    .list-actions{display:flex;justify-content:center;padding-top:17px}
+    .list-actions[hidden]{display:none}
+    .expand-button{border:1px solid #005c84;border-radius:4px;background:#fff;color:#005c84;padding:10px 16px;font-size:12px;font-weight:700;cursor:pointer}
+    .expand-button:hover{background:#eff6fa}
+    .expand-button:focus-visible,.search-field:focus-within{outline:3px solid rgba(0,92,132,.22);outline-offset:2px}
+    .catalogue-contact{margin-top:18px;padding:13px 16px;border-left:3px solid #005c84;background:#f4f8fa;color:#526b7b;font-size:12px}
+    .catalogue-contact a{color:#005c84;font-weight:700;text-underline-offset:3px}
+    @media(max-width:620px){.catalogue-tools{align-items:stretch;flex-direction:column;gap:8px;margin:0 0 14px}.search-field{width:100%}.catalogue-result{font-size:11px}.list-actions{padding-top:13px}}
   </style>
 </head>
 <body>
@@ -160,12 +175,17 @@ const PAGE = String.raw`<!doctype html>
       <div class="section-rule" aria-hidden="true"></div>
       <section class="section" id="societies" aria-labelledby="societies-title">
         <div class="section-heading"><div><div class="section-kicker">YOUR SELECTION</div><h2 id="societies-title">Choose your societies</h2><p>Select the societies whose events you want to see.</p></div><div class="selection-count" id="selection-count" aria-live="polite">0 selected</div></div>
+        <div class="catalogue-tools"><label class="search-field"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.7"></circle><path d="m13.2 13.2 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg><span class="sr-only">Search societies by name</span><input id="society-search" type="search" autocomplete="off" placeholder="Search societies"></label><span class="catalogue-result" id="society-result-count" role="status" aria-live="polite">Loading societies…</span></div>
         <div class="society-grid" id="society-grid" aria-live="polite"><div class="empty-state">Gathering the society list…</div></div>
+        <div class="list-actions" id="society-actions" hidden><button class="expand-button" id="society-toggle" type="button" aria-controls="society-grid" aria-expanded="false">Show all societies</button></div>
+        <div class="catalogue-contact">Want your society included? <a href="mailto:marlow.thijs@icloud.com?subject=Add%20my%20society%20to%20uniflow">Get in touch with the uniflow team</a>.</div>
       </section>
 
       <section class="section event-section" id="events" aria-labelledby="events-title">
         <div class="section-heading"><div><div class="section-kicker">WHAT’S ON</div><h2 id="events-title">Upcoming events</h2><p id="event-intro">Events from the societies listed above.</p></div><div class="selection-count" id="event-count">Loading events</div></div>
+        <div class="catalogue-tools"><label class="search-field"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.7"></circle><path d="m13.2 13.2 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg><span class="sr-only">Search events by title, society, place or date</span><input id="event-search" type="search" autocomplete="off" placeholder="Search events, societies or places"></label><span class="catalogue-result" id="event-result-count" role="status" aria-live="polite">Loading events…</span></div>
         <div class="event-list" id="event-list" aria-live="polite"><div class="empty-state">Loading the latest events…</div></div>
+        <div class="list-actions" id="event-actions" hidden><button class="expand-button" id="event-toggle" type="button" aria-controls="event-list" aria-expanded="false">Show all events</button></div>
       </section>
 
       <section class="sync-section" id="calendar" aria-labelledby="calendar-title">
@@ -188,8 +208,16 @@ const PAGE = String.raw`<!doctype html>
       var KEY="society-synth:selected-societies:v1";
       var catalogue={societies:[],events:[],updated_at:null};
       var selected=new Set(readSavedSelection());
+      var societyExpanded=false;
+      var eventExpanded=false;
       var grid=document.getElementById("society-grid");
       var list=document.getElementById("event-list");
+      var societySearch=document.getElementById("society-search");
+      var eventSearch=document.getElementById("event-search");
+      var societyActions=document.getElementById("society-actions");
+      var societyToggle=document.getElementById("society-toggle");
+      var eventActions=document.getElementById("event-actions");
+      var eventToggle=document.getElementById("event-toggle");
       var feedUrl=document.getElementById("feed-url");
       var copyButton=document.getElementById("copy-feed");
       var downloadLink=document.getElementById("download-feed");
@@ -199,32 +227,51 @@ const PAGE = String.raw`<!doctype html>
       function fmtDate(value,zone,options){return new Intl.DateTimeFormat("en-GB",Object.assign({timeZone:zone||"Europe/London"},options)).format(new Date(value));}
       function eventTime(event){return fmtDate(event.start,event.timezone,{hour:"2-digit",minute:"2-digit",hourCycle:"h23"})+" — "+fmtDate(event.end,event.timezone,{hour:"2-digit",minute:"2-digit",hourCycle:"h23"});}
       function eventDate(event){return {day:fmtDate(event.start,event.timezone,{day:"2-digit"}),month:fmtDate(event.start,event.timezone,{month:"short"}),weekday:fmtDate(event.start,event.timezone,{weekday:"long"}),full:fmtDate(event.start,event.timezone,{weekday:"long",day:"numeric",month:"long",year:"numeric"})};}
+      function searchText(value){return String(value||"").toLocaleLowerCase("en-GB").normalize("NFD").replace(/[\u0300-\u036f]/g,"");}
       function visibleEvents(){var chosen=selected.size?catalogue.events.filter(function(event){return selected.has(event.society_id);}):catalogue.events;return chosen.filter(function(event){return new Date(event.end).getTime()>=Date.now();}).sort(function(a,b){return new Date(a.start)-new Date(b.start);});}
       function societyFor(id){return catalogue.societies.find(function(society){return society.id===id;})||{name:id};}
       function renderSocieties(){
         document.getElementById("selection-count").textContent=selected.size+" selected";
-        if(!catalogue.societies.length){grid.innerHTML='<div class="empty-state">No societies are listed yet. Check back after the next catalogue update.</div>';return;}
-        grid.innerHTML=catalogue.societies.map(function(society){
+        if(!catalogue.societies.length){document.getElementById("society-result-count").textContent="No societies listed";societyActions.hidden=true;grid.innerHTML='<div class="empty-state">No societies are listed yet. Check back after the next catalogue update.</div>';return;}
+        var query=searchText(societySearch.value).trim();
+        var matches=catalogue.societies.filter(function(society){return !query||searchText(society.name+" "+society.id+" "+(society.description||"")).indexOf(query)!==-1;});
+        var visible=societyExpanded?matches:matches.slice(0,6);
+        document.getElementById("society-result-count").textContent=matches.length?("Showing "+visible.length+" of "+matches.length+" societies"):"No societies found";
+        societyActions.hidden=matches.length<=6;
+        societyToggle.textContent=societyExpanded?"Show fewer societies":"Show all "+matches.length+" societies";
+        societyToggle.setAttribute("aria-expanded",String(societyExpanded));
+        if(!matches.length){grid.innerHTML='<div class="empty-state"><strong>No societies match that search.</strong><br>Try a different society name.</div>';return;}
+        grid.innerHTML=visible.map(function(society){
           var active=selected.has(society.id), count=catalogue.events.filter(function(event){return event.society_id===society.id&&new Date(event.end).getTime()>=Date.now();}).length;
           var initials=Array.from(society.name).slice(0,4).join("");
           return '<article class="society-card'+(active?' is-selected':'')+'"><div class="society-top"><div class="society-monogram" style="background:'+esc(society.accent||"#b7ef72")+'">'+esc(initials)+'</div><span class="society-type">Society calendar</span></div><h3>'+esc(society.name)+'</h3><p>'+esc(society.description||"Events and meetups from this society.")+'</p><div class="society-bottom"><span class="society-events">'+count+' upcoming '+(count===1?'event':'events')+'</span><label class="society-check"><input type="checkbox" data-society="'+esc(society.id)+'" '+(active?'checked':'')+'><span>Add to my calendar</span></label></div></article>';
         }).join("");
-        grid.innerHTML+='<article class="society-card coming-soon"><div class="society-top"><div class="society-monogram">+</div><span class="society-type">Coming soon</span></div><h3>More societies</h3><p>Want your society included? Get in touch:</p><div class="society-bottom"><a class="society-events society-contact" href="mailto:marlow.thijs@icloud.com?subject=Add%20my%20society%20to%20uniflow">marlow.thijs@icloud.com</a></div></article>';
         grid.querySelectorAll("[data-society]").forEach(function(check){check.addEventListener("change",function(){var id=check.getAttribute("data-society");if(check.checked){selected.add(id);}else{selected.delete(id);}try{localStorage.setItem(KEY,JSON.stringify(Array.from(selected)));}catch(_){}render();document.getElementById("announcement").textContent=selected.has(id)?societyFor(id).name+" added to your calendar feed.":societyFor(id).name+" removed from your calendar feed.";});});
       }
       function renderEvents(){
         var events=visibleEvents();
         document.getElementById("event-intro").textContent=selected.size?"A look at what’s on for the societies you chose.":"A look at what’s on across your societies. Choose one to make a personal feed.";
         document.getElementById("event-count").textContent=events.length+" upcoming "+(events.length===1?"event":"events");
-        if(!events.length){list.innerHTML='<div class="empty-state"><strong>No upcoming events just yet.</strong><br>Society teams add new plans every week. Check back soon or explore another society.</div>';return;}
-        list.innerHTML=events.map(function(event){var society=societyFor(event.society_id), date=eventDate(event);var meta='<span>'+esc(eventTime(event))+'</span>'+(event.location?'<span>'+esc(event.location)+'</span>':'');
+        var query=searchText(eventSearch.value).trim();
+        var matches=events.filter(function(event){if(!query)return true;var society=societyFor(event.society_id),date=eventDate(event);var haystack=event.title+" "+society.name+" "+(event.location||"")+" "+(event.description||"")+" "+date.full+" "+eventTime(event);return searchText(haystack).indexOf(query)!==-1;});
+        var visible=eventExpanded?matches:matches.slice(0,6);
+        document.getElementById("event-result-count").textContent=matches.length?("Showing "+visible.length+" of "+matches.length+" events"):"No events found";
+        eventActions.hidden=matches.length<=6;
+        eventToggle.textContent=eventExpanded?"Show fewer events":"Show all "+matches.length+" events";
+        eventToggle.setAttribute("aria-expanded",String(eventExpanded));
+        if(!matches.length){list.innerHTML=query?'<div class="empty-state"><strong>No events match that search.</strong><br>Try a different title, society, place or date.</div>':'<div class="empty-state"><strong>No upcoming events just yet.</strong><br>Society teams add new plans every week. Check back soon or explore another society.</div>';return;}
+        list.innerHTML=visible.map(function(event){var society=societyFor(event.society_id), date=eventDate(event);var meta='<span>'+esc(eventTime(event))+'</span>'+(event.location?'<span>'+esc(event.location)+'</span>':'');
           return '<article class="event-card"><div class="event-date"><span class="day">'+esc(date.day)+'</span><span class="month">'+esc(date.month)+'</span></div><div class="event-main"><div class="event-society">'+esc(society.name)+'</div><h3>'+esc(event.title)+'</h3><p class="event-meta">'+meta+'</p>'+(event.description?'<p>'+esc(event.description)+'</p>':'')+'</div><span class="event-label">'+esc(date.weekday)+'</span></article>';
         }).join("");
       }
       function renderPreview(){var event=visibleEvents()[0]||catalogue.events.slice().sort(function(a,b){return new Date(a.start)-new Date(b.start);})[0];if(!event)return;var date=eventDate(event),society=societyFor(event.society_id);document.getElementById("preview-month").textContent=date.month.toUpperCase();document.getElementById("preview-day").textContent=date.day;document.getElementById("preview-date-title").textContent=date.weekday+" plans";document.getElementById("preview-date-subtitle").textContent=date.full;document.getElementById("preview-event-title").textContent=event.title;document.getElementById("preview-society").textContent=society.name;document.getElementById("preview-event-time").textContent=eventTime(event);document.getElementById("preview-event-location").textContent=event.location||"Location to be announced";}
       function renderFeed(){var ids=Array.from(selected).filter(function(id){return catalogue.societies.some(function(s){return s.id===id;});}).sort();if(!ids.length){feedUrl.textContent="Choose a society above to create your feed";copyButton.disabled=true;downloadLink.href="#";downloadLink.setAttribute("aria-disabled","true");document.getElementById("feed-status").textContent="Choose a society to make your calendar link";return;}var url=new URL("/calendar.ics",window.location.origin);url.searchParams.set("societies",ids.join(","));feedUrl.textContent=url.href;copyButton.disabled=false;downloadLink.href=url.href+"&download=1";downloadLink.removeAttribute("aria-disabled");document.getElementById("feed-status").textContent=ids.length+" society "+(ids.length===1?"selected":"calendars selected");}
       function render(){renderSocieties();renderEvents();renderPreview();renderFeed();}
-      async function load(){try{var response=await fetch("/api/events",{cache:"no-store"});if(!response.ok)throw new Error("catalogue unavailable");var next=await response.json();if(!Array.isArray(next.societies)||!Array.isArray(next.events))throw new Error("invalid catalogue");catalogue=next;selected=new Set(Array.from(selected).filter(function(id){return catalogue.societies.some(function(s){return s.id===id;});}));var label=document.getElementById("updated-label");if(catalogue.updated_at){var updated=new Date(catalogue.updated_at);if(!Number.isNaN(updated.getTime()))label.textContent="Events last updated "+new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"Europe/London"}).format(updated);}render();}catch(_){grid.innerHTML='<div class="empty-state">We couldn’t load the society list right now. Please refresh in a moment.</div>';list.innerHTML='<div class="empty-state">Event updates are temporarily unavailable.</div>';}}
+      async function load(){try{var response=await fetch("/api/events",{cache:"no-store"});if(!response.ok)throw new Error("catalogue unavailable");var next=await response.json();if(!Array.isArray(next.societies)||!Array.isArray(next.events))throw new Error("invalid catalogue");catalogue=next;selected=new Set(Array.from(selected).filter(function(id){return catalogue.societies.some(function(s){return s.id===id;});}));var label=document.getElementById("updated-label");if(catalogue.updated_at){var updated=new Date(catalogue.updated_at);if(!Number.isNaN(updated.getTime()))label.textContent="Events last updated "+new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"Europe/London"}).format(updated);}render();}catch(_){document.getElementById("society-result-count").textContent="Societies unavailable";document.getElementById("event-result-count").textContent="Events unavailable";grid.innerHTML='<div class="empty-state">We couldn’t load the society list right now. Please refresh in a moment.</div>';list.innerHTML='<div class="empty-state">Event updates are temporarily unavailable.</div>';}}
+      societySearch.addEventListener("input",function(){societyExpanded=false;renderSocieties();});
+      eventSearch.addEventListener("input",function(){eventExpanded=false;renderEvents();});
+      societyToggle.addEventListener("click",function(){societyExpanded=!societyExpanded;renderSocieties();});
+      eventToggle.addEventListener("click",function(){eventExpanded=!eventExpanded;renderEvents();});
       copyButton.addEventListener("click",async function(){try{await navigator.clipboard.writeText(feedUrl.textContent);copyButton.textContent="Copied ✓";document.getElementById("announcement").textContent="Calendar feed link copied.";setTimeout(function(){copyButton.textContent="Copy link";},1800);}catch(_){var input=document.createElement("textarea");input.value=feedUrl.textContent;input.setAttribute("readonly","");input.style.position="fixed";input.style.opacity="0";document.body.appendChild(input);input.select();var ok=document.execCommand("copy");input.remove();copyButton.textContent=ok?"Copied ✓":"Select link above";setTimeout(function(){copyButton.textContent="Copy link";},1800);}});
       load();window.addEventListener("focus",load);setInterval(load,300000);
     })();
