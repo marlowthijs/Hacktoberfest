@@ -35,7 +35,7 @@ npx wrangler d1 migrations apply DB --remote
 
 ### 2. Set up Google Calendar access
 
-In Google Cloud Console, create a project, enable the **Google Calendar API**, and create an OAuth client with application type **Web application**. Configure the consent screen for Society Synth and add the `calendar.events.owned` scope. Add your Google account as a test user while the app is in testing.
+In Google Cloud Console, create a project, enable the **Google Calendar API**, and create an OAuth client with application type **Web application**. Configure the consent screen for Society Synth and add the `calendar.events.owned` scope. Add your Google account as a test user while the app is in testing. Google issues refresh tokens that expire after 7 days while an external OAuth app remains in Testing, so the weekly sync is only durable after the app is moved to production and any required verification is complete.
 
 Add these authorized redirect URIs to the OAuth client (replace the example domain):
 
