@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f5ef">
+    <meta name="description" content="Follow your campus societies and keep their latest events in sync with Google Calendar.">
+    <title>Society Synth — campus life, in sync</title>
+    <!-- SOCIETY_STYLES -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Society Synth home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>society<span class="brand-light">synth</span></span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#events">This week</a>
+        <a href="#societies">Societies</a>
+      </nav>
+      <div class="top-status"><span class="status-dot"></span> WEEKLY EVENT FEED</div>
+    </header>
+
+    <main id="main" class="page-wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-spark" aria-hidden="true">✳</span> CAMPUS LIFE, IN RHYTHM</p>
+          <h1 id="hero-title">Make room for<br><span>your people.</span></h1>
+          <p class="hero-subtitle">Find your societies, catch the events that matter, and keep your week flowing in Google Calendar.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#societies">Explore societies <span aria-hidden="true">↘</span></a>
+            <span id="hero-summary" class="hero-summary">Pick a society to get started</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-ring art-ring-one"></div>
+          <div class="art-ring art-ring-two"></div>
+          <div class="art-sun"></div>
+          <div class="art-card">
+            <div class="art-card-top"><span>YOUR NEXT GOOD THING</span><span>01 / 01</span></div>
+            <div class="art-card-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="art-card-bottom"><strong>Show up.<br>Find your people.</strong><span class="art-arrow">↗</span></div>
+          </div>
+          <div class="art-orbit-label">GOOD<br>THINGS<br>HAPPEN<br>TOGETHER</div>
+          <div class="art-star">✳</div>
+        </div>
+        <div class="hero-index"><span>01</span> / A BETTER CAMPUS WEEK</div>
+      </section>
+
+      <section class="dashboard" aria-label="Society events and calendar">
+        <div id="events" class="events-column">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">THE GOOD STUFF</p>
+              <h2>Your upcoming events<span class="heading-period">.</span></h2>
+            </div>
+            <div class="event-count" id="event-count">0 <span>EVENTS</span></div>
+          </div>
+          <div id="events-list" class="events-list" aria-live="polite"></div>
+          <div class="week-note"><span class="note-mark">↗</span><span>New society events are added every week. Your live calendar feed keeps up.</span></div>
+        </div>
+
+        <aside class="side-column">
+          <section id="societies" class="society-panel" aria-labelledby="society-heading">
+            <div class="panel-topline"><span>01 / YOUR SOCIETIES</span><span id="society-count">0 SELECTED</span></div>
+            <h2 id="society-heading">Pick your circle<span class="heading-period">.</span></h2>
+            <p class="panel-intro">Follow a society to see its events here and add them to your calendar feed.</p>
+            <div id="societies-list" class="societies-list"></div>
+          </section>
+
+          <section class="calendar-panel" aria-labelledby="calendar-heading">
+            <div class="calendar-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div class="panel-topline"><span>02 / YOUR CALENDAR</span><span class="live-label"><i></i> LIVE FEED</span></div>
+            <h2 id="calendar-heading">Take your people with you<span class="heading-period">.</span></h2>
+            <p class="calendar-copy">Subscribe once. When a society adds an event, it flows into the same calendar feed.</p>
+            <div class="feed-link-wrap">
+              <span class="feed-label">YOUR PERSONAL FEED LINK</span>
+              <code id="feed-url">Choose a society to create your link</code>
+            </div>
+            <div class="calendar-buttons">
+              <button id="copy-feed" class="button button-lime" type="button" disabled>Copy calendar link <span aria-hidden="true">↗</span></button>
+              <a id="download-feed" class="download-link" href="#" aria-disabled="true">Download .ics instead</a>
+            </div>
+            <div class="google-howto">
+              <p class="howto-title">ADD IT IN GOOGLE CALENDAR</p>
+              <p>In Google Calendar, click <b>+</b> beside “Other calendars”, choose <b>From URL</b>, then paste your copied link.</p>
+              <a href="https://calendar.google.com/" target="_blank" rel="noopener noreferrer">Open Google Calendar <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="calendar-footnote">Your feed only includes the societies you follow. If you change your choices later, replace the feed link in Calendar.</p>
+          </section>
+          <div class="privacy-note"><span aria-hidden="true">✳</span> No Google sign-in needed. Your choices stay in this browser; your calendar reads a public feed.</div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="/" aria-label="Society Synth home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>society<span class="brand-light">synth</span></span></a>
+      <span>Made for the moments between lectures.</span>
+      <span class="footer-date">A CAMPUS EVENT PROJECT · 2026</span>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script id="initial-catalogue" type="application/json">__EVENT_DATA__</script>
+    <!-- SOCIETY_SCRIPT -->
+  </body>
+</html>
