@@ -1,21 +1,17 @@
-# Society Synth
+# Southampton Societies
 
-Society Synth turns a weekly society event list into a public calendar feed that students can subscribe to in Google Calendar. It starts with the ECSS Hacktoberfest entry from the project brief.
+Southampton Societies lists upcoming events from University of Southampton societies. Students select the societies they want to follow and download one .ics calendar file to import into Google Calendar or another calendar app.
 
-## Update society events
+The website is served by a Cloudflare Worker. Its static, Southampton-branded interface lives in the public folder; the Worker reads the shared event catalogue from data/events.json on the main branch and creates the downloadable calendar file.
 
-The event catalogue lives in [`data/events.json`](data/events.json). Update this file in the GitHub repository when society teams send their weekly events. The public Site reads the file from the repository's `main` branch and checks for updates every few minutes, so ordinary event edits do not need a Site redeploy.
+## Update the event list
 
-Each event needs a stable `id`, its `society_id`, a title, ISO 8601 start and end times with an offset, a time-zone name, a location, and a short description. Add the society to `societies` before adding its events. Keep IDs stable when editing an existing event so calendar subscriptions can recognise it.
+Open [data/events.json](https://github.com/marlowthijs/Hacktoberfest/edit/main/data/events.json) in GitHub and edit the societies or events arrays. Changes to the shared catalogue appear on the site after the Worker cache expires (up to five minutes).
 
-```json
-{
-  "schema_version": 1,
-  "updated_at": "2026-10-24T12:00:00Z",
-  "societies": [
-    { "id": "ecss", "name": "ECSS", "description": "Society events", "accent": "#b7ef72" }
-  ],
-  "events": [
+Each society needs a stable id, a name, and a short description. Each event needs a stable id, a matching society_id, a title, start and end date-times, a timezone, a location, and a description. Use ISO 8601 date-times with the correct UK offset, and keep event IDs unchanged when editing an event.
+
+Example event:
+
     {
       "id": "hacktoberfest-2026",
       "society_id": "ecss",
@@ -24,30 +20,15 @@ Each event needs a stable `id`, its `society_id`, a title, ISO 8601 start and en
       "end": "2026-10-24T20:00:00+01:00",
       "timezone": "Europe/London",
       "location": "Building 60 West",
-      "description": "hackathon"
+      "description": "Hackathon"
     }
-  ]
-}
-```
 
-## Google Calendar
+Add a society to societies before adding its events. The updated_at field at the top of the catalogue controls the date displayed in the site footer.
 
-Students select societies in the app, copy their calendar URL, then choose **Other calendars → + → From URL** in Google Calendar. The feed is a separate subscribed calendar; it does not write directly into the student's primary calendar. Google refreshes subscribed calendars periodically. The `.ics` download is available for a one-time import.
+## Deploy
 
-Selections stay in the student's browser. The generated feed URL contains only the selected society IDs and public event listings. Anyone who has that URL can view the corresponding feed.
+The Wrangler configuration serves the static files from public/ and sends /api/events and /calendar.ics through the Worker. If Cloudflare Workers Builds is connected to this repository, changes pushed to main are deployed there. Keep hack.marlowt.uk attached to the society-synth Worker. If deploying manually, authenticate Wrangler and run:
 
-## Deploy to Cloudflare
+    npx wrangler deploy
 
-The app is a dependency-free Cloudflare Worker. From this directory, authenticate Wrangler with the Cloudflare account, then run:
-
-```sh
-npx wrangler deploy
-```
-
-Wrangler publishes to the Worker URL. To use a Cloudflare domain, attach the deployed Worker to a domain in **Workers & Pages → Settings → Domains & Routes**. The domain's zone must be available in the Cloudflare account.
-
-## Project files
-
-- `worker/index.js` — public app, event API, and iCalendar feed.
-- `data/events.json` — weekly event catalogue, also served from the GitHub `main` branch.
-- `wrangler.toml` — Cloudflare Worker configuration.
+No Google sign-in or API keys are needed for the .ics download flow. Calendar imports are one-time snapshots; students download a fresh file when they want updated events.
