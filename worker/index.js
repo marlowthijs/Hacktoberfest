@@ -210,6 +210,38 @@ const PAGE = String.raw`<!doctype html>
     @media(max-width:840px){.hero{grid-template-columns:1fr 330px;gap:26px;padding:38px 0}.sync-card{gap:20px;padding:23px}.section{padding:38px 0}}
     @media(max-width:760px){.hero{grid-template-columns:1fr;gap:20px}.hero-art{max-width:480px}}
     @media(max-width:620px){.hero{grid-template-columns:1fr;gap:20px;padding:34px 0}.hero h1{font-size:clamp(38px,10vw,49px)}.hero-art{max-width:none}.art-card{padding:17px}.section{padding:36px 0}.selection-next{align-items:stretch;flex-direction:column}.selection-next .button{width:100%}.sync-section{padding:6px 0 30px}.sync-card{grid-template-columns:1fr;gap:16px;padding:19px}.sync-steps{padding:17px}.event-summary{padding:15px}.event-summary .selection-count{display:none}.event-details-content{padding:0 14px 15px}.selection-dock{padding-left:12px;padding-right:12px}.selection-dock-copy{font-size:11px}.selection-dock .button{font-size:11px;padding:10px 12px}.footer{padding-bottom:100px}.footer-right{gap:12px}}
+    /* On phones, put society search and selection within reach sooner. */
+    @media(max-width:620px){
+      .hero{gap:0;padding:23px 0 25px}
+      .hero h1{font-size:clamp(37px,10vw,46px);line-height:1.04;margin:13px 0 11px}
+      .hero-copy>p{max-width:36ch;font-size:14px;line-height:1.55;margin-bottom:15px}
+      .hero-copy>.button{width:100%;max-width:360px;min-height:48px;border-radius:4px}
+      .hero-footnote{margin-top:12px;font-size:9px;letter-spacing:.07em}
+      .hero-art{display:none}
+      .section#societies{padding:28px 0 36px;scroll-margin-top:12px}
+      .section-heading{gap:12px;margin-bottom:14px}
+      .section-heading h2{font-size:clamp(28px,8vw,34px);line-height:1.06}
+      .section-heading p{font-size:13px;line-height:1.5}
+      .selection-count{min-height:36px;padding:8px 11px}
+      .catalogue-tools{gap:7px;margin-bottom:12px}
+      .search-field{min-height:48px;padding-inline:13px}
+      .search-field input{font-size:16px}
+      .society-grid{gap:10px}
+      .society-card{min-height:0;padding:15px;border-radius:5px}
+      .society-monogram{width:38px;height:38px;border-radius:4px}
+      .society-card h3{font-size:16px;margin:12px 0 5px}
+      .society-card p{font-size:12px;line-height:1.5;margin-bottom:8px}
+      .society-bottom{gap:8px;flex-wrap:wrap;padding-top:7px}
+      .society-check{min-height:44px;padding:5px 8px;border:1px solid #b7c8d2;border-radius:4px;font-size:11px}
+      .society-check input{width:20px;height:20px;border-radius:3px}
+      .selection-next{margin-top:15px;padding:13px}
+      .selection-next .button{min-height:48px;border-radius:4px}
+      .selection-dock{padding-top:9px;padding-bottom:calc(9px + env(safe-area-inset-bottom))}
+      .selection-dock .button{min-height:44px;border-radius:4px}
+      .sync-section{scroll-margin-top:12px}
+      .calendar-action{min-height:48px}
+      body.has-selection .section#societies{padding-bottom:96px}
+    }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
@@ -347,6 +379,7 @@ const PAGE = String.raw`<!doctype html>
         document.getElementById("selection-next-title").textContent=count?count+" societ"+(count===1?"y":"ies")+" selected":"Choose at least one society";
         document.getElementById("selection-next-detail").textContent=count?"Your calendar link is ready in step 2.":"Your calendar link will appear in step 2.";
         selectionDock.hidden=!count;
+        document.body.classList.toggle("has-selection",count>0);
         document.getElementById("selection-dock-count").textContent=count+" societ"+(count===1?"y":"ies")+" selected";
         if(!count){
           feedUrl.textContent="Choose a society above to create your feed";
