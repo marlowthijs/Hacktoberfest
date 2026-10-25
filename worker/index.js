@@ -307,6 +307,9 @@ const PAGE = String.raw`<!doctype html>
     .society-check input{border-color:#829cab;border-radius:3px}
     .society-check input:checked{background:#005c84;border-color:#005c84}
     .society-card.is-selected{border-color:#005c84;background:#f3f8fb}
+    .society-monogram.has-logo{overflow:hidden;padding:3px;border:1px solid #d7e1e8;background:#fff!important}
+    .society-logo{display:block;width:100%;height:100%;object-fit:contain}
+    .society-monogram-fallback{font-size:inherit}
   </style>
 </head>
 <body>
@@ -431,8 +434,15 @@ function upcomingEventCount(id){return catalogue.events.filter(function(event){r
           var type=isSport?(society.sport_format==="intramural"?"Intramural sport":"Sports club"):"Society calendar";
           var selection=hasEvents?'<label class="society-check"><input type="checkbox" data-society="'+esc(society.id)+'" '+(active?'checked':'')+'><span>Add to my calendar</span></label>':'<span class="contact-only-state">Contact details only · no upcoming events listed</span>';
           var eventText=hasEvents?count+' upcoming '+(count===1?'event':'events'):'Contact information';
-          return '<article class="society-card'+(active?' is-selected':'')+(!hasEvents?' contact-only':'')+'"><div class="society-top"><div class="society-monogram" style="background:'+esc(society.accent||"#dceaf2")+'">'+esc(initials)+'</div><span class="society-type">'+esc(type)+'</span></div><h3>'+esc(society.name)+'</h3><p class="society-description">'+esc(description)+'</p>'+schedule+bio+societyLinks(society)+'<div class="society-bottom"><span class="society-events">'+esc(eventText)+'</span>'+selection+'</div></article>';
+          var logo=safeExternalUrl(society.logo_url);
+          var monogram=logo?'<div class="society-monogram has-logo" aria-hidden="true"><img class="society-logo" src="'+esc(logo)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="society-monogram-fallback" hidden>'+esc(initials)+'</span></div>':'<div class="society-monogram" style="background:'+esc(society.accent||"#dceaf2")+'" aria-hidden="true">'+esc(initials)+'</div>';
+          return '<article class="society-card'+(active?' is-selected':'')+(!hasEvents?' contact-only':'')+'"><div class="society-top">'+monogram+'<span class="society-type">'+esc(type)+'</span></div><h3>'+esc(society.name)+'</h3><p class="society-description">'+esc(description)+'</p>'+schedule+bio+societyLinks(society)+'<div class="society-bottom"><span class="society-events">'+esc(eventText)+'</span>'+selection+'</div></article>';
         }).join("");
+        grid.querySelectorAll(".society-logo").forEach(function(image){
+          function restoreInitials(){var mark=image.parentElement;if(!mark)return;image.hidden=true;mark.classList.remove("has-logo");var fallback=mark.querySelector(".society-monogram-fallback");if(fallback)fallback.hidden=false;}
+          image.addEventListener("error",restoreInitials,{once:true});
+          if(image.complete&&!image.naturalWidth)restoreInitials();
+        });
         grid.querySelectorAll("[data-society]").forEach(function(check){check.addEventListener("change",function(){var id=check.getAttribute("data-society");if(!hasUpcomingEvents(id)){check.checked=false;return;}if(check.checked){selected.add(id);}else{selected.delete(id);}try{localStorage.setItem(KEY,JSON.stringify(Array.from(selected)));}catch(_){}render();document.getElementById("announcement").textContent=selected.has(id)?societyFor(id).name+" added to your calendar feed.":societyFor(id).name+" removed from your calendar feed.";});});
       }
       function renderEvents(){

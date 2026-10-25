@@ -9,7 +9,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/93-club-southampton",
       "contact_email": "club93@soton.ac.uk",
-      "website_url": "https://linktr.ee/club93soton"
+      "website_url": "https://linktr.ee/club93soton",
+      "logo_url": "https://www.susu.org/groups/logos/1340_1781879155.png"
     },
     {
       "id": "im-abacus-cranes",
@@ -29,7 +30,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/acs-basketball",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1171_1792417707.jpg"
     },
     {
       "id": "im-acs-football",
@@ -39,7 +41,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-acs-football",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1082_1696950730.png"
     },
     {
       "id": "actuarial-society",
@@ -49,7 +52,8 @@
       "susu_url": "https://www.susu.org/groups/suas",
       "instagram_url": "https://www.instagram.com/sotonactuarial/",
       "instagram_bio": "Actuaries work with data to help clients manage financial risks. Join SUAS to explore and receive support in launching your actuarial career!",
-      "contact_email": "suas@soton.ac.uk"
+      "contact_email": "suas@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/3_1645817448.png"
     },
     {
       "id": "aerial-sports",
@@ -60,7 +64,8 @@
       "instagram_url": "https://www.instagram.com/sass_soc/",
       "instagram_bio": "The OFFICIAL account for the University of Southampton Aerial Sports Society! 🎀 FOLLOW US to stay up to date with all things POLE and HOOP👯",
       "contact_email": "sass@soton.ac.uk",
-      "website_url": "https://linktr.ee/sass_soc"
+      "website_url": "https://linktr.ee/sass_soc",
+      "logo_url": "https://www.susu.org/groups/logos/321_1564566709.png"
     },
     {
       "id": "afghan-society",
@@ -71,7 +76,8 @@
       "instagram_url": "https://www.instagram.com/afgsocsoton/",
       "instagram_bio": "‎خوش آمدید | ښه راغلاست University of Southampton Afghan Society‎",
       "contact_email": "afgsoton@gmail.com",
-      "community_url": "https://chat.whatsapp.com/DHRD1VQlMpY8KGnmNA3DLW?mode=ems_copy_c"
+      "community_url": "https://chat.whatsapp.com/DHRD1VQlMpY8KGnmNA3DLW?mode=ems_copy_c",
+      "logo_url": "https://www.susu.org/groups/logos/1292_1746904973.jpg"
     },
     {
       "id": "african-and-caribbean-society",
@@ -81,7 +87,8 @@
       "susu_url": "https://www.susu.org/groups/acs",
       "instagram_url": "https://www.instagram.com/acssoton/",
       "instagram_bio": "University Of Southampton’s Official African & Caribbean Society Page! Other Socials and events in the Link Below",
-      "contact_email": "acssoton2023@gmail.com"
+      "contact_email": "acssoton2023@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/375_1597507949.png"
     },
     {
       "id": "ahlulbayt-islamic-society",
@@ -91,7 +98,8 @@
       "susu_url": "https://www.susu.org/groups/ahlulbayt-islamic-society",
       "instagram_url": "https://www.instagram.com/sotonabsoc/",
       "instagram_bio": "A student-led community based on the teachings of the holy Quran and Ahlulbayt (as) Want to join the WhatsApp groupchat? Send us a DM! ✉️",
-      "contact_email": "absoc@soton.ac.uk"
+      "contact_email": "absoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1342_1782064260.jpg"
     },
     {
       "id": "airsoft",
@@ -100,7 +108,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/airsoft",
       "contact_email": "committee@supac.org.uk",
-      "website_url": "https://www.supac.org.uk/"
+      "website_url": "https://www.supac.org.uk/",
+      "logo_url": "https://www.susu.org/groups/logos/7_1559840111.jpg"
     },
     {
       "id": "albanian-society",
@@ -110,7 +119,8 @@
       "susu_url": "https://www.susu.org/groups/albanian-society",
       "instagram_url": "https://www.instagram.com/sotonalbsoc/",
       "instagram_bio": "Synimi ynë është per të bashkuar studentët universitare Shqiptarë nga të gjitha trojet 🇦🇱🇽🇰 DM to join our WhatsApp groupchat!",
-      "contact_email": "albsoc@soton.ac.uk"
+      "contact_email": "albsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/907_1720789640.png"
     },
     {
       "id": "american-football",
@@ -119,7 +129,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/stags"
+      "susu_url": "https://www.susu.org/groups/stags",
+      "logo_url": "https://www.susu.org/groups/logos/186_1698080805.png"
     },
     {
       "id": "amnesty-international",
@@ -128,7 +139,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/amnesty-international",
       "instagram_url": "https://www.instagram.com/amnesty_soton/profilecard/",
-      "contact_email": "amnestysoton99@gmail.com"
+      "contact_email": "amnestysoton99@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/11_1754515502.png"
     },
     {
       "id": "anime-and-manga-society",
@@ -139,7 +151,8 @@
       "instagram_url": "https://www.instagram.com/samsanime/",
       "instagram_bio": "University of Southampton Anime and Manga Society ✨Society for all things anime — watch, chill, connect",
       "contact_email": "samsanimesoc@gmail.com",
-      "community_url": "https://discord.gg/RtEYFCUBpx"
+      "community_url": "https://discord.gg/RtEYFCUBpx",
+      "logo_url": "https://www.susu.org/groups/logos/12_1597612745.png"
     },
     {
       "id": "archaeology-society",
@@ -150,7 +163,8 @@
       "instagram_url": "https://www.instagram.com/archsocsoton/",
       "instagram_bio": "For Archaeology lovers at the University of Southampton (degree or otherwise)",
       "contact_email": "archaeologysociety@soton.ac.uk",
-      "website_url": "https://linktr.ee/archsocsoton?fbclid=PAZXh0bgNhZW0CMTEAAabHTMZvyai92TyigTrdoOupVzd72c8H_pz6dbjZ1VyXWn6FfcTZVuO_J90_aem_1CZnECZQJw6LR4UkswezMw"
+      "website_url": "https://linktr.ee/archsocsoton?fbclid=PAZXh0bgNhZW0CMTEAAabHTMZvyai92TyigTrdoOupVzd72c8H_pz6dbjZ1VyXWn6FfcTZVuO_J90_aem_1CZnECZQJw6LR4UkswezMw",
+      "logo_url": "https://www.susu.org/groups/logos/14_1789346547.png"
     },
     {
       "id": "im-archers-road-fc",
@@ -160,7 +174,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-archers-road-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1088_1755019658.png"
     },
     {
       "id": "archery",
@@ -169,13 +184,16 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/suac"
+      "susu_url": "https://www.susu.org/groups/suac",
+      "logo_url": "https://www.susu.org/groups/logos/187_1596378442.png"
     },
     {
       "id": "art-soc",
       "name": "Art Society",
       "description": "Weekly drop-in art sessions.",
-      "accent": "#e3c9ff"
+      "accent": "#e3c9ff",
+      "susu_url": "https://www.susu.org/groups/art-soc",
+      "logo_url": "https://www.susu.org/groups/logos/15_1764271980.png"
     },
     {
       "id": "artificial-intelligence-society",
@@ -186,7 +204,8 @@
       "instagram_url": "https://www.instagram.com/sotonaisoc/",
       "instagram_bio": "Making Artificial Intelligence easy for everyone at @uni_southampton !",
       "contact_email": "aisoc@soton.ac.uk",
-      "website_url": "https://linktr.ee/AISOC"
+      "website_url": "https://linktr.ee/AISOC",
+      "logo_url": "https://www.susu.org/groups/logos/906_1730052481.png"
     },
     {
       "id": "asian-cultural-society",
@@ -196,7 +215,8 @@
       "susu_url": "https://www.susu.org/groups/asiansoc",
       "instagram_url": "https://www.instagram.com/sotonasiansoc/",
       "instagram_bio": "✨Official University of Southampton Asian Cultural Society ✨Follow our TikTok asocsouthampton ✨Follow our page for more events and updates 🫶",
-      "contact_email": "sotonasiansoc@gmail.com"
+      "contact_email": "sotonasiansoc@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/16_1786726307.png"
     },
     {
       "id": "association-of-british-and-chinese-university-students-abacus",
@@ -207,7 +227,8 @@
       "instagram_url": "https://www.instagram.com/soton.abacus/",
       "instagram_bio": "Welcome to Southampton ABACUS💖 Members get 15% off at: - @palettecafe7",
       "contact_email": "southamptonabacus@gmail.com",
-      "website_url": "https://linktr.ee/sotonabacus"
+      "website_url": "https://linktr.ee/sotonabacus",
+      "logo_url": "https://www.susu.org/groups/logos/569_1771024743.png"
     },
     {
       "id": "astronomy-society",
@@ -218,7 +239,8 @@
       "instagram_url": "https://www.instagram.com/sotonastrosoc/",
       "instagram_bio": "The Official University of Southampton Astronomy Society 🌠🪐🌌🔭 Link to become a member and to our other socials below",
       "contact_email": "astrosoc@soton.ac.uk",
-      "website_url": "https://linktr.ee/sotonastrosoc"
+      "website_url": "https://linktr.ee/sotonastrosoc",
+      "logo_url": "https://www.susu.org/groups/logos/17_1752094711.png"
     },
     {
       "id": "im-athenas",
@@ -228,7 +250,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-maths",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1110_1732106114.png"
     },
     {
       "id": "athletics-cross-country",
@@ -239,7 +262,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/athletics-cross-country",
       "instagram_url": "https://www.instagram.com/uniofsotonacc/",
-      "contact_email": "accc@soton.ac.uk"
+      "contact_email": "accc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/188_1750687196.png"
     },
     {
       "id": "im-badgers-basketball",
@@ -249,7 +273,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/badgers-basketball",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/960_1778754193.png"
     },
     {
       "id": "badminton-club",
@@ -259,19 +284,24 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/recbad",
-      "contact_email": "subad@soton.ac.uk"
+      "contact_email": "subad@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/190_1758812206.jpg"
     },
     {
       "id": "baking-society",
       "name": "Baking Society",
       "description": "Weekly bake-and-chat meetups with a new theme each week.",
-      "accent": "#fff0a8"
+      "accent": "#fff0a8",
+      "susu_url": "https://www.susu.org/groups/baking-society",
+      "logo_url": "https://www.susu.org/groups/logos/935_1623606336.jpg"
     },
     {
       "id": "ballet-society",
       "name": "Ballet Society",
       "description": "Weekly ballet classes at four levels.",
-      "accent": "#a8f0e0"
+      "accent": "#a8f0e0",
+      "susu_url": "https://www.susu.org/groups/ballet-society",
+      "logo_url": "https://www.susu.org/groups/logos/20_1690392240.png"
     },
     {
       "id": "ballroom-and-latin-dance-society",
@@ -282,7 +312,8 @@
       "instagram_url": "https://www.instagram.com/sublds/",
       "instagram_bio": "University of Southampton Ballroom & Latin Society🐬Join us for classes, technique and socials -with opportunities to compete!",
       "contact_email": "sublds@soton.ac.uk",
-      "regular_schedule": "Weekly classes for all standards; days and times are not listed."
+      "regular_schedule": "Weekly classes for all standards; days and times are not listed.",
+      "logo_url": "https://www.susu.org/groups/logos/21_1549384736.jpg"
     },
     {
       "id": "bangla-society",
@@ -293,7 +324,8 @@
       "instagram_url": "https://www.instagram.com/sotonbanglasoc/",
       "instagram_bio": "Welcome to the University of Southampton’s Bangladesh Society! 🇧🇩",
       "contact_email": "bsoc@soton.ac.uk",
-      "community_url": "http://chat.whatsapp.com/FYFeXlKjUw7LMYlUGxbvGW"
+      "community_url": "http://chat.whatsapp.com/FYFeXlKjUw7LMYlUGxbvGW",
+      "logo_url": "https://www.susu.org/groups/logos/1223_1714692700.jpg"
     },
     {
       "id": "bar-society",
@@ -301,7 +333,8 @@
       "description": "The Bar Society is a student-led legal organisation at the University of Southampton that deals with student exposure to the legal profession and guidance for students looking to pursue a career at the Bar or elsewhere. We aim to give a range of opportunities so that students can decide whether a career in law, particularly at the Bar, is something they wish to pursue. To this end, we provide events designed to improve employability by developing transferrable skills such as public speaking, networking and writing. To do this, we hold regular legal career orientated events such as mooting competitions, networking socials and skills workshops. There is something for everyone at Inns. Whether you are looking for serious professional development or just a friendly bunch with which to socialise - we are the society for you!",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/inns-of-court-society",
-      "contact_email": "inns@soton.ac.uk"
+      "contact_email": "inns@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/84_1596052954.png"
     },
     {
       "id": "im-barbarians",
@@ -311,7 +344,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-barbarians",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1078_1692385680.png"
     },
     {
       "id": "baseball-and-softball",
@@ -320,7 +354,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/baseball"
+      "susu_url": "https://www.susu.org/groups/baseball",
+      "logo_url": "https://www.susu.org/groups/logos/191_1689721482.jpg"
     },
     {
       "id": "basketball",
@@ -331,7 +366,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/subc",
       "instagram_url": "https://www.instagram.com/subc.sharks/",
-      "contact_email": "subc2526@soton.ac.uk"
+      "contact_email": "subc2526@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/192_1753357197.jpg"
     },
     {
       "id": "beekeeping-society",
@@ -339,7 +375,8 @@
       "description": "BeeSoc provides all the training, kit and bees needed to learn the ancient skill of beekeeping, regardless of how much experience you have.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/beekeeping",
-      "contact_email": "subeekeepingsociety@gmail.com"
+      "contact_email": "subeekeepingsociety@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/897_1731410643.png"
     },
     {
       "id": "bhangra-society",
@@ -350,7 +387,8 @@
       "instagram_url": "https://www.instagram.com/sotonbhangra/",
       "instagram_bio": "The official page of Soton’s Bhangra team 👌🏽 Links to the group chat and tiktok page below! ⬇️",
       "contact_email": "sotonbhangra@soton.ac.uk",
-      "regular_schedule": "Weekly dance classes; check the society links for the current timetable."
+      "regular_schedule": "Weekly dance classes; check the society links for the current timetable.",
+      "logo_url": "https://www.susu.org/groups/logos/1221_1725394899.png"
     },
     {
       "id": "biological-sciences-society",
@@ -361,7 +399,8 @@
       "instagram_url": "https://www.instagram.com/biosocsoton/",
       "instagram_bio": "Welcome to the @uni_southampton Biological Sciences Society! 💚",
       "contact_email": "Bio.Soc@soton.ac.uk",
-      "community_url": "http://chat.whatsapp.com/KZCwujOlRnK8gla4Q2sKi7"
+      "community_url": "http://chat.whatsapp.com/KZCwujOlRnK8gla4Q2sKi7",
+      "logo_url": "https://www.susu.org/groups/logos/24_1723032273.png"
     },
     {
       "id": "im-biosoc-netball",
@@ -371,7 +410,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-biosoc-bees",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1108_1688859468.png"
     },
     {
       "id": "im-biosoc-fc",
@@ -381,7 +421,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/biosoc-fc-",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1241_1723568164.png"
     },
     {
       "id": "im-biosoc-hockey",
@@ -391,7 +432,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/biosoc-hockey",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1172_1725551499.png"
     },
     {
       "id": "black-law-students-network",
@@ -402,7 +444,8 @@
       "instagram_url": "https://www.instagram.com/blsn.soton/",
       "instagram_bio": "BLSN is a safe space for anyone interested in law, whether you study it or not! We aim to bridge the gap for BAME students, but everyone is welcome 🤗",
       "contact_email": "blsn@soton.ac.uk",
-      "website_url": "https://www.linkedin.com/company/blsnsoton/"
+      "website_url": "https://www.linkedin.com/company/blsnsoton/",
+      "logo_url": "https://www.susu.org/groups/logos/1194_1723302336.png"
     },
     {
       "id": "black-women-s-project",
@@ -410,13 +453,16 @@
       "description": "The Black Women's Project is committed to the personal, academic and professional growth of Black Women in higher educational institutions.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/black-womens-project",
-      "contact_email": "bwpsouthampton@gmail.com"
+      "contact_email": "bwpsouthampton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/1042_1627053341.png"
     },
     {
       "id": "bluetits-netball",
       "name": "Bluetits (Netball)",
       "description": "Women's netball training, socials and matches.",
-      "accent": "#ffc9a8"
+      "accent": "#ffc9a8",
+      "susu_url": "https://www.susu.org/groups/bluetits-netball",
+      "logo_url": "https://www.susu.org/groups/logos/961_1695375124.png"
     },
     {
       "id": "boat-rowing",
@@ -426,7 +472,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/boat",
-      "instagram_url": "https://www.instagram.com/subcrowing/"
+      "instagram_url": "https://www.instagram.com/subcrowing/",
+      "logo_url": "https://www.susu.org/groups/logos/194_1720790356.png"
     },
     {
       "id": "bollywood-dance-society",
@@ -434,7 +481,8 @@
       "description": "The Bollywood Dance Society is dedicated to promoting and celebrating the dynamic art form of Bollywood dance within the university community. Bollywood dance is a vibrant fusion of Indian classical, folk, and contemporary styles, known for its expressive storytelling, energy, and cultural richness. Our society aims to provide an inclusive and welcoming environment for students of all backgrounds and experience levels to explore this unique dance style. Through regular workshops, rehearsals, and performances, we hope to foster creativity, confidence, and cultural appreciation among our members. In addition to dance training, we plan to host more social events, collaborate with other cultural and performance societies, and represent the university at student showcases and external competitions. Our goal is to build a diverse community of students united by a shared passion for dance, while also enriching campus life through cultural expression and artistic engagement.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/bollywood-dance-society-",
-      "contact_email": "sotonbwddance@gmail.com"
+      "contact_email": "sotonbwddance@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/1299_1757363825.jpg"
     },
     {
       "id": "book-club",
@@ -443,13 +491,16 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/book-club",
       "instagram_url": "https://www.instagram.com/soton_bookclub/",
-      "contact_email": "bookclub@soton.ac.uk"
+      "contact_email": "bookclub@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1337_1781459929.png"
     },
     {
       "id": "boxing",
       "name": "Boxing",
       "description": "Training, sparring, socials and hill sprints.",
-      "accent": "#ffd1b9"
+      "accent": "#ffd1b9",
+      "susu_url": "https://www.susu.org/groups/boxing",
+      "logo_url": "https://www.susu.org/groups/logos/195_1727268861.jpg"
     },
     {
       "id": "brainsoc",
@@ -458,13 +509,16 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/brainsoc",
       "contact_email": "brainsoc@soton.ac.uk",
-      "community_url": "https://chat.whatsapp.com/LFJpjRyAvPJ7g1xGRmk6NA?mode=gi_t"
+      "community_url": "https://chat.whatsapp.com/LFJpjRyAvPJ7g1xGRmk6NA?mode=gi_t",
+      "logo_url": "https://www.susu.org/groups/logos/1347_1782140016.png"
     },
     {
       "id": "brass-band",
       "name": "Brass Band",
       "description": "Weekly term-time brass band rehearsals.",
-      "accent": "#c9e8ff"
+      "accent": "#c9e8ff",
+      "susu_url": "https://www.susu.org/groups/brass-band",
+      "logo_url": "https://www.susu.org/groups/logos/26_1765044513.png"
     },
     {
       "id": "bridge",
@@ -474,7 +528,8 @@
       "susu_url": "https://www.susu.org/groups/bridge-club",
       "instagram_url": "https://www.instagram.com/uosbridgesoc/",
       "contact_email": "bridgeclub@soton.ac.uk",
-      "regular_schedule": "Weekly contract bridge sessions; days and times are not listed."
+      "regular_schedule": "Weekly contract bridge sessions; days and times are not listed.",
+      "logo_url": "https://www.susu.org/groups/logos/28_1601310530.jpg"
     },
     {
       "id": "bulgarian-society",
@@ -485,7 +540,8 @@
       "instagram_url": "https://www.instagram.com/soton.bg_society/",
       "instagram_bio": "📍 join us at our events on Fridays/Saturdays 🗣️ dm us to be added to our messenger group chat sign up for free using the link below👇",
       "contact_email": "mmm1g24@soton.ac.uk",
-      "website_url": "https://docs.google.com/presentation/d/1fdDs1SU4ZDf9bjRCYVVRmtVqSdg6SNCYDjLqoWvWxPk/edit?usp=sharing"
+      "website_url": "https://docs.google.com/presentation/d/1fdDs1SU4ZDf9bjRCYVVRmtVqSdg6SNCYDjLqoWvWxPk/edit?usp=sharing",
+      "logo_url": "https://www.susu.org/groups/logos/381_1665081385.png"
     },
     {
       "id": "business-society",
@@ -495,7 +551,8 @@
       "susu_url": "https://www.susu.org/groups/university-of-southampton-business-society-",
       "instagram_url": "https://www.instagram.com/bizsoc/",
       "instagram_bio": "Find all our links here:",
-      "contact_email": "bussoc@soton.ac.uk"
+      "contact_email": "bussoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1239_1769372608.png"
     },
     {
       "id": "im-bussoc-fc",
@@ -505,13 +562,16 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-bussoc-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1058_1741275256.jpg"
     },
     {
       "id": "calisthenics-society",
       "name": "Calisthenics Society",
       "description": "Weekly calisthenics workshops and training sessions.",
-      "accent": "#f2b8ff"
+      "accent": "#f2b8ff",
+      "susu_url": "https://www.susu.org/groups/calisthenics-society",
+      "logo_url": "https://www.susu.org/groups/logos/1294_1751015990.png"
     },
     {
       "id": "cameroon-catalyst",
@@ -522,7 +582,8 @@
       "instagram_url": "https://www.instagram.com/camcatsoton/",
       "instagram_bio": "An international organisation 🌍 student driven charity promoting sustainable development in rural Cameroon - medical & engineering projects 🎓🇨🇲🩺",
       "contact_email": "en5g24@soton.ac.uk",
-      "website_url": "http://www.camerooncatalyst.org"
+      "website_url": "http://www.camerooncatalyst.org",
+      "logo_url": "https://www.susu.org/groups/logos/609_1782680125.png"
     },
     {
       "id": "canadian-law-society",
@@ -533,7 +594,8 @@
       "instagram_url": "https://www.instagram.com/clssoton/",
       "instagram_bio": "Updates and Information on the University of Southampton’s Canadian Law Society!⚖️",
       "contact_email": "canadianlawsoc@soton.ac.uk",
-      "website_url": "https://www.linkedin.com/company/university-of-southampton-canadian-law-society/"
+      "website_url": "https://www.linkedin.com/company/university-of-southampton-canadian-law-society/",
+      "logo_url": "https://www.susu.org/groups/logos/1149_1664446382.jpg"
     },
     {
       "id": "canoe",
@@ -544,7 +606,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/canoe",
       "instagram_url": "https://www.instagram.com/sotonuni_canoeclub/",
-      "contact_email": "sucanoeclub@gmail.com"
+      "contact_email": "sucanoeclub@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/197_1682950690.png"
     },
     {
       "id": "canoe-polo",
@@ -555,7 +618,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sucp",
       "instagram_url": "https://www.instagram.com/sucp_soton/",
-      "contact_email": "sucp@soton.ac.uk"
+      "contact_email": "sucp@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/196_1630941793.png"
     },
     {
       "id": "capoeira",
@@ -567,7 +631,8 @@
       "instagram_bio": "with Mestre João da Figueira 🤸 Tuesday: 20:00-21:30 Wednesday: 19:30-21:30 Location: Building 42, Training Room Axé!",
       "contact_email": "capoeirasoton@gmail.com",
       "website_url": "http://www.marazul.co.uk/",
-      "regular_schedule": "Tuesday 20:00–21:30 and Wednesday 19:30–21:30 at Building 42, Training Room."
+      "regular_schedule": "Tuesday 20:00–21:30 and Wednesday 19:30–21:30 at Building 42, Training Room.",
+      "logo_url": "https://www.susu.org/groups/logos/371_1730132350.jpg"
     },
     {
       "id": "cardiology-society",
@@ -576,13 +641,16 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/cardiology-society",
       "contact_email": "uoscardiosoc@gmail.com",
-      "website_url": "https://linktr.ee/SotonCardio"
+      "website_url": "https://linktr.ee/SotonCardio",
+      "logo_url": "https://www.susu.org/groups/logos/1315_1788270995.png"
     },
     {
       "id": "cathsoc",
       "name": "Catholic Society",
       "description": "Weekly Mass, dinner and social for Catholic students.",
-      "accent": "#d4f5a0"
+      "accent": "#d4f5a0",
+      "susu_url": "https://www.susu.org/groups/cathsoc",
+      "logo_url": "https://www.susu.org/groups/logos/31_1791196100.png"
     },
     {
       "id": "caving",
@@ -591,7 +659,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/caving"
+      "susu_url": "https://www.susu.org/groups/caving",
+      "logo_url": "https://www.susu.org/groups/logos/198_1789753162.png"
     },
     {
       "id": "celtic-society",
@@ -601,7 +670,8 @@
       "susu_url": "https://www.susu.org/groups/Welsh-and-Celtic-Society",
       "instagram_url": "https://www.instagram.com/uoscelticsoc/",
       "instagram_bio": "⛰️Welcome to the University of Southampton Celtic Society!⛰️ 🏴󠁧󠁢󠁷󠁬󠁳󠁿Croeso i'r Gymdeithas Geltaidd Prifysgol Southampton",
-      "contact_email": "welshsoc@soton.ac.uk"
+      "contact_email": "welshsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/49_1732098472.jpg"
     },
     {
       "id": "chamber-choir",
@@ -612,7 +682,8 @@
       "instagram_url": "https://www.instagram.com/susuchamberchoir/",
       "instagram_bio": "🎵 UoS' auditioned chamber choir 🎶 Contemporary, classical & sacred music 🎼 Join us in Romsey Abbey on October 25th",
       "contact_email": "suchamberchoir@gmail.com",
-      "website_url": "https://www.chamber-choir.com/"
+      "website_url": "https://www.chamber-choir.com/",
+      "logo_url": "https://www.susu.org/groups/logos/23_1564569809.jpg"
     },
     {
       "id": "im-chamberlain-football",
@@ -622,7 +693,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-chamberlain",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1083_1782561232.png"
     },
     {
       "id": "cheerleading-vixens",
@@ -633,7 +705,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/cheerleading-vixens",
       "instagram_url": "https://www.instagram.com/southampton_vixens/",
-      "contact_email": "Southamptonvixens@soton.ac.uk"
+      "contact_email": "Southamptonvixens@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/260_1561393223.png"
     },
     {
       "id": "chemical-engineering-society",
@@ -642,13 +715,16 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/chemical-engineering-society",
       "instagram_url": "https://www.instagram.com/chemengsoton/",
-      "instagram_bio": "Official Instagram 🧪⚙️"
+      "instagram_bio": "Official Instagram 🧪⚙️",
+      "logo_url": "https://www.susu.org/groups/logos/1283_1756793921.png"
     },
     {
       "id": "chemsoc",
       "name": "Chemistry Society",
       "description": "Academic and social events for chemistry students.",
-      "accent": "#c9e8ff"
+      "accent": "#c9e8ff",
+      "susu_url": "https://www.susu.org/groups/chemsoc",
+      "logo_url": "https://www.susu.org/groups/logos/32_1727713372.jpg"
     },
     {
       "id": "im-chemsoc-fc",
@@ -658,7 +734,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/chemsoc-fc-",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1184_1758204824.png"
     },
     {
       "id": "chess",
@@ -670,7 +747,8 @@
       "instagram_bio": "Join us at 6.30pm, Thursdays at Below Deck for our social mix in sessions. We also have Monday Competitive Practice Nights and Weekend Socials",
       "contact_email": "chess@soton.ac.uk",
       "regular_schedule": "Thursday 18:30 social sessions at Below Deck; Monday competitive practice and weekend socials.",
-      "community_url": "https://www.discord.gg/hNEyPdSegv"
+      "community_url": "https://www.discord.gg/hNEyPdSegv",
+      "logo_url": "https://www.susu.org/groups/logos/33_1564570048.jpg"
     },
     {
       "id": "chinese-students-scholars-association",
@@ -679,7 +757,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/chinese-students-scholars-association",
       "contact_email": "cssasoton@hotmail.com",
-      "website_url": "http://www.cssasoton.org/new/"
+      "website_url": "http://www.cssasoton.org/new/",
+      "logo_url": "https://www.susu.org/groups/logos/35_1620129338.jpg"
     },
     {
       "id": "christian-medical-fellowship",
@@ -687,7 +766,8 @@
       "description": "University of Southampton society. See the SUSU profile for current information.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/christian-medical-fellowship",
-      "contact_email": "Cmfsouthampton@outlook.com"
+      "contact_email": "Cmfsouthampton@outlook.com",
+      "logo_url": "https://www.susu.org/groups/logos/964_1628007580.png"
     },
     {
       "id": "christian-union",
@@ -698,13 +778,16 @@
       "instagram_url": "https://www.instagram.com/SouthamptonCU/",
       "instagram_bio": "We are Southampton Uni Christian Union - a community sharing Jesus' love, hope and joy with our campus!",
       "contact_email": "sucusecretary@gmail.com",
-      "website_url": "http://www.sucu.org.uk"
+      "website_url": "http://www.sucu.org.uk",
+      "logo_url": "https://www.susu.org/groups/logos/36_1738775161.png"
     },
     {
       "id": "circsoc",
       "name": "Circus Society",
       "description": "Weekly circus skills sessions.",
-      "accent": "#ffd6e8"
+      "accent": "#ffd6e8",
+      "susu_url": "https://www.susu.org/groups/circsoc",
+      "logo_url": "https://www.susu.org/groups/logos/37_1695990964.png"
     },
     {
       "id": "civil-engineering-society",
@@ -716,7 +799,8 @@
       "instagram_bio": "Southampton CIVSOC 🏗️ -Keep updated by following us and our social media for events and trips! -FREE MEMBERSHIP 26-27 ✉️ civsoc@soton.ac.uk",
       "contact_email": "civsoc@soton.ac.uk",
       "website_url": "https://linktr.ee/soton.civsoc",
-      "community_url": "https://chat.whatsapp.com/JZtqbXAqoODBpWg5JON8CL"
+      "community_url": "https://chat.whatsapp.com/JZtqbXAqoODBpWg5JON8CL",
+      "logo_url": "https://www.susu.org/groups/logos/937_1727702386.png"
     },
     {
       "id": "clay-pigeon-shooting",
@@ -725,7 +809,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/clay-pigeon-shooting-club"
+      "susu_url": "https://www.susu.org/groups/clay-pigeon-shooting-club",
+      "logo_url": "https://www.susu.org/groups/logos/873_1720552514.png"
     },
     {
       "id": "communist-society",
@@ -736,13 +821,16 @@
       "instagram_url": "https://www.instagram.com/susucommunists/",
       "instagram_bio": "@revolutionarycommuniststudents DEMAND THE IMPOSSIBLE. DEMAND THE FUTURE. Students of @sotoncommunists 👇 Claim your free Communist Society membership",
       "contact_email": "communist@soton.ac.uk",
-      "website_url": "https://linktr.ee/sotoncommunists"
+      "website_url": "https://linktr.ee/sotoncommunists",
+      "logo_url": "https://www.susu.org/groups/logos/453_1784503506.jpg"
     },
     {
       "id": "concert-band",
       "name": "Concert Band",
       "description": "Weekly concert band rehearsals.",
-      "accent": "#b7ef72"
+      "accent": "#b7ef72",
+      "susu_url": "https://www.susu.org/groups/concert-band",
+      "logo_url": "https://www.susu.org/groups/logos/42_1695725002.png"
     },
     {
       "id": "im-connaught-football",
@@ -752,7 +840,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-connaught",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1059_1686749906.png"
     },
     {
       "id": "conservation-volunteers-sucv",
@@ -763,19 +852,24 @@
       "instagram_url": "https://www.instagram.com/sucv_soton/",
       "instagram_bio": "We run local conservation days on Sundays, restoring ecosystems and biodiversity around Southampton and Hampshire. @uni_southampton @union_soton",
       "contact_email": "sucv@soton.ac.uk",
-      "regular_schedule": "Sunday mornings, usually around 09:00; tasks typically finish around 16:00. Locations vary."
+      "regular_schedule": "Sunday mornings, usually around 09:00; tasks typically finish around 16:00. Locations vary.",
+      "logo_url": "https://www.susu.org/groups/logos/43_1601108323.png"
     },
     {
       "id": "contemporary-dance",
       "name": "Contemporary Dance Society",
       "description": "Weekly contemporary dance classes at three levels.",
-      "accent": "#f6b6c8"
+      "accent": "#f6b6c8",
+      "susu_url": "https://www.susu.org/groups/contemporary-dance",
+      "logo_url": "https://www.susu.org/groups/logos/177_1718398284.jpg"
     },
     {
       "id": "sucws",
       "name": "Creative Writing Society",
       "description": "Writing workshops and feedback sessions.",
-      "accent": "#b9d8ff"
+      "accent": "#b9d8ff",
+      "susu_url": "https://www.susu.org/groups/sucws",
+      "logo_url": "https://www.susu.org/groups/logos/347_1554369572.png"
     },
     {
       "id": "cricket-ladies",
@@ -786,7 +880,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sulcc",
       "instagram_url": "https://www.instagram.com/sulccy/",
-      "contact_email": "sulccy@soton.ac.uk"
+      "contact_email": "sulccy@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/200_1596126655.png"
     },
     {
       "id": "cricket-mens",
@@ -796,13 +891,16 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/cricket-mens",
-      "instagram_url": "https://www.instagram.com/sotonunicricket_/"
+      "instagram_url": "https://www.instagram.com/sotonunicricket_/",
+      "logo_url": "https://www.susu.org/groups/logos/199_1588954006.jpg"
     },
     {
       "id": "cyber-security",
       "name": "Cyber Security",
       "description": "Weekly cyber sessions, CTFs and practical workshops.",
-      "accent": "#b9d8ff"
+      "accent": "#b9d8ff",
+      "susu_url": "https://www.susu.org/groups/cyber-security-society",
+      "logo_url": "https://www.susu.org/groups/logos/568_1696621039.png"
     },
     {
       "id": "darts-club",
@@ -811,13 +909,16 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/southampton-university-darts-club"
+      "susu_url": "https://www.susu.org/groups/southampton-university-darts-club",
+      "logo_url": "https://www.susu.org/groups/logos/1217_1721507330.png"
     },
     {
       "id": "debating-society",
       "name": "Debating Union",
       "description": "Weekly debating practice and events.",
-      "accent": "#ffd1b9"
+      "accent": "#ffd1b9",
+      "susu_url": "https://www.susu.org/groups/debating-society",
+      "logo_url": "https://www.susu.org/groups/logos/51_1696175008.png"
     },
     {
       "id": "dermatology-society",
@@ -827,7 +928,8 @@
       "susu_url": "https://www.susu.org/groups/dermatology-society",
       "instagram_url": "https://www.instagram.com/dermsocsoton/",
       "instagram_bio": "The official account for University of Southampton Dermatology Society 🩺✨🔬🧴💉💕 Run by UoS medical students!",
-      "contact_email": "dermsocsouthampton@gmail.com"
+      "contact_email": "dermsocsouthampton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/965_1726840025.png"
     },
     {
       "id": "digital-arts-and-gamedev-society",
@@ -838,7 +940,8 @@
       "instagram_url": "https://www.instagram.com/uos_dagsoc/",
       "instagram_bio": "University of Southampton Digital Arts and Game Development Society",
       "contact_email": "dagsoc.uos@gmail.com",
-      "website_url": "http://dagsoc.com"
+      "website_url": "http://dagsoc.com",
+      "logo_url": "https://www.susu.org/groups/logos/1154_1659647444.png"
     },
     {
       "id": "doctor-who-society",
@@ -848,7 +951,8 @@
       "susu_url": "https://www.susu.org/groups/doctor-who-society",
       "instagram_url": "https://www.instagram.com/sotondocsoc/",
       "instagram_bio": "The official University of Southampton Doctor Who Society!",
-      "website_url": "https://linktr.ee/soton.docsoc"
+      "website_url": "https://linktr.ee/soton.docsoc",
+      "logo_url": "https://www.susu.org/groups/logos/1189_1726153698.jpg"
     },
     {
       "id": "dodgeball",
@@ -859,7 +963,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/dodgeball",
       "instagram_url": "https://www.instagram.com/sotondodgeball/",
-      "contact_email": "dodgeball@soton.ac.uk"
+      "contact_email": "dodgeball@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/201_1600095653.png"
     },
     {
       "id": "im-economics-football",
@@ -869,7 +974,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-economics",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1087_1696943244.jpg"
     },
     {
       "id": "economics-society",
@@ -880,13 +986,16 @@
       "instagram_url": "https://www.instagram.com/econsoc.soton/",
       "instagram_bio": "Welcome to the Economics Society!",
       "contact_email": "econsoc@soton.ac.uk",
-      "website_url": "https://linktr.ee/econsocsoton"
+      "website_url": "https://linktr.ee/econsocsoton",
+      "logo_url": "https://www.susu.org/groups/logos/1214_1745578204.png"
     },
     {
       "id": "ecss",
       "name": "ECSS",
       "description": "ECS talks, workshops and socials in one easy-to-follow calendar.",
-      "accent": "#b7ef72"
+      "accent": "#b7ef72",
+      "susu_url": "https://www.susu.org/groups/ecss",
+      "logo_url": "https://www.susu.org/groups/logos/57_1672491611.png"
     },
     {
       "id": "im-ecss-fc",
@@ -896,7 +1005,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-ecss",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1060_1790701422.png"
     },
     {
       "id": "education-society",
@@ -906,7 +1016,8 @@
       "susu_url": "https://www.susu.org/groups/education-society",
       "instagram_url": "https://www.instagram.com/uos_edusoc/",
       "instagram_bio": "For University of Southampton students studying or interested in entering the education field 💙 Sign up for a FREE membership below 👇",
-      "contact_email": "uoseducationsociety@soton.ac.uk"
+      "contact_email": "uoseducationsociety@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/947_1717598276.png"
     },
     {
       "id": "electronic-music-society",
@@ -917,7 +1028,8 @@
       "instagram_url": "https://www.instagram.com/semsusoton/",
       "instagram_bio": "| SOCIETY OF ELECTRONIC MUSIC SOUTHAMPTON UNIVERSITY | Just a group of noisy students bringing you the best of the underground.",
       "contact_email": "semsuevents@gmail.com",
-      "website_url": "http://semsu.org"
+      "website_url": "http://semsu.org",
+      "logo_url": "https://www.susu.org/groups/logos/1195_1696355618.png"
     },
     {
       "id": "emergency-medicine-society",
@@ -933,7 +1045,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/empower"
+      "susu_url": "https://www.susu.org/groups/empower",
+      "logo_url": "https://www.susu.org/groups/logos/1164_1741528373.png"
     },
     {
       "id": "enactus-southampton",
@@ -944,7 +1057,8 @@
       "instagram_url": "https://www.instagram.com/enactussoton/",
       "instagram_bio": "Student-led social enterprises⭐️ Join us: @wonkybowl 🥣 @projectsafesip 🥤",
       "contact_email": "enactussouthampton26@gmail.com",
-      "website_url": "https://enactussouthampton.org/"
+      "website_url": "https://enactussouthampton.org/",
+      "logo_url": "https://www.susu.org/groups/logos/180_1784055161.png"
     },
     {
       "id": "endocrine-and-life-cycle-society",
@@ -954,7 +1068,8 @@
       "susu_url": "https://www.susu.org/groups/endocrine-and-life-cycle-society",
       "instagram_url": "https://www.instagram.com/elcsoc_soton/",
       "instagram_bio": "Welcome to the University of Southampton Endocrine and Life Cycle Society",
-      "contact_email": "ll1n23@soton.ac.uk"
+      "contact_email": "ll1n23@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1248_1726153592.jpg"
     },
     {
       "id": "im-engineering-fc",
@@ -964,7 +1079,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-engineering-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1061_1758674026.jpg"
     },
     {
       "id": "engineering-society",
@@ -975,7 +1091,8 @@
       "instagram_url": "https://www.instagram.com/sotonengineering/",
       "instagram_bio": "Hi, We are SUES! ⚙️ —— 2026-2027 SUES Memberships are now available in our Linktree! Linktree and Tiktok links below 🔗🌴",
       "contact_email": "sues@soton.ac.uk",
-      "website_url": "https://www.linkedin.com/company/southampton-university-engineering-society/"
+      "website_url": "https://www.linkedin.com/company/southampton-university-engineering-society/",
+      "logo_url": "https://www.susu.org/groups/logos/58_1755001770.png"
     },
     {
       "id": "im-engineers-rugby",
@@ -985,7 +1102,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-engineers",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1075_1720193715.png"
     },
     {
       "id": "engineers-without-borders-southampton",
@@ -996,7 +1114,8 @@
       "instagram_url": "https://www.instagram.com/ewb_soton/",
       "instagram_bio": "Engineers Without Borders Southampton . For more information, check out our LinkTree below!",
       "contact_email": "southampton.chapter@ewb-uk-movement.org",
-      "website_url": "https://linktr.ee/ewb.southampton.chapter"
+      "website_url": "https://linktr.ee/ewb.southampton.chapter",
+      "logo_url": "https://www.susu.org/groups/logos/618_1564481599.jpg"
     },
     {
       "id": "english-society",
@@ -1006,7 +1125,8 @@
       "susu_url": "https://www.susu.org/groups/engsoc",
       "instagram_url": "https://www.instagram.com/engsocsoton/",
       "instagram_bio": "University of Southampton English Society! Anyone with a passion for books! 📚",
-      "contact_email": "engsoc@soton.ac.uk"
+      "contact_email": "engsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/60_1756684337.jpg"
     },
     {
       "id": "environmental-science-student-society",
@@ -1016,7 +1136,8 @@
       "susu_url": "https://www.susu.org/groups/esss",
       "instagram_url": "https://www.instagram.com/sotonenvssoc/",
       "instagram_bio": "University of Southampton Environmental Science Society",
-      "contact_email": "sotonenvssoc@gmail.com"
+      "contact_email": "sotonenvssoc@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/61_1738856914.png"
     },
     {
       "id": "esn-southampton",
@@ -1025,7 +1146,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/esn-southampton",
       "contact_email": "southampton@esnuk.org",
-      "website_url": "https://accounts.esn.org/section/gb-sout-esn"
+      "website_url": "https://accounts.esn.org/section/gb-sout-esn",
+      "logo_url": "https://www.susu.org/groups/logos/1254_1744633676.jpg"
     },
     {
       "id": "fandom-society",
@@ -1037,7 +1159,8 @@
       "instagram_bio": "Uos Fandom society Join us on Discord! Join us for Tuesday socials! Join us for unhinged fandom chats!",
       "contact_email": "FandomSociety@soton.ac.uk",
       "website_url": "http://linktr.ee/fandomsociety_soton",
-      "regular_schedule": "Weekly film or TV watch sessions; the Instagram bio also mentions Tuesday socials."
+      "regular_schedule": "Weekly film or TV watch sessions; the Instagram bio also mentions Tuesday socials.",
+      "logo_url": "https://www.susu.org/groups/logos/524_1709162143.jpg"
     },
     {
       "id": "fencing",
@@ -1046,7 +1169,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/fencing"
+      "susu_url": "https://www.susu.org/groups/fencing",
+      "logo_url": "https://www.susu.org/groups/logos/202_1694005448.png"
     },
     {
       "id": "figure-skating",
@@ -1056,7 +1180,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/university-of-southampton-figure-skating-club",
-      "instagram_url": "https://www.instagram.com/USFSC/"
+      "instagram_url": "https://www.instagram.com/USFSC/",
+      "logo_url": "https://www.susu.org/groups/logos/554_1728909715.png"
     },
     {
       "id": "filipino-society",
@@ -1066,7 +1191,8 @@
       "susu_url": "https://www.susu.org/groups/filipino-society",
       "instagram_url": "https://www.instagram.com/filsocsoton/",
       "instagram_bio": "🇵🇭 / South-coast’s finest 😉 links below ⬎",
-      "contact_email": "filsoc@soton.ac.uk"
+      "contact_email": "filsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/523_1787853715.jpg"
     },
     {
       "id": "im-filipino-society-basketball",
@@ -1076,7 +1202,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-filipino-society",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1137_1727548136.jpg"
     },
     {
       "id": "film-society",
@@ -1086,7 +1213,8 @@
       "susu_url": "https://www.susu.org/groups/film-society",
       "instagram_url": "https://www.instagram.com/sotonfilmsociety/",
       "instagram_bio": "Home of the @uni_southampton Film Society! 🌟Follow us for updates on events, plans and much more...🌟📍@filmuos & @union_soton Important Links! ⬇️",
-      "contact_email": "filmsociety@soton.ac.uk"
+      "contact_email": "filmsociety@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/952_1788772091.png"
     },
     {
       "id": "finance-investment-society",
@@ -1096,13 +1224,16 @@
       "susu_url": "https://www.susu.org/groups/trading-investment-society",
       "instagram_url": "https://www.instagram.com/uos_tradingandinvest/",
       "contact_email": "Financeinvestment@soton.ac.uk",
-      "website_url": "https://linktr.ee/sotonfisociety"
+      "website_url": "https://linktr.ee/sotonfisociety",
+      "logo_url": "https://www.susu.org/groups/logos/736_1788421920.png"
     },
     {
       "id": "links",
       "name": "First Aid Society",
       "description": "Weekly first aid training, then the Stag's.",
-      "accent": "#e3c9ff"
+      "accent": "#e3c9ff",
+      "susu_url": "https://www.susu.org/groups/links",
+      "logo_url": "https://www.susu.org/groups/logos/153_1597703713.png"
     },
     {
       "id": "first-love-society",
@@ -1110,7 +1241,8 @@
       "description": "Welcome to the First Love Society! A vibrant Christian group passionate about loving God and loving others.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/first-love-society",
-      "contact_email": "Firstlovesouthampton@soton.ac.uk"
+      "contact_email": "Firstlovesouthampton@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1266_1746447585.jpeg"
     },
     {
       "id": "fish-on-toast",
@@ -1122,13 +1254,16 @@
       "instagram_bio": "Inspiring the entrepreneurial leaders and innovators of tomorrow💡 Southampton's Entrepreneurship Society 🚀",
       "contact_email": "fot@soton.ac.uk",
       "website_url": "https://linktr.ee/fish_on_toast",
-      "regular_schedule": "SUSU mentions Thursday evening activities; check society links for current dates and details."
+      "regular_schedule": "SUSU mentions Thursday evening activities; check society links for current dates and details.",
+      "logo_url": "https://www.susu.org/groups/logos/66_1664182632.png"
     },
     {
       "id": "folksoc",
       "name": "Folk Music Society",
       "description": "Weekly sessions to learn folk tunes and songs.",
-      "accent": "#fff0a8"
+      "accent": "#fff0a8",
+      "susu_url": "https://www.susu.org/groups/folksoc",
+      "logo_url": "https://www.susu.org/groups/logos/314_1564573564.jpg"
     },
     {
       "id": "football-ladies",
@@ -1138,7 +1273,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sulfc",
-      "instagram_url": "https://www.instagram.com/sulfc_/"
+      "instagram_url": "https://www.instagram.com/sulfc_/",
+      "logo_url": "https://www.susu.org/groups/logos/205_1750081382.png"
     },
     {
       "id": "football-mens",
@@ -1149,7 +1285,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sufc",
       "instagram_url": "https://www.instagram.com/SUFCcarefree/",
-      "contact_email": "football@soton.ac.uk"
+      "contact_email": "football@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/204_1696609198.png"
     },
     {
       "id": "formula-sailing",
@@ -1158,7 +1295,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/southampton-sumoth-society",
       "instagram_url": "https://www.instagram.com/p/DePwvlmsht1/",
-      "contact_email": "Sumoth@soton.ac.uk"
+      "contact_email": "Sumoth@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1309_1791555033.png"
     },
     {
       "id": "french-society",
@@ -1168,14 +1306,16 @@
       "susu_url": "https://www.susu.org/groups/french-society",
       "instagram_url": "https://www.instagram.com/frenchsocsoton/",
       "instagram_bio": "A community celebrating French language, the culture and traditions of the Francophonie 💙 Find our WhatsApp + FREE membership + social links ⬇️",
-      "contact_email": "frenchsoc@soton.ac.uk"
+      "contact_email": "frenchsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1276_1746643592.png"
     },
     {
       "id": "friends-of-msf",
       "name": "Friends of MSF",
       "description": "Hello! We are the Friends of MSF Southampton society. We are a student group raising awareness for and supporting the work of Médecins Sans Frontières.",
       "accent": "#dceaf2",
-      "susu_url": "https://www.susu.org/groups/friends-of-msf"
+      "susu_url": "https://www.susu.org/groups/friends-of-msf",
+      "logo_url": "https://www.susu.org/groups/logos/1243_1732567633.png"
     },
     {
       "id": "furry-society",
@@ -1185,7 +1325,8 @@
       "susu_url": "https://www.susu.org/groups/furry-society",
       "instagram_url": "https://www.instagram.com/sufurs_uk/",
       "instagram_bio": "The Southampton University Furry Society (SUFurs) - for everyone involved with or supporting the furry fandom at the university! DM for Discord link.",
-      "contact_email": "SUFURS@soton.ac.uk"
+      "contact_email": "SUFURS@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1227_1716996726.png"
     },
     {
       "id": "futsal",
@@ -1195,7 +1336,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/southampton-university-futsal-club",
-      "instagram_url": "https://www.instagram.com/sotonfutsal/"
+      "instagram_url": "https://www.instagram.com/sotonfutsal/",
+      "logo_url": "https://www.susu.org/groups/logos/537_1785161366.png"
     },
     {
       "id": "gaana-society",
@@ -1206,13 +1348,16 @@
       "instagram_url": "https://www.instagram.com/sotongaanasoc/",
       "instagram_bio": "🧡Welcome to UoS Gaana Dance Society 🤙🏽 Join our Whatsapp Group chat using the link below 🕺Class and Workshop updates here!",
       "contact_email": "sotongaanasociety@gmail.com",
-      "regular_schedule": "Weekly dance sessions; days and times are not listed."
+      "regular_schedule": "Weekly dance sessions; days and times are not listed.",
+      "logo_url": "https://www.susu.org/groups/logos/828_1687858560.png"
     },
     {
       "id": "gamesoc",
       "name": "Games Society",
       "description": "Board games, card games, war games and Blood on the Clocktower, all year round.",
-      "accent": "#a8f0e0"
+      "accent": "#a8f0e0",
+      "susu_url": "https://www.susu.org/groups/gamesoc",
+      "logo_url": "https://www.susu.org/groups/logos/70_1722635928.png"
     },
     {
       "id": "general-practitioner-society",
@@ -1220,7 +1365,8 @@
       "description": "Welcome to the University of Southampton General Practitioner (GP) Society. We offer a range of talks, webinars and events throughout the year aiming to increase awareness and get people excited about GP as a specialty! We aim to create opportunities for networking, hearing from qualified GPs and trainees about their experience, as well as attending conferences and events. You don't need to be an aspiring GP to come along and just hear more about this amazing speciality!",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/general-practitioner-society",
-      "contact_email": "Southampton.gpsoc@gmail.com"
+      "contact_email": "Southampton.gpsoc@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/971_1742316920.jpg"
     },
     {
       "id": "geography-society",
@@ -1230,7 +1376,8 @@
       "susu_url": "https://www.susu.org/groups/geogsoc",
       "instagram_url": "https://www.instagram.com/geogsocsouthampton/",
       "instagram_bio": "Welcome to Geography Society - one of Southampton’s biggest and best academic societies! 🌎",
-      "contact_email": "geographysociety@soton.ac.uk"
+      "contact_email": "geographysociety@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/71_1730211177.jpg"
     },
     {
       "id": "im-geogsoc-netball",
@@ -1240,7 +1387,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-geogsoc-netball",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1093_1726927089.png"
     },
     {
       "id": "im-geogsoc-fc",
@@ -1250,7 +1398,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-geogsoc-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1062_1788280420.png"
     },
     {
       "id": "im-glen-eyre-netball",
@@ -1260,7 +1409,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-glen-eyre",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1102_1686092067.png"
     },
     {
       "id": "im-glen-eyre-fc",
@@ -1270,7 +1420,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-glen-eyre-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1063_1751468641.png"
     },
     {
       "id": "im-glen-eyre-lost-boys",
@@ -1280,7 +1431,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-glen-eyre-lost-boys",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1076_1670942821.jpg"
     },
     {
       "id": "gliding",
@@ -1291,7 +1443,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sugc",
       "instagram_url": "https://www.instagram.com/sugliding/",
-      "contact_email": "gliding@soton.ac.uk"
+      "contact_email": "gliding@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/206_1694985314.png"
     },
     {
       "id": "golf",
@@ -1302,13 +1455,16 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/golf",
       "instagram_url": "https://www.instagram.com/Sotongolf/",
-      "contact_email": "lf6g23@soton.ac.uk"
+      "contact_email": "lf6g23@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/208_1783819570.png"
     },
     {
       "id": "gophers-hockey",
       "name": "Gophers (Hockey)",
       "description": "Mixed hockey training and socials.",
-      "accent": "#ffc9a8"
+      "accent": "#ffc9a8",
+      "susu_url": "https://www.susu.org/groups/gophers-hockey",
+      "logo_url": "https://www.susu.org/groups/logos/972_1654706900.jpg"
     },
     {
       "id": "gospel-choir",
@@ -1316,7 +1472,8 @@
       "description": "The Southampton University Gospel Choir is a vibrant, Christ-centred community of students united by a shared love for worship and gospel music. Our primary aim is to create a space for true worship - where reverence to God is expressed not just through our voices, but through our lives. Rooted in scripture and theologically rich gospel songs, we are committed to employing unique vocal arrangements and a distinct sound to glorify God. We seek to develop people musically and personally, through training in vocal technique and harmony, fostering a community that promotes confidence and creativity in musical expression that honours God and is skilful. By pursuing excellence through worship we aim to represent the University on both local and national platforms, integrating the gospel with authentic expression.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/gospel-choir-",
-      "contact_email": "sugospelchoir@soton.ac.uk"
+      "contact_email": "sugospelchoir@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1303_1751310813.png"
     },
     {
       "id": "grad-and-mature-medics",
@@ -1326,7 +1483,8 @@
       "susu_url": "https://www.susu.org/groups/grad-and-mature-medics",
       "instagram_url": "https://www.instagram.com/gramms_uos/",
       "instagram_bio": "Graduate and Mature Medics Society - A community for the mature students across all BM programs at UoS",
-      "contact_email": "gramms-soton@outlook.com"
+      "contact_email": "gramms-soton@outlook.com",
+      "logo_url": "https://www.susu.org/groups/logos/973_1620297432.png"
     },
     {
       "id": "guild-of-change-ringers",
@@ -1335,7 +1493,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/sugcr",
       "contact_email": "master@sugcr.co.uk",
-      "regular_schedule": "Weekly evening practice and Sunday morning service ringing; locations vary by tower."
+      "regular_schedule": "Weekly evening practice and Sunday morning service ringing; locations vary by tower.",
+      "logo_url": "https://www.susu.org/groups/logos/79_1678031100.png"
     },
     {
       "id": "gymnastics",
@@ -1345,7 +1504,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sugym",
-      "instagram_url": "https://www.instagram.com/uosgymnasticsclub/"
+      "instagram_url": "https://www.instagram.com/uosgymnasticsclub/",
+      "logo_url": "https://www.susu.org/groups/logos/372_1758282465.png"
     },
     {
       "id": "habesha-society",
@@ -1353,7 +1513,8 @@
       "description": "A new society aimed at celebrating Habesha Culture in the University.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/habesha-society-",
-      "contact_email": "HabeshaSoc@soton.ac.uk"
+      "contact_email": "HabeshaSoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1300_1746998624.webp"
     },
     {
       "id": "haematology-society",
@@ -1363,7 +1524,8 @@
       "susu_url": "https://www.susu.org/groups/haematology-society",
       "instagram_url": "https://www.instagram.com/haemsocsoton/",
       "instagram_bio": "🩸🔬🩺 📧: haemsocsoton@gmail.com",
-      "contact_email": "haemsoc@soton.ac.uk"
+      "contact_email": "haemsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1336_1786905371.jpg"
     },
     {
       "id": "im-hale-s-angels",
@@ -1373,7 +1535,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-hales-angels",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1105_1787763327.png"
     },
     {
       "id": "hawks-badminton",
@@ -1382,7 +1545,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/hawks-badminton-doubles",
       "contact_email": "hawksbadminton@soton.ac.uk",
-      "regular_schedule": "Weekly training on Sunday evenings."
+      "regular_schedule": "Weekly training on Sunday evenings.",
+      "logo_url": "https://www.susu.org/groups/logos/1177_1707846536.jpg"
     },
     {
       "id": "im-highfield-football-club",
@@ -1392,7 +1556,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-highfield",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1064_1656597513.jpg"
     },
     {
       "id": "hillwalking",
@@ -1403,13 +1568,16 @@
       "instagram_url": "https://www.instagram.com/SotonHillwalking/",
       "instagram_bio": "Exploring the best mountains, coastlines and countryside around Southampton and abroad! 🥾🏔",
       "contact_email": "walking@soton.ac.uk",
-      "regular_schedule": "Weekly Saturday day walks, plus occasional weekend trips."
+      "regular_schedule": "Weekly Saturday day walks, plus occasional weekend trips.",
+      "logo_url": "https://www.susu.org/groups/logos/210_1691441322.jpg"
     },
     {
       "id": "hindu-society",
       "name": "Hindu Society",
       "description": "Cultural and religious events including Diwali.",
-      "accent": "#f2b8ff"
+      "accent": "#f2b8ff",
+      "susu_url": "https://www.susu.org/groups/hindu-society",
+      "logo_url": "https://www.susu.org/groups/logos/80_1722439242.jpg"
     },
     {
       "id": "history-society",
@@ -1419,7 +1587,8 @@
       "susu_url": "https://www.susu.org/groups/histsoc",
       "instagram_url": "https://www.instagram.com/sotonhistsoc/",
       "instagram_bio": "The University of Southampton's History Society @histsocsports @histsocfc @histsoc_netball #bleedorange 🧡🧡🧡",
-      "contact_email": "histsoc@soton.ac.uk"
+      "contact_email": "histsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/81_1727704146.png"
     },
     {
       "id": "im-history-society-football",
@@ -1429,7 +1598,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-histsoc-football",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1065_1686673088.png"
     },
     {
       "id": "im-history-society-netball",
@@ -1439,7 +1609,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-history-boycott",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1103_1724947037.jpg"
     },
     {
       "id": "hockey-ladies",
@@ -1450,7 +1621,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sulhc",
       "instagram_url": "https://www.instagram.com/sulhcwessex/",
-      "contact_email": "sulhc@soton.ac.uk"
+      "contact_email": "sulhc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/212_1600337428.jpg"
     },
     {
       "id": "hockey-mens",
@@ -1460,7 +1632,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/hockey-mens",
-      "instagram_url": "https://www.instagram.com/wessexrangers/"
+      "instagram_url": "https://www.instagram.com/wessexrangers/",
+      "logo_url": "https://www.susu.org/groups/logos/211_1600608755.jpg"
     },
     {
       "id": "hong-kong-public-affairs-and-social-service-society",
@@ -1470,13 +1643,16 @@
       "susu_url": "https://www.susu.org/groups/hong-kong-public-affairs-and-social-service-soceity",
       "instagram_url": "https://www.instagram.com/sotonhkpass/",
       "instagram_bio": "University of Southampton Hong Kong Public Affairs and Social Service Society🐬🩵",
-      "contact_email": "sotonhkpass@gmail.com"
+      "contact_email": "sotonhkpass@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/532_1564579763.jpg"
     },
     {
       "id": "hookers-knitters-and-stichers",
       "name": "Hookers, Knitters and Stitchers",
       "description": "Weekly knitting, crochet and stitching sessions.",
-      "accent": "#c9e8ff"
+      "accent": "#c9e8ff",
+      "susu_url": "https://www.susu.org/groups/hookers-knitters-and-stichers",
+      "logo_url": "https://www.susu.org/groups/logos/910_1693503709.png"
     },
     {
       "id": "hornets-athletics",
@@ -1485,7 +1661,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/hornets-athletics"
+      "susu_url": "https://www.susu.org/groups/hornets-athletics",
+      "logo_url": "https://www.susu.org/groups/logos/1250_1727006641.png"
     },
     {
       "id": "human-powered-aircraft",
@@ -1496,7 +1673,8 @@
       "instagram_url": "https://www.instagram.com/suhpa_/",
       "instagram_bio": "Southampton University Human Powered Aircraft Student membership to our society is FREE! 📩sotonhpa@gmail.com 💻Follow us on Facebook!",
       "contact_email": "suhpa@soton.ac.uk",
-      "website_url": "https://www.suhpa.com"
+      "website_url": "https://www.suhpa.com",
+      "logo_url": "https://www.susu.org/groups/logos/740_1646156297.png"
     },
     {
       "id": "human-powered-submarine",
@@ -1507,7 +1685,8 @@
       "instagram_url": "https://www.instagram.com/suhps_/",
       "instagram_bio": "Follow us as we work to build bigger and better submarines and race in international competitions!⛴",
       "contact_email": "suhps.susu@gmail.com",
-      "website_url": "https://suhps.weebly.com/"
+      "website_url": "https://suhps.weebly.com/",
+      "logo_url": "https://www.susu.org/groups/logos/557_1785846405.png"
     },
     {
       "id": "humanitarian-aid-society",
@@ -1517,7 +1696,8 @@
       "susu_url": "https://www.susu.org/groups/hands-of-light-society",
       "instagram_url": "https://www.instagram.com/uos_humanitarian.aid.soc/",
       "instagram_bio": "UOS Humanitarian Aid Society Fundraise and raise awareness across countries affected by wars, natural disasters,poverty,displacement and injustice🌍🤍",
-      "contact_email": "hands.of.light@soton.ac.uk"
+      "contact_email": "hands.of.light@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1285_1789321769.png"
     },
     {
       "id": "hungarian-society",
@@ -1528,7 +1708,8 @@
       "instagram_url": "https://www.instagram.com/sotonhunsoc/",
       "instagram_bio": "Official page of the Hungarian Society at @uni_southampton 🇭🇺🇭🇺🇭🇺 Drop us a message if you’d like to be added to our official group chat 💌",
       "contact_email": "hunsoc@soton.ac.uk",
-      "regular_schedule": "Weekly drinking and non-drinking socials; days and times are not listed."
+      "regular_schedule": "Weekly drinking and non-drinking socials; days and times are not listed.",
+      "logo_url": "https://www.susu.org/groups/logos/1152_1659531062.jpg"
     },
     {
       "id": "ice-and-inline-hockey",
@@ -1537,7 +1718,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/ice-and-inline-hockey"
+      "susu_url": "https://www.susu.org/groups/ice-and-inline-hockey",
+      "logo_url": "https://www.susu.org/groups/logos/213_1564579932.jpg"
     },
     {
       "id": "im-india-soc-badminton",
@@ -1553,7 +1735,9 @@
       "id": "indian-society",
       "name": "Indian Society",
       "description": "Indian cultural events and socials.",
-      "accent": "#d4f5a0"
+      "accent": "#d4f5a0",
+      "susu_url": "https://www.susu.org/groups/indiasoc",
+      "logo_url": "https://www.susu.org/groups/logos/390_1785783021.png"
     },
     {
       "id": "indonesian-society",
@@ -1563,13 +1747,16 @@
       "susu_url": "https://www.susu.org/groups/indonesian-society",
       "instagram_url": "https://www.instagram.com/indosoc.soton/",
       "instagram_bio": "Selamat datang! We’re University of Southampton’s Indonesian society 🇮🇩",
-      "contact_email": "indosocsouthampton@gmail.com"
+      "contact_email": "indosocsouthampton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/83_1726237362.png"
     },
     {
       "id": "irish-dance-society",
       "name": "Irish Dance Society",
       "description": "Weekly Irish dance classes.",
-      "accent": "#f2b8ff"
+      "accent": "#f2b8ff",
+      "susu_url": "https://www.susu.org/groups/southampton-university-irish-dance-society",
+      "logo_url": "https://www.susu.org/groups/logos/565_1728817168.png"
     },
     {
       "id": "islamic-society",
@@ -1580,7 +1767,8 @@
       "instagram_url": "https://www.instagram.com/southamptonisoc/",
       "instagram_bio": "Joining together in the mutual teaching of truth and patience @southamptonisoc_sisters @muslim_medics_southampton",
       "contact_email": "sotonuniisoc@gmail.com",
-      "website_url": "https://www.southamptonisoc.org/"
+      "website_url": "https://www.southamptonisoc.org/",
+      "logo_url": "https://www.susu.org/groups/logos/87_1631653590.jpg"
     },
     {
       "id": "italian-society",
@@ -1591,7 +1779,8 @@
       "instagram_url": "https://www.instagram.com/italiansocietysoton/",
       "instagram_bio": "🇮🇹 @uni_southampton Italian Society 🇮🇹 Bringing a taste of Italy to campus 🍕🍷 Join our famiglia for events, culture, and community!",
       "contact_email": "itasoc@soton.ac.uk",
-      "regular_schedule": "Weekly coffee meetups; days and times are not listed."
+      "regular_schedule": "Weekly coffee meetups; days and times are not listed.",
+      "logo_url": "https://www.susu.org/groups/logos/89_1787242615.png"
     },
     {
       "id": "jamsoc",
@@ -1599,7 +1788,8 @@
       "description": "We are a medics music society who host jam sessions and perform live at both the medic Christmas and Spring balls, as well as other events throughout the year. Note: although we are majority medics, we welcome anyone of any course and ability!",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/jamsoc",
-      "contact_email": "jamsoc1@gmail.com"
+      "contact_email": "jamsoc1@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/1200_1704829995.png"
     },
     {
       "id": "japanese-society",
@@ -1610,25 +1800,32 @@
       "instagram_url": "https://www.instagram.com/uos_japanese_society/",
       "instagram_bio": "こんにちは! 🎌🇯🇵 Welcome to UoS Japanese Society Members get: 🔺15% OFF DING TEA!",
       "contact_email": "sotonsujas@gmail.com",
-      "website_url": "https://linktr.ee/sotonsujas"
+      "website_url": "https://linktr.ee/sotonsujas",
+      "logo_url": "https://www.susu.org/groups/logos/865_1787424101.png"
     },
     {
       "id": "jazz-band",
       "name": "Jazz Band",
       "description": "Weekly big band rehearsals and Sunday jam sessions.",
-      "accent": "#d4f5a0"
+      "accent": "#d4f5a0",
+      "susu_url": "https://www.susu.org/groups/big-band",
+      "logo_url": "https://www.susu.org/groups/logos/765_1785005113.png"
     },
     {
       "id": "jazz-dance",
       "name": "Jazz Dance",
       "description": "Weekly jazz dance classes at three levels.",
-      "accent": "#ffd6e8"
+      "accent": "#ffd6e8",
+      "susu_url": "https://www.susu.org/groups/jazz-dance",
+      "logo_url": "https://www.susu.org/groups/logos/91_1664796466.png"
     },
     {
       "id": "jazz-orchestra",
       "name": "Jazz Orchestra",
       "description": "Weekly jazz orchestra rehearsal.",
-      "accent": "#b7ef72"
+      "accent": "#b7ef72",
+      "susu_url": "https://www.susu.org/groups/sujo",
+      "logo_url": "https://www.susu.org/groups/logos/92_1669556891.png"
     },
     {
       "id": "jewish-society",
@@ -1639,7 +1836,8 @@
       "instagram_url": "https://www.instagram.com/sotonjsoc/",
       "instagram_bio": "We are an inclusive Jsoc for all Jewish students and those interested in Judaism in the Southampton area! 💙",
       "contact_email": "jsoc@soton.ac.uk",
-      "website_url": "https://www.ujs.org.uk/southampton"
+      "website_url": "https://www.ujs.org.uk/southampton",
+      "logo_url": "https://www.susu.org/groups/logos/88_1737986452.png"
     },
     {
       "id": "jiu-jitsu",
@@ -1649,7 +1847,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/jiu-jitsu",
-      "instagram_url": "https://www.instagram.com/soton_jiu_jitsu/"
+      "instagram_url": "https://www.instagram.com/soton_jiu_jitsu/",
+      "logo_url": "https://www.susu.org/groups/logos/214_1600601877.jpg"
     },
     {
       "id": "judo",
@@ -1659,13 +1858,16 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/judo",
-      "instagram_url": "https://www.instagram.com/soton_judo/"
+      "instagram_url": "https://www.instagram.com/soton_judo/",
+      "logo_url": "https://www.susu.org/groups/logos/215_1601740456.jpg"
     },
     {
       "id": "k-pop",
       "name": "K-Pop Society",
       "description": "K-pop dance classes and socials.",
-      "accent": "#ffc9a8"
+      "accent": "#ffc9a8",
+      "susu_url": "https://www.susu.org/groups/k-pop-society",
+      "logo_url": "https://www.susu.org/groups/logos/1035_1727993173.jpg"
     },
     {
       "id": "karate-club",
@@ -1676,13 +1878,16 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sukds",
       "instagram_url": "https://www.instagram.com/sukckarate/",
-      "contact_email": "sukc@soton.ac.uk"
+      "contact_email": "sukc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/216_1760620624.jpg"
     },
     {
       "id": "kathak-bharatanatyam",
       "name": "Kathak Bharatanatyam Dance Society",
       "description": "Kathak and Bharatanatyam classes.",
-      "accent": "#f6b6c8"
+      "accent": "#f6b6c8",
+      "susu_url": "https://www.susu.org/groups/southampton-kandyan-and-bharata-natyam-dance-society-",
+      "logo_url": "https://www.susu.org/groups/logos/567_1784912223.jpg"
     },
     {
       "id": "kendo",
@@ -1691,7 +1896,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/kendo"
+      "susu_url": "https://www.susu.org/groups/kendo",
+      "logo_url": "https://www.susu.org/groups/logos/708_1727267304.jpg"
     },
     {
       "id": "kickboxing",
@@ -1701,7 +1907,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/modern-wushu",
-      "instagram_url": "https://www.instagram.com/sukickboxing/"
+      "instagram_url": "https://www.instagram.com/sukickboxing/",
+      "logo_url": "https://www.susu.org/groups/logos/224_1749842922.png"
     },
     {
       "id": "kingdom-movement-km",
@@ -1712,7 +1919,8 @@
       "instagram_url": "https://www.instagram.com/km_soton/",
       "instagram_bio": "Christian society at University of Southampton Raising disciples, rooted in love and ready for REVIVAL🔥🔥🔥 Tuesday & Thursday sessions B54/5025 @ 7pm",
       "contact_email": "kmcf.southampton@gmail.com",
-      "regular_schedule": "Tuesday and Thursday sessions at 19:00 in B54/5025 (as listed in the Instagram bio)."
+      "regular_schedule": "Tuesday and Thursday sessions at 19:00 in B54/5025 (as listed in the Instagram bio).",
+      "logo_url": "https://www.susu.org/groups/logos/5_1664810145.png"
     },
     {
       "id": "kiteboarding",
@@ -1721,13 +1929,16 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/suks"
+      "susu_url": "https://www.susu.org/groups/suks",
+      "logo_url": "https://www.susu.org/groups/logos/218_1760549348.png"
     },
     {
       "id": "koalas-bouldering",
       "name": "Koalas Medics Bouldering",
       "description": "Weekly bouldering session followed by the pub.",
-      "accent": "#b9d8ff"
+      "accent": "#b9d8ff",
+      "susu_url": "https://www.susu.org/groups/koalas-medics-bouldering-",
+      "logo_url": "https://www.susu.org/groups/logos/1142_1714922354.png"
     },
     {
       "id": "korfball",
@@ -1738,7 +1949,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sukc",
       "instagram_url": "https://www.instagram.com/southamptonunikorf/",
-      "contact_email": "korfball@soton.ac.uk"
+      "contact_email": "korfball@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/373_1725387539.png"
     },
     {
       "id": "krishna-consciousness-society",
@@ -1755,13 +1967,16 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/hung-leng-kuen-kung-fu",
-      "instagram_url": "https://www.instagram.com/hlksoton/"
+      "instagram_url": "https://www.instagram.com/hlksoton/",
+      "logo_url": "https://www.susu.org/groups/logos/300_1540563484.jpg"
     },
     {
       "id": "labour-society",
       "name": "Labour Society",
       "description": "Weekly meetings and debates.",
-      "accent": "#ffd1b9"
+      "accent": "#ffd1b9",
+      "susu_url": "https://www.susu.org/groups/sulc",
+      "logo_url": "https://www.susu.org/groups/logos/98_1724168181.png"
     },
     {
       "id": "lacrosse-ladies",
@@ -1770,7 +1985,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/sullc"
+      "susu_url": "https://www.susu.org/groups/sullc",
+      "logo_url": "https://www.susu.org/groups/logos/221_1725467353.png"
     },
     {
       "id": "lacrosse-men-s",
@@ -1779,7 +1995,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/mens-lax"
+      "susu_url": "https://www.susu.org/groups/mens-lax",
+      "logo_url": "https://www.susu.org/groups/logos/220_1695221788.png"
     },
     {
       "id": "lacrosse-mixed",
@@ -1788,7 +2005,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/lacrosse-mixed"
+      "susu_url": "https://www.susu.org/groups/lacrosse-mixed",
+      "logo_url": "https://www.susu.org/groups/logos/222_1752072073.png"
     },
     {
       "id": "law-society",
@@ -1799,7 +2017,8 @@
       "instagram_url": "https://www.instagram.com/sotonlawsoc/",
       "instagram_bio": "For the latest news and updates",
       "contact_email": "lawsoc@soton.ac.uk",
-      "website_url": "http://www.sotonlawsoc.co.uk"
+      "website_url": "http://www.sotonlawsoc.co.uk",
+      "logo_url": "https://www.susu.org/groups/logos/99_1663833175.jpg"
     },
     {
       "id": "im-lawsoc-badminton",
@@ -1809,7 +2028,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/lawsoc-badminton",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1197_1700647554.jpg"
     },
     {
       "id": "im-lawsoc-fc",
@@ -1819,7 +2039,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/lawsoc-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1352_1790549504.jpeg"
     },
     {
       "id": "lawyers-without-borders",
@@ -1830,7 +2051,8 @@
       "instagram_url": "https://www.instagram.com/lwob_soton/",
       "instagram_bio": "⚖️ Student Division at @uni_southampton ⭐️ Crossing Borders to Make a Difference 🌍 Supporting diverse aspiring lawyers",
       "contact_email": "lwobssd@soton.ac.uk",
-      "website_url": "https://lawyerswithoutborderssoton.wordpress.com"
+      "website_url": "https://lawyerswithoutborderssoton.wordpress.com",
+      "logo_url": "https://www.susu.org/groups/logos/429_1664274026.png"
     },
     {
       "id": "lgbtq-society",
@@ -1841,7 +2063,8 @@
       "instagram_url": "https://www.instagram.com/soton_lgbt/",
       "instagram_bio": "Representing LGBTQ+ students across the University of Southampton 🏳️‍🌈🏳️‍⚧️ Join us for socials, educational resources, activism, and more! 🌟",
       "contact_email": "lgbt@soton.ac.uk",
-      "website_url": "https://www.sotonlgbt.org.uk/"
+      "website_url": "https://www.sotonlgbt.org.uk/",
+      "logo_url": "https://www.susu.org/groups/logos/100_1620917771.png"
     },
     {
       "id": "liberal-democrats",
@@ -1850,7 +2073,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/liberal-democrats",
       "instagram_url": "https://www.instagram.com/libdems.sotonuni/",
-      "contact_email": "libdems@soton.ac.uk"
+      "contact_email": "libdems@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1293_1746909751.png"
     },
     {
       "id": "life-drawing-society",
@@ -1858,7 +2082,8 @@
       "description": "The Life Drawing Society brings students together to explore and develop their drawing skills by sketching the human form, in a relaxed and friendly atmosphere. Our 2 hour sessions are meant for both beginners and more experienced artists, where we encourage people to experiment or improve with new materials and ideas on how they could depict figures.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/life-drawing-society-",
-      "contact_email": "ga1n22@soton.ac.uk"
+      "contact_email": "ga1n22@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1341_1781997554.jpg"
     },
     {
       "id": "life-sciences-postgraduate-society",
@@ -1866,7 +2091,8 @@
       "description": "The Life Sciences Postgraduate Society (LSPS) is a society for Postgraduate students from the Faculty of Medicine - PhD and MSc/MRes students are entitled to free membership when they enrol on their course. Our events are open to all postgraduate students, post-docs and research staff across the University! We run monthly well-being sessions at Southampton General Hospital, as well as academic talks, and numerous socials ranging from pub quizzes to midweek meals. Keep an eye out for our two biggest events: the annual Faculty of Medicine After-Conference dinner and our Christmas Party!",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/life-sciences-postgraduate-society",
-      "contact_email": "lsps@soton.ac.uk"
+      "contact_email": "lsps@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/857_1612287207.png"
     },
     {
       "id": "lifesaving",
@@ -1875,13 +2101,16 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/sulsc"
+      "susu_url": "https://www.susu.org/groups/sulsc",
+      "logo_url": "https://www.susu.org/groups/logos/223_1758562113.jpg"
     },
     {
       "id": "light-opera",
       "name": "Light Opera Society",
       "description": "Non-auditioned chorus rehearsals.",
-      "accent": "#e3c9ff"
+      "accent": "#e3c9ff",
+      "susu_url": "https://www.susu.org/groups/lopsoc",
+      "logo_url": "https://www.susu.org/groups/logos/103_1789046038.jpg"
     },
     {
       "id": "live-music-society",
@@ -1893,7 +2122,8 @@
       "instagram_bio": "📍University of Southampton’s Live Music Society 🎶Weekly jams on Saturdays in the Plant Pot 💥Gigs, socials and events ALL below!",
       "contact_email": "livemusicsociety@soton.ac.uk",
       "community_url": "https://chat.whatsapp.com/GH4cpDvTddxAkWqSXC3ana",
-      "regular_schedule": "Weekly jams on Saturdays at The Plant Pot."
+      "regular_schedule": "Weekly jams on Saturdays at The Plant Pot.",
+      "logo_url": "https://www.susu.org/groups/logos/105_1790682384.png"
     },
     {
       "id": "malayali-society",
@@ -1903,7 +2133,8 @@
       "susu_url": "https://www.susu.org/groups/malayali-society",
       "instagram_url": "https://www.instagram.com/sotonmalayalisoc/",
       "instagram_bio": "🐘 Namaskaram 🙏🏽 🐘 Official University of Southampton Malayali Society Page 🐘 Halloween Pres 😛✨️ 👇🏽",
-      "contact_email": "Sotonmalayalisoc@gmail.com"
+      "contact_email": "Sotonmalayalisoc@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/955_1787700000.jpg"
     },
     {
       "id": "malaysian-students-association-southampton",
@@ -1913,13 +2144,16 @@
       "susu_url": "https://www.susu.org/groups/msa-soton",
       "instagram_url": "https://www.instagram.com/msasoton/",
       "instagram_bio": "We are the Malaysian Students’ Association at the University of Southampton! Sign up as a member on SUSU to enjoy our Member Benefits! (Link is below)",
-      "contact_email": "msa@soton.ac.uk"
+      "contact_email": "msa@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/107_1689516748.png"
     },
     {
       "id": "mandarin-christian-fellowship",
       "name": "Mandarin Christian Fellowship",
       "description": "Friday evening fellowship.",
-      "accent": "#fff0a8"
+      "accent": "#fff0a8",
+      "susu_url": "https://www.susu.org/groups/mandarin-christian-fellowship",
+      "logo_url": "https://www.susu.org/groups/logos/527_1598741794.png"
     },
     {
       "id": "maths-society",
@@ -1930,7 +2164,8 @@
       "instagram_url": "https://www.instagram.com/sumssoton/",
       "instagram_bio": "🎓University of Southampton Maths Society 🔢 Affiliated with IMA 🧮 Events | Socials | Study Sessions 🤓 Proudly making maths less \"boring\"",
       "contact_email": "sums@soton.ac.uk",
-      "website_url": "https://linktr.ee/SUMSSoton"
+      "website_url": "https://linktr.ee/SUMSSoton",
+      "logo_url": "https://www.susu.org/groups/logos/109_1664205258.png"
     },
     {
       "id": "im-mayflower-fc",
@@ -1940,7 +2175,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-mayflower-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1066_1788364084.png"
     },
     {
       "id": "medics-revue",
@@ -1948,7 +2184,8 @@
       "description": "Medics Revue is an inclusive, close-knit group of idiots who put on a yearly comedy performance paired with song parodies and dancing, for the education and entertainment of our fellow students. All proceeds go towards raising money for the MedSoc charities. We have roles for everyone who wants to get involved: from being on stage to painting sets, doing tech or playing in the live band accompanying the show. All levels of talent (or lack thereof) are welcome to perform! We do a week of performances during November and have socials throughout the year. Follow our Instagram to stay in the loop - @sotonmedicsrevue. See you at auditions!",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/medics-revue",
-      "contact_email": "sotonmedicsrevue@outlook.com"
+      "contact_email": "sotonmedicsrevue@outlook.com",
+      "logo_url": "https://www.susu.org/groups/logos/978_1757696851.png"
     },
     {
       "id": "medsoc",
@@ -1958,7 +2195,8 @@
       "susu_url": "https://www.susu.org/groups/medsoc",
       "instagram_url": "https://www.instagram.com/sotonmedsoc/",
       "instagram_bio": "Uni of Southampton's Medical Society 🩺 Welfare: @sotonmedwelfare Events: @sotonmedevents Education: @sotonmededucation Societies: @sotonmedsocieties",
-      "contact_email": "medsoc@soton.ac.uk"
+      "contact_email": "medsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/111_1789424275.png"
     },
     {
       "id": "medsoc-monty",
@@ -1966,13 +2204,16 @@
       "description": "We are a charity dance society, with a little bit of stripping, which puts on one dance event a year. The society is open to everyone and the focus is on having fun, body positivity, raising money for charity, and of course stripping.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/medsoc-monty",
-      "contact_email": "Medsocmonty@gmail.com"
+      "contact_email": "Medsocmonty@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/979_1635760787.png"
     },
     {
       "id": "melodics",
       "name": "Melodics",
       "description": "Non-audition a cappella group.",
-      "accent": "#a8f0e0"
+      "accent": "#a8f0e0",
+      "susu_url": "https://www.susu.org/groups/the-melodics",
+      "logo_url": "https://www.susu.org/groups/logos/520_1564586981.jpg"
     },
     {
       "id": "middle-eastern-north-african-society",
@@ -1982,7 +2223,8 @@
       "susu_url": "https://www.susu.org/groups/mes",
       "instagram_url": "https://www.instagram.com/uosmena/",
       "instagram_bio": "DM to Join Group Chat and Get the Latest Event News and Updates!",
-      "contact_email": "uosmena@soton.ac.uk"
+      "contact_email": "uosmena@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/115_1564587094.jpg"
     },
     {
       "id": "midwifery-society",
@@ -1992,7 +2234,8 @@
       "susu_url": "https://www.susu.org/groups/university-of-southampton-midwifery-society",
       "instagram_url": "https://www.instagram.com/midsoc_soton/",
       "instagram_bio": "University of Southampton's Midwifery Society 🎓 💌 midsoc@soton.ac.uk 💌",
-      "contact_email": "midsoc@soton.ac.uk"
+      "contact_email": "midsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/800_1787678081.png"
     },
     {
       "id": "mind-society",
@@ -2003,19 +2246,24 @@
       "instagram_url": "https://www.instagram.com/mindsocsotonuni/",
       "instagram_bio": "student led society at @uni_southampton supporting @solentmind through fundraising efforts and promoting awareness of mental health",
       "contact_email": "mindsoc@soton.ac.uk",
-      "regular_schedule": "Weekly tea and talk sessions, plus biweekly sober socials."
+      "regular_schedule": "Weekly tea and talk sessions, plus biweekly sober socials.",
+      "logo_url": "https://www.susu.org/groups/logos/750_1564587189.jpg"
     },
     {
       "id": "mma",
       "name": "MMA",
       "description": "Striking, grappling and full MMA sessions.",
-      "accent": "#f6b6c8"
+      "accent": "#f6b6c8",
+      "susu_url": "https://www.susu.org/groups/sumt",
+      "logo_url": "https://www.susu.org/groups/logos/228_1727793255.png"
     },
     {
       "id": "model-un",
       "name": "Model United Nations",
       "description": "Weekly MUN meetings.",
-      "accent": "#ffc9a8"
+      "accent": "#ffc9a8",
+      "susu_url": "https://www.susu.org/groups/southampton-university-mun",
+      "logo_url": "https://www.susu.org/groups/logos/540_1695921379.png"
     },
     {
       "id": "im-monte-football",
@@ -2025,7 +2273,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-monte",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1086_1726158711.png"
     },
     {
       "id": "im-monte-netball",
@@ -2035,7 +2284,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-monte-netball",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1094_1750781103.png"
     },
     {
       "id": "im-montefiores-exiles-rfc",
@@ -2045,7 +2295,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-montefiores-exiles",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1077_1689895718.jpg"
     },
     {
       "id": "moose-rugby",
@@ -2055,7 +2306,8 @@
       "susu_url": "https://www.susu.org/groups/moose-rugby",
       "instagram_url": "https://www.instagram.com/unisouthampton_hospitals_rfc/",
       "instagram_bio": "The best rugby club at Southampton Uni since 1974 All courses and abilities 3x🏆 Medical Schools Championship 15’s 5x🏆 Medical Schools Championship 7’s",
-      "contact_email": "themoose@soton.ac.uk"
+      "contact_email": "themoose@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/980_1604932920.jpg"
     },
     {
       "id": "mountain-bike",
@@ -2064,7 +2316,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/sumbc"
+      "susu_url": "https://www.susu.org/groups/sumbc",
+      "logo_url": "https://www.susu.org/groups/logos/226_1564587335.jpg"
     },
     {
       "id": "mountaineering",
@@ -2073,7 +2326,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/sumc"
+      "susu_url": "https://www.susu.org/groups/sumc",
+      "logo_url": "https://www.susu.org/groups/logos/227_1758553454.jpg"
     },
     {
       "id": "muslim-medics-southampton",
@@ -2084,7 +2338,8 @@
       "instagram_url": "https://www.instagram.com/muslim_medics_southampton/",
       "instagram_bio": "Working to spread knowledge and dawah in the medical community 🌙 Resources, revision events and support available to all @southamptonisoc",
       "contact_email": "Sotonmuslimmedics@gmail.com",
-      "website_url": "https://linktr.ee/muslimmedicssoton"
+      "website_url": "https://linktr.ee/muslimmedicssoton",
+      "logo_url": "https://www.susu.org/groups/logos/995_1786615205.png"
     },
     {
       "id": "nepalese-society",
@@ -2094,7 +2349,8 @@
       "susu_url": "https://www.susu.org/groups/nepsoc",
       "instagram_url": "https://www.instagram.com/southamptonepal/",
       "instagram_bio": "Namaste🇳🇵Nepalese society brought to you by @uni_southampton 🪷 Est. 2018 More information below↓",
-      "contact_email": "nepsoc.sotonuni@gmail.com"
+      "contact_email": "nepsoc.sotonuni@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/525_1758910911.png"
     },
     {
       "id": "netball",
@@ -2105,13 +2361,16 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sunc",
       "instagram_url": "https://www.instagram.com/suncnetball/",
-      "contact_email": "sir1g24@soton.ac.uk"
+      "contact_email": "sir1g24@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/229_1726143939.jpg"
     },
     {
       "id": "neurodiversity-disability",
       "name": "Neurodiversity & Disability Society",
       "description": "Weekly socials.",
-      "accent": "#c9e8ff"
+      "accent": "#c9e8ff",
+      "susu_url": "https://www.susu.org/groups/university-of-southampton-neurodiversity-disability-society",
+      "logo_url": "https://www.susu.org/groups/logos/835_1682262933.png"
     },
     {
       "id": "neurosoc",
@@ -2121,7 +2380,8 @@
       "susu_url": "https://www.susu.org/groups/neurosoc",
       "instagram_url": "https://www.instagram.com/sotonneurosoc/",
       "instagram_bio": "Follow for all things Neuro! 🧠 Guest Speakers | Teaching series | Revision Sessions | Research Opportunities | SNNRC Annual Conference",
-      "contact_email": "southamptonneurosoc@gmail.com"
+      "contact_email": "southamptonneurosoc@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/981_1650957932.png"
     },
     {
       "id": "im-nightingales",
@@ -2131,7 +2391,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-nightingales",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1109_1667344966.png"
     },
     {
       "id": "im-noc-mermaids",
@@ -2141,7 +2402,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-noc-mermaids",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1101_1656513222.png"
     },
     {
       "id": "noc-society",
@@ -2151,7 +2413,8 @@
       "susu_url": "https://www.susu.org/groups/noc-society",
       "instagram_url": "https://www.instagram.com/nocsociety/",
       "instagram_bio": "Welcome to the now official Uni of Southampton NOC Society!🌊🌍🐠🦑🪸 Showing you what Ocean and Earth Science students do-follow for updates + events!",
-      "contact_email": "nocsoc@soton.ac.uk"
+      "contact_email": "nocsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1323_1789341822.png"
     },
     {
       "id": "nursing-society",
@@ -2159,7 +2422,8 @@
       "description": "NurSoc is the principal point of contact for nursing students, however, anyone is welcome. We offer continuous welfare support and guidance for all student nurses, and organise fun social events at student friendly venues around Southampton. NurSoc takes students' experience at university very seriously and we aim to regularly engage with students in a number of ways through face-to-face meet ups, socials, responding to queries via Facebook, Instagram or Email (nursoc@soton.ac.uk). We're also collaborating with other societies aimed at future healthcare professionals to give you additional support to develop your skills for the future within the multidisciplinary team. All students are welcome to join; we are a society that will always provide help to its members and will help make your university experience amazing!",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/nursoc",
-      "contact_email": "nursoc@soton.ac.uk"
+      "contact_email": "nursoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/120_1750795658.jpg"
     },
     {
       "id": "occupational-therapy-society",
@@ -2168,7 +2432,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/occupational-therapy-society",
       "instagram_url": "https://www.instagram.com/otsocsoton/",
-      "instagram_bio": "Uni Of Southampton Occupational Therapy Society Follow us for social events and all things OT at Uni of Southampton 💚"
+      "instagram_bio": "Uni Of Southampton Occupational Therapy Society Follow us for social events and all things OT at Uni of Southampton 💚",
+      "logo_url": "https://www.susu.org/groups/logos/940_1654862862.jpg"
     },
     {
       "id": "im-ocean-and-earth-fc",
@@ -2178,7 +2443,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-ocean-and-earth-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1070_1697473144.png"
     },
     {
       "id": "olympic-weightlifting",
@@ -2189,7 +2455,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/olympic-weightlifting-club",
       "instagram_url": "https://www.instagram.com/suwlc/",
-      "contact_email": "suwlc1@soton.com"
+      "contact_email": "suwlc1@soton.com",
+      "logo_url": "https://www.susu.org/groups/logos/659_1695298071.png"
     },
     {
       "id": "once-a-month",
@@ -2199,13 +2466,16 @@
       "susu_url": "https://www.susu.org/groups/once-a-month",
       "instagram_url": "https://www.instagram.com/soton_onceamonth/",
       "instagram_bio": "🌷 Student-led volunteer project fighting against period poverty in Southampton 🌷 Affiliated with @uom_onceamonth 🩸",
-      "contact_email": "sotononceamonth@gmail.com"
+      "contact_email": "sotononceamonth@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/1025_1619354499.jpg"
     },
     {
       "id": "optics-photonics",
       "name": "Optics and Photonics Society",
       "description": "Talks, socials and events for optics and photonics students.",
-      "accent": "#a8f0e0"
+      "accent": "#a8f0e0",
+      "susu_url": "https://www.susu.org/groups/university-of-southampton-optics-and-photonics-society",
+      "logo_url": "https://www.susu.org/groups/logos/735_1670939731.png"
     },
     {
       "id": "padel-society",
@@ -2214,7 +2484,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/southampton-university-padel-society"
+      "susu_url": "https://www.susu.org/groups/southampton-university-padel-society",
+      "logo_url": "https://www.susu.org/groups/logos/1335_1786545433.jpg"
     },
     {
       "id": "paediatric-society",
@@ -2224,7 +2495,8 @@
       "susu_url": "https://www.susu.org/groups/paediatric-society",
       "instagram_url": "https://www.instagram.com/uospaedsoc/",
       "instagram_bio": "University of Southampton’s Paediatric Society 🌈🧸🩻 Providing lots of educational content and useful information for anyone with interest in Paeds!!",
-      "contact_email": "Paedsoc@gmail.com"
+      "contact_email": "Paedsoc@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/986_1761139718.png"
     },
     {
       "id": "paintball",
@@ -2234,7 +2506,8 @@
       "susu_url": "https://www.susu.org/groups/paintball",
       "instagram_url": "https://www.instagram.com/southamptonsavage/",
       "contact_email": "committee@supac.org.uk",
-      "community_url": "https://discord.gg/f66d35vgAm"
+      "community_url": "https://discord.gg/f66d35vgAm",
+      "logo_url": "https://www.susu.org/groups/logos/231_1722275855.jpg"
     },
     {
       "id": "pakistan-society",
@@ -2244,7 +2517,8 @@
       "susu_url": "https://www.susu.org/groups/pakistan-society",
       "instagram_url": "https://www.instagram.com/paksocsoton/",
       "instagram_bio": "Official account for the University of Southampton Pakistan Society🇵🇰 🦌",
-      "contact_email": "paksoc@soton.ac.uk"
+      "contact_email": "paksoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/122_1733098973.png"
     },
     {
       "id": "palestine-solidarity-society",
@@ -2255,13 +2529,16 @@
       "instagram_url": "https://www.instagram.com/palsoc.uos/",
       "instagram_bio": "Stand together in solidarity 🇵🇸🦌✊ ↓ Sign our list of demands ↓",
       "contact_email": "palsoc@soton.ac.uk",
-      "website_url": "https://linktr.ee/palsocuos"
+      "website_url": "https://linktr.ee/palsocuos",
+      "logo_url": "https://www.susu.org/groups/logos/1277_1758796394.png"
     },
     {
       "id": "panthers-cricket",
       "name": "Panthers Mixed Medics Cricket",
       "description": "Weekly indoor cricket nets.",
-      "accent": "#f2b8ff"
+      "accent": "#f2b8ff",
+      "susu_url": "https://www.susu.org/groups/panthers-mixed-medics-cricket",
+      "logo_url": "https://www.susu.org/groups/logos/1316_1758563023.png"
     },
     {
       "id": "persian",
@@ -2269,14 +2546,16 @@
       "description": "Persian society aims to introduce Iran and Persian culture to our academic community and offer celebrations and events based on the ancient culture of Iran. In addition, participate in Social events to introduce Iran and learn about other countries and cultures as well. Persian society organise regular gatherings for students, staff and alumni in order to create an opportunity for them to make friends, share their problems and reach for help if needed. The society tries to materialise these objectives through some cultural and social activities",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/usps",
-      "contact_email": "persiansociety@soton.ac.uk"
+      "contact_email": "persiansociety@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/421_1732371816.png"
     },
     {
       "id": "persian-dance-society",
       "name": "Persian Dance Society",
       "description": "The Persian Dance Society has been created to enable everyone to experience Persian culture through learning about the various styles of Persian dance, from traditional to Sama, Azari, Kordi, bandari, Lori, etc. This group is for anyone who is interested in learning how to dance the Persian way. It is also a great opportunity for experienced dancers to try a similar but different style of dancing to what they are already used to.",
       "accent": "#dceaf2",
-      "susu_url": "https://www.susu.org/groups/university-of-southampton-persian-dance-society"
+      "susu_url": "https://www.susu.org/groups/university-of-southampton-persian-dance-society",
+      "logo_url": "https://www.susu.org/groups/logos/869_1743011141.png"
     },
     {
       "id": "im-pgr-netball",
@@ -2286,13 +2565,16 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/pgr-netball-",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1339_1784033366.png"
     },
     {
       "id": "philharmonic-choir",
       "name": "Philharmonic Choir",
       "description": "Choir rehearsals led by a professional conductor.",
-      "accent": "#d4f5a0"
+      "accent": "#d4f5a0",
+      "susu_url": "https://www.susu.org/groups/suphil",
+      "logo_url": "https://www.susu.org/groups/logos/124_1753966669.png"
     },
     {
       "id": "philosophy-society",
@@ -2302,7 +2584,8 @@
       "susu_url": "https://www.susu.org/groups/philsoc",
       "instagram_url": "https://www.instagram.com/uosphilsoc/",
       "instagram_bio": "🎓 Welcome to the University of Southampton’s Philosophy Society! ⭐️ Follow for updates, photos, and info for upcoming events! 📚 Join our WhatsApp:",
-      "contact_email": "philsoc@soton.ac.uk"
+      "contact_email": "philsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/397_1730365117.jpg"
     },
     {
       "id": "philosophy-politics-and-economics-society",
@@ -2311,7 +2594,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/philosophy-politics-and-economics-society-",
       "instagram_url": "https://www.instagram.com/sotonppe/",
-      "instagram_bio": "The University of Southampton Philosophy, Politics and Economics Society 📚 Follow us to stay updated on our events and anything PPE related!"
+      "instagram_bio": "The University of Southampton Philosophy, Politics and Economics Society 📚 Follow us to stay updated on our events and anything PPE related!",
+      "logo_url": "https://www.susu.org/groups/logos/1308_1758501170.png"
     },
     {
       "id": "photographic-society",
@@ -2322,7 +2606,8 @@
       "instagram_url": "https://www.instagram.com/su.photosoc/",
       "instagram_bio": "▪️The oldest photography society in the UK based at @uni_southampton Come & take photos with us 📸 Get a membership below!",
       "contact_email": "sups@soton.ac.uk",
-      "regular_schedule": "Regular Tuesday meetings, plus weekly lectures and workshops."
+      "regular_schedule": "Regular Tuesday meetings, plus weekly lectures and workshops.",
+      "logo_url": "https://www.susu.org/groups/logos/125_1602761383.png"
     },
     {
       "id": "im-physics-badminton",
@@ -2332,7 +2617,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/physics-badminton",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1206_1698054754.png"
     },
     {
       "id": "physics-society",
@@ -2343,7 +2629,8 @@
       "instagram_url": "https://www.instagram.com/physoc_soton/",
       "instagram_bio": "Welcome to the University of Southampton Physics Society!",
       "contact_email": "physoc@soton.ac.uk",
-      "website_url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=-XhTSvQpPk2-iWadA62p2BB9g3vHMiBHuHBTWZHmq11UNUEwVzAzODJIVTFYSVNWN1JKSUxQV1hQMi4u"
+      "website_url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=-XhTSvQpPk2-iWadA62p2BB9g3vHMiBHuHBTWZHmq11UNUEwVzAzODJIVTFYSVNWN1JKSUxQV1hQMi4u",
+      "logo_url": "https://www.susu.org/groups/logos/320_1695667699.png"
     },
     {
       "id": "physiotherapy-society",
@@ -2352,7 +2639,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/physiotherapy-society",
       "instagram_url": "https://www.instagram.com/southamptonphysio/",
-      "contact_email": "PhysioSoc@soton.ac.uk"
+      "contact_email": "PhysioSoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/630_1601899418.jpg"
     },
     {
       "id": "im-physoc-fc",
@@ -2362,7 +2650,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-physoc-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1071_1683630539.png"
     },
     {
       "id": "im-physoc-flames-physics-netball",
@@ -2372,13 +2661,16 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/physics-netball",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1209_1697474497.png"
     },
     {
       "id": "pianosoc",
       "name": "Piano Society",
       "description": "Weekly piano jam sessions.",
-      "accent": "#ffd6e8"
+      "accent": "#ffd6e8",
+      "susu_url": "https://www.susu.org/groups/pianosoc",
+      "logo_url": "https://www.susu.org/groups/logos/430_1564646556.png"
     },
     {
       "id": "polish-society",
@@ -2389,7 +2681,8 @@
       "instagram_url": "https://www.instagram.com/polsoc.soton/",
       "instagram_bio": "Celebrating Polish culture, language & community at @uni_southampton 🇵🇱✨🎓",
       "contact_email": "polsoc@soton.ac.uk",
-      "website_url": "http://linktr.ee/uospolsoc"
+      "website_url": "http://linktr.ee/uospolsoc",
+      "logo_url": "https://www.susu.org/groups/logos/130_1598122047.png"
     },
     {
       "id": "politics-society",
@@ -2399,7 +2692,8 @@
       "susu_url": "https://www.susu.org/groups/supa",
       "instagram_url": "https://www.instagram.com/politicssocsoton/",
       "instagram_bio": "Welcome to the University of Southampton’s Politics Society!🎓 Follow us to keep updated",
-      "contact_email": "politicssoc@soton.ac.uk"
+      "contact_email": "politicssoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/131_1688057850.png"
     },
     {
       "id": "polo",
@@ -2409,7 +2703,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/polo",
-      "instagram_url": "https://www.instagram.com/southamptonunipolo/"
+      "instagram_url": "https://www.instagram.com/southamptonunipolo/",
+      "logo_url": "https://www.susu.org/groups/logos/232_1729811535.png"
     },
     {
       "id": "pop-girlies-society",
@@ -2419,7 +2714,8 @@
       "susu_url": "https://www.susu.org/groups/taylor-swift-society",
       "instagram_url": "https://www.instagram.com/uospopsoc/",
       "instagram_bio": "🪩🩻💌🎀🦷🌼🤍🍎",
-      "contact_email": "swiftsoc@soton.ac.uk"
+      "contact_email": "swiftsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1191_1788975935.jpg"
     },
     {
       "id": "powerlifting",
@@ -2430,7 +2726,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/powerlifting",
       "instagram_url": "https://www.instagram.com/southamptonunipowerlifting/",
-      "contact_email": "supl@soton.ac.uk"
+      "contact_email": "supl@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1146_1724077658.png"
     },
     {
       "id": "im-ppe-hockey",
@@ -2440,7 +2737,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/ppe-hockey",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1251_1730061350.png"
     },
     {
       "id": "im-psych-netball",
@@ -2450,7 +2748,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-psychosoc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1098_1757437691.png"
     },
     {
       "id": "psychiatry-society",
@@ -2460,7 +2759,8 @@
       "susu_url": "https://www.susu.org/groups/psychiatry-society",
       "instagram_url": "https://www.instagram.com/sotonpsychsoc/",
       "instagram_bio": "Welcome to the University of Southampton Psychiatry Society Instagram! Follow us to keep updated with our events and to learn more about Psychiatry 🧠",
-      "contact_email": "Psysoc.soton@gmail.com"
+      "contact_email": "Psysoc.soton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/989_1759341178.jpg"
     },
     {
       "id": "psychology-society",
@@ -2471,7 +2771,8 @@
       "instagram_url": "https://www.instagram.com/psychsocsoton/",
       "instagram_bio": "Official page for UoS Psychology Society Stay up to date with info on socials and more 🤍 ↓ Memberships, Group Chat and other social medias ↓",
       "contact_email": "tm10g23@soton.ac.uk",
-      "website_url": "https://linktr.ee/psychsocsoton"
+      "website_url": "https://linktr.ee/psychsocsoton",
+      "logo_url": "https://www.susu.org/groups/logos/134_1750845402.png"
     },
     {
       "id": "punjabi-society",
@@ -2482,7 +2783,8 @@
       "instagram_url": "https://www.instagram.com/sotonpunjabisoc/",
       "instagram_bio": "University of Southampton’s Punjabi Society Follow our Bhangra Page @sotonbhangra 🤩 Social links and more👇",
       "contact_email": "sotonpunjabisoc@gmail.com",
-      "website_url": "http://linktr.ee/sotonpunjabisoc"
+      "website_url": "http://linktr.ee/sotonpunjabisoc",
+      "logo_url": "https://www.susu.org/groups/logos/913_1784826449.png"
     },
     {
       "id": "quadball",
@@ -2492,7 +2794,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/southampton-quidditch",
-      "instagram_url": "https://www.instagram.com/southamptonquadballclub/"
+      "instagram_url": "https://www.instagram.com/southamptonquadballclub/",
+      "logo_url": "https://www.susu.org/groups/logos/536_1725704585.png"
     },
     {
       "id": "quiz-society",
@@ -2504,19 +2807,24 @@
       "instagram_bio": "We are Southampton Quiz Society! We try to run both fun and competitive quizzes every week, so keep an eye out for weekly updates!",
       "contact_email": "quizsoc@soton.ac.uk",
       "website_url": "https://linktr.ee/quizsoc_soton",
-      "regular_schedule": "Fun and competitive quizzes every week; check Instagram for the current day and time."
+      "regular_schedule": "Fun and competitive quizzes every week; check Instagram for the current day and time.",
+      "logo_url": "https://www.susu.org/groups/logos/595_1538229513.png"
     },
     {
       "id": "relentless-generation",
       "name": "Relentless Generation Christian Fellowship",
       "description": "Monday fellowship.",
-      "accent": "#b7ef72"
+      "accent": "#b7ef72",
+      "susu_url": "https://www.susu.org/groups/relentless-generation-christian-fellowship",
+      "logo_url": "https://www.susu.org/groups/logos/642_1727556508.png"
     },
     {
       "id": "resus",
       "name": "RESUS",
       "description": "Weekly term-time workshops on renewable engineering.",
-      "accent": "#f6b6c8"
+      "accent": "#f6b6c8",
+      "susu_url": "https://www.susu.org/groups/southampton-university-renewability-and-sustainability-society",
+      "logo_url": "https://www.susu.org/groups/logos/1145_1743789166.png"
     },
     {
       "id": "riding",
@@ -2526,7 +2834,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/riding",
-      "instagram_url": "https://www.instagram.com/instasurc/"
+      "instagram_url": "https://www.instagram.com/instasurc/",
+      "logo_url": "https://www.susu.org/groups/logos/233_1757005236.png"
     },
     {
       "id": "rifle",
@@ -2535,7 +2844,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/rifle"
+      "susu_url": "https://www.susu.org/groups/rifle",
+      "logo_url": "https://www.susu.org/groups/logos/234_1785542166.png"
     },
     {
       "id": "im-river-plato",
@@ -2545,7 +2855,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-river-plato",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1081_1696715889.png"
     },
     {
       "id": "road-cycling",
@@ -2554,13 +2865,16 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/surc"
+      "susu_url": "https://www.susu.org/groups/surc",
+      "logo_url": "https://www.susu.org/groups/logos/235_1564647341.png"
     },
     {
       "id": "robosoc",
       "name": "RoboSoc",
       "description": "Robotics meet-ups.",
-      "accent": "#b9d8ff"
+      "accent": "#b9d8ff",
+      "susu_url": "https://www.susu.org/groups/robosoc",
+      "logo_url": "https://www.susu.org/groups/logos/673_1570019955.png"
     },
     {
       "id": "rock-and-metal-music-society",
@@ -2568,7 +2882,8 @@
       "description": "Welcome to the Southampton University Rock and Metal Society SUSU Page. Here at Rocksoc we aim to provide a friendly environment to make friends with like minded people. Whether you are a die hard rock and metal fan or simply curious about either genre, all are welcome! The group is for both current Uni students, ex-students and anyone else in the area who is a fan of rock and metal. For both informal and formal events keep an eye on this page. Sign up for weekly email updates and check out our Instagram @uosrocksoc for updates and photos from events. The link to our WhatsApp group chat is available upon request. Peace, love and metal, Rocksoc xx",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/rocksoc",
-      "contact_email": "rocksoc.soton@gmail.com"
+      "contact_email": "rocksoc.soton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/136_1769515987.jpg"
     },
     {
       "id": "romanian-society",
@@ -2579,13 +2894,16 @@
       "instagram_url": "https://www.instagram.com/rosoc_soton/",
       "instagram_bio": "Official page of RoSoc - University of Southampton 🇷🇴 Follow us to hear the latest news, events & socials💃.",
       "contact_email": "rosocsouthampton@gmail.com",
-      "website_url": "http://rosoc.co.uk/"
+      "website_url": "http://rosoc.co.uk/",
+      "logo_url": "https://www.susu.org/groups/logos/137_1653042141.png"
     },
     {
       "id": "roosters-football",
       "name": "Roosters (Football)",
       "description": "Medics football training.",
-      "accent": "#ffd1b9"
+      "accent": "#ffd1b9",
+      "susu_url": "https://www.susu.org/groups/roosters-football",
+      "logo_url": "https://www.susu.org/groups/logos/991_1628598491.png"
     },
     {
       "id": "roundnet-spikeball",
@@ -2595,7 +2913,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/trivolle-club",
-      "instagram_url": "https://www.instagram.com/southamptonroundnet/"
+      "instagram_url": "https://www.instagram.com/southamptonroundnet/",
+      "logo_url": "https://www.susu.org/groups/logos/760_1788626504.png"
     },
     {
       "id": "rugby-mens",
@@ -2605,7 +2924,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/surfc",
-      "contact_email": "sotonunirugby@gmail.com"
+      "contact_email": "sotonunirugby@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/236_1786802570.jpg"
     },
     {
       "id": "rugby-women-s",
@@ -2615,7 +2935,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/rugby-ladies",
-      "instagram_url": "https://www.instagram.com/suw_rfc/"
+      "instagram_url": "https://www.instagram.com/suw_rfc/",
+      "logo_url": "https://www.susu.org/groups/logos/237_1756650055.jpg"
     },
     {
       "id": "russian-speaking-society",
@@ -2625,7 +2946,8 @@
       "susu_url": "https://www.susu.org/groups/rss",
       "instagram_url": "https://www.instagram.com/rssuos/",
       "instagram_bio": "📍University of Southampton 💬DM to be added to the groupchat",
-      "contact_email": "rssoc@soton.ac.uk"
+      "contact_email": "rssoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/431_1727086885.png"
     },
     {
       "id": "sailing-club",
@@ -2634,13 +2956,16 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/sailing"
+      "susu_url": "https://www.susu.org/groups/sailing",
+      "logo_url": "https://www.susu.org/groups/logos/238_1721164077.png"
     },
     {
       "id": "salsa-society",
       "name": "Salsa Society",
       "description": "Weekly Bachata and Cuban Salsa lessons.",
-      "accent": "#e3c9ff"
+      "accent": "#e3c9ff",
+      "susu_url": "https://www.susu.org/groups/salsa-society",
+      "logo_url": "https://www.susu.org/groups/logos/140_1759136020.jpg"
     },
     {
       "id": "saudi-society",
@@ -2648,7 +2973,8 @@
       "description": "Everyone is Welcome, we are Saudi students aiming to introduce the Saudi Arabian culture and history to others and celebrate national holidays with everyone. Also, we will provide support and advice to Saudi students.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/saudi-society",
-      "contact_email": "saudissouthampton@gmail.com"
+      "contact_email": "saudissouthampton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/542_1746705842.jpg"
     },
     {
       "id": "im-scorpions",
@@ -2658,13 +2984,16 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-scorpions",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1107_1729778368.png"
     },
     {
       "id": "seals-squash",
       "name": "Seals Mixed Medics Squash",
       "description": "Weekly squash sessions.",
-      "accent": "#fff0a8"
+      "accent": "#fff0a8",
+      "susu_url": "https://www.susu.org/groups/seals-mixed-medics-squash",
+      "logo_url": "https://www.susu.org/groups/logos/1161_1729251123.jpg"
     },
     {
       "id": "showstoppers",
@@ -2674,13 +3003,16 @@
       "susu_url": "https://www.susu.org/groups/showstoppers",
       "instagram_url": "https://www.instagram.com/showstopperssoton/",
       "instagram_bio": "Whether you want to perform, direct, choreograph, produce a show or be in a pit band, we’re the society for you!",
-      "contact_email": "president.susushowstoppers@gmail.com"
+      "contact_email": "president.susushowstoppers@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/142_1724769131.png"
     },
     {
       "id": "sign-language",
       "name": "Sign Language Society",
       "description": "Weekly BSL lessons.",
-      "accent": "#a8f0e0"
+      "accent": "#a8f0e0",
+      "susu_url": "https://www.susu.org/groups/signsoc",
+      "logo_url": "https://www.susu.org/groups/logos/401_1632391242.png"
     },
     {
       "id": "sikh-society",
@@ -2691,7 +3023,8 @@
       "instagram_url": "https://www.instagram.com/southamptonsikhsociety/",
       "instagram_bio": "Society of the Year 2023 ☬ Global Impact Award 2024 ਨਾਮ ਬਿਨਾ ਨਹੀ ਜੀਵਿਆ ਜਾਇ ॥ Without the naam, I cannot live",
       "contact_email": "southamptonsikhsociety@gmail.com",
-      "regular_schedule": "Weekly Sunday seva at the Gurdwara; time is not listed."
+      "regular_schedule": "Weekly Sunday seva at the Gurdwara; time is not listed.",
+      "logo_url": "https://www.susu.org/groups/logos/1158_1718631181.jpg"
     },
     {
       "id": "sinfonietta",
@@ -2700,7 +3033,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/sinfonietta",
       "contact_email": "susinf@soton.ac.uk",
-      "regular_schedule": "Rehearsals are held mostly on Thursday evenings."
+      "regular_schedule": "Rehearsals are held mostly on Thursday evenings.",
+      "logo_url": "https://www.susu.org/groups/logos/144_1691053273.png"
     },
     {
       "id": "singapore-society",
@@ -2710,7 +3044,8 @@
       "susu_url": "https://www.susu.org/groups/singsoc",
       "instagram_url": "https://www.instagram.com/singsocsoton/",
       "instagram_bio": "Hello👋 We are the Singapore Society at the University of Southampton 🇸🇬! For enquiries, drop us a DM or email us at singsocsoton65@gmail.com ☺️",
-      "contact_email": "singsocsoton65@gmail.com"
+      "contact_email": "singsocsoton65@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/145_1728916354.png"
     },
     {
       "id": "skate-society",
@@ -2718,7 +3053,8 @@
       "description": "Society for all skateboarders, longboarders, rollerskaters and more! Welcome to all ability levels, holding regular for casual group sessions, as well as structured events.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/skate-society",
-      "contact_email": "SUSkateSoc@soton.ac.uk"
+      "contact_email": "SUSkateSoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1298_1746995286.png"
     },
     {
       "id": "skydive",
@@ -2729,14 +3065,16 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/skydive",
       "instagram_url": "https://www.instagram.com/uosskydive",
-      "contact_email": "skydive@soton.ac.uk"
+      "contact_email": "skydive@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/242_1685468946.png"
     },
     {
       "id": "slacklining-society",
       "name": "Slacklining Society",
       "description": "We are a friendly group of students who like to get out and slackline! We rig parklines, waterlines and highlines on campus, around Southampton, and further afield.",
       "accent": "#dceaf2",
-      "susu_url": "https://www.susu.org/groups/university-of-southampton-slacklining-society"
+      "susu_url": "https://www.susu.org/groups/university-of-southampton-slacklining-society",
+      "logo_url": "https://www.susu.org/groups/logos/1307_1756474066.png"
     },
     {
       "id": "snooker-and-pool",
@@ -2745,7 +3083,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/snooker-and-pool"
+      "susu_url": "https://www.susu.org/groups/snooker-and-pool",
+      "logo_url": "https://www.susu.org/groups/logos/243_1748518003.png"
     },
     {
       "id": "snowsports-club",
@@ -2755,7 +3094,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/ski-and-snowboard",
-      "instagram_url": "https://www.instagram.com/susscagram/"
+      "instagram_url": "https://www.instagram.com/susscagram/",
+      "logo_url": "https://www.susu.org/groups/logos/241_1596502241.png"
     },
     {
       "id": "socialist-students-society",
@@ -2766,7 +3106,8 @@
       "instagram_url": "https://www.instagram.com/socialiststudentssoton/",
       "instagram_bio": "We are Southampton Socialist Students. Meeting, debating and organising together! You can find us at SUSU and on WhatsApp.",
       "contact_email": "socialist.students@soton.ac.uk",
-      "website_url": "http://www.socialiststudents.org.uk"
+      "website_url": "http://www.socialiststudents.org.uk",
+      "logo_url": "https://www.susu.org/groups/logos/769_1788301157.png"
     },
     {
       "id": "sociology-social-policy-and-criminology-society",
@@ -2774,7 +3115,8 @@
       "description": "Welcome to the University of Southampton SSPC Society! Our society focuses on bringing together students with an interest in Sociology, Social Policy, and Criminology! But you don’t have to be on one of these degrees to join us. If you have a passion for criminal justice and understanding the social world, then this society is definitely for you. We are all about building an inclusive community where everyone can feel welcome, meet new people and share their passions. We work hard to offer events that everyone will enjoy! Throughout each year, we run a wide range of events, from guest speaker evenings and documentary nights, to relaxed socials, pub trips and criminology-themed nights out. For those who prefer something more low-key, we also host drop-in sessions and casual get-togethers, which are perfect for making friends and having a chat with people with similar interests to you. Whether you’re keen to expand your knowledge, make new connections, or just have some fun, the SSPC Society has something for you. Come along and get involved- we can’t wait to meet you!",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/sspc-society-",
-      "contact_email": "sspcsoc@soton.ac.uk"
+      "contact_email": "sspcsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1265_1756907119.png"
     },
     {
       "id": "somali-society",
@@ -2784,7 +3126,8 @@
       "susu_url": "https://www.susu.org/groups/somali",
       "instagram_url": "https://www.instagram.com/somsocsoton/",
       "instagram_bio": "Official page of UoSouthampton SomSoc. Follow us on TikTok: sotonsomsoc",
-      "contact_email": "somalisociety@soton.ac.uk"
+      "contact_email": "somalisociety@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/898_1549632836.png"
     },
     {
       "id": "soton-medical-technology-society",
@@ -2794,7 +3137,8 @@
       "susu_url": "https://www.susu.org/groups/soton-medical-technology-society",
       "instagram_url": "https://www.instagram.com/sotonmedtechsoc/",
       "instagram_bio": "Bringing students together to shape the future of MedTech.",
-      "contact_email": "sotonmedtech@soton.ac.uk"
+      "contact_email": "sotonmedtech@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1286_1757761829.png"
     },
     {
       "id": "sotonmedentrepreneurs",
@@ -2802,7 +3146,8 @@
       "description": "Soton MedEntrepreneurs is the go-to society for medical students keen to master the business of medicine—from private practice setup and med-tech ventures to AI in healthcare and investment strategies. While our focus is on equipping future doctors with the financial know-how and entrepreneurial mindset to innovate in medicine, we welcome anyone from healthcare or beyond—business, engineering, computer science and more. Join us for hands-on workshops, idea-development sessions, pitch nights and candid guest talks, and turn your business ideas into real-world impact.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/sotonmedentrepreneurs",
-      "contact_email": "SotonMedEntrepreneurs@soton.ac.uk"
+      "contact_email": "SotonMedEntrepreneurs@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1301_1788879096.png"
     },
     {
       "id": "south-asian-medics-southampton",
@@ -2813,7 +3158,8 @@
       "instagram_url": "https://www.instagram.com/southasianmedics_soton/",
       "instagram_bio": "All are welcome! email: samssoton@outlook.com",
       "contact_email": "samssoton@outlook.com",
-      "website_url": "https://medsoc.wixsite.com/sotonmedsoc"
+      "website_url": "https://medsoc.wixsite.com/sotonmedsoc",
+      "logo_url": "https://www.susu.org/groups/logos/1246_1788433127.png"
     },
     {
       "id": "southampton-international-medics-society",
@@ -2821,7 +3167,8 @@
       "description": "To provide a safe and fun space for new and current international medics, where they feel comfortable socialising, asking each other for help and discussing their own cultures while learning about new ones. We have found it is very difficult for international medics to adjust to life away from home, we aim to make this adjustment easier with welfare, social and academic events.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/southampton-international-medics-society",
-      "contact_email": "Contactsimsoc@gmail.com"
+      "contact_email": "Contactsimsoc@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/994_1617216600.jpg"
     },
     {
       "id": "southampton-marrow",
@@ -2832,7 +3179,8 @@
       "instagram_url": "https://www.instagram.com/sotonmarrow/",
       "instagram_bio": "Students saving lives through stem cells A student branch of @anthonynolancharity 💚 DM us any questions you have :)",
       "contact_email": "southampton@ukmarrow.org",
-      "website_url": "https://southamptonmarrow.wixsite.com/southampton"
+      "website_url": "https://southamptonmarrow.wixsite.com/southampton",
+      "logo_url": "https://www.susu.org/groups/logos/1187_1725278929.png"
     },
     {
       "id": "southampton-pub-society",
@@ -2844,7 +3192,8 @@
       "instagram_bio": "because lectures are better with a pint (afterwards.. probs) x SUSU Affiliated since 2026 🎉",
       "contact_email": "sotonpubsociety@soton.ac.uk",
       "website_url": "http://linktr.ee/sotonpubsoc",
-      "regular_schedule": "Weekly pub-crawl socials; check Instagram for each week’s details."
+      "regular_schedule": "Weekly pub-crawl socials; check Instagram for each week’s details.",
+      "logo_url": "https://www.susu.org/groups/logos/1325_1788436661.jpg"
     },
     {
       "id": "southampton-robotics-outreach",
@@ -2855,13 +3204,16 @@
       "instagram_url": "https://www.instagram.com/roboticsoutreach/",
       "instagram_bio": "Inspiring young people to get into computing, electronics and robotics",
       "contact_email": "sro@soton.ac.uk",
-      "website_url": "https://roboticsoutreach.org"
+      "website_url": "https://roboticsoutreach.org",
+      "logo_url": "https://www.susu.org/groups/logos/636_1706054358.png"
     },
     {
       "id": "swing-dancers",
       "name": "Southampton Swing Dancers",
       "description": "Weekly lindy hop lessons.",
-      "accent": "#ffc9a8"
+      "accent": "#ffc9a8",
+      "susu_url": "https://www.susu.org/groups/lindy-hop-southampton-university-",
+      "logo_url": "https://www.susu.org/groups/logos/850_1538490360.png"
     },
     {
       "id": "spaceflight-society",
@@ -2872,7 +3224,8 @@
       "instagram_url": "https://www.instagram.com/su_spaceflight/",
       "instagram_bio": "Official account for University of Southampton Spaceflight Society",
       "contact_email": "susf@soton.ac.uk",
-      "website_url": "https://spaceflight.soton.ac.uk"
+      "website_url": "https://spaceflight.soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/459_1602847338.png"
     },
     {
       "id": "spanish-latin-american-and-portuguese-society",
@@ -2882,7 +3235,8 @@
       "susu_url": "https://www.susu.org/groups/slaps",
       "instagram_url": "https://www.instagram.com/sotonslaps/",
       "instagram_bio": "Spanish, Latin American and Portuguese Society at the @uni_southampton 🇪🇸 🇵🇹 🇧🇷 🇦🇷 🇺🇾 🇨🇴 🇨🇱 🇵🇾 🇧🇴 & many more",
-      "contact_email": "slapssoton@gmail.com"
+      "contact_email": "slapssoton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/150_1600514965.png"
     },
     {
       "id": "sports-and-exercise-medicine-society",
@@ -2890,7 +3244,8 @@
       "description": "The Sports and Exercise Medicine Society is a student-led group dedicated to exploring the role of physical activity in health, performance, and rehabilitation. We host expert-led talks, interactive workshops, and focused revision sessions to support medical students interested in injury management, exercise physiology, and lifestyle medicine. Whether you're pursuing a career in sports medicine or simply passionate about staying active, our society offers a welcoming space to learn, connect, and get inspired.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/sports-and-exercise-medicine-society",
-      "contact_email": "kdk1g23@soton.ac.uk"
+      "contact_email": "kdk1g23@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1318_1759149785.png"
     },
     {
       "id": "squash",
@@ -2901,7 +3256,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/susc",
       "instagram_url": "https://www.instagram.com/uos_squash/",
-      "contact_email": "squash@soton.ac.uk"
+      "contact_email": "squash@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/244_1750951797.png"
     },
     {
       "id": "sri-lanka-society",
@@ -2911,7 +3267,8 @@
       "susu_url": "https://www.susu.org/groups/sri-lanka-society",
       "instagram_url": "https://www.instagram.com/slsocsoton/",
       "instagram_bio": "| ආයුබෝවන් | வணக்கம் | As-salamu alaykum | 🙏🇱🇰 . Welcome to the Instagram Page of the University of Southampton Sri Lankan Society.",
-      "contact_email": "slsocsoton@gmail.com"
+      "contact_email": "slsocsoton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/152_1751036781.jpg"
     },
     {
       "id": "stage-technicians-society",
@@ -2922,13 +3279,16 @@
       "instagram_url": "https://www.instagram.com/stagesoc/",
       "instagram_bio": "We are the Stage Technician's Society, providing backstage support for Performing Arts at the University of Southampton.",
       "contact_email": "secretary@stagesoc.org.uk",
-      "website_url": "https://stagesoc.org.uk/"
+      "website_url": "https://stagesoc.org.uk/",
+      "logo_url": "https://www.susu.org/groups/logos/154_1538142666.jpg"
     },
     {
       "id": "kraken-soc",
       "name": "Steampunk Society (Kraken Soc)",
       "description": "Weekly film nights and socials.",
-      "accent": "#c9e8ff"
+      "accent": "#c9e8ff",
+      "susu_url": "https://www.susu.org/groups/krakensoc",
+      "logo_url": "https://www.susu.org/groups/logos/405_1758362165.jpg"
     },
     {
       "id": "im-stem-netball",
@@ -2938,19 +3298,24 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-stem",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1096_1786456393.png"
     },
     {
       "id": "street-dance-society",
       "name": "Street Dance Society",
       "description": "Weekly street dance and Afro classes.",
-      "accent": "#f2b8ff"
+      "accent": "#f2b8ff",
+      "susu_url": "https://www.susu.org/groups/street-dance-society",
+      "logo_url": "https://www.susu.org/groups/logos/156_1720548406.png"
     },
     {
       "id": "ssago",
       "name": "Student Scout And Guide Organisation",
       "description": "Weekly term-time meet-up.",
-      "accent": "#d4f5a0"
+      "accent": "#d4f5a0",
+      "susu_url": "https://www.susu.org/groups/ssago",
+      "logo_url": "https://www.susu.org/groups/logos/325_1564649759.png"
     },
     {
       "id": "sub-aqua-scuba-diving",
@@ -2961,7 +3326,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sub-aqua",
       "instagram_url": "https://www.instagram.com/sotonunisac/",
-      "contact_email": "committee@susac.org.uk"
+      "contact_email": "committee@susac.org.uk",
+      "logo_url": "https://www.susu.org/groups/logos/247_1600883731.png"
     },
     {
       "id": "sudanese-society",
@@ -2971,7 +3337,8 @@
       "susu_url": "https://www.susu.org/groups/university-of-southampton-sudanese-society",
       "instagram_url": "https://www.instagram.com/sudsocsoton/",
       "instagram_bio": "University of Southampton Sudanese Society 🇸🇩🇸🇸 Bringing Sudanese culture to Soton 🌍 Events | Socials | Community",
-      "contact_email": "sudsoc@soton.ac.uk"
+      "contact_email": "sudsoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1226_1789307507.png"
     },
     {
       "id": "im-suens-hockey",
@@ -2981,7 +3348,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-suens",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1114_1788360935.jpg"
     },
     {
       "id": "im-suhc-mixed-hockey",
@@ -2991,7 +3359,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/suhc-mixed-hockey-",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1196_1694187149.jpg"
     },
     {
       "id": "surf",
@@ -3001,7 +3370,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/susurf",
-      "instagram_url": "https://www.instagram.com/southamptonunisurfclub/"
+      "instagram_url": "https://www.instagram.com/southamptonunisurfclub/",
+      "logo_url": "https://www.susu.org/groups/logos/248_1597768119.png"
     },
     {
       "id": "surge",
@@ -3012,7 +3382,8 @@
       "instagram_url": "https://www.instagram.com/surgesoton/",
       "instagram_bio": "Award-winning Student Radio at @uni_southampton Since 1976 📻 What’s on?: @surgemembers Join and Listen👇",
       "contact_email": "surgemedia@soton.ac.uk",
-      "website_url": "http://www.surgeradio.co.uk"
+      "website_url": "http://www.surgeradio.co.uk",
+      "logo_url": "https://www.susu.org/groups/logos/266_1759179281.png"
     },
     {
       "id": "surgical-society",
@@ -3023,19 +3394,24 @@
       "instagram_url": "https://www.instagram.com/sotonsurgisoc/",
       "instagram_bio": "Welcome to the University of Southampton Surgical Society! 📧: sotonsurgisoc@outlook.com",
       "contact_email": "sotonsurgisoc@outlook.com",
-      "community_url": "https://chat.whatsapp.com/K7J6R8SwrzM1cjTmSj5mat?mode=gi_t"
+      "community_url": "https://chat.whatsapp.com/K7J6R8SwrzM1cjTmSj5mat?mode=gi_t",
+      "logo_url": "https://www.susu.org/groups/logos/999_1788884832.png"
     },
     {
       "id": "susingers",
       "name": "SUSingers",
       "description": "Sunday choir rehearsals.",
-      "accent": "#ffd6e8"
+      "accent": "#ffd6e8",
+      "susu_url": "https://www.susu.org/groups/su-singers",
+      "logo_url": "https://www.susu.org/groups/logos/161_1699456841.png"
     },
     {
       "id": "sustrings",
       "name": "SUStrings (String Orchestra)",
       "description": "Weekly string orchestra rehearsals.",
-      "accent": "#b7ef72"
+      "accent": "#b7ef72",
+      "susu_url": "https://www.susu.org/groups/sustrings",
+      "logo_url": "https://www.susu.org/groups/logos/162_1729605971.png"
     },
     {
       "id": "swallows-football",
@@ -3044,7 +3420,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/swallows-football",
       "contact_email": "swallows@soton.ac.uk",
-      "regular_schedule": "Tuesday evening training at Wide Lane; the society also plays in weekly leagues."
+      "regular_schedule": "Tuesday evening training at Wide Lane; the society also plays in weekly leagues.",
+      "logo_url": "https://www.susu.org/groups/logos/1000_1722792527.png"
     },
     {
       "id": "swimming",
@@ -3053,7 +3430,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/swim-team"
+      "susu_url": "https://www.susu.org/groups/swim-team",
+      "logo_url": "https://www.susu.org/groups/logos/249_1726504750.png"
     },
     {
       "id": "symphonic-wind-orchestra",
@@ -3064,13 +3442,16 @@
       "instagram_url": "https://www.instagram.com/suswo.official/",
       "instagram_bio": "Facebook @suswo.official",
       "contact_email": "suswo@soton.ac.uk",
-      "website_url": "http://suswo.unionsouthampton.org"
+      "website_url": "http://suswo.unionsouthampton.org",
+      "logo_url": "https://www.susu.org/groups/logos/163_1658772524.png"
     },
     {
       "id": "symphony-orchestra",
       "name": "Symphony Orchestra",
       "description": "Weekly term-time orchestra rehearsals.",
-      "accent": "#f6b6c8"
+      "accent": "#f6b6c8",
+      "susu_url": "https://www.susu.org/groups/symphony-orchestra",
+      "logo_url": "https://www.susu.org/groups/logos/164_1784215952.png"
     },
     {
       "id": "table-tennis",
@@ -3081,7 +3462,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/table-tennis",
       "instagram_url": "https://www.instagram.com/sotontabletennis/",
-      "contact_email": "suttc@soton.ac.uk"
+      "contact_email": "suttc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/250_1641567952.png"
     },
     {
       "id": "taekwondo",
@@ -3092,7 +3474,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sutkd",
       "instagram_url": "https://www.instagram.com/sutkd_/",
-      "contact_email": "sutkd@soton.ac.uk"
+      "contact_email": "sutkd@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/252_1788185092.png"
     },
     {
       "id": "tamil-society",
@@ -3100,19 +3483,24 @@
       "description": "The Tamil Society brings together those who are captivated with the ideas and traditions of Tamil culture. It aims to organise social, cultural and sports events in order to raise money for charities and other worthy causes, as well as providing opportunities for individuals to participate in inter-university competitions. We hope that in the future, Tamil Society will become a gravitation point for people of all kinds to learn about the unique nature of Tamil culture, and South-Asian culture in general.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/tamil-society",
-      "contact_email": "sotontamilsoc@gmail.com"
+      "contact_email": "sotontamilsoc@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/549_1663791360.png"
     },
     {
       "id": "tap-dance",
       "name": "Tap Dance",
       "description": "Weekly tap classes at three levels.",
-      "accent": "#b9d8ff"
+      "accent": "#b9d8ff",
+      "susu_url": "https://www.susu.org/groups/tap-dance-society",
+      "logo_url": "https://www.susu.org/groups/logos/167_1719152124.png"
     },
     {
       "id": "tea-society",
       "name": "Tea Society",
       "description": "Drop-in tea sessions, any week.",
-      "accent": "#ffd1b9"
+      "accent": "#ffd1b9",
+      "susu_url": "https://www.susu.org/groups/tea-society",
+      "logo_url": "https://www.susu.org/groups/logos/729_1713977578.jpg"
     },
     {
       "id": "team-southampton-motorsport",
@@ -3121,7 +3509,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/wmc"
+      "susu_url": "https://www.susu.org/groups/wmc",
+      "logo_url": "https://www.susu.org/groups/logos/225_1590685245.jpg"
     },
     {
       "id": "teddy-bear-hospital",
@@ -3132,7 +3521,8 @@
       "instagram_url": "https://www.instagram.com/tbhsouthampton/",
       "instagram_bio": "the @uni_southampton branch providing health education to primary school children🩺🩷 MedSoc Dean Awards 2025 - Community Impact Award Winners",
       "contact_email": "tbhsouthampton@outlook.com",
-      "website_url": "http://sites.google.com/view/tbhsouthampton/home"
+      "website_url": "http://sites.google.com/view/tbhsouthampton/home",
+      "logo_url": "https://www.susu.org/groups/logos/1001_1602254817.jpg"
     },
     {
       "id": "telugu-society",
@@ -3143,7 +3533,8 @@
       "instagram_url": "https://www.instagram.com/sotontelugusoc/",
       "instagram_bio": "స్వాగతం సుస్వాగతం 🙏🏽 Southampton Telugu Society Join our WhatsApp group for event updates 🎉, cultural vibes 🪔 & fun activities 🎨.",
       "contact_email": "TeluguSociety@soton.ac.uk",
-      "community_url": "http://chat.whatsapp.com/EUyjI26CWPKL6JE4XV9yMO"
+      "community_url": "http://chat.whatsapp.com/EUyjI26CWPKL6JE4XV9yMO",
+      "logo_url": "https://www.susu.org/groups/logos/1256_1744735684.png"
     },
     {
       "id": "tennis",
@@ -3153,7 +3544,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/tennis",
-      "instagram_url": "https://www.instagram.com/southamptontennis/"
+      "instagram_url": "https://www.instagram.com/southamptontennis/",
+      "logo_url": "https://www.susu.org/groups/logos/255_1725299323.png"
     },
     {
       "id": "thai-society",
@@ -3163,7 +3555,8 @@
       "susu_url": "https://www.susu.org/groups/thai-society-",
       "instagram_url": "https://www.instagram.com/sotonthaisociety/",
       "instagram_bio": "🇹🇭We are the Thai society of the University of Southampton 🇹🇭 Be part of our community, be harmony, be friends🤍",
-      "contact_email": "soton.thaisoc.committee@gmail.com"
+      "contact_email": "soton.thaisoc.committee@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/1165_1760560801.png"
     },
     {
       "id": "the-edge",
@@ -3172,7 +3565,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/the-edge",
       "contact_email": "teeditor@soton.ac.uk",
-      "website_url": "http://www.theedgesusu.co.uk/"
+      "website_url": "http://www.theedgesusu.co.uk/",
+      "logo_url": "https://www.susu.org/groups/logos/269_1672165897.png"
     },
     {
       "id": "the-mindful-medical-society",
@@ -3182,7 +3576,8 @@
       "susu_url": "https://www.susu.org/groups/the-mindful-medical-society",
       "instagram_url": "https://www.instagram.com/mindfulmedsoc/",
       "instagram_bio": "Southampton University expanding our compassion, awareness and wellbeing ~ talks ~ events ~ movement ~ meditation ~",
-      "contact_email": "mindful@soton.ac.uk"
+      "contact_email": "mindful@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1332_1780826606.png"
     },
     {
       "id": "theatre-group",
@@ -3192,7 +3587,8 @@
       "susu_url": "https://www.susu.org/groups/tg",
       "instagram_url": "https://www.instagram.com/susu_theatre_group/",
       "instagram_bio": "Society for theatre at University of Southampton🎭 Next auditions: coming soon 🔜❓",
-      "contact_email": "president@theatre-group.com"
+      "contact_email": "president@theatre-group.com",
+      "logo_url": "https://www.susu.org/groups/logos/169_1712498186.png"
     },
     {
       "id": "im-therabandits-physiosoc-netball",
@@ -3202,13 +3598,16 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/therabandits-physiosoc-netball-",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1207_1726685511.png"
     },
     {
       "id": "tigers-tennis",
       "name": "Tigers (Tennis)",
       "description": "Medics tennis for all levels.",
-      "accent": "#e3c9ff"
+      "accent": "#e3c9ff",
+      "susu_url": "https://www.susu.org/groups/tigers-tennis",
+      "logo_url": "https://www.susu.org/groups/logos/1003_1751889989.png"
     },
     {
       "id": "touch-rugby",
@@ -3217,7 +3616,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/touch-rugby"
+      "susu_url": "https://www.susu.org/groups/touch-rugby",
+      "logo_url": "https://www.susu.org/groups/logos/443_1759753589.png"
     },
     {
       "id": "trampolining",
@@ -3227,7 +3627,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sutc",
-      "instagram_url": "https://www.instagram.com/SUTC_/"
+      "instagram_url": "https://www.instagram.com/SUTC_/",
+      "logo_url": "https://www.susu.org/groups/logos/257_1749885458.jpg"
     },
     {
       "id": "trauma-and-orthopaedic-society",
@@ -3239,7 +3640,8 @@
       "instagram_bio": "Welcome to the University of Southampton Trauma and Orthopaedic Society! 🦴🩺 Follow us for event updates and T&O content! 📧: sotonorthosoc@outlook.com",
       "contact_email": "sotonorthosoc@outlook.com",
       "website_url": "https://chat.whatsapp.com/DWEeU8qu4jt0IR5XhOyUeJ?mode=gi_t",
-      "community_url": "http://chat.whatsapp.com/DWEeU8qu4jt0IR5XhOyUeJ"
+      "community_url": "http://chat.whatsapp.com/DWEeU8qu4jt0IR5XhOyUeJ",
+      "logo_url": "https://www.susu.org/groups/logos/1249_1756644855.png"
     },
     {
       "id": "triathlon",
@@ -3248,7 +3650,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/sutri"
+      "susu_url": "https://www.susu.org/groups/sutri",
+      "logo_url": "https://www.susu.org/groups/logos/258_1564652495.jpg"
     },
     {
       "id": "turkish-society",
@@ -3258,7 +3661,8 @@
       "susu_url": "https://www.susu.org/groups/turkish-society",
       "instagram_url": "https://www.instagram.com/sotonturksoc/",
       "instagram_bio": "🇹🇷Welcome to UoS’s Official Turkish Society Instagram Page 👇Join us from the links below! @uni_southampton",
-      "contact_email": "turksoc@soton.ac.uk"
+      "contact_email": "turksoc@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1237_1738004966.png"
     },
     {
       "id": "im-turksoc-fc",
@@ -3268,7 +3672,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/turkish-soc-fc",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1350_1787931200.jpg"
     },
     {
       "id": "ukrainian-society",
@@ -3279,7 +3684,8 @@
       "instagram_url": "https://www.instagram.com/ukrainian.society_suus/",
       "instagram_bio": "Привіт, козаче, тобі тут раді! 🇺🇦 We are the @uni_southampton Ukrainian Society 🦌 Est. 2024 Members of @ukrainian_su",
       "contact_email": "ukrainiansociety@soton.ac.uk",
-      "website_url": "https://linktr.ee/su_ukrainian_society"
+      "website_url": "https://linktr.ee/su_ukrainian_society",
+      "logo_url": "https://www.susu.org/groups/logos/1228_1723215488.png"
     },
     {
       "id": "ultimate-frisbee",
@@ -3290,7 +3696,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/ultimate-frisbee",
       "instagram_url": "https://www.instagram.com/skunksultimate/",
-      "contact_email": "skunks@soton.ac.uk"
+      "contact_email": "skunks@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/259_1564652539.jpg"
     },
     {
       "id": "union-films",
@@ -3299,7 +3706,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/uf",
       "contact_email": "uf@soton.ac.uk",
-      "website_url": "http://www.unionfilms.org"
+      "website_url": "http://www.unionfilms.org",
+      "logo_url": "https://www.susu.org/groups/logos/270_1603389521.png"
     },
     {
       "id": "union-southampton-dance",
@@ -3307,7 +3715,8 @@
       "description": "University of Southampton society. See the SUSU profile for current information.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/union-southampton-dance",
-      "contact_email": "USDDanceRep@soton.ac.uk"
+      "contact_email": "USDDanceRep@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1007_1722007810.png"
     },
     {
       "id": "university-of-southampton-180-degrees-consulting",
@@ -3318,7 +3727,8 @@
       "instagram_url": "https://www.instagram.com/180dcsoton/",
       "instagram_bio": "@uni_southampton branch of the world’s largest university-based consultancy for non-profits and social enterprises.",
       "contact_email": "180dc@soton.ac.uk",
-      "website_url": "https://www.180dc.org/"
+      "website_url": "https://www.180dc.org/",
+      "logo_url": "https://www.susu.org/groups/logos/1224_1716581934.jpg"
     },
     {
       "id": "university-of-southampton-ophthalmology-society",
@@ -3327,7 +3737,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/university-of-southampton-ophthalmology-society",
       "contact_email": "sotoneyesoc@soton.ac.uk",
-      "website_url": "https://linktr.ee/sotoneyesoc"
+      "website_url": "https://linktr.ee/sotoneyesoc",
+      "logo_url": "https://www.susu.org/groups/logos/1343_1782065011.png"
     },
     {
       "id": "vegan-and-vegetarian-society",
@@ -3337,7 +3748,8 @@
       "susu_url": "https://www.susu.org/groups/southampton-university-vegan-and-vegetarian-society",
       "instagram_url": "https://www.instagram.com/soton_vegsoc/",
       "instagram_bio": "🌱inspiring veggie & vegan living @uni_southampton 🌵DM us if you have any questions!",
-      "contact_email": "vegsocsoton@gmail.com"
+      "contact_email": "vegsocsoton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/545_1631304988.png"
     },
     {
       "id": "video-games-esports-society",
@@ -3349,7 +3761,8 @@
       "instagram_bio": "#2 Esports University in the UK 🇬🇧 University of Southampton’s Video Games and Esports Society Competing in @nse_gg , USS & LANs 🔻Discord link below🔻",
       "contact_email": "SVGE@soton.ac.uk",
       "website_url": "https://www.nse.gg/",
-      "community_url": "https://discord.gg/5TSyVHFAyQ"
+      "community_url": "https://discord.gg/5TSyVHFAyQ",
+      "logo_url": "https://www.susu.org/groups/logos/613_1664674346.png"
     },
     {
       "id": "vietnamese-society",
@@ -3358,7 +3771,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/vietnamese-society",
       "instagram_url": "https://www.instagram.com/vietsoc_southampton/",
-      "contact_email": "vietsocsoton@soton.ac.uk"
+      "contact_email": "vietsocsoton@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1259_1744827816.png"
     },
     {
       "id": "im-villarrealgorithm-cf",
@@ -3368,7 +3782,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-villarrealgorithm-cf",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1084_1665756057.png"
     },
     {
       "id": "volleyball",
@@ -3378,7 +3793,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/suvc",
-      "instagram_url": "https://www.instagram.com/uosvolleyball/"
+      "instagram_url": "https://www.instagram.com/uosvolleyball/",
+      "logo_url": "https://www.susu.org/groups/logos/261_1720284399.png"
     },
     {
       "id": "water-polo",
@@ -3387,7 +3803,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/suwpc"
+      "susu_url": "https://www.susu.org/groups/suwpc",
+      "logo_url": "https://www.susu.org/groups/logos/264_1664787992.png"
     },
     {
       "id": "wessex-scene",
@@ -3396,7 +3813,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/wessex-scene",
       "contact_email": "editor@wessexscene.co.uk",
-      "website_url": "http://www.wessexscene.co.uk"
+      "website_url": "http://www.wessexscene.co.uk",
+      "logo_url": "https://www.susu.org/groups/logos/268_1564653305.jpg"
     },
     {
       "id": "im-wessex-warriors",
@@ -3406,7 +3824,8 @@
       "category": "sport",
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/wessex-warriors-",
-      "contact_email": "susport@soton.ac.uk"
+      "contact_email": "susport@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1306_1751407545.png"
     },
     {
       "id": "widening-access-to-medicine-southampton",
@@ -3417,7 +3836,8 @@
       "instagram_url": "https://www.instagram.com/wamsocsoton/",
       "instagram_bio": "A student-led initiative aiming to equalise the platform between prospective medical applicants eMentoring, interview practice, UCAT sessions & more!",
       "contact_email": "WAMsocsoton@gmail.com",
-      "website_url": "http://www.wamsocsoton.com"
+      "website_url": "http://www.wamsocsoton.com",
+      "logo_url": "https://www.susu.org/groups/logos/745_1562585456.jpg"
     },
     {
       "id": "wild-swimming-society",
@@ -3427,7 +3847,8 @@
       "susu_url": "https://www.susu.org/groups/wild-swimming-society",
       "instagram_url": "https://www.instagram.com/wildswimming_su/",
       "instagram_bio": "click here to see more about us 🌀🦦",
-      "contact_email": "wildswimcommittee@groups.soton.ac.uk"
+      "contact_email": "wildswimcommittee@groups.soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1284_1746711477.jpeg"
     },
     {
       "id": "wilderness-and-expedition-medicine",
@@ -3437,7 +3858,8 @@
       "susu_url": "https://www.susu.org/groups/wilderness-medicine",
       "instagram_url": "https://www.instagram.com/southamptonwems/",
       "instagram_bio": "Southampton Wilderness/Expedition Medicine Society, better known as SWEMS! We offer walks, hikes, and strolls. With some medicine. Of course. 🏔 🥾 🩺🚑",
-      "contact_email": "Southamptonwems@gmail.com"
+      "contact_email": "Southamptonwems@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/1005_1628418447.png"
     },
     {
       "id": "wildlife-society",
@@ -3448,7 +3870,8 @@
       "instagram_url": "https://www.instagram.com/uoswildlifesociety/",
       "instagram_bio": "🪲 Welcome to University of Southampton’s Wildlife Society! 🐞",
       "contact_email": "uoswildlifesociety@soton.ac.uk",
-      "regular_schedule": "Weekly documentary screenings, with walks, socials and trips; check Instagram for the current schedule."
+      "regular_schedule": "Weekly documentary screenings, with walks, socials and trips; check Instagram for the current schedule.",
+      "logo_url": "https://www.susu.org/groups/logos/792_1668540317.png"
     },
     {
       "id": "windsurfing",
@@ -3457,7 +3880,8 @@
       "accent": "#dceaf2",
       "category": "sport",
       "sport_format": "athletic-union",
-      "susu_url": "https://www.susu.org/groups/suwc"
+      "susu_url": "https://www.susu.org/groups/suwc",
+      "logo_url": "https://www.susu.org/groups/logos/265_1789646265.png"
     },
     {
       "id": "women-in-business-society",
@@ -3468,7 +3892,8 @@
       "instagram_url": "https://www.instagram.com/wibsoton/",
       "instagram_bio": "Women in Business Society @ University of Southampton Shaping women's narratives all throughout business sectors🔥 Empowered women empower women 🫶",
       "contact_email": "wibsoton@outlook.com",
-      "website_url": "https://linktr.ee/wibsoton26?utm_source=linktree_profile_share<sid=83c141d5-adc2-4330-b8ac-d845bef7fb40"
+      "website_url": "https://linktr.ee/wibsoton26?utm_source=linktree_profile_share<sid=83c141d5-adc2-4330-b8ac-d845bef7fb40",
+      "logo_url": "https://www.susu.org/groups/logos/553_1790090310.jpeg"
     },
     {
       "id": "women-in-ecs-society",
@@ -3478,7 +3903,8 @@
       "susu_url": "https://www.susu.org/groups/women-in-ecs-society",
       "instagram_url": "https://www.instagram.com/ecswomen/",
       "instagram_bio": "Connecting and empowering women and non-binary people in Electronics and Computer Science at the University of Southampton 🎀",
-      "contact_email": "women@ecs.soton.ac.uk"
+      "contact_email": "women@ecs.soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1304_1747332627.png"
     },
     {
       "id": "women-in-law",
@@ -3486,7 +3912,8 @@
       "description": "Welcome to the UoS Women in Law society page! While we have a focus on law, everyone is welcome. We provide lots of opportunities to meet like-minded people whilst also providing academic support and development. We hope we can be both fun and helpful and provide you with a sense of community at UoS! Feel free to contact us for more information.",
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/women-in-law",
-      "contact_email": "WomeninLaw@soton.ac.uk"
+      "contact_email": "WomeninLaw@soton.ac.uk",
+      "logo_url": "https://www.susu.org/groups/logos/1324_1780336948.png"
     },
     {
       "id": "women-in-medicine",
@@ -3496,14 +3923,16 @@
       "susu_url": "https://www.susu.org/groups/women-in-medicine",
       "instagram_url": "https://www.instagram.com/womeninmed.soton/",
       "instagram_bio": "Empowering, Supporting, and Educating UoS’ Women in Medicine 🏅Dean's List Academic Society of the Year 2023",
-      "contact_email": "Winmsoc.soton@gmail.com"
+      "contact_email": "Winmsoc.soton@gmail.com",
+      "logo_url": "https://www.susu.org/groups/logos/1006_1726433284.png"
     },
     {
       "id": "women-in-surgery",
       "name": "Women in Surgery",
       "description": "University of Southampton society. See the SUSU profile for current information.",
       "accent": "#dceaf2",
-      "susu_url": "https://www.susu.org/groups/women-in-surgery"
+      "susu_url": "https://www.susu.org/groups/women-in-surgery",
+      "logo_url": "https://www.susu.org/groups/logos/1348_1786901593.png"
     },
     {
       "id": "yoga-society",
@@ -3514,13 +3943,16 @@
       "instagram_url": "https://www.instagram.com/southamptonyogasoc/",
       "instagram_bio": "Providing yoga classes for all levels to students, along with in depth workshops, social events and more 🤍🧘 BOOK A CLASS ⬇️",
       "contact_email": "suyogasoc@gmail.com",
-      "website_url": "https://bookwhen.com/suyogasoc"
+      "website_url": "https://bookwhen.com/suyogasoc",
+      "logo_url": "https://www.susu.org/groups/logos/176_1569087389.jpg"
     },
     {
       "id": "zumba",
       "name": "Zumba+",
       "description": "Weekly Zumba classes.",
-      "accent": "#fff0a8"
+      "accent": "#fff0a8",
+      "susu_url": "https://www.susu.org/groups/zumsoc",
+      "logo_url": "https://www.susu.org/groups/logos/435_1694516914.png"
     }
   ],
   "events": [
