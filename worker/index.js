@@ -126,6 +126,16 @@ const PAGE = String.raw`<!doctype html>
     @media(max-width:840px){.hero{gap:34px;padding-top:58px}.sync-card{gap:24px;padding:28px}.topnav{gap:18px}}
     @media(max-width:620px){.shell{padding:0 19px}.topbar{height:68px}.brand{gap:9px}.brand-logo{width:145px}.brand-divider,.brand-label{display:none}.top-cta{padding:10px 11px;font-size:10px}.hero{grid-template-columns:1fr;gap:24px;padding:48px 0 52px}.hero h1{font-size:clamp(40px,10vw,52px)}.hero-art{padding:0}.art-card{max-width:none;padding:21px}.section{padding:48px 0}.section-heading{align-items:flex-start}.society-grid{grid-template-columns:1fr}.society-card{min-height:178px}.event-card{grid-template-columns:58px minmax(0,1fr);gap:12px;padding:14px}.event-label{grid-column:2;justify-self:start}.sync-section{padding-top:8px}.sync-card{grid-template-columns:1fr;gap:20px;padding:23px 19px;border-radius:6px}.footer{align-items:flex-start;flex-direction:column}.footer-right{flex-wrap:wrap}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
+    .society-card p.society-description{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;max-width:100%;margin-bottom:9px}
+    .society-card p.society-schedule{font-size:11px;line-height:1.45;margin:0 0 9px;color:#405f72}
+    .society-links{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 10px}
+    .society-links a,.event-source{color:#005c84;text-decoration:underline;text-decoration-color:#9ab5c4;text-underline-offset:3px;font-size:10px;font-weight:700}
+    .society-links a:hover,.event-source:hover{text-decoration-color:#005c84}
+    .society-extra{width:100%;margin:-3px 0 10px;color:#526b7b;font-size:10px}
+    .society-extra summary{cursor:pointer;font-weight:700}
+    .society-extra p{font-size:11px;line-height:1.5;margin:6px 0 0;white-space:normal}
+    .event-main p.event-description{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+    .event-source{display:inline-block;margin-top:7px}
     .society-contact{color:#005c84;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
     .catalogue-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:-6px 0 18px}
     .search-field{display:flex;align-items:center;gap:10px;width:min(100%,420px);min-height:44px;padding:0 13px;border:1px solid #b7c8d2;border-radius:4px;background:#fff;color:#526b7b}
@@ -301,7 +311,7 @@ const PAGE = String.raw`<!doctype html>
         </details>
       </section>
     </main>
-    <footer class="footer"><div class="footer-left"><strong>uniflow</strong><span>·</span><span>Student-run project; not an official University service.</span></div><div class="footer-right"><span id="updated-label">Events curated weekly</span><a class="feedback-link" href="mailto:marlow.thijs@icloud.com?subject=UniFlow%20feedback">Feedback: marlow.thijs@icloud.com</a><a href="https://github.com/marlowthijs/Hacktoberfest" target="_blank" rel="noopener noreferrer">Project on GitHub ↗</a></div></footer>
+    <footer class="footer"><div class="footer-left"><strong>uniflow</strong><span>·</span><span>Student-run project; not an official University service.</span></div><div class="footer-right"><span id="updated-label">Society catalogue curated weekly</span><a class="feedback-link" href="mailto:marlow.thijs@icloud.com?subject=UniFlow%20feedback">Feedback: marlow.thijs@icloud.com</a><a href="https://github.com/marlowthijs/Hacktoberfest" target="_blank" rel="noopener noreferrer">Project on GitHub ↗</a></div></footer>
   </div>
   <div class="selection-dock" id="selection-dock" hidden><div class="selection-dock-inner"><div class="selection-dock-copy"><strong id="selection-dock-count">0 societies selected</strong><span>Ready to build your calendar?</span></div><a class="button button-primary" href="#calendar">Continue <span aria-hidden="true">↓</span></a></div></div>
   <div class="sr-only" id="announcement" aria-live="polite"></div>
@@ -329,6 +339,9 @@ const PAGE = String.raw`<!doctype html>
 
       function readSavedSelection(){try{var saved=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(saved)?saved.filter(function(id){return typeof id==="string";}):[];}catch(_){return [];}}
       function esc(value){return String(value==null?"":value).replace(/[&<>"']/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch];});}
+      function safeExternalUrl(value){try{var url=new URL(String(value||""));return url.protocol==="https:"||url.protocol==="http:"?url.href:"";}catch(_){return "";}}
+      function externalAnchor(label,value){var href=safeExternalUrl(value);return href?'<a href="'+esc(href)+'" target="_blank" rel="noopener noreferrer">'+esc(label)+' ↗</a>':'';}
+      function societyLinks(society){var links=[];if(society.instagram_url)links.push(externalAnchor("Instagram",society.instagram_url));if(society.contact_email&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(society.contact_email))links.push('<a href="mailto:'+esc(society.contact_email)+'">Email</a>');if(society.website_url){var host="";try{host=new URL(society.website_url).hostname;}catch(_){}links.push(externalAnchor(/linktr\.ee|beacons\.ai|solo\.to/i.test(host)?"More links":"Website",society.website_url));}if(society.community_url){var host="";try{host=new URL(society.community_url).hostname;}catch(_){}links.push(externalAnchor(/whatsapp/i.test(host)?"WhatsApp group":/discord/i.test(host)?"Discord":"Group link",society.community_url));}if(society.susu_url)links.push(externalAnchor("SUSU profile",society.susu_url));links=links.filter(Boolean);return links.length?'<div class="society-links" aria-label="Society contact links">'+links.join("")+'</div>':'';}
       function fmtDate(value,zone,options){return new Intl.DateTimeFormat("en-GB",Object.assign({timeZone:zone||"Europe/London"},options)).format(new Date(value));}
       function eventTime(event){return fmtDate(event.start,event.timezone,{hour:"2-digit",minute:"2-digit",hourCycle:"h23"})+" — "+fmtDate(event.end,event.timezone,{hour:"2-digit",minute:"2-digit",hourCycle:"h23"});}
       function eventDate(event){return {day:fmtDate(event.start,event.timezone,{day:"2-digit"}),month:fmtDate(event.start,event.timezone,{month:"short"}),weekday:fmtDate(event.start,event.timezone,{weekday:"long"}),full:fmtDate(event.start,event.timezone,{weekday:"long",day:"numeric",month:"long",year:"numeric"})};}
@@ -339,7 +352,7 @@ const PAGE = String.raw`<!doctype html>
         document.getElementById("selection-count").textContent=selected.size+" selected";
         if(!catalogue.societies.length){document.getElementById("society-result-count").textContent="No societies listed";societyActions.hidden=true;grid.innerHTML='<div class="empty-state">No societies are listed yet. Check back after the next catalogue update.</div>';return;}
         var query=searchText(societySearch.value).trim();
-        var matches=catalogue.societies.filter(function(society){return !query||searchText(society.name+" "+society.id+" "+(society.description||"")).indexOf(query)!==-1;});
+        var matches=catalogue.societies.filter(function(society){return !query||searchText([society.name,society.id,society.description,society.instagram_bio,society.regular_schedule].join(" ")).indexOf(query)!==-1;});
         var visible=societyExpanded?matches:matches.slice(0,6);
         document.getElementById("society-result-count").textContent=matches.length?("Showing "+visible.length+" of "+matches.length+" societies"):"No societies found";
         societyActions.hidden=matches.length<=6;
@@ -349,7 +362,10 @@ const PAGE = String.raw`<!doctype html>
         grid.innerHTML=visible.map(function(society){
           var active=selected.has(society.id), count=catalogue.events.filter(function(event){return event.society_id===society.id&&new Date(event.end).getTime()>=Date.now();}).length;
           var initials=Array.from(society.name).slice(0,4).join("");
-          return '<article class="society-card'+(active?' is-selected':'')+'"><div class="society-top"><div class="society-monogram" style="background:'+esc(society.accent||"#b7ef72")+'">'+esc(initials)+'</div><span class="society-type">Society calendar</span></div><h3>'+esc(society.name)+'</h3><p>'+esc(society.description||"Events and meetups from this society.")+'</p><div class="society-bottom"><span class="society-events">'+count+' upcoming '+(count===1?'event':'events')+'</span><label class="society-check"><input type="checkbox" data-society="'+esc(society.id)+'" '+(active?'checked':'')+'><span>Add to my calendar</span></label></div></article>';
+          var description=society.description||"Events and meetups from this society.";
+          var schedule=society.regular_schedule?'<p class="society-schedule"><strong>Regular activities:</strong> '+esc(society.regular_schedule)+'</p>':'';
+          var bio=society.instagram_bio&&searchText(society.instagram_bio)!==searchText(description)?'<details class="society-extra"><summary>Instagram bio</summary><p>'+esc(society.instagram_bio)+'</p></details>':'';
+          return '<article class="society-card'+(active?' is-selected':'')+'"><div class="society-top"><div class="society-monogram" style="background:'+esc(society.accent||"#b7ef72")+'">'+esc(initials)+'</div><span class="society-type">Society calendar</span></div><h3>'+esc(society.name)+'</h3><p class="society-description">'+esc(description)+'</p>'+schedule+bio+societyLinks(society)+'<div class="society-bottom"><span class="society-events">'+count+' upcoming '+(count===1?'event':'events')+'</span><label class="society-check"><input type="checkbox" data-society="'+esc(society.id)+'" '+(active?'checked':'')+'><span>Add to my calendar</span></label></div></article>';
         }).join("");
         grid.querySelectorAll("[data-society]").forEach(function(check){check.addEventListener("change",function(){var id=check.getAttribute("data-society");if(check.checked){selected.add(id);}else{selected.delete(id);}try{localStorage.setItem(KEY,JSON.stringify(Array.from(selected)));}catch(_){}render();document.getElementById("announcement").textContent=selected.has(id)?societyFor(id).name+" added to your calendar feed.":societyFor(id).name+" removed from your calendar feed.";});});
       }
@@ -366,7 +382,8 @@ const PAGE = String.raw`<!doctype html>
         eventToggle.setAttribute("aria-expanded",String(eventExpanded));
         if(!matches.length){list.innerHTML=query?'<div class="empty-state"><strong>No events match that search.</strong><br>Try a different title, society, place or date.</div>':'<div class="empty-state"><strong>No upcoming events just yet.</strong><br>Society teams add new plans every week. Check back soon or explore another society.</div>';return;}
         list.innerHTML=visible.map(function(event){var society=societyFor(event.society_id), date=eventDate(event);var meta='<span>'+esc(eventTime(event))+'</span>'+(event.location?'<span>'+esc(event.location)+'</span>':'');
-          return '<article class="event-card"><div class="event-date"><span class="day">'+esc(date.day)+'</span><span class="month">'+esc(date.month)+'</span></div><div class="event-main"><div class="event-society">'+esc(society.name)+'</div><h3>'+esc(event.title)+'</h3><p class="event-meta">'+meta+'</p>'+(event.description?'<p>'+esc(event.description)+'</p>':'')+'</div><span class="event-label">'+esc(date.weekday)+'</span></article>';
+          var source=externalAnchor("View on SUSU",event.source_url);
+          return '<article class="event-card"><div class="event-date"><span class="day">'+esc(date.day)+'</span><span class="month">'+esc(date.month)+'</span></div><div class="event-main"><div class="event-society">'+esc(society.name)+'</div><h3>'+esc(event.title)+'</h3><p class="event-meta">'+meta+'</p>'+(event.description?'<p class="event-description">'+esc(event.description)+'</p>':'')+source+'</div><span class="event-label">'+esc(date.weekday)+'</span></article>';
         }).join("");
       }
       function renderFeed(){
@@ -402,7 +419,7 @@ const PAGE = String.raw`<!doctype html>
         document.getElementById("copy-guidance").textContent="Your link is ready. The button copies it and opens the Google Calendar URL screen.";
       }
       function render(){renderSocieties();renderEvents();renderFeed();}
-      async function load(){try{var response=await fetch("/api/events",{cache:"no-store"});if(!response.ok)throw new Error("catalogue unavailable");var next=await response.json();if(!Array.isArray(next.societies)||!Array.isArray(next.events))throw new Error("invalid catalogue");catalogue=next;selected=new Set(Array.from(selected).filter(function(id){return catalogue.societies.some(function(s){return s.id===id;});}));var label=document.getElementById("updated-label");if(catalogue.updated_at){var updated=new Date(catalogue.updated_at);if(!Number.isNaN(updated.getTime()))label.textContent="Events last updated "+new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"Europe/London"}).format(updated);}render();}catch(_){document.getElementById("society-result-count").textContent="Societies unavailable";document.getElementById("event-result-count").textContent="Events unavailable";grid.innerHTML='<div class="empty-state">We couldn’t load the society list right now. Please refresh in a moment.</div>';list.innerHTML='<div class="empty-state">Event updates are temporarily unavailable.</div>';}}
+      async function load(){try{var response=await fetch("/api/events",{cache:"no-store"});if(!response.ok)throw new Error("catalogue unavailable");var next=await response.json();if(!Array.isArray(next.societies)||!Array.isArray(next.events))throw new Error("invalid catalogue");catalogue=next;selected=new Set(Array.from(selected).filter(function(id){return catalogue.societies.some(function(s){return s.id===id;});}));var label=document.getElementById("updated-label");if(catalogue.updated_at){var updated=new Date(catalogue.updated_at);if(!Number.isNaN(updated.getTime()))label.textContent="Catalogue updated "+new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"Europe/London"}).format(updated);}render();}catch(_){document.getElementById("society-result-count").textContent="Societies unavailable";document.getElementById("event-result-count").textContent="Events unavailable";grid.innerHTML='<div class="empty-state">We couldn’t load the society list right now. Please refresh in a moment.</div>';list.innerHTML='<div class="empty-state">Event updates are temporarily unavailable.</div>';}}
       societySearch.addEventListener("input",function(){societyExpanded=false;renderSocieties();});
       eventSearch.addEventListener("input",function(){eventExpanded=false;renderEvents();});
       societyToggle.addEventListener("click",function(){societyExpanded=!societyExpanded;renderSocieties();});
@@ -530,7 +547,8 @@ function buildCalendar(events, origin, societyNames) {
     );
     if (event.location) lines.push("LOCATION:" + escapeIcs(event.location));
     if (event.description) lines.push("DESCRIPTION:" + escapeIcs(event.description));
-    lines.push("URL:" + origin + "/", "END:VEVENT");
+    const eventUrl = /^https:\/\/www\.susu\.org\/event\//i.test(event.source_url || "") ? event.source_url : origin + "/";
+    lines.push("URL:" + escapeIcs(eventUrl), "END:VEVENT");
   }
   lines.push("END:VCALENDAR", "");
   return lines.map(foldIcsLine).join("\r\n");
