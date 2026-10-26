@@ -184,11 +184,13 @@ const PAGE = String.raw`<!doctype html>
     .feed-status{font-size:12px;margin:0 0 12px}
     .feed-box{display:block;margin-top:0;max-width:100%;padding:12px;background:rgba(255,255,255,.08)}
     .feed-label{display:block;color:#d2e1e9;font-size:10px;font-weight:700;margin-bottom:7px}
-    .feed-url{display:block;width:100%;font-size:11px;line-height:1.5;white-space:normal;overflow-wrap:anywhere;user-select:all}
+    .feed-url{display:block;width:100%;font-size:11px;line-height:1.5;white-space:normal;overflow-wrap:anywhere;-webkit-user-select:all;user-select:all}
     .calendar-action{width:100%;margin-top:12px;justify-content:center;text-align:center;padding:14px 16px;background:#fff;color:#002f4c;border-radius:4px;font-size:13px}
     .calendar-action:hover{background:#eaf2f7;color:#002f4c;transform:none}
     .calendar-action:disabled{background:#b5c8d2;color:#536d7b;cursor:not-allowed;transform:none}
     .copy-guidance{min-height:42px;margin:10px 0 0;color:#e1ebf0;font-size:11px;line-height:1.55}
+    .mobile-calendar-note{margin:8px 0 0;padding:10px 11px;border-left:2px solid #fcbc00;background:rgba(255,255,255,.08);color:#e1ebf0;font-size:11px;line-height:1.55;overflow-wrap:anywhere}
+    .mobile-calendar-note strong{color:#fff;font-weight:700}
     .feed-foot{margin-top:10px}
     .sync-steps{padding:21px;background:rgba(255,255,255,.08);border-radius:5px}
     .sync-steps h3{margin-bottom:14px;font-size:16px}
@@ -356,10 +358,11 @@ const PAGE = String.raw`<!doctype html>
             <div class="feed-box"><span class="feed-label">Your calendar feed link</span><span class="feed-url" id="feed-url">Choose a society above to create your feed</span></div>
             <button class="button calendar-action" id="copy-feed" type="button" disabled>Copy link &amp; open Google Calendar <span aria-hidden="true">↗</span></button>
             <p class="copy-guidance" id="copy-guidance" role="status" aria-live="polite">After choosing societies, use the button to copy your link and open Google Calendar.</p>
+            <p class="mobile-calendar-note" id="mobile-calendar-note" hidden>On a phone, Google Calendar links can open the app. If that happens, return here and enter <strong>calendar.google.com/calendar/u/0/r/settings/addbyurl</strong> directly in your browser’s address bar. Choose “Desktop site” if the “From URL” option is missing.</p>
             <div class="feed-foot">Anyone with your link can view the selected public society events. Your choices are saved in this browser.</div>
             <a class="snapshot-link" id="download-feed" href="#" aria-disabled="true">Download a one-time .ics file instead</a>
           </div>
-          <div class="sync-steps"><h3>Finish in the Google Calendar tab</h3><ol class="steps"><li><span class="step-num">1</span><span><strong>Choose “From URL”</strong>In Google Calendar, open “Other calendars” and choose “+”, then “From URL”.</span></li><li><span class="step-num">2</span><span><strong>Paste your copied link</strong>Paste it into the URL field and select “Add calendar”.</span></li></ol><a class="google-link" href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" target="_blank" rel="noopener noreferrer">Open Google Calendar manually <span aria-hidden="true">↗</span></a><p class="privacy-note">This adds a separate calendar subscription. It does not edit your primary calendar, and Google may take a little time to refresh new events.</p></div>
+          <div class="sync-steps"><h3>Finish in the Google Calendar browser tab</h3><ol class="steps"><li><span class="step-num">1</span><span><strong>Choose “From URL”</strong>In Google Calendar, open “Other calendars” and choose “+”, then “From URL”.</span></li><li><span class="step-num">2</span><span><strong>Paste your copied link</strong>Paste it into the URL field and select “Add calendar”.</span></li></ol><a class="google-link" href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" target="_blank" rel="noopener noreferrer">Open Google Calendar manually <span aria-hidden="true">↗</span></a><p class="privacy-note">This adds a separate calendar subscription. It does not edit your primary calendar, and Google may take a little time to refresh new events.</p></div>
         </div>
         <div class="wizard-actions"><button class="button button-secondary" id="back-to-events" type="button">← Back to event review</button></div>
       </section>
@@ -385,6 +388,7 @@ const PAGE = String.raw`<!doctype html>
       var eventToggle=document.getElementById("event-toggle");
       var feedUrl=document.getElementById("feed-url");
       var copyButton=document.getElementById("copy-feed");
+      var manualCalendarLink=document.querySelector(".google-link");
       var downloadLink=document.getElementById("download-feed");
       var continueButton=document.getElementById("continue-review");
       var continueCalendarButton=document.getElementById("continue-calendar");
@@ -392,6 +396,11 @@ const PAGE = String.raw`<!doctype html>
       var backToEventsButton=document.getElementById("back-to-events");
       var wizardPages=Array.from(document.querySelectorAll("[data-wizard-page]"));
       var activeStep=1;
+      var mobileCalendarNote=document.getElementById("mobile-calendar-note");
+
+      function isMobileLayout(){return !!(window.matchMedia&&window.matchMedia("(max-width: 760px), (pointer: coarse)").matches);}
+      function calendarSettingsUrl(){return isMobileLayout()?"https://www.google.com/calendar/u/0/r/settings/addbyurl":"https://calendar.google.com/calendar/u/0/r/settings/addbyurl";}
+      if(manualCalendarLink)manualCalendarLink.href=calendarSettingsUrl();
 
       function readSavedSelection(){try{var saved=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(saved)?saved.filter(function(id){return typeof id==="string";}):[];}catch(_){return [];}}
       function esc(value){return String(value==null?"":value).replace(/[&<>"']/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch];});}
@@ -472,22 +481,26 @@ function upcomingEventCount(id){return catalogue.events.filter(function(event){r
         if(!count){
           feedUrl.textContent="Choose a society above to create your feed";
           copyButton.disabled=true;
-          copyButton.textContent="Copy link & open Google Calendar";
+          copyButton.textContent=isMobileLayout()?"Copy link & open Calendar in browser":"Copy link & open Google Calendar";
+          if(mobileCalendarNote)mobileCalendarNote.hidden=!isMobileLayout();
+          if(manualCalendarLink)manualCalendarLink.href=calendarSettingsUrl();
           downloadLink.href="#";
           downloadLink.setAttribute("aria-disabled","true");
           document.getElementById("feed-status").textContent="Choose at least one society to unlock your calendar link.";
-          document.getElementById("copy-guidance").textContent="After choosing societies, use the button to copy your link and open Google Calendar.";
+          document.getElementById("copy-guidance").textContent=isMobileLayout()?"After choosing societies, copy your link and open the Google Calendar website in this browser.":"After choosing societies, use the button to copy your link and open Google Calendar.";
           return;
         }
         var url=new URL("/calendar.ics",window.location.origin);
         url.searchParams.set("societies",ids.join(","));
         feedUrl.textContent=url.href;
         copyButton.disabled=false;
-        copyButton.textContent="Copy link & open Google Calendar";
+        copyButton.textContent=isMobileLayout()?"Copy link & open Calendar in browser":"Copy link & open Google Calendar";
+        if(mobileCalendarNote)mobileCalendarNote.hidden=!isMobileLayout();
+        if(manualCalendarLink)manualCalendarLink.href=calendarSettingsUrl();
         downloadLink.href=url.href+"&download=1";
         downloadLink.removeAttribute("aria-disabled");
         document.getElementById("feed-status").textContent=count+" societ"+(count===1?"y":"ies")+" selected · ready to add";
-        document.getElementById("copy-guidance").textContent="Your link is ready. The button copies it and opens the Google Calendar URL screen.";
+        document.getElementById("copy-guidance").textContent=isMobileLayout()?"Your link is ready. The button copies it and opens the Google Calendar website in this browser.":"Your link is ready. The button copies it and opens the Google Calendar URL screen.";
       }
             function render(){renderSocieties();renderEvents();renderFeed();}
       function showStep(step){if(step<1||step>3)return;if(step>1&&!selected.size){document.getElementById("announcement").textContent="Choose at least one society with upcoming events before continuing.";return;}activeStep=step;wizardPages.forEach(function(page){var current=Number(page.getAttribute("data-wizard-page"))===step;page.hidden=!current;page.classList.toggle("is-current",current);});[1,2,3].forEach(function(number){var item=document.getElementById("wizard-progress-"+number);if(!item)return;item.classList.toggle("is-current",number===step);item.classList.toggle("is-complete",number<step);if(number===step)item.setAttribute("aria-current","step");else item.removeAttribute("aria-current");});document.querySelectorAll("[data-go-step]").forEach(function(link){if(Number(link.getAttribute("data-go-step"))===step)link.setAttribute("aria-current","step");else link.removeAttribute("aria-current");});window.scrollTo({top:0,behavior:"smooth"});var page=document.querySelector("[data-wizard-page=\""+step+"\"]");var heading=page&&page.querySelector("h2");if(heading)heading.focus({preventScroll:true});}
@@ -504,7 +517,8 @@ function upcomingEventCount(id){return catalogue.events.filter(function(event){r
       copyButton.addEventListener("click",async function(){
         if(copyButton.disabled)return;
         var link=feedUrl.textContent;
-        window.open("https://calendar.google.com/calendar/u/0/r/settings/addbyurl","_blank","noopener,noreferrer");
+        var mobile=isMobileLayout();
+        if(!mobile)window.open(calendarSettingsUrl(),"_blank","noopener,noreferrer");
         var copied=false;
         try{if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(link);copied=true;}}catch(_){}
         if(!copied){
@@ -521,16 +535,17 @@ function upcomingEventCount(id){return catalogue.events.filter(function(event){r
         if(copied){
           copyButton.textContent="Link copied ✓";
           document.getElementById("feed-status").textContent="Your calendar link is copied.";
-          document.getElementById("copy-guidance").textContent="In the Google Calendar tab, choose “From URL”, paste your copied link into the URL field, then select “Add calendar”.";
-          document.getElementById("announcement").textContent="Calendar link copied and Google Calendar opened in a new tab. Paste it using From URL, then choose Add calendar.";
+          document.getElementById("copy-guidance").textContent=mobile?"Your link is copied. In Google Calendar, choose “From URL”, paste the link, then select “Add calendar”.":"In the Google Calendar tab, choose “From URL”, paste your copied link into the URL field, then select “Add calendar”.";
+          document.getElementById("announcement").textContent=mobile?"Calendar link copied. Google Calendar website is opening in this browser tab. Paste it using From URL, then choose Add calendar.":"Calendar link copied and Google Calendar opened in a new tab. Paste it using From URL, then choose Add calendar.";
+          if(mobile)window.location.assign(calendarSettingsUrl());
         }else{
-          copyButton.textContent="Google Calendar opened";
-          document.getElementById("feed-status").textContent="Calendar opened. Copy the link above to continue.";
-          document.getElementById("copy-guidance").textContent="Clipboard access was unavailable. Select and copy the link above, then paste it into Google Calendar under “From URL”.";
-          document.getElementById("announcement").textContent="Google Calendar opened in a new tab. Select and copy the link above, then paste it using From URL.";
+          copyButton.textContent=mobile?"Copy link manually":"Google Calendar opened";
+          document.getElementById("feed-status").textContent=mobile?"Clipboard access was unavailable. Copy the link above to continue.":"Calendar opened. Copy the link above to continue.";
+          document.getElementById("copy-guidance").textContent=mobile?"Long-press the link above to copy it, then type calendar.google.com/calendar/u/0/r/settings/addbyurl in your browser’s address bar and paste it under “From URL”.":"Clipboard access was unavailable. Select and copy the link above, then paste it into Google Calendar under “From URL”.";
+          document.getElementById("announcement").textContent=mobile?"Clipboard access unavailable. Long-press the feed link to copy it, then open Google Calendar in your browser and paste it using From URL.":"Google Calendar opened in a new tab. Select and copy the link above, then paste it using From URL.";
         }
       });
-      load();window.addEventListener("focus",load);setInterval(load,300000);
+      load();window.addEventListener("focus",load);window.addEventListener("resize",renderFeed);setInterval(load,300000);
     })();
   </script>
 </body>

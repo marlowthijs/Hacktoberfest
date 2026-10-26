@@ -42,7 +42,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-acs-football",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1082_1696950730.png"
+      "logo_url": "https://www.susu.org/groups/logos/1082_1696950730.png",
+      "instagram_url": "https://www.instagram.com/acsfc.soton/"
     },
     {
       "id": "actuarial-society",
@@ -130,7 +131,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/stags",
-      "logo_url": "https://www.susu.org/groups/logos/186_1698080805.png"
+      "logo_url": "https://www.susu.org/groups/logos/186_1698080805.png",
+      "instagram_url": "https://www.instagram.com/southamptonstags/"
     },
     {
       "id": "amnesty-international",
@@ -175,6 +177,7 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-archers-road-fc",
       "contact_email": "susport@soton.ac.uk",
+      "instagram_url": "https://www.instagram.com/archersroadfc/",
       "logo_url": "https://www.susu.org/groups/logos/1088_1755019658.png"
     },
     {
@@ -185,7 +188,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/suac",
-      "logo_url": "https://www.susu.org/groups/logos/187_1596378442.png"
+      "logo_url": "https://www.susu.org/groups/logos/187_1596378442.png",
+      "instagram_url": "https://www.instagram.com/su.archery.club/"
     },
     {
       "id": "art-soc",
@@ -193,7 +197,8 @@
       "description": "Weekly drop-in art sessions.",
       "accent": "#e3c9ff",
       "susu_url": "https://www.susu.org/groups/art-soc",
-      "logo_url": "https://www.susu.org/groups/logos/15_1764271980.png"
+      "logo_url": "https://www.susu.org/groups/logos/15_1764271980.png",
+      "instagram_url": "https://www.instagram.com/uosartsoc/"
     },
     {
       "id": "artificial-intelligence-society",
@@ -251,7 +256,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-maths",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1110_1732106114.png"
+      "logo_url": "https://www.susu.org/groups/logos/1110_1732106114.png",
+      "instagram_url": "https://www.instagram.com/athenasnetballuos/"
     },
     {
       "id": "athletics-cross-country",
@@ -274,7 +280,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/badgers-basketball",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/960_1778754193.png"
+      "logo_url": "https://www.susu.org/groups/logos/960_1778754193.png",
+      "instagram_url": "https://www.instagram.com/southamptonbadgers/"
     },
     {
       "id": "badminton-club",
@@ -285,7 +292,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/recbad",
       "contact_email": "subad@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/190_1758812206.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/190_1758812206.jpg",
+      "instagram_url": "https://www.instagram.com/southampton_badminton/"
     },
     {
       "id": "baking-society",
@@ -293,7 +301,8 @@
       "description": "Weekly bake-and-chat meetups with a new theme each week.",
       "accent": "#fff0a8",
       "susu_url": "https://www.susu.org/groups/baking-society",
-      "logo_url": "https://www.susu.org/groups/logos/935_1623606336.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/935_1623606336.jpg",
+      "instagram_url": "https://www.instagram.com/bakesocsoton/"
     },
     {
       "id": "ballet-society",
@@ -301,7 +310,8 @@
       "description": "Weekly ballet classes at four levels.",
       "accent": "#a8f0e0",
       "susu_url": "https://www.susu.org/groups/ballet-society",
-      "logo_url": "https://www.susu.org/groups/logos/20_1690392240.png"
+      "logo_url": "https://www.susu.org/groups/logos/20_1690392240.png",
+      "instagram_url": "https://www.instagram.com/usdballet/"
     },
     {
       "id": "ballroom-and-latin-dance-society",
@@ -345,7 +355,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-barbarians",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1078_1692385680.png"
+      "logo_url": "https://www.susu.org/groups/logos/1078_1692385680.png",
+      "instagram_url": "https://www.instagram.com/sotonbarbarians/"
     },
     {
       "id": "baseball-and-softball",
@@ -355,7 +366,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/baseball",
-      "logo_url": "https://www.susu.org/groups/logos/191_1689721482.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/191_1689721482.jpg",
+      "instagram_url": "https://www.instagram.com/uosmustangs/"
     },
     {
       "id": "basketball",
@@ -376,7 +388,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/beekeeping",
       "contact_email": "subeekeepingsociety@gmail.com",
-      "logo_url": "https://www.susu.org/groups/logos/897_1731410643.png"
+      "logo_url": "https://www.susu.org/groups/logos/897_1731410643.png",
+      "instagram_url": "https://www.instagram.com/subeesoc/"
     },
     {
       "id": "bhangra-society",
@@ -411,7 +424,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-biosoc-bees",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1108_1688859468.png"
+      "logo_url": "https://www.susu.org/groups/logos/1108_1688859468.png",
+      "instagram_url": "https://www.instagram.com/sotonbiosocnetball/"
     },
     {
       "id": "im-biosoc-fc",
@@ -422,7 +436,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/biosoc-fc-",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1241_1723568164.png"
+      "logo_url": "https://www.susu.org/groups/logos/1241_1723568164.png",
+      "instagram_url": "https://www.instagram.com/biosocfc/"
     },
     {
       "id": "im-biosoc-hockey",
@@ -433,7 +448,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/biosoc-hockey",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1172_1725551499.png"
+      "logo_url": "https://www.susu.org/groups/logos/1172_1725551499.png",
+      "instagram_url": "https://www.instagram.com/sotonbiosochockey/"
     },
     {
       "id": "black-law-students-network",
@@ -500,7 +516,8 @@
       "description": "Training, sparring, socials and hill sprints.",
       "accent": "#ffd1b9",
       "susu_url": "https://www.susu.org/groups/boxing",
-      "logo_url": "https://www.susu.org/groups/logos/195_1727268861.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/195_1727268861.jpg",
+      "instagram_url": "https://www.instagram.com/uosboxingsociety/"
     },
     {
       "id": "brainsoc",
@@ -510,7 +527,8 @@
       "susu_url": "https://www.susu.org/groups/brainsoc",
       "contact_email": "brainsoc@soton.ac.uk",
       "community_url": "https://chat.whatsapp.com/LFJpjRyAvPJ7g1xGRmk6NA?mode=gi_t",
-      "logo_url": "https://www.susu.org/groups/logos/1347_1782140016.png"
+      "logo_url": "https://www.susu.org/groups/logos/1347_1782140016.png",
+      "instagram_url": "https://www.instagram.com/brainsoc/"
     },
     {
       "id": "brass-band",
@@ -518,7 +536,8 @@
       "description": "Weekly term-time brass band rehearsals.",
       "accent": "#c9e8ff",
       "susu_url": "https://www.susu.org/groups/brass-band",
-      "logo_url": "https://www.susu.org/groups/logos/26_1765044513.png"
+      "logo_url": "https://www.susu.org/groups/logos/26_1765044513.png",
+      "instagram_url": "https://www.instagram.com/subrassband/"
     },
     {
       "id": "bridge",
@@ -563,7 +582,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-bussoc-fc",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1058_1741275256.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1058_1741275256.jpg",
+      "instagram_url": "https://www.instagram.com/bussoc_fc/"
     },
     {
       "id": "calisthenics-society",
@@ -571,7 +591,8 @@
       "description": "Weekly calisthenics workshops and training sessions.",
       "accent": "#f2b8ff",
       "susu_url": "https://www.susu.org/groups/calisthenics-society",
-      "logo_url": "https://www.susu.org/groups/logos/1294_1751015990.png"
+      "logo_url": "https://www.susu.org/groups/logos/1294_1751015990.png",
+      "instagram_url": "https://www.instagram.com/uoscalisthenics/"
     },
     {
       "id": "cameroon-catalyst",
@@ -642,7 +663,8 @@
       "susu_url": "https://www.susu.org/groups/cardiology-society",
       "contact_email": "uoscardiosoc@gmail.com",
       "website_url": "https://linktr.ee/SotonCardio",
-      "logo_url": "https://www.susu.org/groups/logos/1315_1788270995.png"
+      "logo_url": "https://www.susu.org/groups/logos/1315_1788270995.png",
+      "instagram_url": "https://www.instagram.com/sotoncardiology/"
     },
     {
       "id": "cathsoc",
@@ -650,7 +672,8 @@
       "description": "Weekly Mass, dinner and social for Catholic students.",
       "accent": "#d4f5a0",
       "susu_url": "https://www.susu.org/groups/cathsoc",
-      "logo_url": "https://www.susu.org/groups/logos/31_1791196100.png"
+      "logo_url": "https://www.susu.org/groups/logos/31_1791196100.png",
+      "instagram_url": "https://www.instagram.com/uoscathsoc/"
     },
     {
       "id": "caving",
@@ -660,7 +683,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/caving",
-      "logo_url": "https://www.susu.org/groups/logos/198_1789753162.png"
+      "logo_url": "https://www.susu.org/groups/logos/198_1789753162.png",
+      "instagram_url": "https://www.instagram.com/su_caving/"
     },
     {
       "id": "celtic-society",
@@ -694,7 +718,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-chamberlain",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1083_1782561232.png"
+      "logo_url": "https://www.susu.org/groups/logos/1083_1782561232.png",
+      "instagram_url": "https://www.instagram.com/chamberlainfc/"
     },
     {
       "id": "cheerleading-vixens",
@@ -735,7 +760,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/chemsoc-fc-",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1184_1758204824.png"
+      "logo_url": "https://www.susu.org/groups/logos/1184_1758204824.png",
+      "instagram_url": "https://www.instagram.com/chemistryfc_soton/"
     },
     {
       "id": "chess",
@@ -767,7 +793,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/christian-medical-fellowship",
       "contact_email": "Cmfsouthampton@outlook.com",
-      "logo_url": "https://www.susu.org/groups/logos/964_1628007580.png"
+      "logo_url": "https://www.susu.org/groups/logos/964_1628007580.png",
+      "instagram_url": "https://www.instagram.com/cmfsouthampton/"
     },
     {
       "id": "christian-union",
@@ -787,7 +814,8 @@
       "description": "Weekly circus skills sessions.",
       "accent": "#ffd6e8",
       "susu_url": "https://www.susu.org/groups/circsoc",
-      "logo_url": "https://www.susu.org/groups/logos/37_1695990964.png"
+      "logo_url": "https://www.susu.org/groups/logos/37_1695990964.png",
+      "instagram_url": "https://www.instagram.com/circus_southampton/"
     },
     {
       "id": "civil-engineering-society",
@@ -810,7 +838,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/clay-pigeon-shooting-club",
-      "logo_url": "https://www.susu.org/groups/logos/873_1720552514.png"
+      "logo_url": "https://www.susu.org/groups/logos/873_1720552514.png",
+      "instagram_url": "https://www.instagram.com/sucpsc/"
     },
     {
       "id": "communist-society",
@@ -830,7 +859,8 @@
       "description": "Weekly concert band rehearsals.",
       "accent": "#b7ef72",
       "susu_url": "https://www.susu.org/groups/concert-band",
-      "logo_url": "https://www.susu.org/groups/logos/42_1695725002.png"
+      "logo_url": "https://www.susu.org/groups/logos/42_1695725002.png",
+      "instagram_url": "https://www.instagram.com/sotonuniconcertband/"
     },
     {
       "id": "im-connaught-football",
@@ -841,7 +871,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-connaught",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1059_1686749906.png"
+      "logo_url": "https://www.susu.org/groups/logos/1059_1686749906.png",
+      "instagram_url": "https://www.instagram.com/connaughtfc/"
     },
     {
       "id": "conservation-volunteers-sucv",
@@ -861,7 +892,8 @@
       "description": "Weekly contemporary dance classes at three levels.",
       "accent": "#f6b6c8",
       "susu_url": "https://www.susu.org/groups/contemporary-dance",
-      "logo_url": "https://www.susu.org/groups/logos/177_1718398284.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/177_1718398284.jpg",
+      "instagram_url": "https://www.instagram.com/usdcontemporary/"
     },
     {
       "id": "sucws",
@@ -869,7 +901,8 @@
       "description": "Writing workshops and feedback sessions.",
       "accent": "#b9d8ff",
       "susu_url": "https://www.susu.org/groups/sucws",
-      "logo_url": "https://www.susu.org/groups/logos/347_1554369572.png"
+      "logo_url": "https://www.susu.org/groups/logos/347_1554369572.png",
+      "instagram_url": "https://www.instagram.com/sotonwritingsoc/"
     },
     {
       "id": "cricket-ladies",
@@ -900,7 +933,8 @@
       "description": "Weekly cyber sessions, CTFs and practical workshops.",
       "accent": "#b9d8ff",
       "susu_url": "https://www.susu.org/groups/cyber-security-society",
-      "logo_url": "https://www.susu.org/groups/logos/568_1696621039.png"
+      "logo_url": "https://www.susu.org/groups/logos/568_1696621039.png",
+      "instagram_url": "https://www.instagram.com/sotoncyber/"
     },
     {
       "id": "darts-club",
@@ -910,7 +944,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/southampton-university-darts-club",
-      "logo_url": "https://www.susu.org/groups/logos/1217_1721507330.png"
+      "logo_url": "https://www.susu.org/groups/logos/1217_1721507330.png",
+      "instagram_url": "https://www.instagram.com/sudcdarts/"
     },
     {
       "id": "debating-society",
@@ -918,7 +953,8 @@
       "description": "Weekly debating practice and events.",
       "accent": "#ffd1b9",
       "susu_url": "https://www.susu.org/groups/debating-society",
-      "logo_url": "https://www.susu.org/groups/logos/51_1696175008.png"
+      "logo_url": "https://www.susu.org/groups/logos/51_1696175008.png",
+      "instagram_url": "https://www.instagram.com/sotonunidebate/"
     },
     {
       "id": "dermatology-society",
@@ -995,7 +1031,8 @@
       "description": "ECS talks, workshops and socials in one easy-to-follow calendar.",
       "accent": "#b7ef72",
       "susu_url": "https://www.susu.org/groups/ecss",
-      "logo_url": "https://www.susu.org/groups/logos/57_1672491611.png"
+      "logo_url": "https://www.susu.org/groups/logos/57_1672491611.png",
+      "instagram_url": "https://www.instagram.com/ecss_soton/"
     },
     {
       "id": "im-ecss-fc",
@@ -1006,7 +1043,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-ecss",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1060_1790701422.png"
+      "logo_url": "https://www.susu.org/groups/logos/1060_1790701422.png",
+      "instagram_url": "https://www.instagram.com/ecssfc/"
     },
     {
       "id": "education-society",
@@ -1080,7 +1118,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-engineering-fc",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1061_1758674026.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1061_1758674026.jpg",
+      "instagram_url": "https://www.instagram.com/suengineers_fc/"
     },
     {
       "id": "engineering-society",
@@ -1103,7 +1142,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-engineers",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1075_1720193715.png"
+      "logo_url": "https://www.susu.org/groups/logos/1075_1720193715.png",
+      "instagram_url": "https://www.instagram.com/suesrugby/"
     },
     {
       "id": "engineers-without-borders-southampton",
@@ -1147,7 +1187,8 @@
       "susu_url": "https://www.susu.org/groups/esn-southampton",
       "contact_email": "southampton@esnuk.org",
       "website_url": "https://accounts.esn.org/section/gb-sout-esn",
-      "logo_url": "https://www.susu.org/groups/logos/1254_1744633676.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1254_1744633676.jpg",
+      "instagram_url": "https://www.instagram.com/esn_southampton/"
     },
     {
       "id": "fandom-society",
@@ -1170,7 +1211,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/fencing",
-      "logo_url": "https://www.susu.org/groups/logos/202_1694005448.png"
+      "logo_url": "https://www.susu.org/groups/logos/202_1694005448.png",
+      "instagram_url": "https://www.instagram.com/soton_fencing/"
     },
     {
       "id": "figure-skating",
@@ -1233,7 +1275,8 @@
       "description": "Weekly first aid training, then the Stag's.",
       "accent": "#e3c9ff",
       "susu_url": "https://www.susu.org/groups/links",
-      "logo_url": "https://www.susu.org/groups/logos/153_1597703713.png"
+      "logo_url": "https://www.susu.org/groups/logos/153_1597703713.png",
+      "instagram_url": "https://www.instagram.com/sja_uni_soton/"
     },
     {
       "id": "first-love-society",
@@ -1263,7 +1306,8 @@
       "description": "Weekly sessions to learn folk tunes and songs.",
       "accent": "#fff0a8",
       "susu_url": "https://www.susu.org/groups/folksoc",
-      "logo_url": "https://www.susu.org/groups/logos/314_1564573564.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/314_1564573564.jpg",
+      "instagram_url": "https://www.instagram.com/sotonfolksoc/"
     },
     {
       "id": "football-ladies",
@@ -1357,7 +1401,8 @@
       "description": "Board games, card games, war games and Blood on the Clocktower, all year round.",
       "accent": "#a8f0e0",
       "susu_url": "https://www.susu.org/groups/gamesoc",
-      "logo_url": "https://www.susu.org/groups/logos/70_1722635928.png"
+      "logo_url": "https://www.susu.org/groups/logos/70_1722635928.png",
+      "instagram_url": "https://www.instagram.com/gamesoc.uos/"
     },
     {
       "id": "general-practitioner-society",
@@ -1388,7 +1433,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-geogsoc-netball",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1093_1726927089.png"
+      "logo_url": "https://www.susu.org/groups/logos/1093_1726927089.png",
+      "instagram_url": "https://www.instagram.com/geogsocnetball_uos/"
     },
     {
       "id": "im-geogsoc-fc",
@@ -1399,7 +1445,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-geogsoc-fc",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1062_1788280420.png"
+      "logo_url": "https://www.susu.org/groups/logos/1062_1788280420.png",
+      "instagram_url": "https://www.instagram.com/Geogsoc_fc/"
     },
     {
       "id": "im-glen-eyre-netball",
@@ -1432,7 +1479,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-glen-eyre-lost-boys",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1076_1670942821.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1076_1670942821.jpg",
+      "instagram_url": "https://www.instagram.com/glen_eyre_rugby/"
     },
     {
       "id": "gliding",
@@ -1536,7 +1584,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-hales-angels",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1105_1787763327.png"
+      "logo_url": "https://www.susu.org/groups/logos/1105_1787763327.png",
+      "instagram_url": "https://www.instagram.com/hales.angels/"
     },
     {
       "id": "hawks-badminton",
@@ -1557,7 +1606,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-highfield",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1064_1656597513.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1064_1656597513.jpg",
+      "instagram_url": "https://www.instagram.com/highfield.fc/"
     },
     {
       "id": "hillwalking",
@@ -1577,7 +1627,8 @@
       "description": "Cultural and religious events including Diwali.",
       "accent": "#f2b8ff",
       "susu_url": "https://www.susu.org/groups/hindu-society",
-      "logo_url": "https://www.susu.org/groups/logos/80_1722439242.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/80_1722439242.jpg",
+      "instagram_url": "https://www.instagram.com/nhsfsouthampton/"
     },
     {
       "id": "history-society",
@@ -1610,7 +1661,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-history-boycott",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1103_1724947037.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1103_1724947037.jpg",
+      "instagram_url": "https://www.instagram.com/histsoc_netball/"
     },
     {
       "id": "hockey-ladies",
@@ -1652,7 +1704,8 @@
       "description": "Weekly knitting, crochet and stitching sessions.",
       "accent": "#c9e8ff",
       "susu_url": "https://www.susu.org/groups/hookers-knitters-and-stichers",
-      "logo_url": "https://www.susu.org/groups/logos/910_1693503709.png"
+      "logo_url": "https://www.susu.org/groups/logos/910_1693503709.png",
+      "instagram_url": "https://www.instagram.com/projecthks/"
     },
     {
       "id": "hornets-athletics",
@@ -1662,7 +1715,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/hornets-athletics",
-      "logo_url": "https://www.susu.org/groups/logos/1250_1727006641.png"
+      "logo_url": "https://www.susu.org/groups/logos/1250_1727006641.png",
+      "instagram_url": "https://www.instagram.com/southamptonmedicsrunclub/"
     },
     {
       "id": "human-powered-aircraft",
@@ -1719,7 +1773,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/ice-and-inline-hockey",
-      "logo_url": "https://www.susu.org/groups/logos/213_1564579932.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/213_1564579932.jpg",
+      "instagram_url": "https://www.instagram.com/southamptonspitfires/"
     },
     {
       "id": "im-india-soc-badminton",
@@ -1737,7 +1792,8 @@
       "description": "Indian cultural events and socials.",
       "accent": "#d4f5a0",
       "susu_url": "https://www.susu.org/groups/indiasoc",
-      "logo_url": "https://www.susu.org/groups/logos/390_1785783021.png"
+      "logo_url": "https://www.susu.org/groups/logos/390_1785783021.png",
+      "instagram_url": "https://www.instagram.com/sotonindiansoc/"
     },
     {
       "id": "indonesian-society",
@@ -1756,7 +1812,8 @@
       "description": "Weekly Irish dance classes.",
       "accent": "#f2b8ff",
       "susu_url": "https://www.susu.org/groups/southampton-university-irish-dance-society",
-      "logo_url": "https://www.susu.org/groups/logos/565_1728817168.png"
+      "logo_url": "https://www.susu.org/groups/logos/565_1728817168.png",
+      "instagram_url": "https://www.instagram.com/usdirishdance/"
     },
     {
       "id": "islamic-society",
@@ -1809,7 +1866,8 @@
       "description": "Weekly big band rehearsals and Sunday jam sessions.",
       "accent": "#d4f5a0",
       "susu_url": "https://www.susu.org/groups/big-band",
-      "logo_url": "https://www.susu.org/groups/logos/765_1785005113.png"
+      "logo_url": "https://www.susu.org/groups/logos/765_1785005113.png",
+      "instagram_url": "https://www.instagram.com/sotonunijb/"
     },
     {
       "id": "jazz-dance",
@@ -1817,7 +1875,8 @@
       "description": "Weekly jazz dance classes at three levels.",
       "accent": "#ffd6e8",
       "susu_url": "https://www.susu.org/groups/jazz-dance",
-      "logo_url": "https://www.susu.org/groups/logos/91_1664796466.png"
+      "logo_url": "https://www.susu.org/groups/logos/91_1664796466.png",
+      "instagram_url": "https://www.instagram.com/usdjazzdance/"
     },
     {
       "id": "jazz-orchestra",
@@ -1825,7 +1884,8 @@
       "description": "Weekly jazz orchestra rehearsal.",
       "accent": "#b7ef72",
       "susu_url": "https://www.susu.org/groups/sujo",
-      "logo_url": "https://www.susu.org/groups/logos/92_1669556891.png"
+      "logo_url": "https://www.susu.org/groups/logos/92_1669556891.png",
+      "instagram_url": "https://www.instagram.com/sujosoton/"
     },
     {
       "id": "jewish-society",
@@ -1867,7 +1927,8 @@
       "description": "K-pop dance classes and socials.",
       "accent": "#ffc9a8",
       "susu_url": "https://www.susu.org/groups/k-pop-society",
-      "logo_url": "https://www.susu.org/groups/logos/1035_1727993173.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1035_1727993173.jpg",
+      "instagram_url": "https://www.instagram.com/uoskpopsoc/"
     },
     {
       "id": "karate-club",
@@ -1887,7 +1948,8 @@
       "description": "Kathak and Bharatanatyam classes.",
       "accent": "#f6b6c8",
       "susu_url": "https://www.susu.org/groups/southampton-kandyan-and-bharata-natyam-dance-society-",
-      "logo_url": "https://www.susu.org/groups/logos/567_1784912223.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/567_1784912223.jpg",
+      "instagram_url": "https://www.instagram.com/SouthamptonSKBD/"
     },
     {
       "id": "kendo",
@@ -1897,7 +1959,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/kendo",
-      "logo_url": "https://www.susu.org/groups/logos/708_1727267304.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/708_1727267304.jpg",
+      "instagram_url": "https://www.instagram.com/soton.kendo/"
     },
     {
       "id": "kickboxing",
@@ -1930,7 +1993,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/suks",
-      "logo_url": "https://www.susu.org/groups/logos/218_1760549348.png"
+      "logo_url": "https://www.susu.org/groups/logos/218_1760549348.png",
+      "instagram_url": "https://www.instagram.com/southamptonwakeandkite/"
     },
     {
       "id": "koalas-bouldering",
@@ -1938,7 +2002,8 @@
       "description": "Weekly bouldering session followed by the pub.",
       "accent": "#b9d8ff",
       "susu_url": "https://www.susu.org/groups/koalas-medics-bouldering-",
-      "logo_url": "https://www.susu.org/groups/logos/1142_1714922354.png"
+      "logo_url": "https://www.susu.org/groups/logos/1142_1714922354.png",
+      "instagram_url": "https://www.instagram.com/Koalas_bouldering/"
     },
     {
       "id": "korfball",
@@ -1976,7 +2041,8 @@
       "description": "Weekly meetings and debates.",
       "accent": "#ffd1b9",
       "susu_url": "https://www.susu.org/groups/sulc",
-      "logo_url": "https://www.susu.org/groups/logos/98_1724168181.png"
+      "logo_url": "https://www.susu.org/groups/logos/98_1724168181.png",
+      "instagram_url": "https://www.instagram.com/sotonlaboursoc/"
     },
     {
       "id": "lacrosse-ladies",
@@ -1986,7 +2052,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sullc",
-      "logo_url": "https://www.susu.org/groups/logos/221_1725467353.png"
+      "logo_url": "https://www.susu.org/groups/logos/221_1725467353.png",
+      "instagram_url": "https://www.instagram.com/sullc/"
     },
     {
       "id": "lacrosse-men-s",
@@ -1996,7 +2063,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/mens-lax",
-      "logo_url": "https://www.susu.org/groups/logos/220_1695221788.png"
+      "logo_url": "https://www.susu.org/groups/logos/220_1695221788.png",
+      "instagram_url": "https://www.instagram.com/tridentslax/"
     },
     {
       "id": "lacrosse-mixed",
@@ -2006,7 +2074,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/lacrosse-mixed",
-      "logo_url": "https://www.susu.org/groups/logos/222_1752072073.png"
+      "logo_url": "https://www.susu.org/groups/logos/222_1752072073.png",
+      "instagram_url": "https://www.instagram.com/sotonmixedlax/"
     },
     {
       "id": "law-society",
@@ -2029,7 +2098,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/lawsoc-badminton",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1197_1700647554.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1197_1700647554.jpg",
+      "instagram_url": "https://www.instagram.com/sotonlawsocbad/"
     },
     {
       "id": "im-lawsoc-fc",
@@ -2102,7 +2172,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sulsc",
-      "logo_url": "https://www.susu.org/groups/logos/223_1758562113.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/223_1758562113.jpg",
+      "instagram_url": "https://www.instagram.com/southamptonlifesaving/"
     },
     {
       "id": "light-opera",
@@ -2110,7 +2181,8 @@
       "description": "Non-auditioned chorus rehearsals.",
       "accent": "#e3c9ff",
       "susu_url": "https://www.susu.org/groups/lopsoc",
-      "logo_url": "https://www.susu.org/groups/logos/103_1789046038.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/103_1789046038.jpg",
+      "instagram_url": "https://www.instagram.com/lopsoc/"
     },
     {
       "id": "live-music-society",
@@ -2153,7 +2225,8 @@
       "description": "Friday evening fellowship.",
       "accent": "#fff0a8",
       "susu_url": "https://www.susu.org/groups/mandarin-christian-fellowship",
-      "logo_url": "https://www.susu.org/groups/logos/527_1598741794.png"
+      "logo_url": "https://www.susu.org/groups/logos/527_1598741794.png",
+      "instagram_url": "https://www.instagram.com/sotonmcf/"
     },
     {
       "id": "maths-society",
@@ -2176,7 +2249,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-mayflower-fc",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1066_1788364084.png"
+      "logo_url": "https://www.susu.org/groups/logos/1066_1788364084.png",
+      "instagram_url": "https://www.instagram.com/mayflower_fc/"
     },
     {
       "id": "medics-revue",
@@ -2185,7 +2259,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/medics-revue",
       "contact_email": "sotonmedicsrevue@outlook.com",
-      "logo_url": "https://www.susu.org/groups/logos/978_1757696851.png"
+      "logo_url": "https://www.susu.org/groups/logos/978_1757696851.png",
+      "instagram_url": "https://www.instagram.com/sotonmedicsrevue/"
     },
     {
       "id": "medsoc",
@@ -2255,7 +2330,8 @@
       "description": "Striking, grappling and full MMA sessions.",
       "accent": "#f6b6c8",
       "susu_url": "https://www.susu.org/groups/sumt",
-      "logo_url": "https://www.susu.org/groups/logos/228_1727793255.png"
+      "logo_url": "https://www.susu.org/groups/logos/228_1727793255.png",
+      "instagram_url": "https://www.instagram.com/summa_club/"
     },
     {
       "id": "model-un",
@@ -2263,7 +2339,8 @@
       "description": "Weekly MUN meetings.",
       "accent": "#ffc9a8",
       "susu_url": "https://www.susu.org/groups/southampton-university-mun",
-      "logo_url": "https://www.susu.org/groups/logos/540_1695921379.png"
+      "logo_url": "https://www.susu.org/groups/logos/540_1695921379.png",
+      "instagram_url": "https://www.instagram.com/soton_mun/"
     },
     {
       "id": "im-monte-football",
@@ -2274,7 +2351,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-monte",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1086_1726158711.png"
+      "logo_url": "https://www.susu.org/groups/logos/1086_1726158711.png",
+      "instagram_url": "https://www.instagram.com/montefiore_fc/"
     },
     {
       "id": "im-monte-netball",
@@ -2285,7 +2363,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-monte-netball",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1094_1750781103.png"
+      "logo_url": "https://www.susu.org/groups/logos/1094_1750781103.png",
+      "instagram_url": "https://www.instagram.com/montenetballclub/"
     },
     {
       "id": "im-montefiores-exiles-rfc",
@@ -2296,7 +2375,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-montefiores-exiles",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1077_1689895718.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1077_1689895718.jpg",
+      "instagram_url": "https://www.instagram.com/monte.exiles/"
     },
     {
       "id": "moose-rugby",
@@ -2317,7 +2397,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sumbc",
-      "logo_url": "https://www.susu.org/groups/logos/226_1564587335.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/226_1564587335.jpg",
+      "instagram_url": "https://www.instagram.com/thesumbc/"
     },
     {
       "id": "mountaineering",
@@ -2327,7 +2408,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sumc",
-      "logo_url": "https://www.susu.org/groups/logos/227_1758553454.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/227_1758553454.jpg",
+      "instagram_url": "https://www.instagram.com/su_mountaineers/"
     },
     {
       "id": "muslim-medics-southampton",
@@ -2370,7 +2452,8 @@
       "description": "Weekly socials.",
       "accent": "#c9e8ff",
       "susu_url": "https://www.susu.org/groups/university-of-southampton-neurodiversity-disability-society",
-      "logo_url": "https://www.susu.org/groups/logos/835_1682262933.png"
+      "logo_url": "https://www.susu.org/groups/logos/835_1682262933.png",
+      "instagram_url": "https://www.instagram.com/nddsoc/"
     },
     {
       "id": "neurosoc",
@@ -2392,7 +2475,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-nightingales",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1109_1667344966.png"
+      "logo_url": "https://www.susu.org/groups/logos/1109_1667344966.png",
+      "instagram_url": "https://www.instagram.com/nightingalesnetball/"
     },
     {
       "id": "im-noc-mermaids",
@@ -2444,7 +2528,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-ocean-and-earth-fc",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1070_1697473144.png"
+      "logo_url": "https://www.susu.org/groups/logos/1070_1697473144.png",
+      "instagram_url": "https://www.instagram.com/oceanearthfootballclub/"
     },
     {
       "id": "olympic-weightlifting",
@@ -2475,7 +2560,8 @@
       "description": "Talks, socials and events for optics and photonics students.",
       "accent": "#a8f0e0",
       "susu_url": "https://www.susu.org/groups/university-of-southampton-optics-and-photonics-society",
-      "logo_url": "https://www.susu.org/groups/logos/735_1670939731.png"
+      "logo_url": "https://www.susu.org/groups/logos/735_1670939731.png",
+      "instagram_url": "https://www.instagram.com/opsoc_soton/"
     },
     {
       "id": "padel-society",
@@ -2566,7 +2652,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/pgr-netball-",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1339_1784033366.png"
+      "logo_url": "https://www.susu.org/groups/logos/1339_1784033366.png",
+      "instagram_url": "https://www.instagram.com/uos_pgr_netball/"
     },
     {
       "id": "philharmonic-choir",
@@ -2574,7 +2661,8 @@
       "description": "Choir rehearsals led by a professional conductor.",
       "accent": "#d4f5a0",
       "susu_url": "https://www.susu.org/groups/suphil",
-      "logo_url": "https://www.susu.org/groups/logos/124_1753966669.png"
+      "logo_url": "https://www.susu.org/groups/logos/124_1753966669.png",
+      "instagram_url": "https://www.instagram.com/su_philharmonic_choir/"
     },
     {
       "id": "philosophy-society",
@@ -2618,7 +2706,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/physics-badminton",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1206_1698054754.png"
+      "logo_url": "https://www.susu.org/groups/logos/1206_1698054754.png",
+      "instagram_url": "https://www.instagram.com/uosphysbad/"
     },
     {
       "id": "physics-society",
@@ -2662,7 +2751,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/physics-netball",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1209_1697474497.png"
+      "logo_url": "https://www.susu.org/groups/logos/1209_1697474497.png",
+      "instagram_url": "https://www.instagram.com/physocflames/"
     },
     {
       "id": "pianosoc",
@@ -2670,7 +2760,8 @@
       "description": "Weekly piano jam sessions.",
       "accent": "#ffd6e8",
       "susu_url": "https://www.susu.org/groups/pianosoc",
-      "logo_url": "https://www.susu.org/groups/logos/430_1564646556.png"
+      "logo_url": "https://www.susu.org/groups/logos/430_1564646556.png",
+      "instagram_url": "https://www.instagram.com/pianosoc_soton/"
     },
     {
       "id": "polish-society",
@@ -2738,7 +2829,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/ppe-hockey",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1251_1730061350.png"
+      "logo_url": "https://www.susu.org/groups/logos/1251_1730061350.png",
+      "instagram_url": "https://www.instagram.com/SOTONPPESOCHOCKEY/"
     },
     {
       "id": "im-psych-netball",
@@ -2749,7 +2841,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-psychosoc",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1098_1757437691.png"
+      "logo_url": "https://www.susu.org/groups/logos/1098_1757437691.png",
+      "instagram_url": "https://www.instagram.com/psychnetball/"
     },
     {
       "id": "psychiatry-society",
@@ -2816,7 +2909,8 @@
       "description": "Monday fellowship.",
       "accent": "#b7ef72",
       "susu_url": "https://www.susu.org/groups/relentless-generation-christian-fellowship",
-      "logo_url": "https://www.susu.org/groups/logos/642_1727556508.png"
+      "logo_url": "https://www.susu.org/groups/logos/642_1727556508.png",
+      "instagram_url": "https://www.instagram.com/rgcf.soton/"
     },
     {
       "id": "resus",
@@ -2824,7 +2918,8 @@
       "description": "Weekly term-time workshops on renewable engineering.",
       "accent": "#f6b6c8",
       "susu_url": "https://www.susu.org/groups/southampton-university-renewability-and-sustainability-society",
-      "logo_url": "https://www.susu.org/groups/logos/1145_1743789166.png"
+      "logo_url": "https://www.susu.org/groups/logos/1145_1743789166.png",
+      "instagram_url": "https://www.instagram.com/renewsoton/"
     },
     {
       "id": "riding",
@@ -2856,7 +2951,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-river-plato",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1081_1696715889.png"
+      "logo_url": "https://www.susu.org/groups/logos/1081_1696715889.png",
+      "instagram_url": "https://www.instagram.com/riverplato.fc/"
     },
     {
       "id": "road-cycling",
@@ -2866,7 +2962,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/surc",
-      "logo_url": "https://www.susu.org/groups/logos/235_1564647341.png"
+      "logo_url": "https://www.susu.org/groups/logos/235_1564647341.png",
+      "instagram_url": "https://www.instagram.com/surcclub/"
     },
     {
       "id": "robosoc",
@@ -2874,7 +2971,8 @@
       "description": "Robotics meet-ups.",
       "accent": "#b9d8ff",
       "susu_url": "https://www.susu.org/groups/robosoc",
-      "logo_url": "https://www.susu.org/groups/logos/673_1570019955.png"
+      "logo_url": "https://www.susu.org/groups/logos/673_1570019955.png",
+      "instagram_url": "https://www.instagram.com/robosoc_uos/"
     },
     {
       "id": "rock-and-metal-music-society",
@@ -2883,7 +2981,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/rocksoc",
       "contact_email": "rocksoc.soton@gmail.com",
-      "logo_url": "https://www.susu.org/groups/logos/136_1769515987.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/136_1769515987.jpg",
+      "instagram_url": "https://www.instagram.com/uosrocksoc/"
     },
     {
       "id": "romanian-society",
@@ -2925,7 +3024,8 @@
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/surfc",
       "contact_email": "sotonunirugby@gmail.com",
-      "logo_url": "https://www.susu.org/groups/logos/236_1786802570.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/236_1786802570.jpg",
+      "instagram_url": "https://www.instagram.com/unisouthamptonrfc/"
     },
     {
       "id": "rugby-women-s",
@@ -2957,7 +3057,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/sailing",
-      "logo_url": "https://www.susu.org/groups/logos/238_1721164077.png"
+      "logo_url": "https://www.susu.org/groups/logos/238_1721164077.png",
+      "instagram_url": "https://www.instagram.com/unisotonsailing/"
     },
     {
       "id": "salsa-society",
@@ -2965,7 +3066,8 @@
       "description": "Weekly Bachata and Cuban Salsa lessons.",
       "accent": "#e3c9ff",
       "susu_url": "https://www.susu.org/groups/salsa-society",
-      "logo_url": "https://www.susu.org/groups/logos/140_1759136020.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/140_1759136020.jpg",
+      "instagram_url": "https://www.instagram.com/salsasoc/"
     },
     {
       "id": "saudi-society",
@@ -2985,7 +3087,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-scorpions",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1107_1729778368.png"
+      "logo_url": "https://www.susu.org/groups/logos/1107_1729778368.png",
+      "instagram_url": "https://www.instagram.com/acsnetball_soton/"
     },
     {
       "id": "seals-squash",
@@ -3012,7 +3115,8 @@
       "description": "Weekly BSL lessons.",
       "accent": "#a8f0e0",
       "susu_url": "https://www.susu.org/groups/signsoc",
-      "logo_url": "https://www.susu.org/groups/logos/401_1632391242.png"
+      "logo_url": "https://www.susu.org/groups/logos/401_1632391242.png",
+      "instagram_url": "https://www.instagram.com/uossignlanguage/"
     },
     {
       "id": "sikh-society",
@@ -3084,7 +3188,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/snooker-and-pool",
-      "logo_url": "https://www.susu.org/groups/logos/243_1748518003.png"
+      "logo_url": "https://www.susu.org/groups/logos/243_1748518003.png",
+      "instagram_url": "https://www.instagram.com/suspc/"
     },
     {
       "id": "snowsports-club",
@@ -3213,7 +3318,8 @@
       "description": "Weekly lindy hop lessons.",
       "accent": "#ffc9a8",
       "susu_url": "https://www.susu.org/groups/lindy-hop-southampton-university-",
-      "logo_url": "https://www.susu.org/groups/logos/850_1538490360.png"
+      "logo_url": "https://www.susu.org/groups/logos/850_1538490360.png",
+      "instagram_url": "https://www.instagram.com/sotonswingdancers/"
     },
     {
       "id": "spaceflight-society",
@@ -3288,7 +3394,8 @@
       "description": "Weekly film nights and socials.",
       "accent": "#c9e8ff",
       "susu_url": "https://www.susu.org/groups/krakensoc",
-      "logo_url": "https://www.susu.org/groups/logos/405_1758362165.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/405_1758362165.jpg",
+      "instagram_url": "https://www.instagram.com/uos_steampunk_society/"
     },
     {
       "id": "im-stem-netball",
@@ -3299,7 +3406,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-stem",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1096_1786456393.png"
+      "logo_url": "https://www.susu.org/groups/logos/1096_1786456393.png",
+      "instagram_url": "https://www.instagram.com/stemnetball/"
     },
     {
       "id": "street-dance-society",
@@ -3307,7 +3415,8 @@
       "description": "Weekly street dance and Afro classes.",
       "accent": "#f2b8ff",
       "susu_url": "https://www.susu.org/groups/street-dance-society",
-      "logo_url": "https://www.susu.org/groups/logos/156_1720548406.png"
+      "logo_url": "https://www.susu.org/groups/logos/156_1720548406.png",
+      "instagram_url": "https://www.instagram.com/usdstreet/"
     },
     {
       "id": "ssago",
@@ -3315,7 +3424,8 @@
       "description": "Weekly term-time meet-up.",
       "accent": "#d4f5a0",
       "susu_url": "https://www.susu.org/groups/ssago",
-      "logo_url": "https://www.susu.org/groups/logos/325_1564649759.png"
+      "logo_url": "https://www.susu.org/groups/logos/325_1564649759.png",
+      "instagram_url": "https://www.instagram.com/sussago/"
     },
     {
       "id": "sub-aqua-scuba-diving",
@@ -3349,7 +3459,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-suens",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1114_1788360935.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1114_1788360935.jpg",
+      "instagram_url": "https://www.instagram.com/suenshockey/"
     },
     {
       "id": "im-suhc-mixed-hockey",
@@ -3360,7 +3471,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/suhc-mixed-hockey-",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1196_1694187149.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/1196_1694187149.jpg",
+      "instagram_url": "https://www.instagram.com/mixed_suhc/"
     },
     {
       "id": "surf",
@@ -3403,7 +3515,8 @@
       "description": "Sunday choir rehearsals.",
       "accent": "#ffd6e8",
       "susu_url": "https://www.susu.org/groups/su-singers",
-      "logo_url": "https://www.susu.org/groups/logos/161_1699456841.png"
+      "logo_url": "https://www.susu.org/groups/logos/161_1699456841.png",
+      "instagram_url": "https://www.instagram.com/susingersofficial/"
     },
     {
       "id": "sustrings",
@@ -3411,7 +3524,8 @@
       "description": "Weekly string orchestra rehearsals.",
       "accent": "#b7ef72",
       "susu_url": "https://www.susu.org/groups/sustrings",
-      "logo_url": "https://www.susu.org/groups/logos/162_1729605971.png"
+      "logo_url": "https://www.susu.org/groups/logos/162_1729605971.png",
+      "instagram_url": "https://www.instagram.com/sustrings/"
     },
     {
       "id": "swallows-football",
@@ -3421,7 +3535,8 @@
       "susu_url": "https://www.susu.org/groups/swallows-football",
       "contact_email": "swallows@soton.ac.uk",
       "regular_schedule": "Tuesday evening training at Wide Lane; the society also plays in weekly leagues.",
-      "logo_url": "https://www.susu.org/groups/logos/1000_1722792527.png"
+      "logo_url": "https://www.susu.org/groups/logos/1000_1722792527.png",
+      "instagram_url": "https://www.instagram.com/swallowsfc/"
     },
     {
       "id": "swimming",
@@ -3431,7 +3546,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/swim-team",
-      "logo_url": "https://www.susu.org/groups/logos/249_1726504750.png"
+      "logo_url": "https://www.susu.org/groups/logos/249_1726504750.png",
+      "instagram_url": "https://www.instagram.com/swimsusc/"
     },
     {
       "id": "symphonic-wind-orchestra",
@@ -3451,7 +3567,8 @@
       "description": "Weekly term-time orchestra rehearsals.",
       "accent": "#f6b6c8",
       "susu_url": "https://www.susu.org/groups/symphony-orchestra",
-      "logo_url": "https://www.susu.org/groups/logos/164_1784215952.png"
+      "logo_url": "https://www.susu.org/groups/logos/164_1784215952.png",
+      "instagram_url": "https://www.instagram.com/susorchestra/"
     },
     {
       "id": "table-tennis",
@@ -3484,7 +3601,8 @@
       "accent": "#dceaf2",
       "susu_url": "https://www.susu.org/groups/tamil-society",
       "contact_email": "sotontamilsoc@gmail.com",
-      "logo_url": "https://www.susu.org/groups/logos/549_1663791360.png"
+      "logo_url": "https://www.susu.org/groups/logos/549_1663791360.png",
+      "instagram_url": "https://www.instagram.com/sotontamilsoc/"
     },
     {
       "id": "tap-dance",
@@ -3492,7 +3610,8 @@
       "description": "Weekly tap classes at three levels.",
       "accent": "#b9d8ff",
       "susu_url": "https://www.susu.org/groups/tap-dance-society",
-      "logo_url": "https://www.susu.org/groups/logos/167_1719152124.png"
+      "logo_url": "https://www.susu.org/groups/logos/167_1719152124.png",
+      "instagram_url": "https://www.instagram.com/usdtapdance/"
     },
     {
       "id": "tea-society",
@@ -3500,7 +3619,8 @@
       "description": "Drop-in tea sessions, any week.",
       "accent": "#ffd1b9",
       "susu_url": "https://www.susu.org/groups/tea-society",
-      "logo_url": "https://www.susu.org/groups/logos/729_1713977578.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/729_1713977578.jpg",
+      "instagram_url": "https://www.instagram.com/teasocietea_soton/"
     },
     {
       "id": "team-southampton-motorsport",
@@ -3510,7 +3630,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/wmc",
-      "logo_url": "https://www.susu.org/groups/logos/225_1590685245.jpg"
+      "logo_url": "https://www.susu.org/groups/logos/225_1590685245.jpg",
+      "instagram_url": "https://www.instagram.com/southampton_motorsport/"
     },
     {
       "id": "teddy-bear-hospital",
@@ -3566,7 +3687,8 @@
       "susu_url": "https://www.susu.org/groups/the-edge",
       "contact_email": "teeditor@soton.ac.uk",
       "website_url": "http://www.theedgesusu.co.uk/",
-      "logo_url": "https://www.susu.org/groups/logos/269_1672165897.png"
+      "logo_url": "https://www.susu.org/groups/logos/269_1672165897.png",
+      "instagram_url": "https://www.instagram.com/theedgesusu/"
     },
     {
       "id": "the-mindful-medical-society",
@@ -3599,7 +3721,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/therabandits-physiosoc-netball-",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1207_1726685511.png"
+      "logo_url": "https://www.susu.org/groups/logos/1207_1726685511.png",
+      "instagram_url": "https://www.instagram.com/physionetball/"
     },
     {
       "id": "tigers-tennis",
@@ -3607,7 +3730,8 @@
       "description": "Medics tennis for all levels.",
       "accent": "#e3c9ff",
       "susu_url": "https://www.susu.org/groups/tigers-tennis",
-      "logo_url": "https://www.susu.org/groups/logos/1003_1751889989.png"
+      "logo_url": "https://www.susu.org/groups/logos/1003_1751889989.png",
+      "instagram_url": "https://www.instagram.com/southamptonmedicstennis/"
     },
     {
       "id": "touch-rugby",
@@ -3617,7 +3741,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/touch-rugby",
-      "logo_url": "https://www.susu.org/groups/logos/443_1759753589.png"
+      "logo_url": "https://www.susu.org/groups/logos/443_1759753589.png",
+      "instagram_url": "https://www.instagram.com/sutrc/"
     },
     {
       "id": "trampolining",
@@ -3783,7 +3908,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/intramural-villarrealgorithm-cf",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1084_1665756057.png"
+      "logo_url": "https://www.susu.org/groups/logos/1084_1665756057.png",
+      "instagram_url": "https://www.instagram.com/uosmathsfc/"
     },
     {
       "id": "volleyball",
@@ -3804,7 +3930,8 @@
       "category": "sport",
       "sport_format": "athletic-union",
       "susu_url": "https://www.susu.org/groups/suwpc",
-      "logo_url": "https://www.susu.org/groups/logos/264_1664787992.png"
+      "logo_url": "https://www.susu.org/groups/logos/264_1664787992.png",
+      "instagram_url": "https://www.instagram.com/suwpc/"
     },
     {
       "id": "wessex-scene",
@@ -3825,7 +3952,8 @@
       "sport_format": "intramural",
       "susu_url": "https://www.susu.org/groups/wessex-warriors-",
       "contact_email": "susport@soton.ac.uk",
-      "logo_url": "https://www.susu.org/groups/logos/1306_1751407545.png"
+      "logo_url": "https://www.susu.org/groups/logos/1306_1751407545.png",
+      "instagram_url": "https://www.instagram.com/wessexwarriors/"
     },
     {
       "id": "widening-access-to-medicine-southampton",
