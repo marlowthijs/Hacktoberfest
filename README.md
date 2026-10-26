@@ -36,6 +36,8 @@ Society records can also include `susu_url`, `logo_url`, `instagram_url`, `insta
 
 Students select societies in the app, copy their calendar URL, then choose **Other calendars → + → From URL** in Google Calendar. The feed is a separate subscribed calendar; it does not write directly into the student's primary calendar. Google refreshes subscribed calendars periodically. The `.ics` download is available for a one-time import.
 
+On phones, the button only copies the feed link: navigating automatically can launch the Google Calendar app, which cannot add URL subscriptions. The app shows browser instructions instead. In iPhone Safari, press and hold the Google Calendar website link, choose **Open in New Tab**, and use Safari's **Request Desktop Website** option. If Google does not offer **From URL** there, complete the one-time setup on a computer with the same Google account. A normal tap on UniFlow's mobile Google Calendar link displays the long-press instructions without navigating.
+
 Selections stay in the student's browser. The generated feed URL contains only the selected society IDs and public event listings. Anyone who has that URL can view the corresponding feed.
 
 ## Deploy to Cloudflare
@@ -45,6 +47,8 @@ The app is a dependency-free Cloudflare Worker. From this directory, authenticat
 ```sh
 npx wrangler deploy
 ```
+
+Changes to `worker/index.js` (including the interface and calendar setup flow) require this deployment after updating `main`; pushing to GitHub alone does not publish Worker code. Changes only to `data/events.json` are picked up automatically from `main` without a deployment.
 
 Wrangler publishes to the Worker URL. To use a Cloudflare domain, attach the deployed Worker to a domain in **Workers & Pages → Settings → Domains & Routes**. The domain's zone must be available in the Cloudflare account.
 
