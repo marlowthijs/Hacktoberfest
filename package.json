@@ -1,0 +1,14 @@
+{
+  "name": "uniflow",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 migrations apply PORTAL_DB --local",
+    "db:production": "wrangler d1 migrations apply PORTAL_DB --remote"
+  },
+  "devDependencies": { "wrangler": "4.152.0", "jsdom": "26.1.0" }
+}

@@ -2,3 +2,13 @@ name = "hacktoberfest2"
 main = "worker/index.js"
 compatibility_date = "2026-10-24"
 workers_dev = true
+
+[vars]
+# Branch preview URLs must not be allowed to write to the production database.
+PORTAL_ALLOWED_ORIGINS = "https://hack.marlowt.uk,https://marlowt.uk"
+
+[[d1_databases]]
+binding = "PORTAL_DB"
+database_name = "uniflow-portal"
+database_id = "3fc011f5-6531-46e4-be42-6528bd1cf5d8"
+migrations_dir = "migrations"

@@ -1,4 +1,7 @@
 import { UNIVERSITY_LOGO_SVG } from "./university-logo.js";
+import { SECRETARY_PAGE } from "./secretary-page.js";
+import { PORTAL_SCRIPT } from "./portal-client.js";
+import { handlePortalApi, mergePortalCatalogue } from "./portal-api.js";
 
 const FALLBACK_CATALOGUE = {
   schema_version: 1,
@@ -317,6 +320,10 @@ const PAGE = String.raw`<!doctype html>
     .society-monogram.has-logo{overflow:hidden;padding:3px;border:1px solid #d7e1e8;background:#fff!important}
     .society-logo{display:block;width:100%;height:100%;object-fit:contain}
     .society-monogram-fallback{font-size:inherit}
+    .society-involvement{border-top:1px solid #d7e1e8;margin-top:12px;padding-top:5px;font-size:13px;color:#304e61}
+    .society-involvement summary{cursor:pointer;min-height:44px;display:list-item;padding:11px 0;font-weight:700;color:#005c84}
+    .society-involvement p{white-space:pre-line;overflow-wrap:anywhere;line-height:1.6;margin:4px 0 12px}
+    .society-involvement a{display:inline-block;min-height:44px;padding:10px 0;color:#005c84;font-weight:700}
   </style>
 </head>
 <body>
@@ -345,7 +352,7 @@ const PAGE = String.raw`<!doctype html>
         <div class="society-grid" id="society-grid" aria-live="polite"><div class="empty-state">Gathering the society list…</div></div>
         <div class="list-actions" id="society-actions" hidden><button class="expand-button" id="society-toggle" type="button" aria-controls="society-grid" aria-expanded="false">Show all societies</button></div>
         <div class="selection-next"><div class="selection-next-copy"><strong id="selection-next-title">Choose at least one society</strong><span id="selection-next-detail">Your event review and calendar link are in the next steps.</span></div><button class="button button-primary" id="continue-review" type="button" disabled>Continue to event review <span aria-hidden="true">→</span></button></div>
-        <div class="catalogue-contact">Want your society included? <a href="mailto:marlow.thijs@icloud.com?subject=Add%20my%20society%20to%20uniflow">Get in touch with the uniflow team</a>.</div>
+        <div class="catalogue-contact">Run a society? <a href="/secretary">Manage your events and joining details</a>. Want your society included? <a href="mailto:marlow.thijs@icloud.com?subject=Add%20my%20society%20to%20uniflow">Get in touch</a>.</div>
       </section>
 
       <section class="section event-section wizard-page" id="events" data-wizard-page="2" hidden aria-labelledby="events-title">
@@ -443,9 +450,9 @@ const PAGE = String.raw`<!doctype html>
       function eventTime(event){return fmtDate(event.start,event.timezone,{hour:"2-digit",minute:"2-digit",hourCycle:"h23"})+" — "+fmtDate(event.end,event.timezone,{hour:"2-digit",minute:"2-digit",hourCycle:"h23"});}
       function eventDate(event){return {day:fmtDate(event.start,event.timezone,{day:"2-digit"}),month:fmtDate(event.start,event.timezone,{month:"short"}),weekday:fmtDate(event.start,event.timezone,{weekday:"long"}),full:fmtDate(event.start,event.timezone,{weekday:"long",day:"numeric",month:"long",year:"numeric"})};}
       function searchText(value){return String(value||"").toLocaleLowerCase("en-GB").normalize("NFD").replace(/[\u0300-\u036f]/g,"");}
-function upcomingEventCount(id){return catalogue.events.filter(function(event){return event.society_id===id&&new Date(event.end).getTime()>=Date.now();}).length;}
+function upcomingEventCount(id){return catalogue.events.filter(function(event){return event.society_id===id&&event.status!=="cancelled"&&new Date(event.end).getTime()>=Date.now();}).length;}
       function hasUpcomingEvents(id){return upcomingEventCount(id)>0;}
-      function visibleEvents(){var chosen=selected.size?catalogue.events.filter(function(event){return selected.has(event.society_id);}):catalogue.events;return chosen.filter(function(event){return new Date(event.end).getTime()>=Date.now();}).sort(function(a,b){return new Date(a.start)-new Date(b.start);});}
+      function visibleEvents(){var chosen=selected.size?catalogue.events.filter(function(event){return selected.has(event.society_id);}):catalogue.events;return chosen.filter(function(event){return event.status!=="cancelled"&&new Date(event.end).getTime()>=Date.now();}).sort(function(a,b){return new Date(a.start)-new Date(b.start);});}
       function societyFor(id){return catalogue.societies.find(function(society){return society.id===id;})||{name:id};}
       function renderSocieties(){
         document.getElementById("selection-count").textContent=selected.size+" selected";
@@ -471,13 +478,14 @@ function upcomingEventCount(id){return catalogue.events.filter(function(event){r
           var description=society.description||"Check the official SUSU profile for current society and contact information.";
           var schedule=society.regular_schedule?'<p class="society-schedule"><strong>Regular activities:</strong> '+esc(society.regular_schedule)+'</p>':'';
           var bio=society.instagram_bio&&searchText(society.instagram_bio)!==searchText(description)?'<details class="society-extra"><summary>Instagram bio</summary><p>'+esc(society.instagram_bio)+'</p></details>':'';
+          var joining=society.how_to_join||safeExternalUrl(society.membership_url)?'<details class="society-involvement"><summary>How to get involved</summary>'+(society.how_to_join?'<p>'+esc(society.how_to_join)+'</p>':'')+externalAnchor("Join or find out more",society.membership_url)+'</details>':'';
           var isSport=society.category==="sport"||society.id==="boxing"||society.id==="mma";
           var type=isSport?(society.sport_format==="intramural"?"Intramural sport":"Sports club"):"Society calendar";
           var selection=hasEvents?'<label class="society-check"><input type="checkbox" data-society="'+esc(society.id)+'" '+(active?'checked':'')+'><span>Add to my calendar</span></label>':'<span class="contact-only-state">Contact details only · no upcoming events listed</span>';
           var eventText=hasEvents?count+' upcoming '+(count===1?'event':'events'):'Contact information';
           var logo=safeExternalUrl(society.logo_url);
           var monogram=logo?'<div class="society-monogram has-logo" aria-hidden="true"><img class="society-logo" src="'+esc(logo)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="society-monogram-fallback" hidden>'+esc(initials)+'</span></div>':'<div class="society-monogram" style="background:'+esc(society.accent||"#dceaf2")+'" aria-hidden="true">'+esc(initials)+'</div>';
-          return '<article class="society-card'+(active?' is-selected':'')+(!hasEvents?' contact-only':'')+'"><div class="society-top">'+monogram+'<span class="society-type">'+esc(type)+'</span></div><h3>'+esc(society.name)+'</h3><p class="society-description">'+esc(description)+'</p>'+schedule+bio+societyLinks(society)+'<div class="society-bottom"><span class="society-events">'+esc(eventText)+'</span>'+selection+'</div></article>';
+          return '<article class="society-card'+(active?' is-selected':'')+(!hasEvents?' contact-only':'')+'"><div class="society-top">'+monogram+'<span class="society-type">'+esc(type)+'</span></div><h3>'+esc(society.name)+'</h3><p class="society-description">'+esc(description)+'</p>'+joining+schedule+bio+societyLinks(society)+'<div class="society-bottom"><span class="society-events">'+esc(eventText)+'</span>'+selection+'</div></article>';
         }).join("");
         grid.querySelectorAll(".society-logo").forEach(function(image){
           function restoreInitials(){var mark=image.parentElement;if(!mark)return;image.hidden=true;mark.classList.remove("has-logo");var fallback=mark.querySelector(".society-monogram-fallback");if(fallback)fallback.hidden=false;}
@@ -498,7 +506,7 @@ function upcomingEventCount(id){return catalogue.events.filter(function(event){r
         eventToggle.textContent=eventExpanded?"Show fewer events":"Show all "+matches.length+" events";
         eventToggle.setAttribute("aria-expanded",String(eventExpanded));
         if(!matches.length){list.innerHTML=query?'<div class="empty-state"><strong>No events match that search.</strong><br>Try a different title, society, place or date.</div>':'<div class="empty-state"><strong>No upcoming events for these choices.</strong><br>Go back and choose a society with upcoming listings.</div>';return;}
-        list.innerHTML=visible.map(function(event){var society=societyFor(event.society_id),date=eventDate(event);var meta='<span>'+esc(eventTime(event))+'</span>'+(event.location?'<span>'+esc(event.location)+'</span>':'');var source=externalAnchor("View on SUSU",event.source_url);
+        list.innerHTML=visible.map(function(event){var society=societyFor(event.society_id),date=eventDate(event);var meta='<span>'+esc(eventTime(event))+'</span>'+(event.location?'<span>'+esc(event.location)+'</span>':'');var source=externalAnchor("Event details",event.source_url);
           return '<article class="event-card"><div class="event-date"><span class="day">'+esc(date.day)+'</span><span class="month">'+esc(date.month)+'</span></div><div class="event-main"><div class="event-society">'+esc(society.name)+'</div><h3>'+esc(event.title)+'</h3><p class="event-meta">'+meta+'</p>'+(event.description?'<p class="event-description">'+esc(event.description)+'</p>':'')+source+'</div><span class="event-label">'+esc(date.weekday)+'</span></article>';
         }).join("");
       }
@@ -614,24 +622,28 @@ function validateCatalogue(value) {
   };
 }
 
-function catalogueUrlForRequest(request) {
-  const hostname = new URL(request.url).hostname.toLowerCase();
-  const previewHost = hostname === "localhost" || hostname === "127.0.0.1" || hostname === "0.0.0.0" || hostname.endsWith(".workers.dev") || hostname.endsWith(".pages.dev");
-  const ref = previewHost ? "add-susu-societies" : "main";
+function catalogueUrlForRequest(request, env = {}) {
+  const ref = env.CATALOGUE_REF || "main";
   return CATALOGUE_BASE_URL + ref + "/data/events.json";
 }
 
-async function loadCatalogue(request) {
+async function loadBaseCatalogue(request, env = {}, strict = false) {
   try {
     const interval = Math.floor(Date.now() / 300000);
-    const response = await fetch(catalogueUrlForRequest(request) + "?v=" + interval, {
+    const response = await fetch(catalogueUrlForRequest(request, env) + "?v=" + interval, {
       headers: { accept: "application/json" },
     });
     if (!response.ok) throw new Error("Catalogue request failed");
     return validateCatalogue(await response.json());
-  } catch (_) {
+  } catch (error) {
+    if (strict) throw error;
     return FALLBACK_CATALOGUE;
   }
+}
+
+async function loadCatalogue(request, env) {
+  // An unavailable catalogue must not publish an incomplete feed to subscribers.
+  return mergePortalCatalogue(await loadBaseCatalogue(request, env, Boolean(env.PORTAL_DB)), env);
 }
 
 function escapeIcs(value) {
@@ -666,7 +678,7 @@ function icsDate(value) {
   return new Date(value).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
 }
 
-function buildCalendar(events, origin, societyNames) {
+export function buildCalendar(events, origin, societyNames) {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -680,14 +692,18 @@ function buildCalendar(events, origin, societyNames) {
     lines.push(
       "BEGIN:VEVENT",
       "UID:" + encodeURIComponent(event.id) + "@society-synth",
-      "DTSTAMP:" + icsDate(new Date().toISOString()),
+      "DTSTAMP:" + icsDate(event.modified_at || new Date().toISOString()),
+      "SEQUENCE:" + (Number.isSafeInteger(event.version) ? event.version : 0),
       "DTSTART:" + icsDate(event.start),
       "DTEND:" + icsDate(event.end),
       "SUMMARY:" + escapeIcs(event.title),
     );
+    if (event.modified_at) lines.push("LAST-MODIFIED:" + icsDate(event.modified_at));
+    if (event.status === "cancelled") lines.push("STATUS:CANCELLED");
     if (event.location) lines.push("LOCATION:" + escapeIcs(event.location));
     if (event.description) lines.push("DESCRIPTION:" + escapeIcs(event.description));
-    const eventUrl = /^https:\/\/www\.susu\.org\/event\//i.test(event.source_url || "") ? event.source_url : origin + "/";
+    let eventUrl = origin + "/";
+    try { const source = new URL(event.source_url); if (["https:", "http:"].includes(source.protocol) && !source.username && !source.password) eventUrl = source.href; } catch {}
     lines.push("URL:" + escapeIcs(eventUrl), "END:VEVENT");
   }
   lines.push("END:VCALENDAR", "");
@@ -700,10 +716,22 @@ const securityHeaders = {
 };
 
 export default {
-  async fetch(request) {
+  async fetch(request, env = {}) {
     const url = new URL(request.url);
+    try {
+    if (url.pathname.startsWith("/api/portal/")) return await handlePortalApi(request, env, { loadBaseCatalogue: () => loadBaseCatalogue(request, env, true) });
     if (request.method !== "GET" && request.method !== "HEAD") {
       return new Response("Method not allowed", { status: 405, headers: { allow: "GET, HEAD", ...securityHeaders } });
+    }
+    if (["/secretary", "/secretary/", "/secretary/admin", "/secretary/admin/"].includes(url.pathname)) {
+      return new Response(request.method === "HEAD" ? null : SECRETARY_PAGE, { headers: {
+        "content-type": "text/html; charset=utf-8", "cache-control": "no-store", ...securityHeaders,
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self' mailto:",
+        "x-frame-options": "DENY",
+      } });
+    }
+    if (url.pathname === "/assets/portal.js") {
+      return new Response(request.method === "HEAD" ? null : PORTAL_SCRIPT, { headers: { "content-type": "text/javascript; charset=utf-8", "cache-control": "no-store", ...securityHeaders } });
     }
     if (url.pathname === "/southampton-logo.svg") {
       return new Response(request.method === "HEAD" ? null : UNIVERSITY_LOGO_SVG, {
@@ -721,7 +749,7 @@ export default {
       });
     }
     if (url.pathname === "/api/events") {
-      const catalogue = await loadCatalogue(request);
+      const catalogue = await loadCatalogue(request, env);
       return new Response(request.method === "HEAD" ? null : JSON.stringify(catalogue), {
         headers: { "content-type": "application/json; charset=utf-8", "cache-control": "public, max-age=300, s-maxage=300", "access-control-allow-origin": "*", ...securityHeaders },
       });
@@ -734,7 +762,7 @@ export default {
           headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store", ...securityHeaders },
         });
       }
-      const catalogue = await loadCatalogue(request);
+      const catalogue = await loadCatalogue(request, env);
       const societyIds = new Set(selected);
       const societies = catalogue.societies.filter((society) => societyIds.has(society.id));
       if (!societies.length) {
@@ -755,5 +783,9 @@ export default {
       return new Response(request.method === "HEAD" ? null : body, { headers });
     }
     return new Response("Not found", { status: 404, headers: { "content-type": "text/plain; charset=utf-8", ...securityHeaders } });
+    } catch (error) {
+      console.error("Catalogue unavailable:", error.name);
+      return new Response("Society updates are temporarily unavailable. Please try again shortly.", { status: 503, headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store", ...securityHeaders } });
+    }
   },
 };
