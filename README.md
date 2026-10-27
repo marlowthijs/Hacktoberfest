@@ -42,15 +42,17 @@ Selections stay in the student's browser. The generated feed URL contains only t
 
 ## Deploy to Cloudflare
 
-The app is a dependency-free Cloudflare Worker. From this directory, authenticate Wrangler with the Cloudflare account, then run:
+The live app at `hack.marlowt.uk` is the **`hacktoberfest2`** Cloudflare Worker. Its GitHub integration automatically builds and deploys changes pushed to `main`. Check **Workers & Pages → hacktoberfest2 → Deployments** for a successful deployment of your commit before expecting interface changes to appear.
+
+The app is a dependency-free Worker. If a manual deployment is needed, authenticate Wrangler with the Cloudflare account, then run this from the repository directory:
 
 ```sh
 npx wrangler deploy
 ```
 
-Changes to `worker/index.js` (including the interface and calendar setup flow) require this deployment after updating `main`; pushing to GitHub alone does not publish Worker code. Changes only to `data/events.json` are picked up automatically from `main` without a deployment.
+Changes to `worker/index.js` (including the interface and calendar setup flow) must be deployed, normally by the automatic build from `main`. The public app also reads `data/events.json` directly from `main`, so event edits are picked up after its cache refreshes even without a new Worker deployment.
 
-Wrangler publishes to the Worker URL. To use a Cloudflare domain, attach the deployed Worker to a domain in **Workers & Pages → Settings → Domains & Routes**. The domain's zone must be available in the Cloudflare account.
+`wrangler.toml` targets `hacktoberfest2`. The older `society-synth` Worker does not serve `hack.marlowt.uk`. The existing custom domains are managed in **Workers & Pages → hacktoberfest2 → Domains**.
 
 ## Project files
 
