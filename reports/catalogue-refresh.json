@@ -1,0 +1,4652 @@
+{
+  "checked_at": "2026-11-17T12:00:00.000Z",
+  "directories": [
+    {
+      "url": "https://www.susu.org/activities/interest/societies",
+      "count": 248
+    },
+    {
+      "url": "https://www.susu.org/activities/interest/athletic-union",
+      "count": 78
+    },
+    {
+      "url": "https://www.susu.org/activities/interest/intramural-sports",
+      "count": 52
+    }
+  ],
+  "new_societies": [
+    {
+      "id": "gujarati-society",
+      "name": "Gujarati Society",
+      "url": "https://www.susu.org/groups/gujarati-society"
+    },
+    {
+      "id": "habesha-basketball",
+      "name": "Habesha Basketball",
+      "url": "https://www.susu.org/groups/habesha-basketball"
+    }
+  ],
+  "changed_profiles": [
+    {
+      "id": "im-abacus-cranes",
+      "name": "ABACUS Cranes",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "im-acs-basketball",
+      "name": "ACS Basketball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule"
+      ]
+    },
+    {
+      "id": "93-club-southampton",
+      "name": "93% Club Southampton",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-acs-football",
+      "name": "ACS Football",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule"
+      ]
+    },
+    {
+      "id": "actuarial-society",
+      "name": "Actuarial Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "afghan-society",
+      "name": "Afghan Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "aerial-sports",
+      "name": "Aerial Sports",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "african-and-caribbean-society",
+      "name": "African and Caribbean Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "ahlulbayt-islamic-society",
+      "name": "AhlulBayt Islamic Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "airsoft",
+      "name": "Airsoft",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "community_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "albanian-society",
+      "name": "Albanian Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "american-football",
+      "name": "American Football",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "amnesty-international",
+      "name": "Amnesty International",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "anime-and-manga-society",
+      "name": "Anime and Manga Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-archers-road-fc",
+      "name": "Archers Road FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "archaeology-society",
+      "name": "Archaeology Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "archery",
+      "name": "Archery",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "art-soc",
+      "name": "Art Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "community_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "artificial-intelligence-society",
+      "name": "Artificial Intelligence Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "asian-cultural-society",
+      "name": "Asian Cultural Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "astronomy-society",
+      "name": "Astronomy Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "association-of-british-and-chinese-university-students-abacus",
+      "name": "Association of British and Chinese University Students (ABACUS)",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-athenas",
+      "name": "Athenas",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "athletics-cross-country",
+      "name": "Athletics & Cross Country",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "community_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-badgers-basketball",
+      "name": "Badgers (Basketball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "badminton-club",
+      "name": "Badminton Club",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "community_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "baking-society",
+      "name": "Baking Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "ballet-society",
+      "name": "Ballet Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "ballroom-and-latin-dance-society",
+      "name": "Ballroom and Latin Dance Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "bangla-society",
+      "name": "Bangla Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "bar-society",
+      "name": "Bar Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-barbarians",
+      "name": "Barbarians",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "basketball",
+      "name": "Basketball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "how_to_join"
+      ]
+    },
+    {
+      "id": "baseball-and-softball",
+      "name": "Baseball and Softball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "beekeeping-society",
+      "name": "Beekeeping Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "bhangra-society",
+      "name": "Bhangra Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "biological-sciences-society",
+      "name": "Biological Sciences Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-biosoc-netball",
+      "name": "BioSoc (Netball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-biosoc-fc",
+      "name": "BioSoc FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-biosoc-hockey",
+      "name": "BioSoc Hockey",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "black-law-students-network",
+      "name": "Black Law Students Network",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "black-women-s-project",
+      "name": "Black Women's Project",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "bluetits-netball",
+      "name": "Bluetits (Netball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "boat-rowing",
+      "name": "Boat (Rowing)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "bollywood-dance-society",
+      "name": "Bollywood Dance Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "book-club",
+      "name": "Book Club",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "boxing",
+      "name": "Boxing",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "brainsoc",
+      "name": "BrainSoc",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "brass-band",
+      "name": "Brass Band",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "bridge",
+      "name": "Bridge",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "bulgarian-society",
+      "name": "Bulgarian Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "business-society",
+      "name": "Business Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-bussoc-fc",
+      "name": "BusSoc FC",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "calisthenics-society",
+      "name": "Calisthenics Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "canadian-law-society",
+      "name": "Canadian Law Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "contact_email"
+      ]
+    },
+    {
+      "id": "cameroon-catalyst",
+      "name": "Cameroon Catalyst",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "canoe",
+      "name": "Canoe",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "canoe-polo",
+      "name": "Canoe Polo",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "capoeira",
+      "name": "Capoeira",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "cardiology-society",
+      "name": "Cardiology Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "cathsoc",
+      "name": "Catholic Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "celtic-society",
+      "name": "Celtic Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "caving",
+      "name": "Caving",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "chamber-choir",
+      "name": "Chamber Choir",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-chamberlain-football",
+      "name": "Chamberlain (Football)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "cheerleading-vixens",
+      "name": "Cheerleading - Vixens",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "chemical-engineering-society",
+      "name": "Chemical Engineering Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "chemsoc",
+      "name": "Chemistry Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-chemsoc-fc",
+      "name": "ChemSoc FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "chess",
+      "name": "Chess",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "chinese-students-scholars-association",
+      "name": "Chinese Students & Scholars Association",
+      "fields": [
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "christian-medical-fellowship",
+      "name": "Christian Medical Fellowship",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "christian-union",
+      "name": "Christian Union",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "civil-engineering-society",
+      "name": "Civil Engineering Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "circsoc",
+      "name": "Circus Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "community_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "clay-pigeon-shooting",
+      "name": "Clay Pigeon Shooting",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "communist-society",
+      "name": "Communist Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "concert-band",
+      "name": "Concert Band",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-connaught-football",
+      "name": "Connaught (Football)",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "conservation-volunteers-sucv",
+      "name": "Conservation Volunteers (SUCV)",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "contemporary-dance",
+      "name": "Contemporary Dance Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "cricket-ladies",
+      "name": "Cricket (Ladies)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sucws",
+      "name": "Creative Writing Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "community_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "cricket-mens",
+      "name": "Cricket (Mens)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "cyber-security",
+      "name": "Cyber Security Society",
+      "fields": [
+        "name",
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "dermatology-society",
+      "name": "Dermatology Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "debating-society",
+      "name": "Debating Union",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "darts-club",
+      "name": "Darts Club",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "community_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "digital-arts-and-gamedev-society",
+      "name": "Digital Arts and Gamedev Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "doctor-who-society",
+      "name": "Doctor Who Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-economics-football",
+      "name": "Economics (Football)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "dodgeball",
+      "name": "Dodgeball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "economics-society",
+      "name": "Economics Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "ecss",
+      "name": "Electronics and Computer Science Society",
+      "fields": [
+        "name",
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "education-society",
+      "name": "Education Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "electronic-music-society",
+      "name": "Electronic Music Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-ecss-fc",
+      "name": "ECSS FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "empower",
+      "name": "Empower",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "enactus-southampton",
+      "name": "Enactus Southampton",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "emergency-medicine-society",
+      "name": "Emergency Medicine Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "endocrine-and-life-cycle-society",
+      "name": "Endocrine and Life Cycle Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "engineering-society",
+      "name": "Engineering Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-engineering-fc",
+      "name": "Engineering FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-engineers-rugby",
+      "name": "Engineers (Rugby)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "engineers-without-borders-southampton",
+      "name": "Engineers Without Borders (Southampton)",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "esn-southampton",
+      "name": "ESN Southampton",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "english-society",
+      "name": "English Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "fandom-society",
+      "name": "Fandom Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "community_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "environmental-science-student-society",
+      "name": "Environmental Science Student Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "fencing",
+      "name": "Fencing",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "figure-skating",
+      "name": "Figure Skating",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-filipino-society-basketball",
+      "name": "Filipino Society (Basketball)",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "filipino-society",
+      "name": "Filipino Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "film-society",
+      "name": "Film Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "finance-investment-society",
+      "name": "Finance & Investment Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "first-love-society",
+      "name": "First Love Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "links",
+      "name": "First Aid Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "fish-on-toast",
+      "name": "Fish On Toast",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "football-ladies",
+      "name": "Football (Ladies)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "folksoc",
+      "name": "Folk Music Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "football-mens",
+      "name": "Football (Mens)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "formula-sailing",
+      "name": "Formula Sailing",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "french-society",
+      "name": "French Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "friends-of-msf",
+      "name": "Friends of MSF",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "furry-society",
+      "name": "Furry Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "community_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "futsal",
+      "name": "Futsal",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "gamesoc",
+      "name": "Games Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "community_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "gaana-society",
+      "name": "Gaana Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "general-practitioner-society",
+      "name": "General Practitioner Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "geography-society",
+      "name": "Geography Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-geogsoc-fc",
+      "name": "GeogSoc FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-geogsoc-netball",
+      "name": "GeogSoc (Netball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-glen-eyre-netball",
+      "name": "Glen Eyre (Netball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-glen-eyre-fc",
+      "name": "Glen Eyre FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "gliding",
+      "name": "Gliding",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-glen-eyre-lost-boys",
+      "name": "Glen Eyre Lost Boys",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "golf",
+      "name": "Golf",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "gospel-choir",
+      "name": "Gospel Choir",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "gophers-hockey",
+      "name": "Gophers (Hockey)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "community_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "grad-and-mature-medics",
+      "name": "Grad and Mature Medics",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "guild-of-change-ringers",
+      "name": "Guild of Change Ringers",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "gymnastics",
+      "name": "Gymnastics",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "habesha-society",
+      "name": "Habesha Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "haematology-society",
+      "name": "Haematology Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-hale-s-angels",
+      "name": "Hale's Angels",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-highfield-football-club",
+      "name": "Highfield Football Club",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hawks-badminton",
+      "name": "Hawks (Badminton)",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hindu-society",
+      "name": "Hindu Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "history-society",
+      "name": "History Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-history-society-football",
+      "name": "History Society (Football)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hillwalking",
+      "name": "Hillwalking",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hockey-mens",
+      "name": "Hockey (Mens)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-history-society-netball",
+      "name": "History Society (Netball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hong-kong-public-affairs-and-social-service-society",
+      "name": "Hong Kong Public Affairs and Social Service Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hockey-ladies",
+      "name": "Hockey (Ladies)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join"
+      ]
+    },
+    {
+      "id": "human-powered-aircraft",
+      "name": "Human Powered Aircraft",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hookers-knitters-and-stichers",
+      "name": "Hookers, Knitters and Stitchers",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "human-powered-submarine",
+      "name": "Human Powered Submarine",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hornets-athletics",
+      "name": "Hornets Athletics",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "hungarian-society",
+      "name": "Hungarian Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "humanitarian-aid-society",
+      "name": "Humanitarian Aid Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "ice-and-inline-hockey",
+      "name": "Ice and Inline Hockey",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-india-soc-badminton",
+      "name": "India Soc Badminton",
+      "fields": [
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "indonesian-society",
+      "name": "Indonesian Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "islamic-society",
+      "name": "Islamic Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "indian-society",
+      "name": "Indian Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "irish-dance-society",
+      "name": "Irish Dance Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "italian-society",
+      "name": "Italian Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "jamsoc",
+      "name": "JamSoc",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "japanese-society",
+      "name": "Japanese Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "jazz-band",
+      "name": "Jazz Band",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "jewish-society",
+      "name": "Jewish Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "jazz-dance",
+      "name": "Jazz Dance",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "jazz-orchestra",
+      "name": "Jazz Orchestra",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "jiu-jitsu",
+      "name": "Jiu-Jitsu",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "judo",
+      "name": "Judo",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "k-pop",
+      "name": "K-Pop Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "kathak-bharatanatyam",
+      "name": "Kathak Bharatanatyam Dance Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "karate-club",
+      "name": "Karate Club",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "kingdom-movement-km",
+      "name": "Kingdom Movement (KM)",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "kickboxing",
+      "name": "Kickboxing",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "kendo",
+      "name": "Kendo",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "kiteboarding",
+      "name": "Kiteboarding",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "korfball",
+      "name": "Korfball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "krishna-consciousness-society",
+      "name": "Krishna Consciousness Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "kung-fu-club",
+      "name": "Kung Fu Club",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "koalas-bouldering",
+      "name": "Koalas Medics Bouldering",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "community_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "labour-society",
+      "name": "Labour Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "community_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "lacrosse-men-s",
+      "name": "Lacrosse (Men's)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "lacrosse-ladies",
+      "name": "Lacrosse (Ladies)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "lacrosse-mixed",
+      "name": "Lacrosse (Mixed)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "law-society",
+      "name": "Law Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-lawsoc-badminton",
+      "name": "LawSoc Badminton",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-lawsoc-fc",
+      "name": "LawSoc FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "lawyers-without-borders",
+      "name": "Lawyers Without Borders",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "lgbtq-society",
+      "name": "LGBTQ+ Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url"
+      ]
+    },
+    {
+      "id": "liberal-democrats",
+      "name": "Liberal Democrats",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "life-drawing-society",
+      "name": "Life Drawing Society",
+      "fields": [
+        "logo_url",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "life-sciences-postgraduate-society",
+      "name": "Life Sciences Postgraduate Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "light-opera",
+      "name": "Light Opera Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "lifesaving",
+      "name": "Lifesaving",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "live-music-society",
+      "name": "Live Music Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "malayali-society",
+      "name": "Malayali Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "malaysian-students-association-southampton",
+      "name": "Malaysian Students Association Southampton",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "mandarin-christian-fellowship",
+      "name": "Mandarin Christian Fellowship",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "maths-society",
+      "name": "Maths Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-mayflower-fc",
+      "name": "Mayflower FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "medics-revue",
+      "name": "Medics Revue",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "medsoc",
+      "name": "MedSoc",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "medsoc-monty",
+      "name": "Medsoc Monty",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "melodics",
+      "name": "Melodics",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "middle-eastern-north-african-society",
+      "name": "Middle Eastern & North African Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "midwifery-society",
+      "name": "Midwifery Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "mind-society",
+      "name": "Mind Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "mma",
+      "name": "Mixed Martial Arts (MMA)",
+      "fields": [
+        "name",
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "model-un",
+      "name": "Model United Nations",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-monte-football",
+      "name": "Monte (Football)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule"
+      ]
+    },
+    {
+      "id": "im-monte-netball",
+      "name": "Monte (Netball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join"
+      ]
+    },
+    {
+      "id": "im-montefiores-exiles-rfc",
+      "name": "Montefiores Exiles RFC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "moose-rugby",
+      "name": "Moose (Rugby)",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "mountain-bike",
+      "name": "Mountain Bike",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "mountaineering",
+      "name": "Mountaineering",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "muslim-medics-southampton",
+      "name": "Muslim Medics Southampton",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "netball",
+      "name": "Netball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule"
+      ]
+    },
+    {
+      "id": "nepalese-society",
+      "name": "Nepalese Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "neurodiversity-disability",
+      "name": "Neurodiversity & Disability Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "neurosoc",
+      "name": "NeuroSoc",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-nightingales",
+      "name": "Nightingales",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-noc-mermaids",
+      "name": "NOC Mermaids",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "noc-society",
+      "name": "NOC Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "nursing-society",
+      "name": "Nursing Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "occupational-therapy-society",
+      "name": "Occupational Therapy Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-ocean-and-earth-fc",
+      "name": "Ocean and Earth FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "olympic-weightlifting",
+      "name": "Olympic Weightlifting",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "once-a-month",
+      "name": "Once a Month",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "optics-photonics",
+      "name": "Optics and Photonics Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "padel-society",
+      "name": "Padel Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "paediatric-society",
+      "name": "Paediatric Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "paintball",
+      "name": "Paintball",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "pakistan-society",
+      "name": "Pakistan Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "palestine-solidarity-society",
+      "name": "Palestine Solidarity Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "panthers-cricket",
+      "name": "Panthers Mixed Medics Cricket",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "persian-dance-society",
+      "name": "Persian Dance Society",
+      "fields": [
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "persian",
+      "name": "Persian",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-pgr-netball",
+      "name": "PGR Netball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "philharmonic-choir",
+      "name": "Philharmonic Choir",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "philosophy-society",
+      "name": "Philosophy Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "photographic-society",
+      "name": "Photographic Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "philosophy-politics-and-economics-society",
+      "name": "Philosophy, Politics and Economics Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-physics-badminton",
+      "name": "Physics Badminton",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "physics-society",
+      "name": "Physics Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-physoc-fc",
+      "name": "PhySoc FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "physiotherapy-society",
+      "name": "Physiotherapy Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "pianosoc",
+      "name": "Piano Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "community_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "politics-society",
+      "name": "Politics Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "polish-society",
+      "name": "Polish Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "polo",
+      "name": "Polo",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "pop-girlies-society",
+      "name": "Pop Girlies' Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-ppe-hockey",
+      "name": "PPE Hockey",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "powerlifting",
+      "name": "Powerlifting",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-psych-netball",
+      "name": "Psych (Netball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "psychiatry-society",
+      "name": "Psychiatry Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "psychology-society",
+      "name": "Psychology Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "punjabi-society",
+      "name": "Punjabi Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "quadball",
+      "name": "Quadball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "regular_schedule",
+        "how_to_join"
+      ]
+    },
+    {
+      "id": "relentless-generation",
+      "name": "Relentless Generation Christian Fellowship",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "quiz-society",
+      "name": "Quiz Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "resus",
+      "name": "Renewable Engineering Society University of Southampton (RESUS)",
+      "fields": [
+        "name",
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "riding",
+      "name": "Riding",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "rifle",
+      "name": "Rifle",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-river-plato",
+      "name": "River Plato",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "road-cycling",
+      "name": "Road Cycling",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "robosoc",
+      "name": "RoboSoc",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "rock-and-metal-music-society",
+      "name": "Rock and Metal Music Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "romanian-society",
+      "name": "Romanian Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "roosters-football",
+      "name": "Roosters (Football)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "russian-speaking-society",
+      "name": "Russian Speaking Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "rugby-women-s",
+      "name": "Rugby (Women's)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "rugby-mens",
+      "name": "Rugby (Mens)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "community_url",
+        "how_to_join"
+      ]
+    },
+    {
+      "id": "roundnet-spikeball",
+      "name": "Roundnet Spikeball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "community_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sailing-club",
+      "name": "Sailing Club",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "salsa-society",
+      "name": "Salsa Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-scorpions",
+      "name": "Scorpions",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "saudi-society",
+      "name": "Saudi Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sikh-society",
+      "name": "Sikh Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sign-language",
+      "name": "Sign Language Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "seals-squash",
+      "name": "Seals Mixed Medics Squash",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "showstoppers",
+      "name": "Showstoppers",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sinfonietta",
+      "name": "Sinfonietta",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "singapore-society",
+      "name": "Singapore Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "skate-society",
+      "name": "Skate Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "snooker-and-pool",
+      "name": "Snooker and Pool",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "community_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "skydive",
+      "name": "Skydive",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "snowsports-club",
+      "name": "Snowsports Club",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "slacklining-society",
+      "name": "Slacklining Society",
+      "fields": [
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "socialist-students-society",
+      "name": "Socialist Students Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sociology-social-policy-and-criminology-society",
+      "name": "Sociology, Social Policy and Criminology Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "somali-society",
+      "name": "Somali Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "soton-medical-technology-society",
+      "name": "Soton Medical Technology Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sotonmedentrepreneurs",
+      "name": "SotonMedEntrepreneurs",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "south-asian-medics-southampton",
+      "name": "South Asian Medics Southampton",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "southampton-international-medics-society",
+      "name": "Southampton International Medics Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "southampton-marrow",
+      "name": "Southampton Marrow",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "southampton-robotics-outreach",
+      "name": "Southampton Robotics Outreach",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "community_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "southampton-pub-society",
+      "name": "Southampton Pub Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "swing-dancers",
+      "name": "Southampton Swing Dancers",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "spanish-latin-american-and-portuguese-society",
+      "name": "Spanish, Latin American and Portuguese Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sports-and-exercise-medicine-society",
+      "name": "Sports and Exercise Medicine Society",
+      "fields": [
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "squash",
+      "name": "Squash",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join"
+      ]
+    },
+    {
+      "id": "spaceflight-society",
+      "name": "Spaceflight Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "kraken-soc",
+      "name": "Steampunk Society (Kraken Soc)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-stem-netball",
+      "name": "STEM Netball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sri-lanka-society",
+      "name": "Sri Lanka Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "stage-technicians-society",
+      "name": "Stage Technicians' Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "community_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "street-dance-society",
+      "name": "Street Dance Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "ssago",
+      "name": "Student Scout And Guide Organisation",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sub-aqua-scuba-diving",
+      "name": "Sub-Aqua (Scuba Diving)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sudanese-society",
+      "name": "Sudanese Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "surf",
+      "name": "Surf",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-suens-hockey",
+      "name": "SUENS Hockey",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-suhc-mixed-hockey",
+      "name": "SUHC Mixed Hockey",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "surge",
+      "name": "SURGE",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "surgical-society",
+      "name": "Surgical Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "susingers",
+      "name": "SUSingers",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "sustrings",
+      "name": "SUStrings (String Orchestra)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "swallows-football",
+      "name": "Swallows (Football)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "symphonic-wind-orchestra",
+      "name": "Symphonic Wind Orchestra",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "swimming",
+      "name": "Swimming",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "table-tennis",
+      "name": "Table Tennis",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "symphony-orchestra",
+      "name": "Symphony Orchestra",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "taekwondo",
+      "name": "Taekwondo",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "tamil-society",
+      "name": "Tamil Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "tap-dance",
+      "name": "Tap Dance",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "tea-society",
+      "name": "Tea Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "community_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "telugu-society",
+      "name": "Telugu Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "team-southampton-motorsport",
+      "name": "Team Southampton Motorsport",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "teddy-bear-hospital",
+      "name": "Teddy Bear Hospital",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "tennis",
+      "name": "Tennis",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "thai-society",
+      "name": "Thai Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "the-mindful-medical-society",
+      "name": "The Mindful Medical Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "the-edge",
+      "name": "The Edge",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "theatre-group",
+      "name": "Theatre Group",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-therabandits-physiosoc-netball",
+      "name": "Therabandits (PhysioSoc Netball)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "touch-rugby",
+      "name": "Touch Rugby",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "tigers-tennis",
+      "name": "Tigers (Tennis)",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "trampolining",
+      "name": "Trampolining",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "trauma-and-orthopaedic-society",
+      "name": "Trauma and Orthopaedic Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "triathlon",
+      "name": "Triathlon",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "turkish-society",
+      "name": "Turkish Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-turksoc-fc",
+      "name": "TurkSoc FC",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "ukrainian-society",
+      "name": "Ukrainian Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "ultimate-frisbee",
+      "name": "Ultimate Frisbee",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "union-films",
+      "name": "Union Films",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "union-southampton-dance",
+      "name": "Union Southampton Dance",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "university-of-southampton-ophthalmology-society",
+      "name": "University of Southampton Ophthalmology Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships"
+      ]
+    },
+    {
+      "id": "university-of-southampton-180-degrees-consulting",
+      "name": "University of Southampton 180 Degrees Consulting",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "vegan-and-vegetarian-society",
+      "name": "Vegan and Vegetarian Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "video-games-esports-society",
+      "name": "Video Games & Esports Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "community_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-villarrealgorithm-cf",
+      "name": "Villarrealgorithm CF",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "vietnamese-society",
+      "name": "Vietnamese Society",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "water-polo",
+      "name": "Water Polo",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "wessex-scene",
+      "name": "Wessex Scene",
+      "fields": [
+        "logo_url",
+        "susu_group_id",
+        "memberships",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "im-wessex-warriors",
+      "name": "Wessex Warriors",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "widening-access-to-medicine-southampton",
+      "name": "Widening Access to Medicine Southampton",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "website_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "wild-swimming-society",
+      "name": "Wild Swimming society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "wildlife-society",
+      "name": "Wildlife Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "regular_schedule",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "wilderness-and-expedition-medicine",
+      "name": "Wilderness and Expedition Medicine",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "windsurfing",
+      "name": "Windsurfing",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "women-in-business-society",
+      "name": "Women in Business Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "instagram_url",
+        "website_url",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "women-in-ecs-society",
+      "name": "Women in ECS Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "women-in-law",
+      "name": "Women in Law",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "women-in-medicine",
+      "name": "Women in Medicine",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "women-in-surgery",
+      "name": "Women in Surgery",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "gujarati-society",
+      "name": "Gujarati Society",
+      "fields": [
+        "memberships"
+      ]
+    },
+    {
+      "id": "habesha-basketball",
+      "name": "Habesha Basketball",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "yoga-society",
+      "name": "Yoga Society",
+      "fields": [
+        "susu_group_id",
+        "memberships",
+        "how_to_join",
+        "membership_url"
+      ]
+    },
+    {
+      "id": "zumba",
+      "name": "Zumba+",
+      "fields": [
+        "description",
+        "susu_group_id",
+        "memberships",
+        "contact_email",
+        "instagram_url",
+        "website_url",
+        "regular_schedule",
+        "how_to_join",
+        "membership_url"
+      ]
+    }
+  ],
+  "missing_from_directories": [
+    {
+      "id": "im-physoc-flames-physics-netball",
+      "name": "Physoc Flames (Physics Netball)",
+      "url": "https://www.susu.org/groups/physics-netball"
+    }
+  ],
+  "failed_profiles": [
+    {
+      "id": "im-physoc-flames-physics-netball",
+      "url": "https://www.susu.org/groups/physics-netball",
+      "error": "Unrecognised society profile"
+    }
+  ],
+  "failed_events": [],
+  "unmatched_event_groups": [
+    {
+      "group_id": 500,
+      "title": "Round Robin Classics",
+      "url": "https://www.susu.org/event/26444/round-robin-classics"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26702/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Coventry City v Ipswich Town (PL)",
+      "url": "https://www.susu.org/event/27007/coventry-city-v-ipswich-town-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26715/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Liverpool v Sunderland (PL)",
+      "url": "https://www.susu.org/event/27008/liverpool-v-sunderland-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Round Robin Classics",
+      "url": "https://www.susu.org/event/26443/round-robin-classics"
+    },
+    {
+      "group_id": 500,
+      "title": "Solve & Sip",
+      "url": "https://www.susu.org/event/26461/solve-sip"
+    },
+    {
+      "group_id": 500,
+      "title": "Tottenham Hotspur v Fulham (PL)",
+      "url": "https://www.susu.org/event/27009/tottenham-hotspur-v-fulham-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Festive Roller Skating",
+      "url": "https://www.susu.org/event/27034/festive-roller-skating"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26728/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Sheffield United v West Ham United (Championship)",
+      "url": "https://www.susu.org/event/27010/sheffield-united-v-west-ham-united-championship"
+    },
+    {
+      "group_id": 500,
+      "title": "Christmas at The Stag's",
+      "url": "https://www.susu.org/event/27043/christmas-at-the-stags"
+    },
+    {
+      "group_id": 500,
+      "title": "Chelsea v Liverpool (PL)",
+      "url": "https://www.susu.org/event/27011/chelsea-v-liverpool-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Nottingham Forest v Brighton & Hove Albion (PL)",
+      "url": "https://www.susu.org/event/27012/nottingham-forest-v-brighton-hove-albion-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Brentford v Manchester City (PL)",
+      "url": "https://www.susu.org/event/27013/brentford-v-manchester-city-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Newcastle United v Sunderland (PL)",
+      "url": "https://www.susu.org/event/27014/newcastle-united-v-sunderland-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Premier League - Tottenham Hotspur v Arsenal",
+      "url": "https://www.susu.org/event/27022/premier-league-tottenham-hotspur-v-arsenal"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26689/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Quiz & Chips",
+      "url": "https://www.susu.org/event/26551/quiz-chips"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26703/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Barcelona v Manchester City (UCL)",
+      "url": "https://www.susu.org/event/27016/barcelona-v-manchester-city-ucl"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26716/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Arsenal v Real Madrid (UCL)",
+      "url": "https://www.susu.org/event/27017/arsenal-v-real-madrid-ucl"
+    },
+    {
+      "group_id": 500,
+      "title": "Jagiellonia Bialystok v Crystal Palace (UEL)",
+      "url": "https://www.susu.org/event/27018/jagiellonia-bialystok-v-crystal-palace-uel"
+    },
+    {
+      "group_id": 500,
+      "title": "Stag's Presents... Music: Karaoke",
+      "url": "https://www.susu.org/event/27052/stags-presents-music-karaoke"
+    },
+    {
+      "group_id": 500,
+      "title": "AC Milan v Sunderland (UEL)",
+      "url": "https://www.susu.org/event/27019/ac-milan-v-sunderland-uel"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26729/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "UniLife Euro Trip",
+      "url": "https://www.susu.org/event/26476/unilife-euro-trip"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26690/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26704/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26717/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Switzerland v Scotland (Nations League)",
+      "url": "https://www.susu.org/event/26989/switzerland-v-scotland-nations-league"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26700/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Wales v Portugal (Nations League)",
+      "url": "https://www.susu.org/event/26990/wales-v-portugal-nations-league"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26713/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Break The Ice: Connect & Play - Christmas Card Games!",
+      "url": "https://www.susu.org/event/26830/break-the-ice-connect-play-christmas-card-games"
+    },
+    {
+      "group_id": 500,
+      "title": "Winter Festival: Festive Market",
+      "url": "https://www.susu.org/event/26953/winter-festival-festive-market"
+    },
+    {
+      "group_id": 500,
+      "title": "Winter Festival: Family Zone",
+      "url": "https://www.susu.org/event/26950/winter-festival-family-zone"
+    },
+    {
+      "group_id": 500,
+      "title": "Gingerbread House Decorating",
+      "url": "https://www.susu.org/event/26459/gingerbread-house-decorating"
+    },
+    {
+      "group_id": 500,
+      "title": "Winter Festival: Light Switch On",
+      "url": "https://www.susu.org/event/26952/winter-festival-light-switch-on"
+    },
+    {
+      "group_id": 500,
+      "title": "Stags Presents...Karaoke",
+      "url": "https://www.susu.org/event/27051/stags-presentskaraoke"
+    },
+    {
+      "group_id": 500,
+      "title": "Winter Festival: Speed Bingo",
+      "url": "https://www.susu.org/event/26949/winter-festival-speed-bingo"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26726/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Manchester City v Fulham (PL)",
+      "url": "https://www.susu.org/event/26991/manchester-city-v-fulham-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Newcaslte united v Arsenal (PL)",
+      "url": "https://www.susu.org/event/26992/newcaslte-united-v-arsenal-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Hull City v Brighton & Hove Albion (PL)",
+      "url": "https://www.susu.org/event/26993/hull-city-v-brighton-hove-albion-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Liverpool v Manchester United (PL)",
+      "url": "https://www.susu.org/event/26994/liverpool-v-manchester-united-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Housing Drop In",
+      "url": "https://www.susu.org/event/26687/advice-centre-housing-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Quiz & Chips",
+      "url": "https://www.susu.org/event/26549/quiz-chips"
+    },
+    {
+      "group_id": 500,
+      "title": "Brentford v Everton (PL)",
+      "url": "https://www.susu.org/event/26995/brentford-v-everton-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26701/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Galatasaray v Aston Villa (UCL)",
+      "url": "https://www.susu.org/event/26996/galatasaray-v-aston-villa-ucl"
+    },
+    {
+      "group_id": 500,
+      "title": "Sculpt & Sip",
+      "url": "https://www.susu.org/event/26460/sculpt-sip"
+    },
+    {
+      "group_id": 500,
+      "title": "Arsenal v Borussia Dortmund (UCL)",
+      "url": "https://www.susu.org/event/26997/arsenal-v-borussia-dortmund-ucl"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26714/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Sabah FC v Barcelona (UCL)",
+      "url": "https://www.susu.org/event/26998/sabah-fc-v-barcelona-ucl"
+    },
+    {
+      "group_id": 500,
+      "title": "Club Brugge v Liverpool (UCL)",
+      "url": "https://www.susu.org/event/26999/club-brugge-v-liverpool-ucl"
+    },
+    {
+      "group_id": 500,
+      "title": "Housing Fair",
+      "url": "https://www.susu.org/event/27023/housing-fair"
+    },
+    {
+      "group_id": 500,
+      "title": "Celta Vigo v AFC Bournemouth (UEL)",
+      "url": "https://www.susu.org/event/27000/celta-vigo-v-afc-bournemouth-uel"
+    },
+    {
+      "group_id": 500,
+      "title": "Crystal Palace v Real Sociedad (UEL)",
+      "url": "https://www.susu.org/event/27001/crystal-palace-v-real-sociedad-uel"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Housing Drop In",
+      "url": "https://www.susu.org/event/26727/advice-centre-housing-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "The Pirate Game",
+      "url": "https://www.susu.org/event/26924/the-pirate-game"
+    },
+    {
+      "group_id": 500,
+      "title": "Nottingham Forest v Chelsea (PL)",
+      "url": "https://www.susu.org/event/27002/nottingham-forest-v-chelsea-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Women's IM Football Taster - 28th of November",
+      "url": "https://www.susu.org/event/27055/womens-im-football-taster-28th-of-november"
+    },
+    {
+      "group_id": 500,
+      "title": "Ipswich Town v Aston Villa (PL)",
+      "url": "https://www.susu.org/event/27003/ipswich-town-v-aston-villa-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Everton v Liverpool (PL)",
+      "url": "https://www.susu.org/event/27004/everton-v-liverpool-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Sunderland v Tottenham Hotspur (PL)",
+      "url": "https://www.susu.org/event/27005/sunderland-v-tottenham-hotspur-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Arsenal v Manchester City (PL)",
+      "url": "https://www.susu.org/event/27006/arsenal-v-manchester-city-pl"
+    },
+    {
+      "group_id": 500,
+      "title": "Advice Centre Drop In",
+      "url": "https://www.susu.org/event/26688/advice-centre-drop-in"
+    },
+    {
+      "group_id": 500,
+      "title": "Quiz & Chips",
+      "url": "https://www.susu.org/event/26550/quiz-chips"
+    },
+    {
+      "group_id": 500,
+      "title": "Round Robin Classics",
+      "url": "https://www.susu.org/event/26445/round-robin-classics"
+    }
+  ],
+  "date_issues": [
+    {
+      "id": "susu-event-27041",
+      "title": "Variyaa X - TSoc Boat Party",
+      "url": "https://www.susu.org/event/27041/variyaa-x-tsoc-boat-party",
+      "reason": "SUSU lists a duration longer than seven days. The event dates need checking with the organiser."
+    }
+  ],
+  "added_events": 190,
+  "updated_events": 1,
+  "unverified_upcoming_events": 417
+}

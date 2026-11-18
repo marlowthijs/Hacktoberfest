@@ -71,6 +71,8 @@ test('profile edits publish as an overlay without changing official identity', a
   const publicData = await mergePortalCatalogue(base, env);
   assert.equal(publicData.societies[0].name, 'Art Society');
   assert.equal(publicData.societies[0].how_to_join, saved.society.how_to_join);
+  assert.ok(publicData.societies[0].portal_updated_at);
+  assert.ok(publicData.societies[0].portal_fields.includes('contact_email'));
   assert.equal(publicData.societies[1].how_to_join, undefined);
   assert.ok(!JSON.stringify(publicData).includes('token_hash'));
 });

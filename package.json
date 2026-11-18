@@ -5,6 +5,7 @@
   "engines": { "node": ">=22.13.0" },
   "scripts": {
     "dev": "node scripts/dev.mjs",
+    "refresh:catalogue": "node scripts/refresh-catalogue.mjs",
     "test": "node --test tests/*.test.mjs",
     "deploy": "wrangler deploy",
     "db:local": "wrangler d1 migrations apply PORTAL_DB --local",

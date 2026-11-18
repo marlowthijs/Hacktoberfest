@@ -2,6 +2,31 @@
 
 uniflow turns a weekly society event list into a public calendar feed that students can subscribe to in Google Calendar. Society committees can publish their own events and joining instructions through the secretary portal.
 
+## Student journey
+
+1. Search and follow societies or sports. Browsing shows six results at a time; contact-only groups appear when searched for or in **My selection**. Choices stay saved on that device, including societies with no upcoming dates.
+2. Review events with search and 7-day, 30-day or all-upcoming filters. These filters change the preview, not the subscription. Source dates and links explain where each listing came from.
+3. Copy a subscription link and follow the Google Calendar or Apple/other-calendar instructions. Copying never automatically redirects to another app. A one-time `.ics` download is also available.
+
+## Refresh the SUSU catalogue
+
+The [17 November 2026 refresh report](reports/catalogue-refresh-2026-11-17.md) records coverage, additions and outstanding source problems. The refresh tool reads the public society, Athletic Union and intramural directories, each profile, eight months of the SUSU calendar and additional event links on profiles. It extracts descriptions, logos, public contacts, membership fees and joining/schedule notes. It does not read private social content, send messages or invent dated occurrences from a regular schedule.
+
+From a review branch, run:
+
+```sh
+npm ci
+npm run refresh:catalogue
+npm test
+npm run dev
+```
+
+Review `data/events.json` and `reports/catalogue-refresh.json` before merging. The command updates local files only; it does not publish, change the portal database, or install a scheduled job. Normal runs fetch sources afresh. Public source snapshots are cached in ignored `.catalogue-cache/`; `--resume` uses existing snapshots for an interrupted run and `--cached` reprocesses them offline. Only reuse snapshots from the same collection: reprocessing old snapshots does not establish new freshness. `--date YYYY-MM-DD` preserves that collection date. For a reproducible review, `--baseline /path/to/catalogue.json` compares against that saved input instead of the working catalogue.
+
+`source_checked_at` means the information was present on the cited SUSU page when checked, not that its organiser independently confirmed it. Previously supplied contact links are preserved if SUSU omits them, but are labelled as not rechecked. Membership prices include their published validity period. Profiles that disappear stay searchable and are flagged for review, so saved selections retain their IDs.
+
+Events with `verification_status: "needs_confirmation"` are excluded from the default preview and subscribed feed. Students can explicitly include them; their URL adds `include_unconfirmed=1`, and their calendar entries are marked `[Unconfirmed]` and `STATUS:TENTATIVE`. A conflicting event date or an old generated schedule is never presented as a newly verified date. Existing event IDs and cancellation records are preserved. Calendar `sequence` tracks source changes separately from the portal's edit-conflict `version`.
+
 ## Update society events
 
 The event catalogue lives in [`data/events.json`](data/events.json). Update this file in the GitHub repository when society teams send their weekly events. The public app reads the file from the repository's `main` branch and checks for updates every few minutes, so ordinary event edits do not need a Worker redeploy.
@@ -62,7 +87,7 @@ Changes to `worker/index.js` (including the interface and calendar setup flow) m
 
 ## Try the secretary portal locally
 
-1. Check out `codex/society-secretary-portal` and open a terminal in the repository.
+1. Check out the branch you want to preview and open a terminal in the repository.
 2. Run `npm ci`, then `npm run dev`.
 3. Open [the owner portal](http://127.0.0.1:8787/secretary/admin).
 4. Open `.portal-access/local-owner-key.txt` and paste that key into the owner login.
@@ -72,7 +97,7 @@ Changes to `worker/index.js` (including the interface and calendar setup flow) m
 
 `npm run dev` creates a random local owner key and applies the schema to a local database automatically. Local edits never change the live website. Keep the terminal running; press Ctrl+C to stop. If port 8787 is busy, use `npm run dev -- --port 8788` and use that port in the links above.
 
-The preview reads the base catalogue from GitHub `main` and stores edits locally in `.wrangler/state`. It does not write back to `data/events.json`. Set `CATALOGUE_REF` in `.dev.vars` to preview catalogue data from another published branch. Never commit `.dev.vars`, `.portal-access/`, or `.wrangler/`; all are ignored by Git.
+Localhost and `workers.dev` previews use the catalogue bundled from the checked-out branch, so local JSON changes can be tested before merging. Local secretary edits are stored in `.wrangler/state` and do not write back to `data/events.json`. Set `CATALOGUE_REF` explicitly in `.dev.vars` to read a different published GitHub branch instead. Live custom domains continue reading GitHub `main`. Never commit `.dev.vars`, `.portal-access/`, `.catalogue-cache/` or `.wrangler/`; all are ignored by Git.
 
 ## Running the portal
 
@@ -111,13 +136,18 @@ Invitation and session tokens are random; only their hashes are stored. Producti
 
 Run `npm test` for API and DOM integration tests, and `npx wrangler deploy --dry-run` to check the Worker bundle. Tests cover invitation redemption and expiry, revocation, society isolation, CSRF, concurrent edits, validation, preview isolation, safe public rendering, calendar cancellation and upstream failures.
 
+Student and source-parser tests also cover search and progressive results, quiet-society subscriptions, mobile copy behaviour, source/committee separation, unsafe links, inconsistent source dates and tentative-calendar opt-in.
+
 ## Project files
 
 - `worker/index.js` — student app, public event API and iCalendar feed.
+- `worker/student-client.js` — student discovery, saved selections, event review and calendar setup.
 - `worker/portal-api.js` — invitation access, validation and D1 persistence.
 - `worker/secretary-page.js` / `worker/portal-client.js` — secretary and owner interfaces.
 - `data/events.json` — base society and event catalogue.
 - `migrations/` — D1 database schema.
 - `scripts/dev.mjs` — isolated local preview setup.
+- `scripts/refresh-catalogue.mjs` — repeatable public SUSU source refresh.
+- `reports/` — source coverage and refresh exceptions.
 - `tests/` — API and interface integration tests.
 - `wrangler.toml` — live Worker and database configuration.

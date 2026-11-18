@@ -101,10 +101,10 @@ export async function mergePortalCatalogue(base, env) {
   for (const row of events.results) {
     if (!ids.has(row.society_id)) continue;
     const prior = mergedEvents.get(row.event_id); if (prior && prior.society_id !== row.society_id) continue;
-    mergedEvents.set(row.event_id, { ...JSON.parse(row.data_json), id: row.event_id, society_id: row.society_id, version: row.version, modified_at: row.modified_at });
+    mergedEvents.set(row.event_id, { ...JSON.parse(row.data_json), id: row.event_id, society_id: row.society_id, version: row.version, modified_at: row.modified_at, source_type: 'secretary', source_checked_at: row.modified_at });
     if (row.modified_at > latest) latest = row.modified_at;
   }
-  const societies = base.societies.map(s => { const row = profilesById.get(s.id); if (!row) return s; if (row.modified_at > latest) latest = row.modified_at; return { ...s, ...JSON.parse(row.data_json), id: s.id, name: s.name }; });
+  const societies = base.societies.map(s => { const row = profilesById.get(s.id); if (!row) return s; if (row.modified_at > latest) latest = row.modified_at; const profile = JSON.parse(row.data_json); return { ...s, ...profile, id: s.id, name: s.name, portal_updated_at: row.modified_at, portal_fields: Object.keys(profile) }; });
   return { ...base, societies, events: [...mergedEvents.values()], updated_at: latest || null };
 }
 
@@ -205,7 +205,7 @@ export async function handlePortalApi(request, env, { loadBaseCatalogue }) {
     if (path === '/api/portal/events' && request.method === 'POST') {
       const data = validateEvent(await readBody(request));
       const id = society.id + '-' + crypto.randomUUID(), modified = new Date().toISOString();
-      const event = { ...data, id, society_id: society.id, status: 'confirmed', version: 1, modified_at: modified };
+      const event = { ...data, id, society_id: society.id, status: 'confirmed', source_type: 'secretary', source_checked_at: modified, sequence: 1, version: 1, modified_at: modified };
       await db.prepare('INSERT INTO portal_events (event_id,society_id,data_json,version,modified_at) VALUES (?,?,?,1,?)').bind(id, society.id, JSON.stringify(event), modified).run();
       await audit(db, session, 'event_created', id); return json({ event }, 201);
     }
@@ -215,7 +215,7 @@ export async function handlePortalApi(request, env, { loadBaseCatalogue }) {
       const body = await readBody(request), version = versionOf(body.version);
       if (eventMatch[2]) allowFields(body, ['version']);
       const data = eventMatch[2] ? prior : validateEvent(body, true), modified = new Date().toISOString();
-      const event = { ...data, id, society_id: society.id, status: eventMatch[2] ? 'cancelled' : 'confirmed', version: version + 1, modified_at: modified };
+      const event = { ...data, id, society_id: society.id, status: eventMatch[2] ? 'cancelled' : 'confirmed', source_type: 'secretary', source_checked_at: modified, verification_status: undefined, sequence: (prior.sequence || prior.version || 0) + 1, version: version + 1, modified_at: modified };
       const result = version === 0
         ? await db.prepare('INSERT INTO portal_events (event_id,society_id,data_json,version,modified_at) VALUES (?,?,?,1,?) ON CONFLICT(event_id) DO NOTHING RETURNING version').bind(id, society.id, JSON.stringify(event), modified).first()
         : await db.prepare('UPDATE portal_events SET data_json=?,version=version+1,modified_at=? WHERE event_id=? AND society_id=? AND version=? RETURNING version').bind(JSON.stringify(event), modified, id, society.id, version).first();
