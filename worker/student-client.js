@@ -3,12 +3,14 @@ export const STUDENT_SCRIPT = String.raw`(() => {
 const $ = id => document.getElementById(id);
 const KEY = 'society-synth:selected-societies:v1';
 const PREFS_KEY = 'uniflow:calendar-preferences:v1';
+const setupParams = new URLSearchParams(location.search);
 function stored(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } }
 const saved = stored(KEY, []), prefs = stored(PREFS_KEY, {});
 let selected = new Set(Array.isArray(saved) ? saved.filter(id => typeof id === 'string') : []);
 let catalogue = { societies: [], events: [] }, societyMap = new Map(), eventMap = new Map(), searchMap = new Map();
 let societyLimit = 6, eventLimit = 6, kind = 'all', onlySelected = false, activeStep = 1;
 let includeUnconfirmed = prefs?.includeUnconfirmed === true, copiedFeed = '', failedCopyFeed = '', copying = false;
+let copiedSetup = '', failedSetup = '', copyingSetup = false, clipboardKind = '';
 let loading = false, loaded = false, lastPayload = '', lastLiveIds = '', lastFetchAt = 0, lastRemoved = null, undoTimer;
 let lastCopiedSelection = typeof prefs?.lastCopiedSelection === 'string' ? prefs.lastCopiedSelection : '';
 const scrollPositions = new Map(), formatters = new Map();
@@ -137,19 +139,30 @@ function renderSelections() {
   updateNavigation();
 }
 function isAppleMobile() { return /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); }
-function isMobile() { return isAppleMobile() || /Android/i.test(navigator.userAgent) || !!window.matchMedia?.('(hover: none) and (pointer: coarse)').matches; }
+function isMobile() { return isAppleMobile() || /Android/i.test(navigator.userAgent) || !!window.matchMedia?.('(hover: none) and (pointer: coarse)').matches || window.innerWidth <= 640; }
 function signature() { return [...selected].sort().join(',') + (includeUnconfirmed ? ':tentative' : ''); }
 function renderFeed() {
   const mobile = isMobile(), provider = $('calendar-provider').value, google = provider === 'google', apple = provider === 'apple';
   const u = new URL('/calendar.ics', location.origin); u.searchParams.set('societies', [...selected].sort().join(','));
   if (includeUnconfirmed) u.searchParams.set('include_unconfirmed', '1');
   const link = selected.size ? u.href : '', copied = Boolean(link && copiedFeed === link), failed = Boolean(link && failedCopyFeed === link);
+  const setup = new URL('/', location.origin); setup.searchParams.set('follow', [...selected].sort().join(','));
+  if (includeUnconfirmed) setup.searchParams.set('tentative', '1');
+  setup.hash = 'calendar';
+  const setupLink = selected.size ? setup.href : '', setupCopied = Boolean(setupLink && copiedSetup === setupLink), setupFailed = Boolean(setupLink && failedSetup === setupLink);
+  $('setup-url').value = setupLink;
+  $('copy-setup-link').disabled = !setupLink || copyingSetup || copying;
+  $('copy-setup-link').textContent = copyingSetup ? 'Copying…' : setupCopied && clipboardKind === 'setup' ? 'Setup link copied ✓' : 'Copy setup link';
+  $('setup-copy-status').textContent = setupFailed ? 'Copying was blocked. Select and copy the setup link below, then send it to yourself.' : setupCopied ? 'Open this setup link on your computer. Your society choices will be ready there; you haven’t subscribed yet.' : 'This opens UniFlow with your choices, ready to finish in the same Google account you use on your phone.';
+  $('setup-link-manual').hidden = !setupFailed;
   $('feed-url').value = link;
-  $('copy-feed').disabled = !link || copying;
-  $('copy-feed').textContent = copying ? 'Copying…' : copied ? 'Copied ✓ — copy again' : 'Copy calendar link';
+  $('copy-feed').disabled = $('recopy-feed').disabled = !link || copying || copyingSetup;
+  $('copy-feed').textContent = copying ? 'Copying…' : copied && clipboardKind === 'feed' ? 'Copied ✓ — copy again' : 'Copy calendar link';
+  $('recopy-feed').textContent = copying ? 'Copying…' : copied && clipboardKind === 'feed' ? 'Calendar link copied ✓' : 'Copy calendar link';
+  $('browser-copy-status').textContent = failed ? 'Copying was blocked. Copy your calendar link from the field above.' : copied && clipboardKind === 'feed' ? 'Now open a new browser tab. Keep this calendar link copied for the final step.' : 'Copy the calendar link here before switching tabs. The setup link is only for continuing on a computer.';
   $('feed-status').textContent = copied ? 'Copied. Your next step is ready.' : selected.size + ' ' + (selected.size === 1 ? 'society' : 'societies') + ' · ' + selectedEvents().length + ' upcoming events';
   $('feed-status').classList.toggle('is-copied', copied);
-  $('copy-guidance').textContent = failed ? 'Tap the link to select it, then copy it manually.' : copied ? 'Next, finish adding your calendar subscription.' : apple ? 'Or open Apple Calendar directly using the subscribe button.' : 'Copy first, then add it to your calendar.';
+  $('copy-guidance').textContent = failed ? 'Tap the link to select it, then copy it manually.' : clipboardKind === 'setup' && setupCopied ? 'Your setup link is copied. Copy the calendar link again before pasting into Google Calendar.' : copied ? 'Next, finish adding your calendar subscription.' : apple ? 'Or open Apple Calendar directly using the subscribe button.' : 'Copy first, then add it to your calendar.';
   $('feed-heading').textContent = apple ? 'Your society calendar' : '1. Copy your calendar link';
   $('calendar-waiting').hidden = copied || apple;
   $('desktop-calendar-steps').hidden = !copied || mobile || !google;
@@ -157,10 +170,12 @@ function renderFeed() {
   $('apple-calendar-steps').hidden = !apple;
   $('other-calendar-steps').hidden = !copied || provider !== 'other';
   $('calendar-next').classList.toggle('is-ready', copied || apple);
-  $('mobile-finish-title').textContent = isAppleMobile() ? '2. Finish in Safari' : '2. Finish in your browser';
+  if (mobile) $('desktop-google-link').removeAttribute('href');
+  else $('desktop-google-link').href = 'https://calendar.google.com/calendar/u/0/r/settings/addbyurl';
+  $('mobile-browser-title').textContent = isAppleMobile() ? 'Try Safari on this iPhone or iPad instead' : 'Try this phone’s browser instead';
+  $('mobile-address-title').textContent = isAppleMobile() ? 'Type the address in a new Safari tab' : 'Type the address in a new browser tab';
   $('desktop-site-title').textContent = isAppleMobile() ? 'Request Desktop Website' : 'Turn on Desktop site';
   $('desktop-site-guidance').textContent = isAppleMobile() ? 'In Safari’s Page menu beside the address bar, choose “Request Desktop Website”. Sign in to the same Google account as the app.' : 'In your browser menu, turn on “Desktop site”. Sign in to the same Google account as the app.';
-  $('mobile-browser-guidance').textContent = 'A normal tap can open the app. Press and hold the website link instead.';
   $('download-feed').href = link ? link + '&download=1' : '#';
   $('download-feed').setAttribute('aria-disabled', String(!link));
   $('apple-subscribe').href = link ? link.replace(/^https?:/, 'webcal:') : '#';
@@ -205,9 +220,22 @@ async function load() {
     // A focus refresh must not collapse details or interrupt an unchanged page.
     if (loaded && payload === lastPayload && liveIds === lastLiveIds) return;
     catalogue = data; lastPayload = payload; lastLiveIds = liveIds; indexCatalogue();
+    let invalidSetup = false;
+    if (!loaded && setupParams.has('follow')) {
+      const requested = [...new Set(setupParams.get('follow').split(',').filter(Boolean))];
+      const valid = requested.filter(id => societyFor(id)); invalidSetup = !valid.length;
+      $('setup-notice').hidden = false;
+      if (valid.length) {
+        selected = new Set(valid); includeUnconfirmed = setupParams.get('tentative') === '1';
+        $('include-unconfirmed').checked = includeUnconfirmed; $('calendar-provider').value = 'google'; savePreferences();
+        $('setup-notice').textContent = valid.length === requested.length ? 'Your society choices are ready. Copy your calendar link below to finish adding it.' : 'Your available societies are ready. Some groups in this setup link are no longer listed; review your selection before adding it.';
+      } else $('setup-notice').textContent = 'This setup link has no available societies. Your saved choices are still here; choose your societies to continue.';
+      const clean = new URL(location.href); clean.searchParams.delete('follow'); clean.searchParams.delete('tentative');
+      history.replaceState(null, '', clean.pathname + clean.search + clean.hash);
+    }
     selected = new Set([...selected].filter(id => societyFor(id))); save();
     const firstLoad = !loaded; loaded = true; render();
-    if (firstLoad) showStep(Math.max(1, ['#societies', '#events', '#calendar'].indexOf(location.hash) + 1), false, true);
+    if (firstLoad) showStep(invalidSetup ? 1 : Math.max(1, ['#societies', '#events', '#calendar'].indexOf(location.hash) + 1), false, true);
     else if (!selected.size && activeStep > 1) showStep(1, false);
   } catch {
     $('load-error').hidden = false;
@@ -219,6 +247,7 @@ function hideUndo() { clearTimeout(undoTimer); $('undo-message').hidden = true; 
 function scheduleUndoHide() { undoTimer = setTimeout(() => { if ($('undo-message').contains(document.activeElement)) scheduleUndoHide(); else hideUndo(); }, 8000); }
 function changeSelection(id, chosen, check) {
   if (!societyFor(id)) return;
+  $('setup-notice').hidden = true;
   if (chosen) selected.add(id);
   else { lastRemoved = { id, index: [...selected].indexOf(id) }; selected.delete(id); hideUndo(); $('undo-text').textContent = societyFor(id).name + ' removed'; $('undo-message').hidden = false; scheduleUndoHide(); }
   save();
@@ -262,21 +291,37 @@ window.addEventListener('popstate', () => { if (loaded) showStep(Math.max(1, ['#
 window.addEventListener('hashchange', () => { if (loaded) showStep(Math.max(1, ['#societies', '#events', '#calendar'].indexOf(location.hash) + 1), false); });
 $('calendar-provider').value = ['google', 'apple', 'other'].includes(prefs?.provider) ? prefs.provider : 'google';
 $('calendar-provider').addEventListener('change', () => { savePreferences(); renderFeed(); });
+$('desktop-google-link').addEventListener('click', e => { if (isMobile()) { e.preventDefault(); renderFeed(); revealCalendarNext(); } });
 $('retry-load').addEventListener('click', load);
-$('mobile-google-link').addEventListener('click', e => { e.preventDefault(); $('mobile-browser-guidance').textContent = 'Press and hold this link and choose “Open in New Tab”. A normal tap can open the Calendar app.'; });
 for (const id of ['download-feed', 'apple-subscribe']) $(id).addEventListener('click', e => { if ($(id).getAttribute('aria-disabled') === 'true') e.preventDefault(); });
 $('feed-url').addEventListener('click', () => $('feed-url').select());
 function revealCalendarNext() { if (window.innerWidth <= 640) $('calendar-next').scrollIntoView?.({ block: 'start', behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); }
-function markCopied(link) { copiedFeed = link; failedCopyFeed = ''; lastCopiedSelection = signature(); savePreferences(); }
+function markCopied(link) { copiedFeed = link; failedCopyFeed = ''; clipboardKind = 'feed'; lastCopiedSelection = signature(); savePreferences(); }
 $('manual-copy-done').addEventListener('click', () => { if (!$('feed-url').value) return; markCopied($('feed-url').value); renderFeed(); revealCalendarNext(); $('announcement').textContent = 'Calendar instructions are ready.'; });
-$('copy-feed').addEventListener('click', async () => {
-  const link = $('feed-url').value; if (!link || copying) return; copying = true; renderFeed(); let copied = false;
-  try { await navigator.clipboard.writeText(link); copied = true; }
-  catch { try { $('feed-url').focus(); $('feed-url').select(); copied = document.execCommand('copy'); } catch {} }
+async function copyField(input, fallback = () => {}) {
+  try { await navigator.clipboard.writeText(input.value); return true; }
+  catch { try { fallback(); input.focus(); input.select(); return document.execCommand('copy'); } catch { return false; } }
+}
+async function copyCalendar(reveal = true) {
+  const link = $('feed-url').value; if (!link || copying || copyingSetup) return; copying = true; renderFeed();
+  const copied = await copyField($('feed-url'));
   copying = false;
-  if (copied) { copiedFeed = link; lastCopiedSelection = new URL(link).searchParams.get('societies') + (new URL(link).searchParams.has('include_unconfirmed') ? ':tentative' : ''); savePreferences(); failedCopyFeed = ''; }
+  if (copied) { copiedFeed = link; clipboardKind = 'feed'; lastCopiedSelection = new URL(link).searchParams.get('societies') + (new URL(link).searchParams.has('include_unconfirmed') ? ':tentative' : ''); savePreferences(); failedCopyFeed = ''; }
   else { copiedFeed = ''; failedCopyFeed = link; }
-  renderFeed(); if (copied && copiedFeed === $('feed-url').value) revealCalendarNext(); $('announcement').textContent = copied ? 'Link copied. Finish adding your subscription using the next step.' : 'Select and copy the calendar link manually.';
+  renderFeed(); if (reveal && copied && copiedFeed === $('feed-url').value) revealCalendarNext(); $('announcement').textContent = copied ? 'Link copied. Finish adding your subscription using the next step.' : 'Select and copy the calendar link manually.';
+}
+$('copy-feed').addEventListener('click', () => copyCalendar());
+$('recopy-feed').addEventListener('click', () => copyCalendar(false));
+$('setup-url').addEventListener('click', () => $('setup-url').select());
+$('copy-setup-link').addEventListener('click', async () => {
+  const link = $('setup-url').value; if (!link || copyingSetup || copying) return; copyingSetup = true; renderFeed();
+  const copied = await copyField($('setup-url'), () => { $('setup-link-manual').hidden = false; });
+  copyingSetup = false;
+  if (copied) { copiedSetup = link; failedSetup = ''; clipboardKind = 'setup'; }
+  else { copiedSetup = ''; failedSetup = link; }
+  renderFeed();
+  if (!copied) { $('setup-url').focus(); $('setup-url').select(); }
+  $('announcement').textContent = copied ? 'Setup link copied. Open it on a computer to finish adding your calendar.' : 'Select and copy the setup link manually.';
 });
 let fullHeight = window.innerHeight;
 function updateKeyboard() {
@@ -286,7 +331,7 @@ function updateKeyboard() {
   document.body.classList.toggle('keyboard-open', Boolean(keyboard));
 }
 window.visualViewport?.addEventListener('resize', updateKeyboard);
-window.addEventListener('resize', updateKeyboard);
+window.addEventListener('resize', () => { updateKeyboard(); renderFeed(); });
 document.addEventListener('focusin', updateKeyboard); document.addEventListener('focusout', () => setTimeout(updateKeyboard, 0));
 for (const id of ['society-search', 'event-search']) $(id).addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); e.target.blur(); } if (e.key === 'Escape') { e.target.value = ''; e.target.dispatchEvent(new Event('input')); } });
 function refreshWhenIdle() { if (Date.now() - lastFetchAt >= 60000 && !document.activeElement?.matches('input,select,textarea')) load(); }

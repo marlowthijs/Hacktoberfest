@@ -9,9 +9,9 @@ const origin='https://uniflow.test',KEY='society-synth:selected-societies:v1',no
 const iso=days=>new Date(now+days*86400000).toISOString();
 const dataset=()=>({schema_version:1,updated_at:new Date(now).toISOString(),societies:[...Array.from({length:15},(_,i)=>({id:'s'+i,name:'Society '+i,category:i%2?'sport':'society'})),{id:'quiet',name:'Quiet Club',description:'Chess and board games'}],events:[...Array.from({length:15},(_,i)=>({id:'e'+i,society_id:'s'+i,title:'Event '+i,start:iso(i+1),end:iso(i+1.1),timezone:'Europe/London',source_type:'susu_event',source_checked_at:iso(0)})),{id:'uncertain',society_id:'s0',title:'Unconfirmed session',start:iso(1),end:iso(1.1),verification_status:'needs_confirmation'}]});
 async function until(check){for(let i=0;i<100;i++){if(check())return;await new Promise(r=>setTimeout(r,5));}assert.ok(check(),'Expected UI state was not reached');}
-async function setup(t,{saved=[],failure=false,mobile=false,preferences={},copyFails=false,hash=''}={}){
+async function setup(t,{saved=[],failure=false,mobile=false,preferences={},copyFails=false,hash='',query='',device={}}={}){
  let fail=failure,source=dataset(),requests=0;const html=await(await worker.fetch(new Request(origin))).text();const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
- const dom=new JSDOM(html,{url:origin+hash,runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.localStorage.setItem(KEY,JSON.stringify(saved));w.localStorage.setItem('uniflow:calendar-preferences:v1',JSON.stringify(preferences));w.scrollTo=({top})=>{w.scrollY=top;};w.matchMedia=()=>({matches:false});if(mobile)Object.defineProperty(w.navigator,'userAgent',{value:'iPhone Safari'});w.fetch=async()=>{requests++;if(fail)throw new Error('offline');return Response.json(source);};Object.defineProperty(w.navigator,'clipboard',{value:{writeText:async value=>{if(copyFails)throw new Error('Copy denied');w.copied=value;}}});w.open=()=>{throw new Error('Unexpected app navigation');};}});
+ const dom=new JSDOM(html,{url:origin+query+hash,runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.localStorage.setItem(KEY,JSON.stringify(saved));w.localStorage.setItem('uniflow:calendar-preferences:v1',JSON.stringify(preferences));w.scrollTo=({top})=>{w.scrollY=top;};w.matchMedia=()=>({matches:false});if(mobile||device.userAgent)Object.defineProperty(w.navigator,'userAgent',{value:device.userAgent||'iPhone Safari'});if(device.platform)Object.defineProperty(w.navigator,'platform',{value:device.platform});if(device.touchPoints)Object.defineProperty(w.navigator,'maxTouchPoints',{value:device.touchPoints});if(device.width)w.innerWidth=device.width;w.fetch=async()=>{requests++;if(fail)throw new Error('offline');return Response.json(source);};Object.defineProperty(w.navigator,'clipboard',{value:{writeText:async value=>{if(copyFails)throw new Error('Copy denied');w.copied=value;}}});w.open=()=>{throw new Error('Unexpected app navigation');};}});
  t.after(()=>dom.window.close());const d=dom.window.document;await until(()=>!d.getElementById('load-error').hidden||d.querySelector('.society-card'));
  const input=(id,value)=>{d.getElementById(id).value=value;d.getElementById(id).dispatchEvent(new dom.window.Event('input',{bubbles:true}));};
  return {dom,d,input,errors,recover:()=>{fail=false;},setSource:value=>{source=value;},requests:()=>requests};
@@ -31,6 +31,52 @@ test('unconfirmed dates require opt-in and mobile copy never redirects to an app
  d.getElementById('include-unconfirmed').checked=true;d.getElementById('include-unconfirmed').dispatchEvent(new dom.window.Event('change',{bubbles:true}));assert.match(d.getElementById('event-list').textContent,/Unconfirmed session/);
  d.getElementById('continue-calendar').click();assert.equal(new URL(d.getElementById('feed-url').value).searchParams.get('include_unconfirmed'),'1');d.getElementById('copy-feed').click();await until(()=>d.getElementById('copy-feed').textContent.startsWith('Copied'));assert.equal(dom.window.copied,d.getElementById('feed-url').value);
  assert.equal(d.getElementById('mobile-calendar-steps').hidden,false);d.getElementById('calendar-provider').value='apple';d.getElementById('calendar-provider').dispatchEvent(new dom.window.Event('change'));assert.match(d.getElementById('apple-subscribe').href,/^webcal:/);assert.equal(d.getElementById('apple-calendar-steps').hidden,false);
+});
+test('mobile Google setup has no Google Calendar hyperlinks, including iPad desktop mode',async t=>{
+ for(const device of [{userAgent:'iPhone Safari'},{userAgent:'Android Chrome'},{userAgent:'Macintosh Safari',platform:'MacIntel',touchPoints:5},{width:390}]) {
+  const {dom,d,errors}=await setup(t,{saved:['s0'],device,hash:'#calendar'});
+  d.getElementById('copy-feed').click();await until(()=>!d.getElementById('mobile-calendar-steps').hidden);
+  assert.equal(d.querySelectorAll('a[href*="calendar.google.com"]').length,0);
+  assert.match(d.getElementById('mobile-browser-help').textContent,/calendar.google.com/);
+  assert.doesNotMatch(d.getElementById('mobile-calendar-steps').textContent,/Press and hold|Open in New Tab/);
+  assert.equal(new URL(dom.window.copied).pathname,'/calendar.ics');assert.deepEqual(errors,[]);
+ }
+});
+test('a mobile setup link restores the exact calendar selection and opt-in on another device',async t=>{
+ const phone=await setup(t,{saved:['quiet','s0'],mobile:true,preferences:{includeUnconfirmed:true},hash:'#calendar'});
+ phone.d.getElementById('copy-feed').click();await until(()=>!phone.d.getElementById('mobile-calendar-steps').hidden);
+ const feed=phone.dom.window.copied;
+ phone.d.getElementById('copy-setup-link').click();await until(()=>phone.d.getElementById('copy-setup-link').textContent.includes('copied'));
+ const link=new URL(phone.dom.window.copied);assert.equal(link.origin,origin);assert.equal(link.pathname,'/');assert.equal(link.searchParams.get('follow'),'quiet,s0');assert.equal(link.searchParams.get('tentative'),'1');assert.equal(link.hash,'#calendar');assert.notEqual(link.href,feed);
+ assert.match(phone.d.getElementById('copy-guidance').textContent,/Copy the calendar link again/);
+ assert.doesNotMatch(phone.d.getElementById('copy-feed').textContent,/Copied/);
+ phone.d.getElementById('recopy-feed').click();await until(()=>phone.d.getElementById('browser-copy-status').textContent.includes('new browser tab'));assert.equal(phone.dom.window.copied,feed);
+ const computer=await setup(t,{saved:['s1'],preferences:{provider:'apple'},query:link.search,hash:link.hash});
+ assert.deepEqual(JSON.parse(computer.dom.window.localStorage.getItem(KEY)),['quiet','s0']);assert.equal(computer.d.getElementById('calendar-provider').value,'google');assert.equal(computer.d.getElementById('include-unconfirmed').checked,true);assert.equal(computer.d.getElementById('calendar').hidden,false);
+ assert.equal(computer.dom.window.location.search,'');assert.equal(computer.d.getElementById('setup-notice').hidden,false);assert.equal(computer.d.getElementById('desktop-calendar-steps').hidden,true);
+ computer.d.getElementById('copy-feed').click();await until(()=>!computer.d.getElementById('desktop-calendar-steps').hidden);
+ assert.equal(computer.dom.window.copied,feed);assert.match(computer.d.getElementById('desktop-google-link').href,/settings\/addbyurl$/);assert.deepEqual(computer.errors,[]);assert.deepEqual(phone.errors,[]);
+});
+test('setup links ignore unknown IDs and do not replace saved choices with an invalid selection',async t=>{
+ const partial=await setup(t,{query:'?follow=s0,missing,s0,quiet&tentative=no',hash:'#calendar',preferences:{includeUnconfirmed:true}});
+ assert.deepEqual(JSON.parse(partial.dom.window.localStorage.getItem(KEY)),['s0','quiet']);assert.equal(partial.d.getElementById('include-unconfirmed').checked,false);assert.match(partial.d.getElementById('setup-notice').textContent,/no longer listed/);
+ const invalid=await setup(t,{saved:['s1'],query:'?follow=missing',hash:'#calendar'});
+ assert.deepEqual(JSON.parse(invalid.dom.window.localStorage.getItem(KEY)),['s1']);assert.equal(invalid.d.getElementById('societies').hidden,false);assert.match(invalid.d.getElementById('setup-notice').textContent,/saved choices are still here/);
+});
+test('a setup link is retained during load failure and can recover without losing the transferred selection',async t=>{
+ const {dom,d,recover}=await setup(t,{saved:['s1'],query:'?follow=s0',hash:'#calendar',failure:true});
+ assert.equal(dom.window.location.search,'?follow=s0');assert.deepEqual(JSON.parse(dom.window.localStorage.getItem(KEY)),['s1']);
+ recover();d.getElementById('retry-load').click();await until(()=>!d.getElementById('calendar').hidden);
+ assert.deepEqual(JSON.parse(dom.window.localStorage.getItem(KEY)),['s0']);assert.equal(dom.window.location.search,'');
+});
+test('a blocked setup copy reveals and selects the setup URL without claiming success',async t=>{
+ const {dom,d,errors}=await setup(t,{saved:['s0'],mobile:true,copyFails:true,hash:'#calendar'});
+ d.getElementById('manual-copy-done').click();d.getElementById('copy-setup-link').click();await until(()=>!d.getElementById('setup-link-manual').hidden&&d.getElementById('setup-copy-status').textContent.includes('blocked'));
+ const field=d.getElementById('setup-url');assert.equal(d.activeElement,field);assert.equal(field.selectionStart,0);assert.equal(field.selectionEnd,field.value.length);assert.equal(dom.window.copied,undefined);assert.doesNotMatch(d.getElementById('copy-setup-link').textContent,/copied/);assert.deepEqual(errors,[]);
+});
+test('changing to a narrow screen removes the desktop Google app link',async t=>{
+ const {dom,d}=await setup(t,{saved:['s0'],hash:'#calendar'});assert.ok(d.getElementById('desktop-google-link').hasAttribute('href'));
+ dom.window.innerWidth=390;dom.window.dispatchEvent(new dom.window.Event('resize'));assert.equal(d.getElementById('desktop-google-link').hasAttribute('href'),false);
 });
 test('a failed refresh preserves choices and retry recovers',async t=>{
  const {dom,d,recover}=await setup(t,{saved:['quiet'],failure:true});assert.deepEqual(JSON.parse(dom.window.localStorage.getItem(KEY)),['quiet']);assert.equal(d.getElementById('load-error').hidden,false);recover();d.getElementById('retry-load').click();await until(()=>d.getElementById('load-error').hidden);assert.equal(d.getElementById('selection-count').textContent,'1 selected');
