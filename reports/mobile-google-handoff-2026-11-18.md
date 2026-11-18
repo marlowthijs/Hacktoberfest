@@ -16,7 +16,7 @@ Opening Google Calendar from iPhone Safari continued to launch its app, even wit
 
 - 37 automated tests pass, including cross-device transfer, opt-in preservation, unknown IDs, load retries, clipboard denial, and absence of Google Calendar hyperlinks on mobile.
 - Cloudflare deployment dry run passes with the existing database and allowed-origin bindings.
-- Browser checks at 390px show the mobile instructions, setup-copy feedback, calendar recopy feedback, no Google Calendar links, no horizontal overflow, and no console errors.
+- Browser checks at 390px show the mobile instructions, setup-copy feedback, calendar recopy feedback, no Google Calendar links, no horizontal overflow, and no console errors. A 320px check caught the old fixed minimum page width overflowing beside a desktop scrollbar; removing that minimum leaves the page within the available width.
 - Opening the generated setup URL at desktop size restores the choices and exposes the usual desktop Google setup after copying the feed.
 
 These checks do not simulate installed iPhone apps or complete a subscription inside a real Google account. Safari's optional desktop-site workaround has not been verified on a physical iPhone.
