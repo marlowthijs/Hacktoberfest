@@ -117,10 +117,16 @@ An invitation expires after seven days and can be used once. It signs the secret
 Secretaries can:
 
 - Add, edit, duplicate, cancel and restore their society’s events.
+- See upcoming events and imported dates needing confirmation separately, search their events and reveal six at a time.
 - Publish an introduction, joining instructions, membership link, regular activity notes, public email and social links.
-- Preview their joining instructions before publishing.
+- Preview events and joining instructions before publishing.
+- Resume automatically saved event and joining-details drafts from the same browser. Drafts are not public, are not synced to another device, and are removed if the browser's site data is cleared. Use **Publish** to make changes public.
+
+If someone publishes a newer version while a draft is saved, the portal compares the published details with the draft and asks the secretary to review them before publishing. A failed connection keeps the form available; retrying the same new event does not create a second copy. Draft storage failures are shown explicitly, with a warning before leaving unsaved changes.
 
 Dates use Southampton time (`Europe/London`), including British Summer Time. The form rejects the missing hour during the spring clock change; in autumn it uses the first occurrence of a repeated time. A regular activity note does not generate calendar events: add dated events, or duplicate an existing one and change the date.
+
+Changing a start time moves the end time to keep the existing duration. Duplicating suggests the next future weekly occurrence at the same Southampton local time; check that suggested date before publishing the separate event.
 
 Publishing updates the database immediately. Public catalogue and feed responses may be cached for up to five minutes. Google and other subscribed calendars refresh on their own schedule. One-off downloaded/imported `.ics` files do not update automatically. Cancellation keeps the event’s UID and adds `STATUS:CANCELLED` and an incremented sequence so subscriptions can recognise the change.
 
@@ -142,6 +148,8 @@ Run `npm test` for API and DOM integration tests, and `npx wrangler deploy --dry
 
 Student and source-parser tests also cover search and progressive results, quiet-society subscriptions, mobile copy behaviour, source/committee separation, unsafe links, inconsistent source dates and tentative-calendar opt-in. Navigation tests exercise browser history and scroll restoration, undo, disclosure retention, clipboard failure, saved calendar preferences and keyboard-aware mobile controls.
 
+Leader tests cover local draft recovery, newer-version comparisons, joining-details tab recovery, lost publication responses, duplicate prevention, confirmation of imported dates, duration-preserving edits, clock changes, focused validation errors and unavailable browser storage.
+
 ## Project files
 
 - `worker/index.js` — page routes, public event API and iCalendar feed.
@@ -149,6 +157,7 @@ Student and source-parser tests also cover search and progressive results, quiet
 - `worker/student-page.js` / `worker/student-styles.js` — student page structure and responsive styling.
 - `worker/portal-api.js` — invitation access, validation and D1 persistence.
 - `worker/secretary-page.js` / `worker/portal-client.js` — secretary and owner interfaces.
+- `worker/portal-drafts.js` / `worker/leader-styles.js` — local leader drafts, conflict review and responsive workspace styling.
 - `data/events.json` — base society and event catalogue.
 - `migrations/` — D1 database schema.
 - `scripts/dev.mjs` — isolated local preview setup.

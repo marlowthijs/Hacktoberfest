@@ -203,10 +203,17 @@ export async function handlePortalApi(request, env, { loadBaseCatalogue }) {
     }
     const eventMatch = path.match(/^\/api\/portal\/events\/([^/]+)(\/cancel)?$/);
     if (path === '/api/portal/events' && request.method === 'POST') {
-      const data = validateEvent(await readBody(request));
-      const id = society.id + '-' + crypto.randomUUID(), modified = new Date().toISOString();
+      const { request_id, ...fields } = await readBody(request), data = validateEvent(fields);
+      if (request_id !== undefined && (typeof request_id !== 'string' || !/^[a-f0-9]{32}$/.test(request_id))) fail(400, 'Reload the event editor before publishing.', 'invalid_request_id');
+      const id = society.id + '-' + (request_id || crypto.randomUUID()), modified = new Date().toISOString();
       const event = { ...data, id, society_id: society.id, status: 'confirmed', source_type: 'secretary', source_checked_at: modified, sequence: 1, version: 1, modified_at: modified };
-      await db.prepare('INSERT INTO portal_events (event_id,society_id,data_json,version,modified_at) VALUES (?,?,?,1,?)').bind(id, society.id, JSON.stringify(event), modified).run();
+      const inserted = await db.prepare('INSERT INTO portal_events (event_id,society_id,data_json,version,modified_at) VALUES (?,?,?,1,?) ON CONFLICT(event_id) DO NOTHING RETURNING event_id').bind(id, society.id, JSON.stringify(event), modified).first();
+      if (!inserted) {
+        const row = await db.prepare('SELECT society_id,data_json FROM portal_events WHERE event_id=?').bind(id).first();
+        const prior = row && JSON.parse(row.data_json);
+        if (row?.society_id === society.id && prior.version === 1 && prior.status === 'confirmed' && Object.keys(data).every(key => data[key] === prior[key])) return json({ event: prior });
+        fail(409, 'This draft already created an event. Load the latest version, then continue your draft to review any remaining changes.', 'already_published');
+      }
       await audit(db, session, 'event_created', id); return json({ event }, 201);
     }
     if (eventMatch && ((request.method === 'PATCH' && !eventMatch[2]) || (request.method === 'POST' && eventMatch[2]))) {

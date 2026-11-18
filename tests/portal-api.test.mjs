@@ -49,6 +49,17 @@ test('same-origin and CSRF protections reject forged writes', async t => {
   assert.equal((await call('profile', 'PATCH', { version: 0, description: 'bad' }, auth, { origin: 'https://evil.example' })).status, 403);
 });
 
+test('retrying a new event after a lost response creates it only once', async t => {
+  const { call, secretary, env } = setup(t); const auth=await secretary();
+  const request={...eventInput,request_id:'a'.repeat(32)};
+  const responses=await Promise.all([call('events','POST',request,auth),call('events','POST',request,auth)]);
+  assert.deepEqual(responses.map(r=>r.status).sort(),[200,201]);assert.equal(responses[0].event.id,responses[1].event.id);
+  assert.equal((await mergePortalCatalogue(base,env)).events.filter(e=>e.id===responses[0].event.id).length,1);
+  const changed=await call('events','POST',{...request,title:'Different title'},auth);assert.equal(changed.status,409);assert.equal(changed.code,'already_published');
+  assert.equal((await call('events','POST',{...eventInput,request_id:'invalid'},auth)).status,400);
+  const other=await secretary('boxing');const separate=await call('events','POST',request,other);assert.equal(separate.status,201);assert.notEqual(separate.event.id,responses[0].event.id);
+});
+
 test('one-use invitations resist parallel redemption and expire', async t => {
   const { call, owner, db } = setup(t); const admin = await owner();
   const issue = () => call('admin/invitations', 'POST', { society_id: 'art', label: 'Alex' }, admin);
