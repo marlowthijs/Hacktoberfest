@@ -4,9 +4,11 @@ uniflow turns a weekly society event list into a public calendar feed that stude
 
 ## Student journey
 
-1. Search and follow societies or sports. Browsing shows six results at a time; contact-only groups appear when searched for or in **My selection**. Choices stay saved on that device, including societies with no upcoming dates.
-2. Review events with search and 7-day, 30-day or all-upcoming filters. These filters change the preview, not the subscription. Source dates and links explain where each listing came from.
-3. Copy a subscription link and follow the Google Calendar or Apple/other-calendar instructions. Copying never automatically redirects to another app. A one-time `.ics` download is also available.
+1. Search and follow societies or sports. Compact cards put **Follow** at the top; browsing shows six results at a time. Contact-only groups appear when searched for or in **My selection**. Choices stay saved on that device, including societies with no upcoming dates. Accidental removals have an **Undo** action.
+2. Review events with search and 7-day, 30-day or all-upcoming filters. These filters change the preview, not the subscription. A bottom action bar keeps the next step in reach. Source dates and expandable joining details explain each listing.
+3. Choose a calendar app. Google and other apps reveal the paste instructions after copying; Apple Calendar also offers a direct subscription link. Copying stays on UniFlow and, on small screens, scrolls to the next instruction. Failed copying selects the link and offers a manual route. A one-time `.ics` download remains under a disclosure.
+
+The progress steps are clickable, and browser Back/Forward restore the previous step and scroll position. Search filters and expanded details survive navigation; unchanged background refreshes leave the page intact. Returning users can choose **Your calendar** in the header. Calendar-app and tentative-date preferences are saved locally. If the selection differs from a previously copied link, the app explains that an existing subscription needs replacing: changing browser selections does not change an older subscription URL.
 
 ## Refresh the SUSU catalogue
 
@@ -136,12 +138,13 @@ Invitation and session tokens are random; only their hashes are stored. Producti
 
 Run `npm test` for API and DOM integration tests, and `npx wrangler deploy --dry-run` to check the Worker bundle. Tests cover invitation redemption and expiry, revocation, society isolation, CSRF, concurrent edits, validation, preview isolation, safe public rendering, calendar cancellation and upstream failures.
 
-Student and source-parser tests also cover search and progressive results, quiet-society subscriptions, mobile copy behaviour, source/committee separation, unsafe links, inconsistent source dates and tentative-calendar opt-in.
+Student and source-parser tests also cover search and progressive results, quiet-society subscriptions, mobile copy behaviour, source/committee separation, unsafe links, inconsistent source dates and tentative-calendar opt-in. Navigation tests exercise browser history and scroll restoration, undo, disclosure retention, clipboard failure, saved calendar preferences and keyboard-aware mobile controls.
 
 ## Project files
 
-- `worker/index.js` — student app, public event API and iCalendar feed.
+- `worker/index.js` — page routes, public event API and iCalendar feed.
 - `worker/student-client.js` — student discovery, saved selections, event review and calendar setup.
+- `worker/student-page.js` / `worker/student-styles.js` — student page structure and responsive styling.
 - `worker/portal-api.js` — invitation access, validation and D1 persistence.
 - `worker/secretary-page.js` / `worker/portal-client.js` — secretary and owner interfaces.
 - `data/events.json` — base society and event catalogue.
