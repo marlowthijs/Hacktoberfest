@@ -1,14 +1,24 @@
 # uniflow
 
-uniflow turns a weekly society event list into a public calendar feed that students can subscribe to in Google Calendar. Society committees can publish their own events and joining instructions through the secretary portal.
+uniflow helps Southampton students discover society events, save a personal event plan and subscribe to their societies' calendars. Society committees can publish their own events and joining instructions through the secretary portal.
 
 ## Student journey
 
 1. Search and follow societies or sports. Compact cards put **Follow** at the top; browsing shows six results at a time. Contact-only groups appear when searched for or in **My selection**. Choices stay saved on that device, including societies with no upcoming dates. Accidental removals have an **Undo** action.
-2. Review events with search and 7-day, 30-day or all-upcoming filters. These filters change the preview, not the subscription. A bottom action bar keeps the next step in reach. Source dates and expandable joining details explain each listing.
+2. Explore **All events**, **My societies** or a **Saved plan**. Students can browse before following anyone. Search and filters for today, tomorrow, this weekend, seven days, thirty days and all dates use Southampton local days. Group filters separate societies and sports; lists reveal six events at a time. These filters change the view, not a society subscription.
 3. Choose a calendar app. Google and other apps reveal the paste instructions after copying; Apple Calendar also offers a direct subscription link. Copying stays on UniFlow and, on small screens, scrolls to the next instruction. Failed copying selects the link and offers a manual route. A one-time `.ics` download remains under a disclosure.
 
 The progress steps are clickable, and browser Back/Forward restore the previous step and scroll position. Search filters and expanded details survive navigation; unchanged background refreshes leave the page intact. Returning users can choose **Your calendar** in the header. Calendar-app and tentative-date preferences are saved locally. If the selection differs from a previously copied link, the app explains that an existing subscription needs replacing: changing browser selections does not change an older subscription URL.
+
+### Saved event plans
+
+**Save** adds an individual event to a plan independently of following its society. A bottom shortcut opens the plan while browsing. Events show the society's joining instructions, public contacts and booking link where available; students can also follow the society from an event's details.
+
+Plans hold up to 200 event IDs in this browser's local storage. They do not require an account, sync between devices or reveal students' personal calendars. If storage is blocked, the UI explains that the plan lasts for the current visit only. Clearing site data removes saved choices and plans.
+
+Overlapping confirmed upcoming events in the plan are flagged; adjacent events are not. These warnings compare saved society events only, not lectures or a student's private calendar. Cancelled, finished and unavailable saved events remain visible for review. Tentative dates retain their warning.
+
+Students can download an individual event or the plan through `/events.ics?events=id1,id2`. This produces a one-time `.ics` file, not an updating subscription. The server validates the selection, deduplicates IDs and includes only requested upcoming, non-cancelled events. Unconfirmed dates require `include_unconfirmed=1` and remain tentative in the file. Existing event UIDs and sequence numbers are retained. If every requested event has become unavailable, the download returns a clear error rather than an empty calendar.
 
 ## Refresh the SUSU catalogue
 
@@ -154,6 +164,7 @@ Leader tests cover local draft recovery, newer-version comparisons, joining-deta
 
 - `worker/index.js` — page routes, public event API and iCalendar feed.
 - `worker/student-client.js` — student discovery, saved selections, event review and calendar setup.
+- `worker/student-planner.js` / `worker/student-planner-styles.js` — event discovery, saved plans, local-day filters and overlap warnings.
 - `worker/student-page.js` / `worker/student-styles.js` — student page structure and responsive styling.
 - `worker/portal-api.js` — invitation access, validation and D1 persistence.
 - `worker/secretary-page.js` / `worker/portal-client.js` — secretary and owner interfaces.

@@ -1,3 +1,5 @@
+import { STUDENT_PLANNER } from './student-planner.js';
+
 export const STUDENT_SCRIPT = String.raw`(() => {
 'use strict';
 const $ = id => document.getElementById(id);
@@ -91,39 +93,23 @@ function renderSocieties() {
   if (focused && (focused.startsWith('follow-') || focused.startsWith('details-'))) $(focused)?.focus({ preventScroll: true });
 }
 function selectedEvents() { return [...selected].flatMap(id => eventsFor(id)).sort((a, b) => Date.parse(a.start) - Date.parse(b.start)); }
-function renderEvents() {
-  const container = $('event-list'), open = rememberOpen(container), focused = document.activeElement?.id;
-  const events = selectedEvents(), q = norm($('event-search').value).trim(), days = Number($('event-range').value) || Infinity, cutoff = Date.now() + days * 86400000;
-  const matches = events.filter(e => Date.parse(e.start) < cutoff && (!q || q.split(/\s+/).every(t => norm([e.title, societyFor(e.society_id)?.name, e.location, e.description, fmt(e.start, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })].join(' ')).includes(t))));
-  const visible = matches.slice(0, eventLimit), unconfirmed = [...selected].flatMap(id => eventsFor(id, true)).filter(uncertain).length;
-  $('event-count').textContent = events.length + ' upcoming ' + (events.length === 1 ? 'event' : 'events');
-  $('event-intro').textContent = 'From ' + selected.size + ' selected ' + (selected.size === 1 ? 'society' : 'societies') + '. Times are shown for Southampton.';
-  $('event-result-count').textContent = matches.length ? visible.length + ' of ' + matches.length + ' events' : 'No matching dates';
-  $('clear-event-search').hidden = !q;
-  $('unconfirmed-option').hidden = !unconfirmed;
-  $('unconfirmed-count').textContent = unconfirmed + ' dates need confirmation: they come from older schedules or conflicting source details.';
-  $('event-actions').hidden = matches.length <= eventLimit;
-  $('event-toggle').textContent = 'Show ' + Math.min(6, Math.max(0, matches.length - eventLimit)) + ' more';
-  container.innerHTML = visible.map(e => {
-    const society = societyFor(e.society_id), label = uncertain(e) ? 'Date needs confirmation' : e.source_type === 'secretary' ? 'Published by society' : e.source_checked_at ? 'SUSU · checked ' + date(e.source_checked_at) : 'Previously supplied event';
-    return '<article class="event-card" tabindex="-1"><div class="event-date"><span class="day">' + fmt(e.start, { day: '2-digit' }) + '</span><span class="month">' + fmt(e.start, { month: 'short', ...(differentYear(e.start) ? { year: 'numeric' } : {}) }) + '</span></div><div class="event-main"><div class="event-society">' + esc(society?.name) + '</div><h3>' + esc(e.title) + '</h3><p class="event-meta">' + esc(fmt(e.start, { weekday: 'short' })) + ' · ' + time(e.start) + '–' + time(e.end) + (date(e.start) !== date(e.end) ? ' (' + date(e.end) + ')' : '') + '</p><p>' + esc(e.location || 'Location to be confirmed') + '</p><span class="source-badge' + (uncertain(e) ? ' unconfirmed' : '') + '">' + esc(label) + '</span>' +
-      '<details class="event-description" data-detail="' + esc(e.id) + '" ' + (open.has(e.id) ? 'open' : '') + '><summary id="event-details-' + esc(e.id) + '">Details & joining info</summary>' + ((e.description || e.verification_note) ? '<p>' + esc([e.verification_note, e.description].filter(Boolean).join('\n\n')) + '</p>' : '') + '<div class="society-links event-links">' + anchor('Official event', e.source_url || society?.susu_url) + anchor('Booking information', e.booking_url) + '</div></details></div></article>';
-  }).join('') || '<div class="empty-state"><strong>' + (events.length ? 'No events match these filters.' : 'No confirmed dates for these societies yet.') + '</strong><p>' + (events.length ? 'Try all upcoming dates or clear your search.' : 'You can still subscribe. Future published events will appear automatically when your calendar refreshes.') + '</p>' + (events.length ? '<button class="button button-secondary" id="reset-events">Show all dates</button>' : '') + '</div>';
-  $('reset-events')?.addEventListener('click', () => { $('event-search').value = ''; $('event-range').value = 'all'; eventLimit = 6; renderEvents(); $('event-search').focus(); });
-  if (focused?.startsWith('event-details-')) $(focused)?.focus({ preventScroll: true });
-}
+${STUDENT_PLANNER}
 function updateNavigation() {
   document.querySelectorAll('[data-go-step]').forEach(el => {
-    if (el.tagName === 'BUTTON' && Number(el.dataset.goStep) > 1) el.disabled = !loaded || !selected.size;
+    if (el.tagName === 'BUTTON' && Number(el.dataset.goStep) > 1) el.disabled = !loaded || (Number(el.dataset.goStep) === 3 && !selected.size);
     if (el.closest('.wizard-progress')) Number(el.dataset.goStep) === activeStep ? el.setAttribute('aria-current', 'step') : el.removeAttribute('aria-current');
   });
   $('return-calendar').hidden = !selected.size || activeStep === 3;
-  const showBar = loaded && selected.size > 0 && activeStep < 3;
+  const planShortcut = activeStep === 2 && eventScope !== 'plan' && planned.size > 0;
+  const showBar = loaded && (selected.size > 0 || planShortcut) && activeStep < 3 && !(activeStep === 2 && eventScope === 'plan');
   $('journey-bar').hidden = !showBar;
   $('journey-bar').dataset.step = String(activeStep);
   document.body.classList.toggle('has-journey-bar', showBar);
   $('continue-review').hidden = activeStep !== 1;
-  $('continue-calendar').hidden = activeStep !== 2;
+  $('continue-calendar').hidden = activeStep !== 2 || planShortcut;
+  $('view-event-plan').hidden = !planShortcut;
+  if (planShortcut) { $('selection-next-title').textContent = planned.size + ' saved ' + (planned.size === 1 ? 'event' : 'events'); $('selection-next-detail').textContent = planStorageFailed ? 'Saved for this visit' : 'Your plan stays on this device'; }
+  else { const count = selectedEvents().length; $('selection-next-title').textContent = selected.size + ' ' + (selected.size === 1 ? 'society' : 'societies') + ' selected'; $('selection-next-detail').textContent = count ? count + ' upcoming ' + (count === 1 ? 'event' : 'events') : 'Ready for future events'; }
   $('back-to-societies').hidden = activeStep !== 2;
 }
 function renderSelections() {
@@ -131,9 +117,6 @@ function renderSelections() {
   $('selected-tray').hidden = !selected.size;
   $('selected-summary').textContent = selected.size + ' selected · view or edit';
   $('selected-chips').innerHTML = [...selected].map(id => '<button class="selection-chip" data-remove="' + esc(id) + '" aria-label="Remove ' + esc(societyFor(id)?.name) + '">' + esc(societyFor(id)?.name) + ' <span aria-hidden="true">×</span></button>').join('');
-  const count = selectedEvents().length;
-  $('selection-next-title').textContent = selected.size + ' ' + (selected.size === 1 ? 'society' : 'societies') + ' selected';
-  $('selection-next-detail').textContent = count ? count + ' upcoming ' + (count === 1 ? 'event' : 'events') : 'Ready for future events';
   $('continue-review').disabled = !selected.size;
   $('continue-calendar').disabled = !selected.size;
   updateNavigation();
@@ -188,7 +171,7 @@ function renderFeed() {
 function render() { renderSocieties(); renderEvents(); renderSelections(); renderFeed(); }
 function showStep(step, push = true, initial = false) {
   if (step < 1 || step > 3) return;
-  if (step > 1 && (!loaded || !selected.size)) { step = 1; $('announcement').textContent = 'Choose at least one society before continuing.'; }
+  if (step > 1 && (!loaded || (step === 3 && !selected.size))) { step = 1; $('announcement').textContent = 'Choose at least one society before continuing.'; }
   if (activeStep !== step) scrollPositions.set(activeStep, window.scrollY || 0);
   const changed = activeStep !== step; activeStep = step;
   document.querySelectorAll('[data-wizard-page]').forEach(page => page.hidden = Number(page.dataset.wizardPage) !== step);
@@ -215,7 +198,7 @@ async function load() {
   try {
     const response = await fetch('/api/events', { cache: 'no-store' }); if (!response.ok) throw new Error('Catalogue unavailable');
     const data = await response.json(); if (!Array.isArray(data.societies) || !Array.isArray(data.events)) throw new Error('Invalid catalogue');
-    const payload = JSON.stringify(data), liveIds = data.events.filter(upcoming).map(e => e.id).join(',');
+    const payload = JSON.stringify(data), liveIds = londonDay(Date.now()) + ':' + data.events.filter(upcoming).map(e => e.id).join(',');
     updateFreshness(data); $('load-error').hidden = true; lastFetchAt = Date.now();
     // A focus refresh must not collapse details or interrupt an unchanged page.
     if (loaded && payload === lastPayload && liveIds === lastLiveIds) return;
@@ -234,9 +217,9 @@ async function load() {
       history.replaceState(null, '', clean.pathname + clean.search + clean.hash);
     }
     selected = new Set([...selected].filter(id => societyFor(id))); save();
-    const firstLoad = !loaded; loaded = true; render();
+    const firstLoad = !loaded; loaded = true; if (firstLoad) eventScope = selected.size ? 'following' : 'all'; render();
     if (firstLoad) showStep(invalidSetup ? 1 : Math.max(1, ['#societies', '#events', '#calendar'].indexOf(location.hash) + 1), false, true);
-    else if (!selected.size && activeStep > 1) showStep(1, false);
+    else if (!selected.size && activeStep === 3) showStep(1, false);
   } catch {
     $('load-error').hidden = false;
     $('load-error-text').textContent = loaded ? 'Could not refresh. Your choices and the last loaded listings are still here.' : 'We couldn’t load the societies. Your saved choices are safe. Try again.';
@@ -282,7 +265,7 @@ $('clear-event-search').addEventListener('click', () => { $('event-search').valu
 $('event-range').addEventListener('change', () => { eventLimit = 6; renderEvents(); });
 $('include-unconfirmed').checked = includeUnconfirmed;
 $('include-unconfirmed').addEventListener('change', e => { includeUnconfirmed = e.target.checked; eventLimit = 6; savePreferences(); render(); });
-$('continue-review').addEventListener('click', () => showStep(2));
+$('continue-review').addEventListener('click', () => { eventScope = 'following'; eventLimit = 6; renderEvents(); showStep(2); });
 $('continue-calendar').addEventListener('click', () => showStep(3));
 $('back-to-societies').addEventListener('click', () => showStep(1));
 $('back-to-events').addEventListener('click', () => showStep(2));

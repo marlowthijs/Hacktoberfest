@@ -1,4 +1,5 @@
 import { STUDENT_SCRIPT } from './student-client.js';
+import { STUDENT_PLANNER_STYLES } from './student-planner-styles.js';
 import { STUDENT_STYLES } from './student-styles.js';
 
 const SEARCH_ICON = '<svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.7"></circle><path d="m13.2 13.2 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg>';
@@ -11,7 +12,7 @@ export const STUDENT_PAGE = String.raw`<!doctype html>
   <meta name="theme-color" content="#002f4c">
   <meta name="description" content="Find Southampton societies and sports, choose your favourites and follow their events in one calendar.">
   <title>uniflow | Southampton Societies</title>
-  <style>${STUDENT_STYLES}</style>
+  <style>${STUDENT_STYLES}${STUDENT_PLANNER_STYLES}</style>
 </head>
 <body>
   <a class="skip-link" href="#societies" data-go-step="1">Skip to societies</a>
@@ -22,7 +23,7 @@ export const STUDENT_PAGE = String.raw`<!doctype html>
   <main class="shell">
     <nav aria-label="Calendar setup steps"><ol class="wizard-progress">
       <li id="wizard-progress-1" class="is-current"><button data-go-step="1" aria-current="step"><span class="wizard-step-number">1</span><span>Choose <small>societies</small></span></button></li>
-      <li id="wizard-progress-2"><button data-go-step="2" disabled><span class="wizard-step-number">2</span><span>Review <small>events</small></span></button></li>
+      <li id="wizard-progress-2"><button data-go-step="2" disabled><span class="wizard-step-number">2</span><span>Explore <small>events</small></span></button></li>
       <li id="wizard-progress-3"><button data-go-step="3" disabled><span class="wizard-step-number">3</span><span>Add <small>to calendar</small></span></button></li>
     </ol></nav>
     <noscript><p class="no-script">Turn on JavaScript to choose societies and create your calendar. For help, email <a href="mailto:marlow.thijs@icloud.com">marlow.thijs@icloud.com</a>.</p></noscript>
@@ -30,6 +31,7 @@ export const STUDENT_PAGE = String.raw`<!doctype html>
     <p id="setup-notice" class="selection-change-note" role="status" hidden></p>
     <section class="wizard-page" id="societies" data-wizard-page="1" aria-labelledby="societies-title">
       <div class="section-heading"><div><h1 id="societies-title" tabindex="-1">Find your societies</h1><p>Pick your favourites. Keep their events in one calendar.</p></div><span class="selection-count" id="selection-count">0 selected</span></div>
+      <div class="discovery-invite"><div><strong>Not sure where to start?</strong><p>See what’s happening and save a few events to try.</p></div><button class="button button-secondary" id="explore-events">Explore what’s on →</button></div>
       <div class="discovery-toolbar">
         <div class="search-field">${SEARCH_ICON}<label class="sr-only" for="society-search">Search societies by name or interest</label><input id="society-search" type="search" autocomplete="off" enterkeyhint="search" placeholder="Search societies or sports"><button id="clear-search" class="search-clear" aria-label="Clear society search" hidden>×</button></div>
         <div class="filter-chips" aria-label="Filter societies"><button data-kind="all" aria-pressed="true">All</button><button data-kind="society" aria-pressed="false">Societies</button><button data-kind="sport" aria-pressed="false">Sports</button><button id="selected-only" aria-pressed="false">My selection</button></div>
@@ -42,8 +44,13 @@ export const STUDENT_PAGE = String.raw`<!doctype html>
     </section>
     <section class="wizard-page" id="events" data-wizard-page="2" hidden aria-labelledby="events-title">
       <div class="section-heading"><div><h1 id="events-title" tabindex="-1">Your upcoming events</h1><p id="event-intro">A quick look at what’s coming up.</p></div><span class="selection-count" id="event-count"></span></div>
-      <div class="event-toolbar"><div class="search-field">${SEARCH_ICON}<label class="sr-only" for="event-search">Search events by title, society, place or date</label><input id="event-search" type="search" autocomplete="off" enterkeyhint="search" placeholder="Search your events"><button id="clear-event-search" class="search-clear" aria-label="Clear event search" hidden>×</button></div><label class="sort-label" for="event-range"><span>Dates</span><select id="event-range"><option value="7">Next 7 days</option><option value="30" selected>Next 30 days</option><option value="all">All upcoming</option></select></label><span class="result-meta" id="event-result-count" role="status" aria-live="polite"></span></div>
-      <p class="event-preview-note">This is a preview. Your calendar includes all published dates and future updates.</p>
+      <div class="event-scopes" aria-label="Choose events to explore"><button id="event-scope-all" data-event-scope="all" aria-pressed="false">All events</button><button id="event-scope-following" data-event-scope="following" aria-pressed="true">My societies</button><button id="event-scope-plan" data-event-scope="plan" aria-pressed="false">Saved plan <span id="plan-count">0</span></button></div>
+      <div id="plan-summary" class="plan-summary" hidden><p>A one-time calendar copy of your upcoming saved events. Check UniFlow for later changes or cancellations.</p><a id="plan-download" class="button button-secondary" href="#" hidden>Download saved events (.ics)</a></div>
+      <p id="plan-storage-warning" role="status" hidden></p>
+      <div id="plan-unavailable" hidden><span id="plan-unavailable-text"></span> <button id="clear-unavailable-plan" class="text-action">Remove unavailable events</button></div>
+      <p id="planner-status" class="planner-notice" role="status" aria-live="polite"></p>
+      <div class="event-toolbar"><div class="search-field">${SEARCH_ICON}<label class="sr-only" for="event-search">Search events by title, society, place or date</label><input id="event-search" type="search" autocomplete="off" enterkeyhint="search" placeholder="Search your events"><button id="clear-event-search" class="search-clear" aria-label="Clear event search" hidden>×</button></div><label class="sort-label" for="event-range"><span>Dates</span><select id="event-range"><option value="today">Today</option><option value="tomorrow">Tomorrow</option><option value="weekend">This weekend</option><option value="7">Next 7 days</option><option value="30" selected>Next 30 days</option><option value="all">All upcoming</option></select></label><label class="sort-label" for="event-kind"><span>Groups</span><select id="event-kind" aria-label="Filter event groups"><option value="all">All groups</option><option value="society">Societies</option><option value="sport">Sports</option></select></label><span class="result-meta" id="event-result-count" role="status" aria-live="polite"></span></div>
+      <p id="event-preview-note" class="event-preview-note">Your calendar includes all published dates and future updates.</p>
       <details id="unconfirmed-option" class="unconfirmed-option" hidden><summary>Dates that need confirmation</summary><p id="unconfirmed-count"></p><label><input id="include-unconfirmed" type="checkbox">Include these unconfirmed dates in my calendar</label><p>They will be labelled tentative. Check times and venues with the society before going.</p></details>
       <div class="event-list" id="event-list"></div>
       <div class="list-actions" id="event-actions" hidden><button class="expand-button" id="event-toggle" aria-controls="event-list">Show 6 more</button></div>
@@ -83,7 +90,7 @@ export const STUDENT_PAGE = String.raw`<!doctype html>
     </section>
     <footer class="footer"><div class="footer-left">Student-run for Southampton. Not an official University service.<br><span id="updated-label"></span></div><div class="footer-right"><a href="mailto:marlow.thijs@icloud.com?subject=UniFlow%20feedback">Feedback: marlow.thijs@icloud.com</a><a href="/secretary">Society portal</a></div></footer>
   </main>
-  <aside class="journey-bar" id="journey-bar" aria-label="Next step" hidden><div class="shell journey-inner"><button class="button bar-back" id="back-to-societies" hidden>← Societies</button><div class="journey-summary"><strong id="selection-next-title"></strong><span id="selection-next-detail"></span></div><button class="button button-primary" id="continue-review" disabled>Review events →</button><button class="button button-primary" id="continue-calendar" hidden disabled>Add to calendar →</button></div></aside>
+  <aside class="journey-bar" id="journey-bar" aria-label="Next step" hidden><div class="shell journey-inner"><button class="button bar-back" id="back-to-societies" hidden>← Societies</button><div class="journey-summary"><strong id="selection-next-title"></strong><span id="selection-next-detail"></span></div><button class="button button-primary" id="continue-review" disabled>Review events →</button><button class="button button-primary" id="continue-calendar" hidden disabled>Society calendar →</button><button class="button button-primary" id="view-event-plan" hidden>View saved plan →</button></div></aside>
   <div class="undo-message" id="undo-message" hidden><span id="undo-text" role="status"></span><button id="undo-remove">Undo</button></div>
   <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
   <script>${STUDENT_SCRIPT}</script>

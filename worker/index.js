@@ -164,6 +164,23 @@ export default {
         headers: { "content-type": "application/json; charset=utf-8", "cache-control": "public, max-age=300, s-maxage=300", "access-control-allow-origin": "*", ...securityHeaders },
       });
     }
+    if (url.pathname === "/events.ics") {
+      const requested = (url.searchParams.get("events") || "").split(",").map(id => id.trim()).filter(Boolean);
+      const errorHeaders = { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store", ...securityHeaders };
+      if (!requested.length || requested.length > 200 || requested.some(id => id.length > 200)) {
+        return new Response("Choose between 1 and 200 events for your calendar download.", { status: 400, headers: errorHeaders });
+      }
+      const catalogue = await loadCatalogue(request, env), ids = new Set(requested);
+      const events = catalogue.events.filter(event => ids.has(event.id) && event.status !== "cancelled" && Date.parse(event.end) >= Date.now() && (event.verification_status !== "needs_confirmation" || url.searchParams.get("include_unconfirmed") === "1"))
+        .sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+      if (!events.length) return new Response("These events are no longer available for download. Return to UniFlow to check your saved plan.", { status: 404, headers: errorHeaders });
+      const societies = new Map(catalogue.societies.map(society => [society.id, society.name]));
+      const body = buildCalendar(events.map(event => ({ ...event, description: [societies.get(event.society_id), event.description].filter(Boolean).join("\n\n") })), url.origin, ["My event plan"]);
+      return new Response(request.method === "HEAD" ? null : body, { headers: {
+        "content-type": "text/calendar; charset=utf-8; method=PUBLISH", "cache-control": "no-store",
+        "content-disposition": "attachment; filename=\"uniflow-event-plan.ics\"", "access-control-allow-origin": "*", ...securityHeaders,
+      } });
+    }
     if (url.pathname === "/calendar.ics") {
       const selected = (url.searchParams.get("societies") || "").split(",").map((id) => id.trim()).filter(Boolean);
       if (!selected.length) {
